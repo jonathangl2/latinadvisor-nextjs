@@ -1,0 +1,182 @@
+@use "../variables-custom";
+
+/* ---------- START CSS BLOG ---------- */
+
+// CSS PAGE BLOG
+.container {
+    &-blog {
+        width: 100%;
+        position: relative;
+        .card-post {
+            h4 {
+                color: variables-custom.$color-blue-grey-1;
+                font-size: 1.6rem;
+                @media #{variables-custom.$M1440} {
+                    font-size: 1.8vw;
+                }
+                @media #{variables-custom.$M991} {
+                    font-size: 4vw;
+                }
+                @media #{variables-custom.$M500} {
+                    font-size: 5.5vw;
+                }
+            }
+            a {
+                line-height: 0 !important;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+// CSS BLOG DETAIL
+#internal_banner_blog_detail,
+.container-blog-detalle {
+    h1 {
+        text-transform: uppercase;
+        text-align: center;
+        color: variables-custom.$color-blue-grey-1;
+        font-weight: bold;
+        font-style: normal;
+        font-size: 3vw;
+        @media #{variables-custom.$M1440} {
+            font-size: 3rem;
+        }
+        @media #{variables-custom.$M991} {
+            font-size: 6vw;
+        }
+        @media #{variables-custom.$M500} {
+            font-size: 9vw;
+        }
+    }
+}
+
+.container {
+    &-blog-detalle {
+        // CSS TITULOS
+        h3,
+        h2 {
+            font-weight: bold;
+            font-style: normal;
+            color: variables-custom.$color-blue-grey-1;
+        }
+        h2 {
+            font-size: 2.8vw;
+            @media #{variables-custom.$M1440} {
+                font-size: 2.8vw;
+            }
+            @media #{variables-custom.$M991} {
+                font-size: 5vw;
+            }
+            @media #{variables-custom.$M500} {
+                font-size: 8vw;
+            }
+            &.color-blue {
+                color: variables-custom.$color-blue-dark-2;
+            }
+        }
+        h3 {
+            font-size: 2vw;
+            @media #{variables-custom.$M1440} {
+                font-size: 2rem;
+            }
+            @media #{variables-custom.$M991} {
+                font-size: 4vw;
+            }
+            @media #{variables-custom.$M500} {
+                font-size: 7vw;
+            }
+            &.color-blue {
+                color: variables-custom.$color-blue-dark-2;
+            }
+        }
+        a.btn-cta-post {
+            line-height: 0 !important;
+            display: inline-block;
+        }
+        p {
+            a {
+                line-height: 0 !important;
+                letter-spacing: 0.5px;
+                display: inline-flex !important;
+                align-items: center !important;
+            }
+        }
+        // CSS CONTENEDOR FRASE DESTACADA
+        &_subtitulo_destacado {
+            .border-left_green,
+            .border-left_blue {
+                h2,
+                h3 {
+                    span {
+                        font-weight: 300;
+                        font-style: normal;
+                        display: block;
+                    }
+                }
+            }
+            .border-left_green {
+                border-left: 5px solid variables-custom.$color-green-1 !important;
+            }
+            .border-left_blue {
+                border-left: 5px solid variables-custom.$color-blue-dark-2;
+            }
+        }
+        // CSS CONTENEDOR FRASE DESTACADA
+        &_frase_destacada {
+            .border-left_green,
+            .border-left_blue {
+                p,
+                h2,
+                h3,
+                h4,
+                h5 {
+                    font-style: italic;
+                }
+            }
+            .border-left_green {
+                border-left: 5px solid variables-custom.$color-green-1 !important;
+            }
+            .border-left_blue {
+                border-left: 5px solid variables-custom.$color-blue-dark-2;
+            }
+        }
+        // CSS CONTENEDOR UL
+        &_listas {
+            ul {
+                li {
+                    padding-left: 1.5rem;
+                    margin-bottom: 10px;
+                    position: relative;
+                    font-size: 1rem;
+                    @media #{variables-custom.$M1440} {
+                        font-size: 1.2vw;
+                    }
+                    @media #{variables-custom.$M991} {
+                        font-size: 2vw;
+                    }
+                    @media #{variables-custom.$M500} {
+                        font-size: 4vw;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        // transform: translateY(-50%);
+                        top: 7px;
+                        left: 0;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 50%;
+                        background-color: variables-custom.$color-green-1;
+                    }
+                }
+            }
+        }
+        &_back {
+            border-top: 1px solid #b8b8b8;
+        }
+    }
+}
+
+
+/* ---------- END CSS BLOG ---------- */

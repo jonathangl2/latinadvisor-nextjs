@@ -1,0 +1,339 @@
+@use "../variables-custom";
+
+/* ---------- START CSS FOOTER ---------- */
+
+footer#principal_footer {
+    background-color: variables-custom.$color-blue-dark-1;
+    min-height: 260px;
+    color: #fff;
+    p {
+        color: #fff;
+        font-weight: normal;
+        font-style: normal;
+    }
+    .contact-information {
+        @media #{variables-custom.$m1440} {
+            padding-left: 0rem !important;
+        }
+        .logo-image {
+            max-width: 350px;
+            // margin-left: -2vw;
+            @media #{variables-custom.$M1440} {
+                margin-left: -1rem;
+            }
+        }
+        &-item {
+            i {
+                margin-right: 0.6vw;
+                &::before {
+                    top: 5px;
+                }
+            }
+        }
+        a.btn {
+            font-size: 1rem;
+            background-color: transparent !important;
+            &.btn-escribenos{
+                color: variables-custom.$color-white;                
+            }
+        }
+        &-social {
+            margin: 0px 4px;
+            color: #fff;
+            i {
+                color: #fff;
+                &.fa-border {
+                    border-color: #fff;
+                }
+            }
+        }
+        .container-cta-subscribe{
+            h2{
+                color: variables-custom.$color-green-1;
+                font-weight: 700;
+                font-size: 1.5rem !important;
+            }
+            p{
+                color: #ffffff;
+            }
+            .btn-escribenos{
+                color: variables-custom.$color-blue-dark-1 !important;
+                text-transform: capitalize;
+                font-size: 1.1rem;
+                padding-left: 2rem;
+                padding-right: 2rem;
+                &:hover,
+                &:focus,
+                &:active,
+                &.active {
+                    color: variables-custom.$color-green-1 !important;
+                }
+            }
+        }
+    }
+    .locations {
+        // @media #{variables-custom.$m1440} {
+        //     padding-left: 0rem !important;
+        // }
+        &-item {
+            margin-bottom: 0.5rem;
+            @media #{variables-custom.$M991} {
+                margin-bottom: 1rem;
+            }
+            &-name {
+                padding-left: 2vw;
+                color: variables-custom.$color-green-1;
+                font-weight: bold;
+                @media #{variables-custom.$M1440} {
+                    padding-left: 2.5rem;
+                }
+            }
+            &-adress {
+                display: flex;
+                align-items: center;
+                i {
+                    min-width: 40px;
+                }
+            }
+        }
+        
+    }
+    .copyright {
+        p {
+            font-weight: normal;
+            small {
+                color: #fff;
+            }
+        }
+    }
+}
+
+#fixed-social-media{
+    position: fixed; 
+    z-index: 999;
+    right: 18px;
+    bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media #{variables-custom.$m992}{
+        bottom: 50%;
+        transform: translateY(50%);
+    }
+    .sm-principal{
+        background-color: variables-custom.$color-white;
+        width: 54px;
+        flex-direction: column;
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        margin-bottom: 0.8rem;
+        box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.35);
+        a { 
+            font-size: 1.2rem;
+            height: 34px;
+            display: flex;
+            align-items: center;
+            background-color: transparent !important;
+            color: variables-custom.$color-blue-dark-5 !important;
+            transition: .5s all ease;
+            i {
+                color: variables-custom.$color-blue-dark-5 !important;
+            }
+            &.link-sm-yt{
+                height: 28px;
+            }
+            &:hover,
+            &:focus,
+            &:active{
+                height: 44px;
+            }
+        }
+        @media #{variables-custom.$M991}{
+            display: none !important;
+        }
+    }
+}
+
+#fixed-whatsapp {
+    width: 60px;
+    height: 60px;
+    background-color: variables-custom.$color-blue-dark-5;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 35px;
+    // box-shadow: 1px 2px 3px #999;
+    box-shadow: 1px 3px 4px 1px rgba(0,0,0,0.10);
+    z-index: 100;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover,
+    &:focus,
+    &:active {
+        transform: scale(1.1);
+    }
+}
+
+.modal_containersuscribe,
+.modal_containerRenewVisa {
+
+    .container {
+        height: 100%;
+    }
+
+    .modal-dialog {
+        max-width: 95%;
+        margin-top: 6rem;
+        @media(min-width: 992px) {
+            max-width: 70%;
+            margin-top: 4rem;
+        }
+    }
+
+    .modal-content {
+        border-radius: 0px;
+        border: 0px;
+        background-color: transparent;
+        box-shadow: none !important;
+
+        .modal-body { 
+            width: 100%;
+            
+            .container-cta-subscribe_modal {    
+                background-color: variables-custom.$color-blue-dark-1;
+                position: relative;
+                
+                .row{
+                    z-index: 1;
+                }
+
+                h3{
+                    font-size: 2.5rem;
+                    color: variables-custom.$color-green-1;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+            
+                h5{
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                }
+            
+                .btn-escribenos{
+                    color: variables-custom.$color-blue-dark-1 !important;
+                    text-transform: capitalize !important;
+                    font-size: 1.1rem;
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &.active {
+                        color: variables-custom.$color-green-1 !important;
+                    }
+                }
+            
+                &:before{
+                    content: '';
+                    position: absolute;
+                    width: 95%;
+                    height: 95%;
+                    border: 1px solid #fff;
+                    z-index: 0;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                }
+            
+            }
+
+        }
+    }
+
+    .close {
+        position: absolute;
+        right: -5vw;
+        top: 0rem;
+        color: #ffffff;
+        opacity: 1;
+        background-color: variables-custom.$color-blue-dark-1;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        line-height: 0;
+        font-size: 1.2rem;
+        z-index: 10;
+        @media(min-width: 992px) {
+            top: 1rem;
+        }
+    }
+
+}
+
+.modal_containerRenewVisa {
+    .modal-content {
+        .modal-body { 
+            img{
+                object-fit: cover;
+                height: 100%;
+            }
+            .container-cta-subscribe_AUD {
+                background-color: variables-custom.$color-green-2;
+                h5{
+                    font-size: 0.85rem;
+                    color: variables-custom.$color-blue-dark-1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: top;
+                    line-height: 0.6;
+                }
+                span{
+                    font-weight: 700;
+                    font-size: 3rem;
+                }
+            }
+            h2{
+                font-weight: 700;
+                font-size: 4.4rem;
+            }
+            p{
+                font-size: 0.85rem;
+                font-weight: 400;
+                span{
+                    font-weight: 600;
+                }
+            }
+            .form-control{
+                height: 40px;
+                margin-bottom: 0.4rem;
+                line-height: 0.8;
+                font-weight: 200;
+                font-size: 0.95rem !important;
+            }
+            .custom-checkbox {
+                .custom-control-label a{
+                    font-size: 0.65rem !important;
+                    color: variables-custom.$color-white !important;
+                    line-height: 0.7 !important;
+                }
+                .custom-control-input {
+                    z-index: 4;
+                    left: -6px;
+                    top:12px;
+                }
+            }
+            .btn-escribenos{
+                font-size: 0.95rem !important;
+                font-weight: 500 !important;
+                padding: 0.3rem 2.5rem !important;
+            }
+        }
+    }
+}
+
+/* ---------- END CSS FOOTER ---------- */

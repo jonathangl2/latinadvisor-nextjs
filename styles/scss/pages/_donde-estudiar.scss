@@ -1,0 +1,261 @@
+@use "../variables-custom";
+
+/* ---------- START CSS DONDE ESTUDIAR ---------- */
+
+.container {
+    &-donde-estudiar {
+        &-description {
+            h4 {
+                // color: variables-custom.$color-grey-6;
+            }
+        }
+        .map-au {
+            position: relative;
+            &-city {
+                position: absolute;
+                font-size: 2.2rem;
+                font-weight: bold;
+                color: variables-custom.$color-blue-grey-1;
+                &:hover,
+                &:focus,
+                &.active {
+                    color: variables-custom.$color-blue-dark-2;
+                }
+                @media #{variables-custom.$M1440} {
+                    font-size: 1.6rem;
+                }
+                @media #{variables-custom.$M991} {
+                    font-size: 1.4rem;
+                }
+                @media #{variables-custom.$M768} {
+                    font-size: 1.2rem;
+                }
+                @media #{variables-custom.$M500} {
+                    font-size: 0.8rem;
+                }
+                &.melbourne {
+                    bottom: 19.5%;
+                    right: 17.5%;
+                    @media #{variables-custom.$M1024} {
+                        right: 12%;
+                        bottom: 18.5%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        right: 15.5%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        right: 11%;
+                        bottom: 18.5%;
+                    }
+                }
+                &.brisbane {
+                    right: 11.5%;
+                    top: 21.5%;
+                    @media #{variables-custom.$M1024} {
+                        right: 7.5%;
+                        top: 20.5%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        right: 9.5%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        right: 7.5%;
+                    }
+                }
+                &.sydney {
+                    right: 14%;
+                    bottom: 29.5%;
+                    @media #{variables-custom.$M1024} {
+                        right: 11%;
+                        bottom: 28.5%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        right: 12%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        right: 10%;
+                    }
+                }
+                &.gold-coast {
+                    right: 3.5%;
+                    top: 36.5%;
+                    @media #{variables-custom.$M1024} {
+                        right: 0%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        right: 1.5%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        right: -1.5%;
+                        top: 35.5%;
+                    }
+                }
+                &.adelaide {
+                    bottom: 22.5%;
+                    left: 31%;
+                    @media #{variables-custom.$M1024} {
+                        left: 28%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        left: 29%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        left: 25%;
+                        bottom: 21.5%;
+                    }
+                }
+                &.perth {
+                    left: 2%;
+                    bottom: 40.5%;
+                    @media #{variables-custom.$M1024} {
+                        left: 0%;
+                        bottom: 40%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        left: 1%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        left: 0%;
+                        bottom: 39.5%;
+                    }
+                }
+                &.tasmania {
+                    bottom: 8%;
+                    right: 24%;
+                    @media #{variables-custom.$M1024} {
+                        right: 20%;
+                    }
+                    @media #{variables-custom.$M768} {
+                        right: 22%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        right: 18%;
+                        bottom: 7%;
+                    }
+                }
+                &.cairns {
+                    right: 20%;
+                    top: 8%;
+                    @media #{variables-custom.$M1024} {
+                        right: 18%;
+                        top: 7.5%;
+                    }
+                    @media #{variables-custom.$M500} {
+                        right: 16%;
+                        top: 7%;
+                    }
+                }
+            }
+        }
+        &-city {
+            display: none;
+            .banner {
+                position: relative;
+                text-align: center;
+                img {
+                    position: relative;
+                    object-fit: cover;
+                    width: 100%;
+                }
+                h2 {
+                    color: #fff;
+                    font-size: 9vw;
+                    font-weight: 700;
+                    line-height: 0.9;
+                    position: absolute;
+                    transform: translate(-50%, -50%);
+                    left: 50%;
+                    top: 50%;
+                    width: 100%;
+                }
+            }
+            .featured-information {
+                padding-top: 5vw;
+                padding-bottom: 5vw;
+                h2,
+                h3,
+                h4 {
+                    color: variables-custom.$color-blue-grey-1;
+                    margin-bottom: 2.5rem;
+                }
+                h3 {
+                    font-weight: bold;
+                    font-style: normal;
+                }
+                p,
+                h5,
+                ul {
+                    margin-bottom: 2rem;
+                    // color: variables-custom.$color-grey-6;
+                }
+                ul {
+                    li {
+                        padding-left: 1.5rem;
+                        margin-bottom: 10px;
+                        position: relative;
+                        font-size: 1.1rem;
+                        @media #{variables-custom.$M1440} {
+                            font-size: 1.2vw;
+                        }
+                        @media #{variables-custom.$M991} {
+                            font-size: 2vw;
+                        }
+                        @media #{variables-custom.$M500} {
+                            font-size: 4vw;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            left: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: variables-custom.$color-green-1;
+                        }
+                    }
+                }
+                &-icon {
+                    width: 45px;
+                    margin-right: 1rem;
+                }
+            }
+            a {
+                color: variables-custom.$color-blue-grey-1;
+                font-weight: bold;
+                font-style: normal;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                i {
+                    width: 30px;
+                    &:before {
+                        top: 2px;
+                    }
+                }
+            }
+            .carousel-donde-estudiar {
+                position: relative;
+                margin-bottom: -2px;
+                .item {
+                    vertical-align: bottom;
+                    img {
+                        display: flex;
+                    }
+                }
+            }
+        }
+        #response {
+            .loader {
+                display: none;
+                h4 {
+                    color: variables-custom.$color-blue-dark-2;
+                }
+            }
+        }
+    }
+}
+
+
+/* ---------- END CSS DONDE ESTUDIAR ---------- */

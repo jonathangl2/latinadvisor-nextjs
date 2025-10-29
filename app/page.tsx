@@ -1,65 +1,161 @@
-import Image from "next/image";
+"use client";
+
+import Script from "next/script";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    console.log("Página principal cargada ✅");
+  }, []);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <>
+      {/* ====================== HERO / PRINCIPAL BANNER ====================== */}
+      <section id="principal_banner" className="container-fluid">
+        <div className="row">
+          <div className="col-12 px-0">
+            <video autoPlay muted loop id="bgVideo" className="d-block d-md-none">
+              <source src="/assets/documents/video-vertical-bg.mp4" type="video/mp4" />
+            </video>
+            <video autoPlay muted loop id="bgVideo" className="d-none d-md-block">
+              <source src="/assets/documents/video-horizontal-bg.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div className="caption">
+            <h1>
+              Vive, estudia y trabaja en el extranjero
+            </h1>
+            <p className="text-white mt-2 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+          
+            <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination">
+              <div className="col-10 col-lg-4">
+                <a
+                  href="#studyplans"
+                  className="scrolling triggerTabInitial"
+                  data-tab="tab-australia"
+                >
+                  <div className="card card-ctaDestination">
+                    <img
+                      src="/assets/images/home/estudiar-en-australia.webp"
+                      alt="Estudiar en Australia"
+                    />
+                    <h5 className="card-ctaDestination_title">Estudiar en Australia</h5>
+                  </div>
+                </a>
+              </div>
+              <div className="col-10 col-lg-4">
+                <a
+                  href="#studyplans"
+                  className="scrolling triggerTabInitial"
+                  data-tab="tab-dubai"
+                >
+                  <div className="card card-ctaDestination">
+                    <img
+                      src="/assets/images/home/estudiar-en-dubai.webp"
+                      alt="Estudiar en Dubái"
+                    />
+                    <h5 className="card-ctaDestination_title">Estudiar en Dubái</h5>
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      {/* ====================== NUESTROS SERVICIOS ====================== */}
+      <section className="section-home section-home_ourServices container-fluid">
+        <section className="container py-5">
+          <div className="row d-flex justify-content-center pb-lg-5">
+            <div className="col-10 pt-4 pb-5 mb-2">
+              <h2 className="section-home_title section-home_ourServices--title text-center text-uppercase">Otros Servicios en Australia</h2>
+            </div>
+
+            {[
+              {
+                img: "/assets/images/home/renovacion-visa-de-estudios.webp",
+                title: "Renovación de visa de estudio",
+              },
+              {
+                img: "/assets/images/home/procesos-migratorios-otras-visas.webp",
+                title: "Procesos Migratorios y otras visas",
+              },
+              {
+                img: "/assets/images/home/work-and-holiday.webp",
+                title: "Work and Holiday",
+              },
+            ].map((item, i) => (
+              <div className="col-10 col-lg-4 mb-5 mb-lg-0" key={i}>
+                <div className="card card-ourServices">
+                  <img src={item.img} alt={item.title} />
+                  <h3 className="card-ourServices_title">{item.title}</h3>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+      </section>
+
+      {/* ====================== FORMULARIO DE CONTACTO / PERFILAMIENTO ====================== */}
+      <section className="section-home section-home_contactForm bg-grey-light-3">
+        <section className="container py-5">
+          <div className="row d-flex justify-content-around align-items-start py-5">
+            <div className="col-11 col-lg-5">
+              <div className="card card-contactForm">
+                <div className="card-header text-center py-3">
+                  <h2 className="text-uppercase">
+                    <strong>Formulario de</strong>
+                    <strong className="text-uppercase text-green-1 mb-3 d-block">
+                      Perfilamiento
+                    </strong>
+                  </h2>
+                  <p>
+                    Completa estas preguntas para analizar tu perfil y brindarte
+                    asesoría personalizada.
+                  </p>
+                </div>
+                <div className="card-body">
+                  <iframe
+                    src="https://api.leadconnectorhq.com/widget/form/1Hc0dJ19yyTGDsdjYhVI"
+                    style={{ width: "100%", height: "100%", border: "none", borderRadius: 0 }}
+                    id="inline-1Hc0dJ19yyTGDsdjYhVI" 
+                    data-layout="{'id':'INLINE'}"
+                    data-trigger-type="alwaysShow"
+                    data-trigger-value=""
+                    data-activation-type="alwaysActivated"
+                    data-activation-value=""
+                    data-deactivation-type="neverDeactivate"
+                    data-deactivation-value=""
+                    data-form-name="1. Formulario - Web global"
+                    data-height="2822"
+                    data-layout-iframe-id="inline-1Hc0dJ19yyTGDsdjYhVI"
+                    data-form-id="1Hc0dJ19yyTGDsdjYhVI"
+                    title="1. Formulario - Web global"></iframe>
+                   <Script src="https://link.msgsndr.com/js/form_embed.js" />
+                </div>
+              </div>
+            </div>
+
+            <div className="col-12 col-lg-6 section-home_contactForm--stickySlider ps-5 d-none d-md-block">
+              
+              <h2 className="title-featuredLatinadvisor my-5">
+                ¿Por qué <br />
+                <strong>Latinadvisor?</strong>
+              </h2>
+
+              <p className="mb-3">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</p>
+              
+              <ul>
+                <li>Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas. </li>
+                <li>Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.</li>
+                <li>Te ayudamos con la visa, el college, acompañamiento, el seguro médico, tips para conseguir trabajo, etc.</li>
+                <li>Además, te invitamos a todos sus eventos educativos y recreativo en Australia o Dubái.</li>
+              </ul>
+              
+            </div>
+          </div>
+        </section>
+      </section>
+    </>
   );
 }

@@ -1,0 +1,171 @@
+@use "../variables-custom";
+
+/* ---------- START CSS HEADER ---------- */
+
+#bodyClick {
+    opacity: 1;
+    z-index: 1032;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.nav-open {
+    .navbar-collapse {
+        -webkit-transform: translate3d(0px, 0, 0);
+        -moz-transform: translate3d(0px, 0, 0);
+        -o-transform: translate3d(0px, 0, 0);
+        -ms-transform: translate3d(0px, 0, 0);
+        transform: translate3d(0px, 0, 0);
+    }
+    .collapse {
+        display: block;
+    }
+}
+
+header {
+    .navbar#principal_navbar {
+        color: variables-custom.$color-grey-2;
+        background-color: variables-custom.$color-grey-nav-rgba !important;
+        @media #{variables-custom.$M1440} {
+            max-height: 90px;
+        }
+        .navbar-brand {
+            display: inline-block;
+            height: auto;
+            .logo-image {
+                width: 270px;
+                @media #{variables-custom.$M1440} {
+                    width: 255px;
+                }
+                @media #{variables-custom.$M991} {
+                    width: 220px;
+                }
+            }
+        }
+        &.bg-header {
+            background-color: variables-custom.$color-grey-nav !important;
+        }
+        .navbar-toggler {
+            .navbar-toggler-icon {
+                width: 30px;
+                margin-bottom: 7px;
+            }
+        }
+        .navbar-collapse {
+            color: variables-custom.$color-grey-2;
+            @media #{variables-custom.$M991} {
+                overflow-y: scroll;
+                background-color: variables-custom.$color-grey-nav !important;
+                height: 100% !important;
+            }
+            .navbar-nav.social-menu {
+                .nav-link {
+                    i {
+                        font-size: 15px;
+                    }
+                }
+            }
+            .navbar-nav.principal-menu {
+                .nav-item {
+                    border-bottom: 3px solid transparent;
+                    max-width: 220px;
+                    &:focus,
+                    &:hover,
+                    &:active,
+                    &.active {
+                        border-bottom: 3px solid variables-custom.$color-green-1;
+                        .nav-link {
+                            background-color: transparent;
+                        }
+                        &:after {
+                            display: none;
+                        }
+                    }
+                    .nav-link {
+                        height: 100% !important;
+                        display: flex !important;
+                        align-items: center !important;
+                        font-size: 13px;
+                        border-radius: 0px;
+                        padding: 1.8rem 1.2rem;
+                        color: variables-custom.$color-grey-2;
+                        white-space: normal;
+                        line-height: 1.1;
+                        @media #{variables-custom.$M1440} {
+                            font-size: 12px;
+                            padding: 1.5rem 1rem;
+                        }
+                        @media #{variables-custom.$M1024} {
+                            padding: 1rem;
+                            margin: 0px;
+                        }
+                        &:hover,
+                        &:focus,
+                        &:active,
+                        &.active {
+                            background-color: transparent;
+                        }
+                        &.dropdown-toggle::after {
+                            font-family: "Font Awesome 5 Free" !important;
+                            font-weight: 900 !important;
+                            font-style: normal;
+                            font-variant: normal;
+                            content: "\f078" !important;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            text-shadow: none;
+                            border: 0px;
+                            font-size: 0.9rem;
+                            margin-left: 0.5rem;
+                        }
+                    }
+                    .dropdown-menu {
+                        background-color: variables-custom.$color-grey-nav !important;
+                        border-radius: 0px;
+                        padding: 0;
+                        border-bottom: 3px solid variables-custom.$color-green-1;
+                        @media #{variables-custom.$M1024} {
+                            height: auto !important;
+                            border-bottom: 0px;
+                            margin-bottom: 0px;
+                        }
+                        .dropdown-item {
+                            margin: 0;
+                            border-radius: 0px;
+                            color: variables-custom.$color-grey-3;
+                            text-transform: uppercase;
+                            font-size: 13px;
+                            white-space: normal;
+
+                            @media #{variables-custom.$M1024} {
+                                padding: 1rem;
+                                margin: 0px;
+                            }
+                            &:hover,
+                            &:focus,
+                            &:active,
+                            &.active {
+                                background-color: variables-custom.$color-grey-7;
+                                box-shadow: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.navbar-landing-page {
+            background-color: #f7f7f7 !important;
+            .btn-blue-dark,
+            .btn-green-1 {
+                color: #fff;
+                font-size: 1rem;
+                @media #{variables-custom.$m1024} {
+                    padding: .9rem 2.5rem;
+                }
+            }
+        }
+    }
+
+}
+
+
+/* ---------- END CSS HEADER ---------- */

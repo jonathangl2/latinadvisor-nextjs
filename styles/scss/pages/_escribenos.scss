@@ -1,0 +1,677 @@
+@use "../variables-custom";
+
+/* ---------- START CSS ESCRIBENOS ---------- */
+
+.container {
+    &-escribenos {
+        .caption_gracias {
+            h1 {
+                font-size: 4.5vw !important;
+                @media #{variables-custom.$M991} {
+                    font-size: 3rem !important;
+                }
+                @media #{variables-custom.$M500} {
+                    font-size: 1.7rem !important;
+                }
+            }
+        }
+        .location {
+            color: variables-custom.$color-grey-1;
+            // border-bottom: 1px solid variables-custom.$color-grey-2;
+            &:last-child {
+                border-bottom: 0px;
+            }
+            i {
+                &:before {
+                    max-width: 18px;
+                    top: 3px;
+                }
+            }
+        }
+        h3,
+        h2 {
+            line-height: 1;
+            color: variables-custom.$color-blue-grey-1;
+        }
+        .btn-back {
+            display: inline-flex !important;
+            align-items: center !important;
+            i {
+                &:before {
+                    height: 26px;
+                }
+            }
+        }
+        form {
+            .form-control {
+                background-color: variables-custom.$color-grey-light-3;
+                background-image: none;
+                border-radius: 20px;
+                border: 0px;
+                padding: 0rem 1rem;
+                margin-bottom: 1rem;
+                height: 45px;
+                color: variables-custom.$color-grey-2;
+                &::placeholder {
+                    color: variables-custom.$color-grey-2;
+                }
+            }
+            .iti {
+                width: 100%;
+                margin-bottom: 1rem !important;
+                .iti__flag-container {
+                    left: 1rem;
+                    &:hover,
+                    &:focus,
+                    &:active,
+                    &.active {
+                        .iti__selected-flag {
+                            background-color: transparent;
+                        }
+                    }
+                    .iti__selected-flag {
+                        padding: 0rem;
+                    }
+                }
+                #celular,
+                #celular_cp {
+                    padding: 0rem 1rem 0rem 4rem;
+                }
+            }
+            select {
+                -webkit-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 100%;
+                background-image: linear-gradient(45deg, transparent 50%, #707070 50%), linear-gradient(135deg, #707070 50%, transparent 50%) !important;
+                background-position: calc(100% - 22px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em !important;
+                background-size: 7px 7px, 7px 7px, 1px 1.5em !important;
+                background-repeat: no-repeat !important;
+                color: variables-custom.$color-grey-2;
+                &:focus,
+                &:hover,
+                &:active {
+                    background-image: linear-gradient(45deg, #707070 50%, transparent 50%), linear-gradient(135deg, transparent 50%, #707070 50%) !important;
+                    background-position: calc(100% - 15px) 1em, calc(100% - 22px) 1em, calc(100% - 2.5em) 0.5em !important;
+                    background-size: 7px 7px, 7px 7px, 1px 1.5em !important;
+                    background-repeat: no-repeat !important;
+                    outline: 0;
+                }
+            }
+            textarea {
+                padding: 1rem !important;
+            }
+            label.form-check-label{
+                a{
+                    color: variables-custom.$color-grey-2 !important;
+                    &:focus,
+                    &:hover,
+                    &:active {
+                        color: variables-custom.$color-green-1 !important;   
+                    }
+                }   
+            }
+            button[type="submit"] {
+                font-size: 0.8rem;
+                padding: 0.4rem 2.5rem;
+            }
+            
+            & .custom-checkbox {
+                position: relative;
+                
+                .custom-control-input{
+                    position: absolute;
+                    left: 0;
+                    z-index: -1;
+                    width: 1rem;
+                    height: 1.25rem;
+                    opacity: 0;
+                }
+
+                & .custom-control-input:checked~.custom-control-label::after {
+                    background-color: variables-custom.$color-grey-1;
+                    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
+                }
+
+                & .custom-control-label {
+                    font-size: 0.8rem !important;
+                    line-height: 1.2;
+                    padding-left: 0.5rem !important;
+                    
+                    position: relative;
+                    margin-bottom: 0;
+                    vertical-align: top;
+
+                    &::before {
+                        border-radius: 0rem;
+                        background-color: variables-custom.$color-grey-light-3;
+                        border: 0px;
+                        width: 1.3rem;
+                        height: 1.3rem;
+                        position: absolute;
+                        top: 0.25rem;
+                        left: -1.5rem;
+                        display: block;
+                        pointer-events: none;
+                        content: "";
+                        -webkit-box-shadow: none;
+                        box-shadow: none;
+                    }
+                    &::after {
+                        border-radius: 0rem;
+                        border: 0px;
+                        width: 1.3rem;
+                        height: 1.3rem;
+
+                        position: absolute;
+                        top: 0.25rem;
+                        left: -1.5rem;
+                        display: block;
+                        content: "";
+                        background: no-repeat 50% / 50% 50%;
+
+                    }
+
+                    a {
+                        font-size: 0.9rem !important;
+                        color: variables-custom.$color-blue-grey-1 !important;
+                        &:hover,
+                        &:focus,
+                        &.active {
+                            color: variables-custom.$color-blue-dark-1 !important;
+                        }
+                    }
+
+                }
+            }
+        }
+        &.container-newsletter{
+            & #newsletterForm {
+                .custom-control-label {
+                    a{
+                        color: #fff !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+section#internal_banner {
+    &.container-magic-offer,
+    &.container-landing-page {
+        & .internal_banner_img {
+            height: 94vh !important;
+            @media #{variables-custom.$m1024} {
+                height: 100% !important;
+            }
+        }
+    }
+}
+
+.container {
+    &-queEstudiar,
+    &-magic-offer,
+    &-landing-page,
+    &-ebooksGuias {
+        margin-top: 3.5rem;
+        @media #{variables-custom.$m1024} {
+            margin-top: 4.1rem;
+        }
+        @media #{variables-custom.$m1680} {
+            margin-top: 4.4rem;
+        }
+        &:after {
+            display: none !important;
+        }
+        .caption {
+            overflow-x: hidden;
+            top: auto;
+            bottom: 7% !important;
+            left: 50%;
+            transform: translate(-50%, 0%) !important;
+            @media #{variables-custom.$m1024} {
+                top: 45%;
+                bottom: auto !important;
+                transform: translate(-50%, -50%) !important;
+            }
+            img {
+                @media #{variables-custom.$m1024} {
+                    padding: 0rem 4vw 0rem 1vw;
+                }
+            }
+            h5 {
+                color: #fff;
+                font-weight: 400;
+                margin-bottom: 1rem;
+                padding: 0rem 2rem;
+                @media #{variables-custom.$m1024} {
+                    font-size: 1.6vw;
+                    padding: 0 6vw 0 4vw;
+                }
+            }
+            .cta-form {
+                @media #{variables-custom.$m1024} {
+                    padding-right: 10vw;
+                }
+                .btn {
+                    @media #{variables-custom.$m1024} {
+                        padding-top: 0.3rem;
+                        padding-bottom: 0.3rem;
+                        padding-left: 2rem;
+                    }
+                    i.icon {
+                        &:before {
+                            @media #{variables-custom.$m1024} {
+                                width: 42px !important;
+                                max-width: 42px !important;
+                                height: 44px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .titulo-formulario {
+            font-size: 3rem;
+            line-height: .8;
+            @media #{variables-custom.$m1024} {
+                line-height: 1;
+                font-size: 6vw;
+            }
+        }
+        & .subtitulo-principal-formulario {
+            font-weight: 400;
+        }
+        & .subtitulo-secundario-formulario {
+            color: variables-custom.$color-grey-6;
+        }
+        form {
+            button[type="submit"] {
+                font-size: 1rem;
+            }
+            .custom-control-label {
+                a{
+                    padding-left: 0rem !important;
+                }
+            }
+        }
+        &_details {
+            a {
+                line-height: 1.2 !important;
+                letter-spacing: 0.5px;
+                display: inline-flex !important;
+                align-items: center !important;
+                @media #{variables-custom.$m1024} {
+                    // line-height: 0 !important;
+                    padding-top: 0.3rem;
+                    padding-bottom: 0.3rem;
+                    padding-left: 1.5rem;
+                }
+                i.icon {
+                    margin-right: 0rem !important;
+                    &:before {
+                        @media #{variables-custom.$m1024} {
+                            width: 42px !important;
+                            max-width: 42px !important;
+                            height: 44px;
+                        }
+                    }
+                }
+            }
+            .information {
+                h2,
+                h3,
+                h4 {
+                    color: variables-custom.$color-blue-grey-1;
+                    margin-bottom: 1rem;
+                    @media #{variables-custom.$m1024} {
+                        margin-bottom: 2.5rem;
+                    }
+                }
+                h3 {
+                    font-weight: bold;
+                    font-style: normal;
+                    &.text--xl {
+                        @media #{variables-custom.$m1024} {
+                            font-size: 3.2vw !important;
+                        }
+                    }
+                    &.text--xxl {
+                        @media #{variables-custom.$m1024} {
+                            font-size: 4.7vw !important;
+                        }
+                    }
+                }
+                p,
+                h5,
+                ul {
+                    margin-bottom: 1rem;
+                    @media #{variables-custom.$m1024} {
+                        margin-bottom: 2rem;
+                        font-size: 1.4vw !important;
+                    }
+                }
+                ul {
+                    li {
+                        padding-left: 1.5rem;
+                        margin-bottom: 10px;
+                        position: relative;
+                        font-size: 1.1rem;
+                        @media #{variables-custom.$m1024} {
+                            font-size: 1.4vw !important;
+                        }
+                        @media #{variables-custom.$M991} {
+                            font-size: 2vw;
+                        }
+                        @media #{variables-custom.$M500} {
+                            font-size: 4vw;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            left: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: variables-custom.$color-green-1;
+                        }
+                    }
+                }
+            }
+            .image-featured {
+                img {
+                    vertical-align: bottom;
+                }
+            }
+        }
+    }
+    &-queEstudiar{
+        .card-form-queEstudiar{
+            border: 0px !important;
+            border-radius: 20px;
+            box-shadow: 0px 7px 20px -8px #dfdfe0 !important;
+            @media #{variables-custom.$m992}{
+                margin-top: -4.5vw;
+            }
+            @media #{variables-custom.$m1366}{
+                margin-top: -4vw;
+            }
+            @media #{variables-custom.$m1920}{
+                margin-top: -3vw;
+            }
+            .card-header{
+                padding: 1rem 1rem;
+                border: 0px !important;
+                margin: 0 !important;
+                background: variables-custom.$color-blue-dark-3 !important;
+                border-radius: 20px 20px 0 0 !important;
+                box-shadow: none !important;
+                h3,h4,p{
+                    color: #fff !important;
+                }
+                p{
+                    font-size: 0.9rem !important;
+                }
+                .text-green-1{
+                    color: variables-custom.$color-green-1 !important;
+                }
+            }
+            .card-body{
+                padding: 2rem 0.4rem;
+                @media #{variables-custom.$m768}{
+                    padding: 1rem 1rem;
+                }
+                @media #{variables-custom.$m1680}{
+                    padding: 2rem 2.5rem;
+                }
+            }
+        }
+    }
+    &-magic-offer{
+        .internal_banner_img_women{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        .caption{
+            bottom: auto !important;
+            padding: 2rem 2rem;
+            @media #{variables-custom.$m1024}{
+                padding: 0rem;
+            } 
+            h2{
+                color: #fff;
+                font-weight: normal !important;
+            }
+            h3{ 
+                line-height: 1.5;
+                color: #fff;
+                font-weight: 500 !important;
+                span{
+                    background-color: variables-custom.$color-green-2;
+                    color: variables-custom.$color-blue-dark-4 !important;
+                    font-weight: normal !important
+                }
+                &.text--xxl {
+                    @media #{variables-custom.$M500} {
+                        line-height: 2;
+                        font-size: 5vw;
+                    }
+                }
+            }
+            h5{
+                color: variables-custom.$color-green-2;
+                letter-spacing: 4px;
+                font-weight: 600;
+                padding: 0px !important;
+            }
+            img{
+                // max-width: 80%;
+                padding: 0rem 1vw 0rem 0rem
+            }
+        }
+        &_details{
+            a{
+                &.text-initial{
+                    text-transform: initial !important;
+                }
+            }
+            .information {
+                h2,
+                h3,
+                h4 {
+                    color: variables-custom.$color-blue-dark-1;
+                }
+                h2 {
+                    font-weight: bold;
+                    font-style: normal;
+                    &.text--xl {
+                        @media #{variables-custom.$m1024} {
+                            font-size: 3.2vw !important;
+                        }
+                    }
+                    &.text--xxl {
+                        @media #{variables-custom.$m1024} {
+                            font-size: 4.7vw !important;
+                        }
+                    }
+                }
+                .text-sm{
+                    font-size: 0.95rem !important;
+                }
+                .subtitulo-siglas{
+                    color: variables-custom.$color-blue-dark-2 !important;
+                    font-weight: 600;
+                }
+            }
+            & .card-acronyms{
+                border-radius: 10px !important;
+                box-shadow: 0px 7px 20px -8px #dfdfe0 !important;
+                .card-body{
+                    padding: 0rem 1rem;
+                    i{                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+                        &:before{
+                            max-width: 52px;
+                            margin: 0 auto;
+                            @media #{variables-custom.$m1680}{
+                                max-width: 60px;
+                            }
+                        }
+                        margin: 0 auto;
+                    }
+                    h4{
+                        font-weight: 400;
+                        span{
+                            color: variables-custom.$color-green-2;
+                            font-weight: bold !important;
+                            font-size: 2vw;
+                            @media #{variables-custom.$M1440} {
+                                font-size: 2rem;
+                            }
+                            @media #{variables-custom.$M991} {
+                                font-size: 4vw;
+                            }
+                            @media #{variables-custom.$M500} {
+                                font-size: 7vw;
+                            }
+                        }
+                    }
+                }
+            }
+            .beneficio-item{
+                i{
+                    &::before{
+                        width: 100%;
+                        max-width: 100px;
+                        margin: 0 auto;
+                        @media #{variables-custom.$m1440}{
+                            max-width: 115px;
+                        }
+                        @media #{variables-custom.$m1920}{
+                            max-width: 120px;
+                        }
+                    }
+                }
+                h4{
+                    color: variables-custom.$color-green-1;
+                    font-weight: 600;
+                }
+            }
+            .metricas-magic-offer{
+                text-align: center;
+                border-bottom: 2px solid #fff;
+                h2{
+                    color: variables-custom.$color-blue-dark-3;
+                    font-weight: 800;
+                }
+                h4 {
+                    color: #fff;
+                    font-weight: 500;
+                    line-height: 1.2;
+                }
+                &:nth-last-child(1){
+                    border-bottom: 0px;
+                }
+                @media #{variables-custom.$m992}{
+                    border-bottom: 0px;
+                    border-right: 2px solid #fff;
+                    &:nth-last-child(1){
+                        border-right: 0px;
+                    }
+                }
+            }
+        }
+        &#container-magic-offer-form{
+            z-index: 2;
+            position: relative;
+            & .titulo-formulario {
+                font-size: 2.8rem;
+                line-height: .8;
+                @media #{variables-custom.$m1024} {
+                    line-height: 0.8;
+                    font-size: 5.5vw;
+                }
+            }
+        }
+        &#container-magic-offer-metricas{
+            .container{
+                @media #{variables-custom.$m1366} {
+                    max-width: 1366px;
+                }
+                @media #{variables-custom.$m1440} {
+                    max-width: 1366px;
+                }
+                @media #{variables-custom.$m1680} {
+                    max-width: 1440px;
+                }
+                @media #{variables-custom.$m1920} {
+                    max-width: 1680px;
+                }
+            }
+        }
+        & .bg-contactForm{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            min-height: 450px;
+            object-fit: cover;
+            width: 100%;
+            @media #{variables-custom.$m768}{
+                height: 75vh;
+            }
+            @media #{variables-custom.$m1024}{
+                height: auto;
+                max-height: 650px;
+                object-position: bottom;
+            }
+        }
+        .card-form-magic-offer{
+            border-radius: 20px;
+            box-shadow: 0px 7px 20px -8px #dfdfe0 !important;
+            .card-header{
+                padding: 2rem 1rem;
+                border: 0px !important;
+                margin: 0 !important;
+                background: variables-custom.$color-blue-dark-3 !important;
+                border-radius: 20px 20px 0 0 !important;
+                box-shadow: none !important;
+                .titulo-formulario,
+                .subtitulo-principal-formulario{
+                    color: #fff !important;
+                }
+            }
+            .card-body{
+                padding: 2rem 0.4rem;
+                @media #{variables-custom.$m768}{
+                    padding: 1rem 2rem;
+                }
+                @media #{variables-custom.$m1680}{
+                    padding: 2rem 4rem;
+                }
+            }
+        }
+        &#container-magic-offer-beneficios{
+            @media #{variables-custom.$m992}{
+                margin-top: -20vw;
+            }
+            @media #{variables-custom.$m1366}{
+                margin-top: -16vw;
+            }
+            @media #{variables-custom.$m1440}{
+                margin-top: -14vw;
+            }
+            @media #{variables-custom.$m1920}{
+                margin-top: -12vw;
+            }
+        }
+    }
+}
+
+
+/* ---------- END CSS ESCRIBENOS ---------- */

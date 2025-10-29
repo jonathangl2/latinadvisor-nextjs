@@ -1,0 +1,415 @@
+@use "../variables-custom";
+
+/* ---------- START CSS QUE ESTUDIAR ---------- */
+
+.container {
+    &-service {
+        width: 100%;
+        position: relative;
+        &-description {
+            h4.text--olivier {
+                color: variables-custom.$color-grey-6;
+            }
+            a {
+                line-height: 0 !important;
+            }
+        }
+        &-title {
+            //background-color: variables-custom.$color-grey-light-2;
+            h2 {
+                font-size: 7vw;
+                color: variables-custom.$color-grey-3;
+                line-height: 0.9;
+                font-weight: 400;
+                @media #{variables-custom.$M1440} {
+                    font-size: 6rem;
+                }
+                @media #{variables-custom.$M991} {
+                    font-size: 5rem;
+                }
+                @media #{variables-custom.$M500} {
+                    font-size: 3rem;
+                }
+                span {
+                    display: block;
+                    color: variables-custom.$color-blue-dark-2;
+                    font-weight: 400;
+                }
+            }
+            h4 {
+                color: variables-custom.$color-grey-6;
+            }
+            .img-featured {
+                margin-bottom: -12vw;
+                position: relative;
+                z-index: 2;
+            }
+        }
+        &-courses {
+            //padding-top: 10vw;
+            &.english-courses {
+                position: relative;
+                // &::before {
+                //     content: '';
+                //     background-image: url('/assets/images/what-to-study/english-course/word-english.png');
+                //     background-size: 100%;
+                //     background-repeat: no-repeat;
+                //     background-position: 0% 0%;
+                //     position: absolute;
+                //     width: 100%;
+                //     min-height: 500px;
+                //     height: 30vw;
+                //     top: -7.8vw;
+                //     left: -1vw;
+                //     opacity: 1;
+                //     z-index: -1;
+                //     display: inline-block;
+                //     @media #{variables-custom.$m1680} {
+                //         top: -7.5vw;
+                //     }
+                // }
+            }
+            &.cursos-vet {
+                position: relative;
+                // padding-bottom: 10vw;
+                // &::before {
+                //     content: '';
+                //     background-image: url('/assets/images/what-to-study/vocational-courses/word-vet.png');
+                //     background-size: 100%;
+                //     background-repeat: no-repeat;
+                //     background-position: 0% 0%;
+                //     position: absolute;
+                //     width: 55%;
+                //     min-height: 300px;
+                //     height: 20vw;
+                //     top: -2.2vw;
+                //     left: -1vw;
+                //     opacity: 1;
+                //     z-index: -1;
+                //     display: inline-block;
+                // }
+                // &::after {
+                //     content: '';
+                //     background-image: url('/assets/images/what-to-study/vocational-courses/word-vet.png');
+                //     background-size: 100%;
+                //     background-repeat: no-repeat;
+                //     background-position: 100% 100%;
+                //     position: absolute;
+                //     width: 55%;
+                //     min-height: 300px;
+                //     height: 20vw;
+                //     bottom: 0vw;
+                //     right: 0vw;
+                //     opacity: 1;
+                //     z-index: -1;
+                //     display: inline-block;
+                // }
+            }
+            &.higher-education {
+                position: relative;
+                // padding-top: 10vw;
+                // padding-bottom: 5vw;
+                // &::before {
+                //     content: '';
+                //     background-image: url('/assets/images/what-to-study/higher-education/word-formacion.png');
+                //     background-size: 100%;
+                //     background-repeat: no-repeat;
+                //     background-position: 0% 0%;
+                //     position: absolute;
+                //     width: 100%;
+                //     min-height: 300px;
+                //     height: 20vw;
+                //     top: -4.6rem;
+                //     left: -1vw;
+                //     opacity: 1;
+                //     z-index: -1;
+                //     display: inline-block;
+                //     @media #{variables-custom.$M991} {
+                //         top: -3.2rem;
+                //     }
+                //     @media #{variables-custom.$M500} {
+                //         top: -2.4rem;
+                //     }
+                // }
+                // &::after {
+                //     content: '';
+                //     background-image: url('/assets/images/what-to-study/higher-education/word-formacion.png');
+                //     background-size: 100%;
+                //     background-repeat: no-repeat;
+                //     background-position: 100% 100%;
+                //     position: absolute;
+                //     width: 100%;
+                //     min-height: 300px;
+                //     height: 20vw;
+                //     bottom: -3.1rem;
+                //     left: 0vw;
+                //     opacity: 1;
+                //     z-index: -1;
+                //     display: inline-block;
+                // }
+            }
+            h2 {
+                color: variables-custom.$color-grey-5;
+                font-weight: 300;
+                font-style: normal;
+                border-left: 5px solid variables-custom.$color-green-1;
+                @media #{variables-custom.$M991} {
+                    padding: 3rem 1.5rem;
+                    border-left: 0px;
+                    border-bottom: 5px solid variables-custom.$color-green-1;
+                }
+                span {
+                    display: block;
+                    font-weight: bold;
+                    font-style: normal;
+                }
+            }
+            h3 {
+                color: variables-custom.$color-blue-grey-1;
+                font-weight: bold;
+                font-style: normal;
+            }
+            &-item {
+                @media #{variables-custom.$M991} {
+                    border-bottom: 3px solid variables-custom.$color-blue-dark-2;
+                    &:nth-last-child(1) {
+                        border-bottom: 0px;
+                    }
+                }
+            }
+            &-title {
+                border-right: 3px solid variables-custom.$color-blue-dark-2;
+                @media #{variables-custom.$M991} {
+                    border-right: 0px;
+                }
+                h4 {
+                    // color: variables-custom.$color-grey-6;
+                    span {
+                        display: block;
+                        color: variables-custom.$color-green-1;
+                        font-weight: bold;
+                        font-style: normal;
+                    }
+                }
+            }
+            &-description {
+                p {
+                    font-weight: 300;
+                    font-style: normal;
+                }
+            }
+            &-anchor {
+                a {
+                    line-height: 0 !important;
+                    // padding: 1.5vw !important;
+                    display: flex !important;
+                    align-items: center;
+                    justify-content: center;
+                    height: 50px;
+                    width: 50px;
+                    &:before {
+                        width: 32px;
+                    }
+                }
+            }
+        }
+        &-courses-details {
+            padding-top: 5vw;
+            @media #{variables-custom.$M991} {
+                padding-top: 4rem;
+            }
+            a {
+                line-height: 0 !important;
+                letter-spacing: 0.5px;
+                display: inline-flex !important;
+                align-items: center !important;
+            }
+            .information,
+            .information-dubai {
+                h2,
+                h3,
+                h4 {
+                    color: variables-custom.$color-blue-grey-1;
+                    margin-bottom: 2.5rem;
+                }
+                h3 {
+                    font-weight: bold;
+                    font-style: normal;
+                }
+                p,
+                h5,
+                ul {
+                    margin-bottom: 2rem;
+                    // color: variables-custom.$color-grey-6;
+                }
+                ul {
+                    li {
+                        padding-left: 1.5rem;
+                        margin-bottom: 10px;
+                        position: relative;
+                        font-size: 1.1rem;
+                        @media #{variables-custom.$M1440} {
+                            font-size: 1.2vw;
+                        }
+                        @media #{variables-custom.$M991} {
+                            font-size: 2vw;
+                        }
+                        @media #{variables-custom.$M500} {
+                            font-size: 4vw;
+                        }
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            transform: translateY(-50%);
+                            top: 50%;
+                            left: 0;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background-color: variables-custom.$color-green-1;
+                        }
+                    }
+                }
+                // a.btn-green-1 {
+                //     color: #fff;
+                //     line-height: 0;
+                //     letter-spacing: 0.5px;
+                //     display: inline-flex;
+                //     align-items: center;
+                // }
+                &-cta {
+                    position: relative;
+                    margin-top: 8vw;
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        width: 10vw;
+                        height: 3px;
+                        background-color: variables-custom.$color-blue-dark-2;
+                        top: 0;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+                    h3.text--olivier {
+                        padding-left: 4.5vw;
+                    }
+                    h3,
+                    h4 {
+                        font-weight: 300;
+                        font-style: normal;
+                    }
+                    .text--olivier {
+                        margin-bottom: 0rem;
+                        color: variables-custom.$color-blue-dark-2;
+                        line-height: 0.85;
+                    }
+                }
+            }
+            .information-dubai{
+                h2,
+                h3{
+                    color: variables-custom.$color-blue-1 !important;
+                }
+            }
+            .image-featured {
+                img {
+                    vertical-align: bottom;
+                }
+            }
+            .image-canguro {
+                // margin-top: -9vw;
+                // margin-bottom: -9vw;
+                @media #{variables-custom.$M1440} {
+                    // margin-top: -12vw;
+                    // margin-bottom: -12vw;
+                }
+                @media #{variables-custom.$M991} {
+                    margin: 1rem auto;
+                }
+            }
+        }
+        &.cta {
+            @media #{variables-custom.$M991} {
+                padding-left: 2rem;
+                padding-right: 2rem;
+            }
+            a {
+                color: #fff;
+            }
+            .cta-label {
+                h3,
+                h2,
+                h4 {
+                    color: #fff;
+                    line-height: 0.8;
+                    font-weight: 300;
+                    font-style: normal;
+                    @media #{variables-custom.$M991} {
+                        padding-left: 0vw;
+                    }
+                }
+                h2 {
+                    // font-family: 'olivier';
+                    // font-weight: normal;
+                    // font-style: normal;
+                    font-size: 5.8vw;
+                    font-weight: 600;
+                    @media #{variables-custom.$M991} {
+                        font-size: 3.8rem;
+                        line-height: 0.8;
+                    }
+                }
+                h4 {
+                    text-transform: uppercase !important;
+                    font-weight: 300 !important;
+                    // margin-right: 6vw;
+                    // @media #{variables-custom.$M1440} {
+                    //     margin-right: 7vw;
+                    // }
+                    // @media #{variables-custom.$M991} {
+                    //     margin-right: 0px;
+                    // }
+                }
+            }
+        }
+        & .icon-medioCirculo_left{
+            position: relative;
+            @media #{variables-custom.$m1024}{
+                &::before{
+                    display: block;
+                    width: 12rem;
+                    height: 24rem;
+                    position: absolute;
+                    left: -1.8rem;
+                    top: -15rem;
+                    background-position: right;
+                    z-index: 0;
+                }
+            }
+            & > div {
+                position: relative;
+            }
+        }
+        & .icon-semiCirculo_right{
+            position: relative;
+            @media #{variables-custom.$m1024}{
+                &::before{
+                    width: 30vw;
+                    height: 34vw;
+                    display: block;
+                    z-index: 0;
+                    position: absolute;
+                    right: 0;
+                    top: -12rem;
+                    background-position: right;
+                }
+            }
+            & > div {
+                position: relative;
+            }
+        }
+    }
+}
+
+
+/* ---------- END CSS QUE ESTUDIAR ---------- */

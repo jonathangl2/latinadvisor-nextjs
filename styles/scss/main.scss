@@ -1,0 +1,32 @@
+/*BASIC*/
+
+@use "./variables-custom"; 
+
+//==========[]Base[]==========///
+@use './base/reset';
+@use './base/fonts';
+@use "./base/icons";
+
+/* HEADER */
+
+@use "./inc/header";
+@use "./inc/index";
+@use "./inc/footer";
+
+/* PAGES */
+
+@use "./pages/internas-general";
+@use "./pages/home";
+@use "./pages/conocenos";
+@use "./pages/que-estudiar";
+@use "./pages/donde-estudiar";
+@use "./pages/australia";
+@use "./pages/escribenos";
+@use "./pages/pqr";
+@use "./pages/blog";
+@use "./pages/ebooks-guias";
+
+//
+@use "./pages/migracion";
+@use "./pages/v2/home" as home2;
+@use "./pages/v2/australia" as australia2;

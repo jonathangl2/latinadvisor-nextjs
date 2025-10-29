@@ -1,0 +1,307 @@
+@use "../variables-custom";
+
+/* ---------- INICIO CSS ICONS ----------  */
+
+/* GENERAL CSS */
+
+.icon {
+    &::before {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
+    &.icon-dubai{
+        position: relative;
+        display: inline-block;
+        width: 10vw !important;
+        height: 10vw !important;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top center;
+        margin: 0 auto;
+        @media #{variables-custom.$M991} {
+            width: 30vw !important;
+            height: 30vw !important;
+        }
+        @media #{variables-custom.$M500} {
+            width: 40vw !important;
+            height: 40vw !important;
+        }
+    }
+}
+
+.icon-marker {
+    &::before {
+        content: url("/assets/images/icons/marker.svg");
+        max-width: 24px;
+    }
+}
+
+.icon-marker-grey {
+    &::before {
+        content: url("/assets/images/icons/marker-grey.svg");
+        max-width: 24px;
+    }
+}
+
+.icon-phone {
+    &::before {
+        content: url("/assets/images/icons/phone.svg");
+        max-width: 24px;
+    }
+}
+
+.icon-phone-grey {
+    &::before {
+        content: url("/assets/images/icons/phone-grey.svg");
+        max-width: 24px;
+    }
+}
+
+.icon-mail {
+    &::before {
+        content: url("/assets/images/icons/mail.svg");
+        max-width: 24px;
+    }
+}
+
+.icon-mail-grey {
+    &::before {
+        content: url("/assets/images/icons/mail-grey.svg");
+        max-width: 24px;
+    }
+}
+
+.icon-arrow-light-right {
+    &::before {
+        content: url("/assets/images/icons/arrow-light-right.svg");
+    }
+}
+
+.icon-arrow-right {
+    &::before {
+        content: url("/assets/images/icons/arrow-right.svg");
+        max-width: 28px;
+    }
+}
+
+.icon-arrow-right-white {
+    &::before {
+        content: url("/assets/images/icons/arrow-right-white.svg");
+        max-width: 28px;
+        max-height: 30px;
+    }
+}
+
+.icon-arrow-right-blue {
+    &::before {
+        content: url("/assets/images/icons/arrow-right-darkblue.svg");
+        max-width: 28px;
+    }
+}
+
+.icon-arrow-right-green {
+    &::before {
+        content: url("/assets/images/icons/arrow-right-green.svg");
+        max-width: 28px;
+    }
+}
+
+.icon-arrow-light-left {
+    &::before {
+        content: url("/assets/images/icons/arrow-light.svg");
+    }
+}
+
+.icon-arrow-left {
+    &::before {
+        content: url("/assets/images/icons/arrow-right.svg");
+        max-width: 28px;
+        transform: rotateY(180deg);
+    }
+}
+
+.icon-arrow-left-white {
+    &::before {
+        content: url("/assets/images/icons/arrow-right-white.svg");
+        max-width: 28px;
+        transform: rotateY(180deg);
+    }
+}
+
+.icon-arrow-left-green {
+    &::before {
+        content: url("/assets/images/icons/arrow-right-green.svg");
+        max-width: 28px;
+        transform: rotateY(180deg);
+    }
+}
+
+.icon-arrow-left-blue {
+    &::before {
+        content: url("/assets/images/icons/arrow-right-darkblue.svg");
+        max-width: 28px;
+        transform: rotateY(180deg);
+    }
+}
+
+.icon-work-circle {
+    &::before {
+        content: url("/assets/images/icons/icon-work-circle.svg");
+    }
+}
+
+.icon-living-circle {
+    &::before {
+        content: url("/assets/images/icons/icon-living-circle.svg");
+    }
+}
+
+.icon-travel-circle {
+    &::before {
+        content: url("/assets/images/icons/icon-travel-circle.svg");
+    }
+}
+
+.icon-estilo-vida {
+    &::before {
+        content: url("/assets/images/australia/estilo-vida-circulo.svg");
+    }
+}
+
+.icon-salario {
+    &::before {
+        content: url("/assets/images/australia/salario-circulo.svg");
+    }
+}
+
+.icon-seguridad {
+    &::before {
+        content: url("/assets/images/australia/seguridad-circulo.svg");
+    }
+}
+
+.icon-vivienda {
+     background-image: url("/assets/images/dubai/vivienda-circulo.svg");
+}
+
+.icon-education {
+     background-image: url("/assets/images/dubai/educacion-circulo.svg");
+}
+
+.icon-estilo-vida-dubai {
+     background-image: url("/assets/images/dubai/estilo-vida-circulo.svg");
+}
+
+.icon-seguridad-dubai {
+     background-image: url("/assets/images/dubai/seguridad-circulo.svg");
+}
+
+.icon-medioCirculo_left{
+    &::before {
+        content: '';
+        background-image:url("/assets/images/icons/medio-circulo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        transform: rotateY(180deg);
+    }
+}
+
+.icon-semiCirculo_right{
+    &::before {
+        content: '';
+        background-image:url("/assets/images/icons/semi-circulo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+}
+
+// ----------------------------
+
+// ICONS MAGIC OFFER
+
+.icon-mobile {
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/mobile.svg");
+    }
+}
+
+.icon-accomodation {
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/accomodation.svg");
+    }
+}
+
+.icon-groceries {
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/groceries.svg");
+    }
+}
+
+.icon-city-tour {
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/city-tour.svg");
+    }
+}
+
+.icon-public-transport{
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/public-transport.svg");
+    }
+}
+
+//
+
+.icon-objetivos{
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/objetivos.svg");
+    }
+}
+
+.icon-historia{
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/historia.svg");
+    }
+}
+
+
+.icon-asesoria-personalizada{
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/asesoria-personalizada.svg");
+    }
+}
+
+
+.icon-experiencia{
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/experiencia.svg");
+    }
+}
+
+
+.icon-tiempo-ahorro{
+    &::before {
+        content: url("/assets/images/landing-page/magic-offer/tiempo-ahorro.svg");
+    }
+}
+
+// ICONS SOCIAL MEDIA
+
+.fa-tiktok{
+    &::before{
+        content: url("/assets/images/icons/tiktok.svg");
+        display: block;
+        height: 35px;
+        width: 37px;
+    }
+}
+
+.fa-tiktok-blue{
+    &::before{
+        content: url("/assets/images/icons/tiktok-blue.svg");
+        display: block;
+        height: 35px;
+        width: 37px;
+    }
+}

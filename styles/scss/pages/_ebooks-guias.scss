@@ -1,0 +1,163 @@
+@use "../variables-custom";
+
+/* ---------- START CSS EBOOKS Y GUIAS ---------- */
+
+// CSS PAGE BLOG
+.container {
+    &-ebooksGuias {
+        width: 100%;
+        position: relative;
+
+        &-details{
+
+            h2{
+                color: variables-custom.$color-blue-dark-2;
+                font-weight: bold;
+                font-style: normal;
+            }
+
+            .image-ebooks-featured{
+                padding: 1rem 2rem;
+                margin-top: 1rem;
+                margin-bottom: -5rem;
+                @media #{variables-custom.$M991} {
+                    margin: 1rem auto;
+                }
+            }
+
+            h1.title-detail{
+                font-style: normal;
+                color: variables-custom.$color-blue-dark-2;
+                line-height: 0.95;
+                span{
+                    font-weight: 900;
+                    font-size: 5rem;
+                    @media #{variables-custom.$M991} {
+                        font-size: 3.5rem;
+                    }
+                    @media #{variables-custom.$M500} {
+                        font-size: 3rem;
+                    }
+                }
+            }
+        }
+
+        &-descriptionForm{
+            h2{
+                color: variables-custom.$color-blue-dark-2;
+                span{
+                    font-weight: 900;
+                }
+            }
+        }
+
+        .card-post {
+            h4 {
+                color: variables-custom.$color-blue-grey-1;
+                font-size: 1.6rem;
+                @media #{variables-custom.$M1440} {
+                    font-size: 1.8vw;
+                }
+                @media #{variables-custom.$M991} {
+                    font-size: 4vw;
+                }
+                @media #{variables-custom.$M500} {
+                    font-size: 5.5vw;
+                }
+            }
+            a {
+                line-height: 0 !important;
+                display: inline-block;
+                text-align: center;
+                padding: 1rem;
+                transition: 0.3s all ease-in-out;
+                img{
+                    transition: 0.3s all ease-in-out;
+                    width: 100%;
+                    height: 350px;
+                    object-fit: contain;
+                    object-position: center bottom;
+                }
+                &:focus,
+                &:hover{
+                    img{
+                        transform: rotate(-8deg);
+                    }
+                }
+            }
+        }
+
+        .card-form-ebooks{
+            border: 0px !important;
+            border-radius: 20px;
+            box-shadow: 0px 7px 20px -8px #dfdfe0 !important;
+            @media #{variables-custom.$m992}{
+                margin-top: -12vw;
+            }
+            @media #{variables-custom.$m1366}{
+                margin-top: -10vw;
+            }
+            @media #{variables-custom.$m1920}{
+                margin-top: -9vw;
+            }
+            .card-header{
+                padding: 1rem 1rem;
+                border: 0px !important;
+                margin: 0 !important;
+                background: variables-custom.$color-blue-dark-3 !important;
+                border-radius: 20px 20px 0 0 !important;
+                box-shadow: none !important;
+                h2{
+                    color: #fff !important;
+                }
+            }
+            .card-body{
+                padding: 2rem 1rem;
+                @media #{variables-custom.$m768}{
+                    padding: 1rem 2rem;
+                }
+                @media #{variables-custom.$m1680}{
+                    padding: 2rem 4rem;
+                }
+            }
+        }
+
+    }
+}
+
+#container-ebooksGuias-form{
+    &::before{
+        content: '';
+        background-image: url('/assets/images/ebooks-guias/icon-plane.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        position: absolute;
+        right: -3px;
+        opacity: 1;
+        z-index: 1;
+        display: inline-block;
+        
+        width: 65vw;
+        min-height: 350px;
+        top: -7rem;
+
+        @media #{variables-custom.$m992}{
+            width: 35vw;
+            min-height: 500px;
+            top: -11rem;
+        }
+
+        @media #{variables-custom.$m1440}{
+            width: 33vw;
+            min-height: 500px;
+            top: -15rem;
+        }
+    
+
+    }
+}
+
+
+
+/* ---------- END CSS EBOOKS Y GUIAS ---------- */

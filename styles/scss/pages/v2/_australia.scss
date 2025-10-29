@@ -1,0 +1,106 @@
+@use "../../variables-custom";
+
+/* ---------- START CSS AUSTRALIA V2 ---------- */
+
+
+.section{
+    &-australia{
+        position: relative;
+        & > div {
+            z-index: 1;
+            position: relative;
+        }
+        .information{
+            h2{
+                color: variables-custom.$color-blue-1;
+            }
+        }
+        .card{
+            &.card-viajarC{
+                border: 0px;
+                border-radius: 15px;
+                position: relative;
+                overflow: hidden;
+                box-shadow: 1px 3px 4px 1px rgba(0,0,0,0.10);
+                height: 100%;
+                .card-header{
+                    border: 0px;
+                    background-color: transparent;
+                    padding: 0px;
+                    overflow: hidden;
+                    height: 240px;
+                    @media #{variables-custom.$m1680}{
+                        height: 270px;
+                    }
+                    img{
+                        object-fit: cover;
+                        object-position: center;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+                .card-body{
+                    text-align: center;
+                    padding: 2rem 1rem;
+                    h4{
+                        padding: 0 2.5rem;
+                        font-weight: 600;
+                        margin-bottom: 1rem !important;
+                    }
+                    p{
+                        margin-bottom: 0px !important;
+                    }
+                }
+            }
+        }
+
+        &.container-cardsViajar{
+            margin: 0px;
+            @media #{variables-custom.$m1024}{
+                margin-top: 240px;
+            }
+            @media #{variables-custom.$m1680}{
+                margin-top: 240px;
+            }
+            .container-australia-v2{
+                @media #{variables-custom.$m1024}{
+                    margin-top: -240px;
+                }
+                @media #{variables-custom.$m1680}{
+                    margin-top: -270px;
+                }
+            }
+        }
+        &.icon-medioCirculo_left#trabajar{
+            @media #{variables-custom.$m1024}{
+                &::before{
+                    width: 31vw;
+                    height: 34vw;
+                    display: block;
+                    z-index: -1;
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    background-position: right;
+                }
+            }
+        }
+        &.icon-semiCirculo_right#vivir{
+            @media #{variables-custom.$m1024}{
+                &::before{
+                    width: 30vw;
+                    height: 50%;
+                    display: block;
+                    z-index: 0;
+                    position: absolute;
+                    right: 0;
+                    top: 50%;
+                    background-position: right;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+}
+
+/* ---------- END CSS AUSTRALIA V2 ---------- */
