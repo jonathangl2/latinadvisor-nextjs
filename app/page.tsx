@@ -1,5 +1,6 @@
 "use client";
 
+import FormEmbed from "@/components/FormEmbed";
 import Script from "next/script";
 import { useEffect } from "react";
 
@@ -100,59 +101,31 @@ export default function Home() {
       <section className="section-home section-home_contactForm bg-grey-light-3">
         <section className="container py-5">
           <div className="row d-flex justify-content-around align-items-start py-5">
+
             <div className="col-11 col-lg-5">
-              <div className="card card-contactForm">
-                <div className="card-header text-center py-3">
-                  <h2 className="text-uppercase">
-                    <strong>Formulario de</strong>
-                    <strong className="text-uppercase text-green-1 mb-3 d-block">
-                      Perfilamiento
-                    </strong>
-                  </h2>
-                  <p>
-                    Completa estas preguntas para analizar tu perfil y brindarte
-                    asesoría personalizada.
-                  </p>
-                </div>
-                <div className="card-body">
-                  <iframe
-                    src="https://api.leadconnectorhq.com/widget/form/1Hc0dJ19yyTGDsdjYhVI"
-                    style={{ width: "100%", height: "100%", border: "none", borderRadius: 0 }}
-                    id="inline-1Hc0dJ19yyTGDsdjYhVI" 
-                    data-layout="{'id':'INLINE'}"
-                    data-trigger-type="alwaysShow"
-                    data-trigger-value=""
-                    data-activation-type="alwaysActivated"
-                    data-activation-value=""
-                    data-deactivation-type="neverDeactivate"
-                    data-deactivation-value=""
-                    data-form-name="1. Formulario - Web global"
-                    data-height="2822"
-                    data-layout-iframe-id="inline-1Hc0dJ19yyTGDsdjYhVI"
-                    data-form-id="1Hc0dJ19yyTGDsdjYhVI"
-                    title="1. Formulario - Web global"></iframe>
-                   <Script src="https://link.msgsndr.com/js/form_embed.js" />
-                </div>
-              </div>
+              <FormEmbed
+                formSrc="https://api.leadconnectorhq.com/widget/form/1Hc0dJ19yyTGDsdjYhVI"
+                formName="1. Formulario - Web global"
+                formId="1Hc0dJ19yyTGDsdjYhVI"
+                formHeight={2822}
+                title="1. Formulario - Web global"
+              />
             </div>
 
             <div className="col-12 col-lg-6 section-home_contactForm--stickySlider ps-5 d-none d-md-block">
-              
               <h2 className="title-featuredLatinadvisor my-5">
                 ¿Por qué <br />
                 <strong>Latinadvisor?</strong>
               </h2>
-
               <p className="mb-3">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</p>
-              
               <ul>
                 <li>Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas. </li>
                 <li>Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.</li>
                 <li>Te ayudamos con la visa, el college, acompañamiento, el seguro médico, tips para conseguir trabajo, etc.</li>
                 <li>Además, te invitamos a todos sus eventos educativos y recreativo en Australia o Dubái.</li>
               </ul>
-              
             </div>
+            
           </div>
         </section>
       </section>

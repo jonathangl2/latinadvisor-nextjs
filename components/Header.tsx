@@ -191,7 +191,7 @@ export default function Header() {
                 </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/nosotros">Nosotros</Link>
+              <Link className="nav-link" href="/conocenos">Nosotros</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" href="/contactanos">Contáctanos</Link>

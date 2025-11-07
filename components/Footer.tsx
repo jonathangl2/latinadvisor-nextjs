@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Script from "next/script";
 
 export default function Footer() {
   const handleSubmit = (e:any) => {
@@ -12,20 +13,24 @@ export default function Footer() {
       <div className="container">
         <div className="row py-5 py-lg-4 d-flex justify-content-center">
 
-          {/* Información de contacto */}
           <div className="pb-4 pt-lg-3 pb-lg-0 col-12 col-sm-9 col-lg-4 contact-information order-2 order-lg-0">
             <div className="row">
-              <div className="col-12">
-                <p className="contact-information-item">
-                  <i className="icon icon-phone"></i> (+57) 301 572 4665
-                </p>
+              <div className="col-12"> 
+                <span id='iasBadge' data-account-id='3865'></span>
+              </div>
+              <div className="col-12 mb-2">
+                <p className="contact-information-item"><i className="icon icon-phone"></i> (+57) 301 572 4665 - (+57) 300 604 6321</p>
+              </div>
+              <div className="col-12 mb-2">
+                <p className="contact-information-item"><i className="icon icon-phone"></i> (+61) 423 165 193 </p>
+              </div>
+              <div className="col-12 mb-2">
+                <p className="contact-information-item"><i className="icon icon-mail"></i> Marketing@latinadvisor.com.au</p>
               </div>
               <div className="col-12 mb-3 mb-lg-0">
-                <p className="contact-information-item">
-                  <i className="icon icon-mail"></i> info@latinadvisor.com.au
-                </p>
+                <p className="contact-information-item"><i className="icon icon-mail"></i> info@latinadvisor.com.au</p>
               </div>
-              <div className="col-12 container-cta-subscribe mt-5 mt-lg-4">
+              {/* <div className="col-12 container-cta-subscribe mt-5 mt-lg-4">
                 <div className="row d-flex align-items-center">
                   <div className="col-12 py-2 text-center text-lg-start">
                     <h2>¡Suscríbete al Newsletter!</h2>
@@ -41,13 +46,12 @@ export default function Footer() {
                     </button>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
 
-          {/* Logo y redes */}
           <div className="col-12 col-sm-9 col-lg-4 pb-4 pb-lg-0 contact-information order-0 order-lg-1">
-            <div className="row">
+            <div className="row d-flex justify-content-center">
               <div className="col-12">
                 <Link href="/" className="d-flex justify-content-center">
                   <img
@@ -55,6 +59,11 @@ export default function Footer() {
                     alt="Latinadvisor"
                     className="logo-image"
                   />
+                </Link>
+              </div>
+              <div className="col-10 d-flex align-items-center justify-content-center mt-4 mb-5">
+                <Link href="/contactanos?utm_web=Web%20contactanos" className="btn btn-round btn-green-1 text-uppercase btn-sm me-2 px-4 py-3 w-100">
+                  Contáctanos
                 </Link>
               </div>
               <div className="col-12">
@@ -82,30 +91,17 @@ export default function Footer() {
                         icon: "fab fa-tiktok",
                       },
                     ].map((s, i) => (
-                      <Link
-                        key={i}
-                        href={s.href}
-                        target="_blank"
-                        className="contact-information-social me-2"
-                      >
+                      <Link key={i} href={s.href} target="_blank" className="contact-information-social me-2">
                         <i className={s.icon} aria-hidden="true"></i>
                       </Link>
                     ))}
-                  </div>
-                  <div className="col-12 d-flex align-items-center justify-content-center mb-2">
-                    <Link
-                      href="/escribenos.html?utm_web=Web%20contactanos"
-                      className="btn-escribenos btn btn-sm btn-round btn-border-green text-uppercase me-2"
-                    >
-                      Escríbenos
-                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Sedes */}
+
           <div className="col-12 col-sm-9 col-lg-4 locations py-4 ps-lg-5 order-1 order-lg-2">
             <div className="row">
               {[
@@ -121,11 +117,16 @@ export default function Footer() {
                   name: "ADELAIDE",
                   address: "89 Pirie St, Adelaide SA 5000",
                 },
+                {
+                  name: "COLOMBIA - ARGENTINA",
+                  address: '',
+                }
               ].map((loc, i) => (
                 <div className="col-12 locations-item" key={i}>
-                  <p className="locations-item-name">{loc.name}</p>
+                  <p className="locations-item-name">
+                    <i className="icon icon-marker"></i> {loc.name}
+                  </p>
                   <p className="locations-item-adress">
-                    <i className="icon icon-marker"></i>
                     <span dangerouslySetInnerHTML={{ __html: loc.address }} />
                   </p>
                 </div>
@@ -133,9 +134,10 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="col-12 mt-4 mb-5 mb-lg-0 text-center copyright order-3">
+          <div className="col-12 mt-2 mb-5 mb-lg-0 text-center copyright order-3">
             <p><small>&#169; Copyright {new Date().getFullYear()} Latinadvisor | Credits | Política de privacidad |</small></p>
-        </div>
+          </div>
+
         </div>
       </div>
 

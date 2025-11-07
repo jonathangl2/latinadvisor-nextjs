@@ -30,13 +30,6 @@ footer#principal_footer {
                 }
             }
         }
-        a.btn {
-            font-size: 1rem;
-            background-color: transparent !important;
-            &.btn-escribenos{
-                color: variables-custom.$color-white;                
-            }
-        }
         &-social {
             margin: 0px 4px;
             color: #fff;
@@ -56,6 +49,7 @@ footer#principal_footer {
             p{
                 color: #ffffff;
             }
+
             .btn-escribenos{
                 color: variables-custom.$color-blue-dark-1 !important;
                 text-transform: capitalize;
@@ -70,13 +64,18 @@ footer#principal_footer {
                 }
             }
         }
+        #iasBadge{
+            margin-top: -6rem;
+            margin-bottom: 2rem;
+            display: flex;
+        }
     }
     .locations {
         // @media #{variables-custom.$m1440} {
         //     padding-left: 0rem !important;
         // }
         &-item {
-            margin-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
             @media #{variables-custom.$M991} {
                 margin-bottom: 1rem;
             }
@@ -84,13 +83,22 @@ footer#principal_footer {
                 padding-left: 2vw;
                 color: variables-custom.$color-green-1;
                 font-weight: bold;
+                display: flex;
+                align-items: center;
                 @media #{variables-custom.$M1440} {
-                    padding-left: 2.5rem;
+                    padding-left: 1.5rem;
+                }
+                i{
+                    width: 40px;
                 }
             }
             &-adress {
                 display: flex;
                 align-items: center;
+                padding-left: 3vw;
+                 @media #{variables-custom.$M1440} {
+                    padding-left: 4rem;
+                }
                 i {
                     min-width: 40px;
                 }

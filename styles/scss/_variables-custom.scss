@@ -13,7 +13,7 @@ $color-blue-1: #0626A5;
 $color-blue-grey-1: #19bebb;
 $color-blue-grey-2: #2fbebb;
 $color-blue-grey-3: #34cec3;
-$color-blue-grey-4: #13CEC3;
+$color-blue-grey-4: #13cec3;
 
 $color-grey-light-1: #f9f9f9;
 $color-grey-light-2: #f6f6f6;
@@ -68,6 +68,10 @@ $m375: "screen and (min-width : 375px)" !default;
     background-color: $color-blue-grey-3;
 }
 
+.bg-blue-grey-4 {
+    background-color: $color-blue-grey-4;
+}
+
 .bg-grey-light-1 {
     background-color: $color-grey-light-1;
 }
@@ -80,8 +84,16 @@ $m375: "screen and (min-width : 375px)" !default;
     background-color: $color-blue-dark-2;
 }
 
+.bg-blue-dark-5 {
+    background-color: $color-blue-dark-5;
+}
+
 .bg-green-1 {
     background-color: $color-green-1;
+}
+
+.bg-green-2 {
+    background-color: $color-green-2;
 }
 
 

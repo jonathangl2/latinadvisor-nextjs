@@ -305,3 +305,43 @@
         width: 37px;
     }
 }
+
+// AUSTRALIA REQUIRES
+
+.icon-requirements{
+    position: relative;
+    display: inline-block;
+    width: 55px !important;
+    height: 55px !important;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position: 45% 40%;
+    margin: 0 auto;
+    background-color: variables-custom.$color-green-2;
+    padding: 1rem;
+    border-radius: 100%;
+}
+
+.icon-requisitos-carta-de-intencion{
+    background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-carta-de-intencion.svg");
+}
+
+.icon-requisitos-carta-aceptacion{
+    background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-carta-aceptacion.svg");
+}
+
+.icon-requisitos-examen-medico{
+    background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-examen-medico.svg");
+}
+
+.icon-requisitos-pasaporte-vigente{
+    background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-pasaporte-vigente.svg");
+}
+
+.icon-equisitos-seguro-medico-internacional{
+    background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-seguro-medico-internacional.svg");
+}
+
+.icon-requisitos-fondos-economicos{
+    background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-fondos-economicos.svg");
+}

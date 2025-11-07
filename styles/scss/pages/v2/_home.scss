@@ -536,7 +536,9 @@
             }
         }
         #carousel-featuredLatinadvisor,
-        #carousel-teamLatinadvisor{
+        #carousel-teamLatinadvisor,
+        #carousel-benefits-australia,
+        #carousel-benefits-dubai{
             .owl-nav {
                 .owl-prev,
                 .owl-next {
@@ -565,13 +567,13 @@
                     }
                 }
                 .owl-prev {
-                    left: -2rem;
+                    left: -4rem;
                     @media #{variables-custom.$M1024} {
                         left: -1rem;
                     }
                 }
                 .owl-next {
-                    right: -2rem;
+                    right: -4rem;
                     @media #{variables-custom.$M1024} {
                         right: -1rem;
                     }
@@ -585,6 +587,15 @@
                     @media #{variables-custom.$M500} {
                         top: 54% !important;
                     }
+                }
+            }
+        }
+        #carousel-benefits-australia,
+        #carousel-benefits-dubai{
+            .owl-nav {
+                .owl-prev,
+                .owl-next {
+                    color: variables-custom.$color-white !important;
                 }
             }
         }

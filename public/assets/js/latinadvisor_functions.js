@@ -467,15 +467,15 @@ let funciones = {
 
     // V2
     getTeamLatinAdvisorHome: () => {
-
+        
         const htmlTeamCArousel = (data) => {
-            return  `<div class="item px-5 pt-5 d-flex align-items-center">
+            return `<div class="item px-5 pt-5 d-flex align-items-center">
                 <div class="card card-team">
                     <div class="card-body">
-                        <div class="img-bg" style="background-image: url('assets/images/home/v2/team/${data?.img_bg}');">
+                        <div class="img-bg" style="background-image: url('/assets/images/conocenos/team/${data?.img_bg}');">
                             <p>${data.description_team}</p>
                         </div>
-                        <div class="img-front" style="background-image: url('assets/images/home/v2/team/${data.img_front}');"></div>
+                        <div class="img-front" style="background-image: url('/assets/images/conocenos/team/${data.img_front}');"></div>
                     </div>
                     <div class="card-footer">
                         <h3>${data.name_team}</h3>
@@ -483,54 +483,42 @@ let funciones = {
                     </div>
                 </div>
             </div>`;
-        }
-        let data = [];
-        document.addEventListener("DOMContentLoaded", function() {
-            fetch('/assets/db/la_home.json').then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok ' + response.statusText);
+        };
+
+        fetch('/assets/db/la_home.json').then(response => {
+            if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
+            return response.json();
+        }).then(({ data }) => {
+
+            const HTMLfinal = data.home.team.map(item => htmlTeamCArousel(item)).join("");
+            const contentElement = document.getElementById('carousel-teamLatinadvisor');
+            if (!contentElement) {
+                console.warn('⚠️ No se encontró #carousel-teamLatinadvisor');
+                return;
+            }
+
+            contentElement.innerHTML = HTMLfinal;
+
+            jQuery('#carousel-teamLatinadvisor').owlCarousel({
+                loop: true,
+                mouseDrag: false,
+                dots: false,
+                items: 1,
+                center: false,
+                autoplay: false,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
+                responsiveClass: true,
+                responsive: {
+                    0: { items: 1 },
+                    720: { items: 2, dots: true },
+                    1024: { items: 3, dots: true }
                 }
-                return response.json();
-            }).then( ({data}) => {
-
-                let HTMLfinal = data.home.team.map((item)=>{
-                   return htmlTeamCArousel(item);
-                }).join("");
-                // console.log(HTMLfinal)
-                const contentElement = document.getElementById('carousel-teamLatinadvisor');
-                contentElement.innerHTML = HTMLfinal;
-
-
-                jQuery('#carousel-teamLatinadvisor').owlCarousel({
-                    loop: true,
-                    mouseDrag: false,
-                    dots: false,
-                    items: 1,
-                    center: false,
-                    autoplay: false,
-                    autoplayTimeout: 6000,
-                    autoplayHoverPause: true,
-                    nav: true,
-                    navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
-                    responsiveClass: true,
-                    responsive: {
-                        0: {
-                            items: 1
-                        },
-                        720:{
-                            items: 2,
-                            dots: true
-                        },
-                        1024:{
-                            items: 3,
-                            dots: true
-                        }
-                    }
-                });
-
-            }).catch(error => {
-                console.error('There has been a problem with your fetch operation:', error);
             });
+        }).catch(error => {
+            console.error('❌ Error en fetch:', error);
         });
     },
     getPostBlog:() => {
@@ -567,10 +555,54 @@ let funciones = {
                 console.error('There has been a problem with your fetch operation:', error);
             });
         });
+    },
+    getBeneficios: (location) => {
+
+        const htmlBenefit = (data) => {
+            return `
+            <div class="item d-flex flex-column align-items-center  px-3">
+                <div class="card card-benefit border-0 bg-transparent">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <img src="${data.img}" alt="${data.title}" class="img-fluid mb-3 benefit-img" />
+                        <h3 class="text-center"><strong>${data.title}</strong></h3>
+                        <p>${data.description}</p>
+                    </div>
+                </div>
+            </div>`;
+        };
+
+        fetch('/assets/db/la_home.json').then((response) => response.json()).then(({ data }) => {
+            
+            const section = data.benefits[location];
+            if (!section) return console.warn(`No se encontraron beneficios para: ${location}`);
+
+            const HTMLfinal = section.map((item) => htmlBenefit(item)).join("");
+            const contentElement = document.getElementById(`carousel-benefits-${location}`);
+            if (!contentElement) return console.warn(`No se encontró el contenedor #carousel-benefits-${location}`);
+
+            contentElement.innerHTML = HTMLfinal;
+
+            jQuery(`#carousel-benefits-${location}`).owlCarousel({
+                loop: true,
+                mouseDrag: false,
+                dots: false,
+                items: 1,
+                center: false,
+                autoplay: false,
+                autoplayTimeout: 8000,
+                autoplayHoverPause: true,
+                nav: true,
+                navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
+                responsiveClass: true,
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2, dots: true },
+                    1024: { items: 2, dots: true }
+                }
+            });
+        }).catch((error) => console.error('Error cargando beneficios:', error));
     }
-
 };
-
 
 function setCookie(name, value, daysToLive) {
     // Encode value in order to escape semicolons, commas, and whitespace
@@ -599,3 +631,5 @@ function getCookie(name) {
     // Return null if not found
     return null;
 }
+
+window.funciones = funciones;

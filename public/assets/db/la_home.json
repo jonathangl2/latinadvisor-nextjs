@@ -1,0 +1,203 @@
+{
+    "data": {
+        "home": {
+            "team": [
+                {
+                    "img_bg": "img-rosario-bg.webp",
+                    "img_front": "img-rosario.webp",
+                    "name_team": "Roshi",
+                    "name_position": "Directora General",
+                    "description_team": "Roshi es una persona con un corazón tan grande que necesita una tarjeta de presentación doble para que quepa todo su amor por los demás. Enamorada de Melbourne hace más de 15 años, es el alma de toda fiesta, líder por naturaleza, foodie y soñadora, siempre dispuesta a dar el 300 % en todo."
+                },
+                {
+                    "img_bg": "img-johanna-bg.webp",
+                    "img_front": "img-johanna.webp",
+                    "name_team": "Joha",
+                    "name_position": "Asesora Estudiantil",
+                    "description_team": "Si alguien puede ser una reina del optimismo desenfrenado es Joha, siempre buscando lo bueno en cada situación y convirtiendo cada día en una aventura emocionante. Con su contagiosa risa, energía positiva y su capacidad para encontrar la magia en lo ordinario, es la compañera perfecta para aquellos que necesitan un poco más de brillo en sus vidas."
+                },
+                {
+                    "img_bg": "img-martha-bg.webp",
+                    "img_front": "img-martha.webp",
+                    "name_team": "Marthica",
+                    "name_position": "Asesora Estudiantil",
+                    "description_team": "La encarnación viviente del instinto maternal, siempre tiene un consejo acertado para cualquier situación. Marthica es como una mamá universal: preocupada, previsora y con una habilidad mágica para saber exactamente qué necesitas escuchar. Es la fan número 1 de los atardeceres y la ciudad de Brisbane."
+                },
+                {
+                    "img_bg": "img-andre-bg.webp",
+                    "img_front": "img-andre.webp",
+                    "name_team": "Andre",
+                    "name_position": "Servicios estudiantiles",
+                    "description_team":"André es la reina de la multitarea que hace que los pulpos se sientan inútiles con solo mirarla. Es super recursiva y siempre está en movimiento, es la prueba viviente de que el tiempo es relativo y que la productividad puede ser un deporte extremo. Es la mano derecha de todos los estudiantes y es un haz realizando eventos."
+                },
+                {
+                    "img_bg": "img-poncho-bg.webp",
+                    "img_front": "img-poncho.webp",
+                    "name_team": "Andrés",
+                    "name_position": "Líder de visas",
+                    "description_team":"Andrés es como una mezcla perfecta de un algodón de azúcar y un reloj suizo: dulce, tierno y siempre a tiempo. Con su combinación única de dulzura y disciplina, él demuestra que puedes ser un rayo de sol organizado y eficiente, todo al mismo tiempo."
+                },
+                {
+                    "img_bg": "img-sandra-bg.webp",
+                    "img_front": "img-sandra.webp",
+                    "name_team": "Sandrita",
+                    "name_position": "Soporte de admisiones y ventas",
+                    "description_team":"Sandrita es una fuerza de la naturaleza: apasionada, responsable y siempre lista para abrazar lo auténtico en la vida. Con su amor por lo artesanal, su conexión con la naturaleza y su fe inquebrantable, es la persona que todos quieren tener cerca cuando buscan inspiración, dirección o simplemente una buena conversación sobre la vida."
+                },
+                {
+                    "img_bg": "img-mafe-bg.webp",
+                    "img_front": "img-mafe.webp",
+                    "name_team": "Mafe",
+                    "name_position": "Asesora Estudiantil",
+                    "description_team":"Mafe es la reina de la diversión que hace que los DJ se sientan intimidados con su lista de reproducción. Es como un tornado de energía positiva, siempre listo para decir 'sí' a cualquier aventura que se le presente. Aunque a veces se carga de mil actividades, Mafe siempre tiene una sonrisa en el rostro y una anécdota graciosa para contar."
+                },
+                {
+                    "img_bg": "img-yuly-bg.webp",
+                    "img_front": "img-yuly.webp",
+                    "name_team": "Yuly",
+                    "name_position": "Manager de casos de migración",
+                    "description_team":"Yuly es una mente brillante envuelta en un paquete de dulzura, Es tan inteligente que las calculadoras le piden ayuda con las cuentas y las enciclopedias le piden que las actualice. Pero no se dejen engañar por su cerebro de genio: también tiene un corazón tan grande que necesita un GPS para encontrar la salida."
+                },
+                {
+                    "img_bg": "img-diana-bg.webp",
+                    "img_front": "img-diana.webp",
+                    "name_team": "Diana",
+                    "name_position": "Marketing Manager",
+                    "description_team":"Dianis es una explosión de creatividad, tan brillante que los arcoíris le piden consejo sobre combinaciones de colores, si fuera un personaje de un cuento de hadas, sería una mezcla entre un hada madrina y un genio de la lámpara, siempre lista para resolver cualquier problema con un toque de magia y una sonrisa."
+                },
+                {
+                    "img_bg": "img-juancho-bg.webp",
+                    "img_front": "img-juancho.webp",
+                    "name_team": "Juancho",
+                    "name_position": "Líder en admisiones",
+                    "description_team":"Juancho vivió en Australia y aunque está de regreso en casa, sigue enamorado de este país. Siempre dispuesto a compartir sus conocimientos, devora libros como si fueran chocolates, su organización impecable y su devoción por los valores que guían su vida, es la compañía perfecta para aquellos que buscan risas, sabiduría y un ejemplo de cómo vivir plenamente."
+                },
+                {
+                    "img_bg": "img-juan-carlos-bg.webp",
+                    "img_front": "img-juan-carlos.webp",
+                    "name_team": "Juan Carlos",
+                    "name_position": "Agente Migratorio",
+                    "description_team":"Es el tipo de persona que sigue las reglas al pie de la letra, incluso en los juegos de mesa, asegurándose de que todos lancen los dados correctamente y sigan las instrucciones al milímetro. Tiene un corazón de oro y sus intenciones siempre son las mejores. Es como un superhéroe de la ley y el orden, sin capa, pero con una libreta de multas imaginaria."
+                },
+                {
+                    "img_bg": "img-johnny-bg.webp",
+                    "img_front": "img-johnny.webp",
+                    "name_team": "Johnny",
+                    "name_position": "Consultor de procesos migratorios",
+                    "description_team":"Si alguna vez necesitas una dosis de risas, Johnny es él que podría hacer reír a una estatua con una sola frase. Es la combinación perfecta de humor, charla y amor paternal. Con su capacidad para hacer reír a todos a su alrededor y su dedicación como papá."
+                },
+                {
+                    "img_bg": "img-carlos-bg.webp",
+                    "img_front": "img-carlos.webp",
+                    "name_team": "Carlos",
+                    "name_position": "Asesor y soporte de visas",
+                    "description_team":"El maestro del misterio que hace que los ninjas parezcan charlatanes, su mente es como una biblioteca enciclopédica, capaz de almacenar información y resolver problemas complejos con la misma facilidad con la que podría resolver un crucigrama en su almuerzo. Es como un enigma envuelto en un acertijo, con un corazón gentil y una mente brillante."
+                },
+                {
+                    "img_bg": "img-meli-bg.webp",
+                    "img_front": "img-meli.webp",
+                    "name_team": "Meli",
+                    "name_position": "Contadora",
+                    "description_team":"Meli llegó a ordenarnos la vida, siempre está calculando y planeando cada paso, como si su vida fuera un juego de ajedrez en el que cada movimiento está estratégicamente calculado,  Puede que parezca que tiene un algoritmo para cada decisión, pero en realidad es solo su increíble capacidad para anticipar y prepararse para cualquier eventualidad."
+                },
+                {
+                    "img_bg": "img-juan-david-bg.webp",
+                    "img_front": "img-juan-david.webp",
+                    "name_team": "Juan David",
+                    "name_position": "Asesor y soporte de visas",
+                    "description_team":"Desde el momento en que el sol asoma por el horizonte, Juan David ya está en movimiento, Es la personificación de la energía matutina y la disciplina personal, con una habilidad para mantenerse en forma y organizada que haría que los cronómetros se sintieran inútiles. Con su amor por el ejercicio y su enfoque en la organización, es la inspiración perfecta."
+                }
+            ]
+        },
+        "blog": {
+            "post_previews":[
+                {
+                    "title":"Impacto de las Reformas Migratorias 2025 en la Comunidad Latina",
+                    "descripcion":"Las reformas migratorias de 2025 han cambiado radicalmente las reglas del juego para los latinos que sueñan con estudiar, trabajar o establecerse en destinos clave como Australia y Dubái. Mientras uno se cierra a perfiles de clase media y privilegia a profesionales altamente calificados, el otro abre puertas rápidas pero enfrenta problemas de saturación laboral y altos costos de vida.",
+                    "img":"reformas-migratorias.webp",
+                    "link":"impacto-reformas-migratorias-2025-latinos.html"
+                },
+                {
+                    "title":"5 Trabajos Comunes en Dubai para Estudiantes Internacionales Latinoamericanos",
+                    "descripcion":"¿Te imaginas combinar tus estudios con un trabajo que no solo cubra tus gastos, sino que también impulse tu carrera hacia un futuro exitoso? ¿Cuáles son los trabajos más buscados? ¿Cuánto podrías ganar realmente? ¿Qué ventajas adicionales podrías disfrutar? Sigue leyendo y descubre cómo hacerlo.",
+                    "img":"trabajos-dubai.png",
+                    "link":"trabajos-para-estudiantes-internacionales-en-dubai.html"
+                },
+                {
+                    "title":"Descubre Dubai: Actividades para Estudiantes Internacionales",
+                    "descripcion":"¡Prepárate para vivir la mejor experiencia de tu vida en Dubai! 🌟 Desde amaneceres dorados en el desierto hasta noches vibrantes bajo las estrellas, esta ciudad lo tiene todo. Como estudiante internacional, no solo te sumergirás en una educación de primera clase, sino que también disfrutarás de un abanico de actividades únicas y emocionantes.",
+                    "img":"aventura-dubai.png",
+                    "link":"actividades-para-estudiantes-internacionales-en-dubai.html"
+                },
+                {
+                    "title":"Beneficios de estudiar en Dubai",
+                    "descripcion":"Dubai, una de las ciudades más seguras del mundo, te ofrece la oportunidad de avanzar en campos como tecnología, ingeniería y medicina. Disfruta de buenos salarios, transporte público eficiente y una residencia sin necesidad de demostrar solvencia económica. Además, Dubai facilita la creación de empresas y es libre de discriminación. Aprovecha estas oportunidades si tienes más de 18 años.",
+                    "img":"dubai.png",
+                    "link":"beneficios-estudiar-en-dubai.html"
+                },
+                {
+                    "title":"Vive la Vida Australiana: actividades y estilo de vida",
+                    "descripcion":"¡Descubre el estilo de vida australiano y las increíbles actividades que te esperan en este paraíso! Tanto migrantes como nativos disfrutan de una vida activa y saludable, valorando deportes, playas y parques en una sociedad diversa y multicultural. Sigue leyendo y te contaremos todo lo que puedes vivir en las 5 principales ciudades del país.",
+                    "img":"vidaaustraliana.png",
+                    "link":"vive-la-vida-australiana.html"
+                }
+            ]
+        },
+        "benefits": {
+            "australia": [
+                {
+                    "img": "/assets/images/australia/beneficios/oportunidad-de-trabajar-legalmente.webp",
+                    "title": "1. Oportunidad de trabajar legalmente",
+                    "description": "Con la visa de estudiante, puedes trabajar hasta 24 horas semanales durante tus estudios y tiempo completo en vacaciones. Esto te permite cubrir tus gastos básicos, pagar parte de tu curso y ahorrar durante su estancia. Australia cuenta con sectores con alta demanda como: Hospitality, Cocina, Childcare, IT, ingeniería, construcción, educación y más."
+                },
+                {
+                    "img": "/assets/images/australia/beneficios/posibilidad-de-quedarte-despues-de-estudiar.webp",
+                    "title": "2. Posibilidad de quedarte después de estudiar",
+                    "description": "Al finalizar tu programa, podrás aplicar a una Post Graduate Visa o extender tu residencia si encuentras un empleador que esté dispuesto a patrocinarte. Nosotros te ayudamos en este camino con la asesoría de nuestros agentes migratorios registrados."
+                },
+                {
+                    "img": "/assets/images/australia/beneficios/educacion-de-calidad.webp",
+                    "title": "3. Educación de calidad",
+                    "description": "Australia cuenta con instituciones reconocidas internacionalmente y programas académicos enfocados en el desarrollo práctico y profesional."
+                },
+                {
+                    "img": "/assets/images/australia/beneficios/calidad-de-vida.webp",
+                    "title": "4. Calidad de vida",
+                    "description": "Australia es uno de los países con mayor calidad de vida del mundo. Su sistema de salud, seguridad, transporte y escenarios naturales impresionantes, hacen de este un lugar ideal para vivir y estudiar."
+                },
+                {
+                    "img": "/assets/images/australia/beneficios/posibilidad-de-viajar-con-tu-pareja-o-familia.webp",
+                    "title": "5. Posibilidad de viajar con tu pareja o familia",
+                    "description": "Algunos programas permiten que tu pareja obtenga también una visa con permiso de trabajo, e incluso incluir a tus hijos en edad escolar."
+                }
+            ],
+            "dubai": [
+                {
+                    "img": "/assets/images/dubai/beneficios/oportunidad-trabajo-legal.webp",
+                    "title": "1. Oportunidad de trabajar legalmente",
+                    "description": "Con tu visa de estudios puedes trabajar medio tiempo en sectores como hotelería, gastronomía, construcción, petróleo y turismo."
+                },
+                {
+                    "img": "/assets/images/dubai/beneficios/salarios-sin-impuestos.webp",
+                    "title": "2. Buenos salarios y sin pagar impuestos",
+                    "description": "Los sueldos en Dubái varían entre $1.500 y $5.000 USD al mes, y lo mejor: ¡no se cobran impuestos sobre los ingresos!"
+                },
+                {
+                    "img": "/assets/images/dubai/beneficios/costo-de-vida-accesible.webp",
+                    "title": "3. Costo de vida accesible",
+                    "description": "Aunque se piensa que Dubái es solo para millonarios, ¡esto es un mito! Puedes vivir cómodamente con un presupuesto mensual de $900 a $1.200 USD si sabes organizar tus gastos."
+                },
+                {
+                    "img": "/assets/images/dubai/beneficios/posibilidad-de-quedarte.webp",
+                    "title": "4. Posibilidad de quedarte",
+                    "description": "Si consigues empleo con un patrocinador, puedes extender tu estadía y optar a una residencia legal en Emiratos Árabes Unidos."
+                },
+                {
+                    "img": "/assets/images/dubai/beneficios/seguridad-calidad-vida.webp",
+                    "title": "5. Seguridad y calidad de vida",
+                    "description": "Dubái está catalogada como una de las ciudades más seguras y modernas del mundo, con transporte eficiente, playas espectaculares y una arquitectura única."
+                }
+            ]
+        }
+    }
+}

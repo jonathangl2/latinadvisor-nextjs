@@ -10,10 +10,7 @@ export const metadata: Metadata = {
   title: 'Inicio | Latinadvisor | Estamos construyendo sueños',
   description: 'Planifica tu viaje y encuentra toda la información en cuanto a visa, tramites y asesoría gratuita para estudiar inglés u otros cursos en Australia.',
   keywords: 'Estudiar en Australia, Agencia de estudios, Agencia de viajes, Agencia de estudios en el exterior, Agencias de estudios en Australia, Agencias de estudios en Melbourne, Agencias de estudios en Brisbane, Agencias de estudios en Sydney, Agencias de estudios en Adelaide, Agencias de estudios en Gold Coast, Estudia en el exterior, Estudia en el extranjero, Cursos de ingles, Viajar Australia, Becas para estudiar ingles en el extranjero, Becas para estudiar en el extranjero',
-  authors: [{ name: 'LatinAdvisor' }],
-  icons: {
-    icon: '/assets/images/favicon.ico',
-  },
+  authors: [{ name: 'LatinAdvisor' }]
 }
 
 export default function RootLayout({
@@ -108,6 +105,7 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe 
@@ -122,26 +120,18 @@ export default function RootLayout({
         <main>{children}</main>
         <Footer />
 
-        {/* External Scripts que necesitan estar en el body */}
-        <Script 
-          src="/assets/js/jquery-3.7.1.min.js" 
-          strategy="beforeInteractive"
-        />
-        <Script 
-          src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
-          strategy="lazyOnload"
-        />
-        <Script 
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" 
-          strategy="lazyOnload"
-        />
-        <Script src="/assets/js/moment.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/owlcarousel/owl.carousel.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/nice-select/jquery.nice-select.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/intl-tel-input/intlTelInput.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/intl-tel-input/intlTelInput-jquery.min.js" strategy="lazyOnload" />
-        <Script src="/assets/js/latinadvisor_functions.js?v=3.2.3" strategy="lazyOnload" />
-        <Script src="/assets/js/latinadvisor_functionsUpdate.js?v=1.5.1" strategy="lazyOnload" />
+        <Script async defer crossOrigin="anonymous" src="https://www-cdn.icef.com/scripts/iasbadgeid.js"></Script>
+
+        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" strategy="beforeInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/moment.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/owlcarousel/owl.carousel.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/nice-select/jquery.nice-select.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/intl-tel-input/intlTelInput.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/intl-tel-input/intlTelInput-jquery.min.js" strategy="beforeInteractive" />
+        <Script src="/assets/js/latinadvisor_functions.js?v=3.2.3" strategy="afterInteractive"  />
+        <Script src="/assets/js/latinadvisor_functionsUpdate.js?v=1.5.1" strategy="afterInteractive" />
       </body>
     </html>
   )

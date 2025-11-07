@@ -7,9 +7,6 @@
         width: 100%;
         position: relative;
         &-description {
-            h4.text--olivier {
-                color: variables-custom.$color-grey-6;
-            }
             a {
                 line-height: 0 !important;
             }
@@ -290,18 +287,10 @@
                         left: 50%;
                         transform: translateX(-50%);
                     }
-                    h3.text--olivier {
-                        padding-left: 4.5vw;
-                    }
                     h3,
                     h4 {
                         font-weight: 300;
                         font-style: normal;
-                    }
-                    .text--olivier {
-                        margin-bottom: 0rem;
-                        color: variables-custom.$color-blue-dark-2;
-                        line-height: 0.85;
                     }
                 }
             }
