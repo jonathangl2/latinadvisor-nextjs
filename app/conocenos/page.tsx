@@ -29,7 +29,7 @@ export default function ConocenosPage() {
         <div className="row">
           <div className="col-12 container-conocenos-description py-lg-5">
             <div className="row justify-content-center align-items-md-end">
-              <div className="col-12 col-lg-11 col-xl-9">
+              <div className="col-11 col-xl-9">
                 <h4 className="mb-4">
                   Somos una empresa Australiana creada en el año 2014 con el fin
                   de ayudarte a cumplir tus sueños de vivir la experiencia en

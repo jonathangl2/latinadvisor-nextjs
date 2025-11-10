@@ -79,6 +79,19 @@
     }
 }
 
+.icon-arrow-white-right {
+    &::before {
+        content: url("/assets/images/icons/arrow-white-right.svg");
+    }
+}
+
+.icon-arrow-right {
+    &::before {
+        content: url("/assets/images/icons/arrow-right.svg");
+        max-width: 28px;
+    }
+}
+
 .icon-arrow-right {
     &::before {
         content: url("/assets/images/icons/arrow-right.svg");
@@ -111,6 +124,13 @@
 .icon-arrow-light-left {
     &::before {
         content: url("/assets/images/icons/arrow-light.svg");
+    }
+}
+
+
+.icon-arrow-white-left {
+    &::before {
+        content: url("/assets/images/icons/arrow-white.svg");
     }
 }
 
@@ -338,10 +358,26 @@
     background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-pasaporte-vigente.svg");
 }
 
-.icon-equisitos-seguro-medico-internacional{
+.icon-requisitos-seguro-medico-internacional{
     background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-seguro-medico-internacional.svg");
 }
 
 .icon-requisitos-fondos-economicos{
     background-image: url("/assets/images/australia/icons-requisitos/icon-requisitos-fondos-economicos.svg");
+}
+
+.icon-diversidad-cultural{
+    background-image: url("/assets/images/dubai/icons-requisitos/icon-diversidad-cultural.svg");
+}
+
+.icon-networking{
+    background-image: url("/assets/images/dubai/icons-requisitos/icon-networking.svg");
+}
+
+.icon-oportunidades-laborales{
+    background-image: url("/assets/images/dubai/icons-requisitos/icon-oportunidades-laborales.svg");
+}
+
+.icon-proceso-facil-rapido{
+    background-image: url("/assets/images/dubai/icons-requisitos/icon-proceso-facil-rapido.svg");
 }

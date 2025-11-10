@@ -22,7 +22,7 @@ export default function CarouselBeneficios({ title, location }: CarouselBenefici
     <section className="section-australia section-australia_benefits container-fluid bg-blue-dark-5 py-5">
 			<section className="container py-lg-4">
 				<div className="row d-flex justify-content-center">
-					<div className="col-12 col-lg-10 pt-4 pb-5">
+					<div className="col-12 col-lg-11 pt-4 pb-5">
 						<h2 className="section-australia_title text-center text-uppercase text-white">{title}</h2>
 					</div>
 					<div className="col-12 col-lg-10">

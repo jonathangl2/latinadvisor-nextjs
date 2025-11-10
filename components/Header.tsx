@@ -105,7 +105,7 @@ export default function Header() {
                   {[
                     {
                       url: "/australia",
-                      title: "visitos visa australia",
+                      title: "visitor visa australia",
                     },
                     {
                       url: "/dubai",
@@ -212,6 +212,18 @@ export default function Header() {
             <ul className="navbar-nav mx-auto align-items-lg-stretch principal-menu">
               <li className="nav-item">
                 <Link className="nav-link" href="/">Home</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/australia">Australia</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/dubai">Dubái</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/conocenos">Nosotros</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/contactanos">Contáctanos</Link>
               </li>
             </ul>
           </div>

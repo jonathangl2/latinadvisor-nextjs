@@ -562,7 +562,7 @@ let funciones = {
             return `
             <div class="item d-flex flex-column align-items-center  px-3">
                 <div class="card card-benefit border-0 bg-transparent">
-                    <div class="card-body d-flex flex-column align-items-center">
+                    <div class="card-body d-flex flex-column align-items-center px-4 px-lg-5">
                         <img src="${data.img}" alt="${data.title}" class="img-fluid mb-3 benefit-img" />
                         <h3 class="text-center"><strong>${data.title}</strong></h3>
                         <p>${data.description}</p>
@@ -592,7 +592,7 @@ let funciones = {
                 autoplayTimeout: 8000,
                 autoplayHoverPause: true,
                 nav: true,
-                navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
+                navText: ['<i class="icon icon-arrow-white-left"></i>', '<i class="icon icon-arrow-white-right"></i>'],
                 responsiveClass: true,
                 responsive: {
                     0: { items: 1 },

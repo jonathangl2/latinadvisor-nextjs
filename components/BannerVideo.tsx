@@ -18,7 +18,7 @@ export default function BannerVideo({
   return (
     <section className="section-australia container-fluid">
       <div className="row">
-        <div className="col-12 px-0 section-australia_content mb-4">
+        <div className="col-12 px-0 section-australia_content mb-md-4">
           <img
             src={imageSrc}
             alt={title}
@@ -31,7 +31,7 @@ export default function BannerVideo({
           />
           <div className="caption">
             <div className="row d-flex justify-content-center">
-              <div className="col-12">
+              <div className="col-11">
                 <h1>{title}</h1>
                 {subtitle && (
                   <p className="text-white mt-2 mb-3">{subtitle}</p>

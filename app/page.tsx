@@ -112,12 +112,13 @@ export default function Home() {
               />
             </div>
 
-            <div className="col-12 col-lg-6 section-home_contactForm--stickySlider ps-5 d-none d-md-block">
-              <h2 className="title-featuredLatinadvisor my-5">
+            <div className="col-12 col-lg-6 section-home_contactForm--stickySlider ps-5 d-none d-md-block pt-5">
+              {/* <h2 className="title-featuredLatinadvisor my-5">
                 ¿Por qué <br />
                 <strong>Latinadvisor?</strong>
-              </h2>
-              <p className="mb-3">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</p>
+              </h2> */}
+              <br></br>
+              <p className="mt-5 mb-3">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</p>
               <ul>
                 <li>Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas. </li>
                 <li>Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.</li>

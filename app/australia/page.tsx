@@ -20,9 +20,9 @@ export default function Australia() {
 			<section className="section-australia container-fluid">
 				<section className="container">
 					<div className="row d-flex justify-content-center py-5">
-						<div className="col-12 col-lg-11 mt-5 py-5 section-australia_contentCta">
+						<div className="col-12 col-lg-11 mt-lg-5 py-5 section-australia_contentCta">
 							<p className="">Australia es uno de los destinos más populares para estudiantes internacionales que buscan una experiencia académica de calidad, oportunidades laborales reales y opciones de migrar de forma permanente.  Con ciudades costeras vibrantes, una economía estable y paisajes naturales incomparables, vivir en Australia es mucho más que una aventura: es una inversión en tu futuro.</p>
-							<a href="" className="btn">¡AGENDA TU ASESORÍA <br/>VIRTUAL GRATUITA!</a>
+							<a href="" className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>
 					</div>
 				</section>
@@ -34,15 +34,15 @@ export default function Australia() {
 				<section className="container py-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
-							<h2 className="section-australia_title text-center text-uppercase mb-4">Amplia Oferta Académica en Australia</h2>
+							<h2 className="section-australia_title text-center text-uppercase mb-4">Amplía Oferta académica en Australia</h2>
 						</div>
 						<div className="col-12 col-lg-10 my-4">
 							<div className="row d-flex justify-content-between align-items-center">
-								<div className="col-12 col-lg-6 information">
-									<img src="/assets/images/australia/cursos-de-ingles-australia.webp" alt="" className="img-fluid w-100 mb-4"/>
-									<img src="/assets/images/australia/cursos-vocacionales-australia.webp" alt="" className="img-fluid w-100"/>
+								<div className="col-12 col-lg-6 information order-1 order-lg-0 pt-5 py-lg-0">
+									<img src="/assets/images/australia/cursos-de-ingles-australia.webp" alt="" className="img-fluid w-100 mb-lg-4"/>
+									<img src="/assets/images/australia/cursos-vocacionales-australia.webp" alt="" className="img-fluid w-100 d-none d-lg-block"/>
 								</div>
-								<div className="col-12 col-lg-6 ps-5 section-australia_courses">
+								<div className="col-12 col-lg-6 ps-lg-5 section-australia_courses order-0 order-lg-1">
 									<div className="row">
 										<div className="col-12">
 											<p className="mb-3">Australia ofrece una gran variedad de programas académicos de alta calidad, según tus intereses, metas y nivel de inglés:</p>
@@ -131,17 +131,17 @@ export default function Australia() {
 											<i className="icon-requirements icon-requisitos-carta-aceptacion"></i>
 										</div>
 										<div className="col">
-											<h5><strong>1. Carta de Aceptación (CoE):</strong></h5>
+											<h5 className="mb-1"><strong>1. Carta de Aceptación (CoE):</strong></h5>
 											<p className="mb-3">Debes estar inscrito en un curso aprobado por el gobierno australiano (CRICOS) y recibir la carta de aceptación oficial (CoE). Esta carta es obligatoria para aplicar a la visa.</p> 
 										</div>
 									</div>
 
 									<div className="row mb-2">
 										<div className="col-3 col-lg-2 d-flex justify-content-center">
-											<i className="icon-requirements icon-equisitos-seguro-medico-internacional"></i>
+											<i className="icon-requirements icon-requisitos-seguro-medico-internacional"></i>
 										</div>
 										<div className="col">
-											<h5><strong>2. Seguro médico internacional:</strong></h5>
+											<h5 className="mb-1"><strong>2. Seguro médico internacional:</strong></h5>
 											<p className="mb-3">Que te ofrecerá asistencia médica con cobertura específica según el elegido.</p>
 										</div>
 									</div>
@@ -151,7 +151,7 @@ export default function Australia() {
 											<i className="icon-requirements icon-requisitos-carta-de-intencion"></i>
 										</div>
 										<div className="col">
-											<h5><strong>3. Carta de intención (GTE):</strong></h5>
+											<h5 className="mb-1"><strong>3. Carta de intención (GTE):</strong></h5>
 											<p className="mb-3">Que te permite exponer tu intención real de ser un estudiante temporal en Australia.</p>
 										</div>
 									</div>
@@ -161,7 +161,7 @@ export default function Australia() {
 											<i className="icon-requirements icon-requisitos-pasaporte-vigente"></i>
 										</div>
 										<div className="col">
-											<h5><strong>4. Pasaporte vigente:</strong></h5>
+											<h5 className="mb-1"><strong>4. Pasaporte vigente:</strong></h5>
 											<p className="mb-3">con vigencia mínimo de 6 meses.</p>
 										</div>
 									</div>
@@ -171,7 +171,7 @@ export default function Australia() {
 											<i className="icon-requirements icon-requisitos-examen-medico"></i>
 										</div>
 										<div className="col">
-											<h5><strong>5. Examen médico:</strong></h5>
+											<h5 className="mb-1"><strong>5. Examen médico:</strong></h5>
 											<p className="mb-3">(según país de origen). Dependiendo de tu nacionalidad o tiempo de estadía, el gobierno puede solicitar exámenes médicos antes de otorgar la visa.</p>
 										</div>
 									</div>	
@@ -186,7 +186,7 @@ export default function Australia() {
 											<i className="icon-requirements icon-requisitos-carta-aceptacion"></i>
 										</div>
 										<div className="col">
-											<h5><strong>6. Traducciones oficiales:</strong></h5>
+											<h5 className="mb-1"><strong>6. Traducciones oficiales:</strong></h5>
 											<p className="mb-3">De toda tu documentación a idioma inglés.</p>
 										</div>
 									</div>
@@ -196,14 +196,14 @@ export default function Australia() {
 											<i className="icon-requirements icon-requisitos-fondos-economicos"></i>
 										</div>
 										<div className="col">
-											<h5><strong>7. Prueba de fondos económicos:</strong></h5>
+											<h5 className="mb-1"><strong>7. Prueba de fondos económicos:</strong></h5>
 											<p className="mb-3">Según tu nacionalidad, podrías tener que demostrar fondos adicionales al valor del curso para cubrir tu estadía en Australia. Este dinero solo debe estar disponible hasta que aprueben tu visa, no es un gasto real que debas pagar.</p>
 										</div>
 									</div>
 
 									<div className="row">
 										<div className="col">
-											<h5><strong>¿Cuánto dinero necesitas demostrar?</strong></h5>
+											<h5 className="mb-1"><strong>¿Cuánto dinero necesitas demostrar?</strong></h5>
 											<p className="mb-3">Depende de la duración de tu curso:</p>
 											<ul className="mb-3">
 												<li>3 meses: aprox. AUD $14,400</li>
@@ -211,7 +211,7 @@ export default function Australia() {
 												<li>12 meses: aprox. AUD $37,200</li>
 											</ul>
 
-											<h5><strong>¿Cómo puedes demostrarlo?</strong></h5>
+											<h5 className="mb-1"><strong>¿Cómo puedes demostrarlo?</strong></h5>
 											<p className="mb-3">
 												✅ Con tus extractos bancarios (últimos 3 meses)<br/>
 												✅ O mediante un patrocinador familiar que respalde tus gastos
@@ -256,15 +256,15 @@ export default function Australia() {
 					<div className="col-11 col-lg-10 py-5 mt-lg-5">
 						<h2 className="section-australia_title text-center text-uppercase mb-4">¿Listo para Impulsar tu <br/>Futuro en Australia?</h2>
 					</div>
-					<div className="col-11 col-lg-10 ">
+					<div className="col-11 col-lg-10 pb-5">
 						<div className="row d-flex justify-content-center">
 							<div className="col-12 col-sm-9 col-lg-6">
 								<FormEmbed
-									formSrc="https://api.leadconnectorhq.com/widget/form/1Hc0dJ19yyTGDsdjYhVI"
-									formName="1. Formulario - Web global"
-									formId="1Hc0dJ19yyTGDsdjYhVI"
-									formHeight={2822}
-									title="1. Formulario - Web global"
+									formSrc="https://api.leadconnectorhq.com/widget/form/2v14tZNWKuPXVhu3l9hi"
+									formName="2. Formulario - Web Australia"
+									formId="2v14tZNWKuPXVhu3l9hi"
+									formHeight={1612}
+									title="2. Formulario - Web Australia"
 								/>
 							</div>
 						</div>
