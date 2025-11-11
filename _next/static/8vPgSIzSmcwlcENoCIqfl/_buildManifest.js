@@ -3,8 +3,8 @@ self.__BUILD_MANIFEST = {
     "afterFiles": [],
     "beforeFiles": [
       {
-        "source": "/latinadvisor//_next/:path+",
-        "destination": "/latinadvisor/_next/:path+"
+        "source": "/latinadvisor-nextjs//_next/:path+",
+        "destination": "/latinadvisor-nextjs/_next/:path+"
       }
     ],
     "fallback": []
