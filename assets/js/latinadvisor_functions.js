@@ -527,7 +527,7 @@ let funciones = {
             return `<div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="card card-post card-postBlog">
                     <div class="card-body">
-                        <img src="./assets/images/blog/posts/${data.img}" alt="" class="img-fluid mb-3">
+                        <img src="/assets/images/blog/posts/${data.img}" alt="" class="img-fluid mb-3">
                         <h3 class="mb-3"><strong>${data.title}</strong></h3>
                         <p>${data.descripcion}</p>
                         <a href="blog/${data.link}" class="mt-4 btn btn-sm btn-cta-post">Sigue leyendo <i class="icon icon-arrow-right-green"></i></a>
