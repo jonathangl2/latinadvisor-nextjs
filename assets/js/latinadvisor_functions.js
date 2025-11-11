@@ -485,7 +485,7 @@ let funciones = {
             </div>`;
         };
 
-        fetch('/assets/db/la_home.json').then(response => {
+        fetch('./assets/db/la_home.json').then(response => {
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             return response.json();
         }).then(({ data }) => {
@@ -537,7 +537,7 @@ let funciones = {
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            fetch('/assets/db/la_home.json').then(response => {
+            fetch('./assets/db/la_home.json').then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
                 }
@@ -571,7 +571,7 @@ let funciones = {
             </div>`;
         };
 
-        fetch('/assets/db/la_home.json').then((response) => response.json()).then(({ data }) => {
+        fetch('./assets/db/la_home.json').then((response) => response.json()).then(({ data }) => {
             
             const section = data.benefits[location];
             if (!section) return console.warn(`No se encontraron beneficios para: ${location}`);
