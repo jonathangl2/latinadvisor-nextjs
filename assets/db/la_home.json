@@ -146,54 +146,54 @@
         "benefits": {
             "australia": [
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/australia/beneficios/oportunidad-de-trabajar-legalmente.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/australia/beneficios/oportunidad-de-trabajar-legalmente.webp",
                     "title": "1. Oportunidad de trabajar legalmente",
                     "description": "Con la visa de estudiante, puedes trabajar hasta 24 horas semanales durante tus estudios y tiempo completo en vacaciones. Esto te permite cubrir tus gastos básicos, pagar parte de tu curso y ahorrar durante su estancia. Australia cuenta con sectores con alta demanda como: Hospitality, Cocina, Childcare, IT, ingeniería, construcción, educación y más."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/australia/beneficios/posibilidad-de-quedarte-despues-de-estudiar.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/australia/beneficios/posibilidad-de-quedarte-despues-de-estudiar.webp",
                     "title": "2. Posibilidad de quedarte después de estudiar",
                     "description": "Al finalizar tu programa, podrás aplicar a una Post Graduate Visa o extender tu residencia si encuentras un empleador que esté dispuesto a patrocinarte. Nosotros te ayudamos en este camino con la asesoría de nuestros agentes migratorios registrados."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/australia/beneficios/educacion-de-calidad.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/australia/beneficios/educacion-de-calidad.webp",
                     "title": "3. Educación de calidad",
                     "description": "Australia cuenta con instituciones reconocidas internacionalmente y programas académicos enfocados en el desarrollo práctico y profesional."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/australia/beneficios/calidad-de-vida.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/australia/beneficios/calidad-de-vida.webp",
                     "title": "4. Calidad de vida",
                     "description": "Australia es uno de los países con mayor calidad de vida del mundo. Su sistema de salud, seguridad, transporte y escenarios naturales impresionantes, hacen de este un lugar ideal para vivir y estudiar."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/australia/beneficios/posibilidad-de-viajar-con-tu-pareja-o-familia.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/australia/beneficios/posibilidad-de-viajar-con-tu-pareja-o-familia.webp",
                     "title": "5. Posibilidad de viajar con tu pareja o familia",
                     "description": "Algunos programas permiten que tu pareja obtenga también una visa con permiso de trabajo, e incluso incluir a tus hijos en edad escolar."
                 }
             ],
             "dubai": [
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/dubai/beneficios/oportunidad-trabajo-legal.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/dubai/beneficios/oportunidad-trabajo-legal.webp",
                     "title": "1. Oportunidad de trabajar legalmente",
                     "description": "Con tu visa de estudios puedes trabajar medio tiempo en sectores como hotelería, gastronomía, construcción, petróleo y turismo."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/dubai/beneficios/salarios-sin-impuestos.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/dubai/beneficios/salarios-sin-impuestos.webp",
                     "title": "2. Buenos salarios y sin pagar impuestos",
                     "description": "Los sueldos en Dubái varían entre $1.500 y $5.000 USD al mes, y lo mejor: ¡no se cobran impuestos sobre los ingresos!"
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/dubai/beneficios/costo-de-vida-accesible.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/dubai/beneficios/costo-de-vida-accesible.webp",
                     "title": "3. Costo de vida accesible",
                     "description": "Aunque se piensa que Dubái es solo para millonarios, ¡esto es un mito! Puedes vivir cómodamente con un presupuesto mensual de $900 a $1.200 USD si sabes organizar tus gastos."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/dubai/beneficios/posibilidad-de-quedarte.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/dubai/beneficios/posibilidad-de-quedarte.webp",
                     "title": "4. Posibilidad de quedarte",
                     "description": "Si consigues empleo con un patrocinador, puedes extender tu estadía y optar a una residencia legal en Emiratos Árabes Unidos."
                 },
                 {
-                    "img": "./latinadvisor-nextjs/assets/images/dubai/beneficios/seguridad-calidad-vida.webp",
+                    "img": "/latinadvisor-nextjs/assets/images/dubai/beneficios/seguridad-calidad-vida.webp",
                     "title": "5. Seguridad y calidad de vida",
                     "description": "Dubái está catalogada como una de las ciudades más seguras y modernas del mundo, con transporte eficiente, playas espectaculares y una arquitectura única."
                 }
