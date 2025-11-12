@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "deploy:gh-pages": "NODE_ENV=production npm run build && gh-pages -d out --dotfiles",
     "lint": "eslint"
   },
   "dependencies": {
@@ -15,12 +16,14 @@
     "sass": "^1.93.2"
   },
   "devDependencies": {
+    "@next/env": "^16.0.1",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.0.1",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4",
     "typescript": "^5"
   }

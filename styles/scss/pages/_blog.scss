@@ -1,4 +1,4 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS BLOG ---------- */
 
@@ -9,15 +9,15 @@
         position: relative;
         .card-post {
             h4 {
-                color: variables-custom.$color-blue-grey-1;
+                color: vars.$color-blue-grey-1;
                 font-size: 1.6rem;
-                @media #{variables-custom.$M1440} {
+                @media #{vars.$M1440} {
                     font-size: 1.8vw;
                 }
-                @media #{variables-custom.$M991} {
+                @media #{vars.$M991} {
                     font-size: 4vw;
                 }
-                @media #{variables-custom.$M500} {
+                @media #{vars.$M500} {
                     font-size: 5.5vw;
                 }
             }
@@ -35,17 +35,17 @@
     h1 {
         text-transform: uppercase;
         text-align: center;
-        color: variables-custom.$color-blue-grey-1;
+        color: vars.$color-blue-grey-1;
         font-weight: bold;
         font-style: normal;
         font-size: 3vw;
-        @media #{variables-custom.$M1440} {
+        @media #{vars.$M1440} {
             font-size: 3rem;
         }
-        @media #{variables-custom.$M991} {
+        @media #{vars.$M991} {
             font-size: 6vw;
         }
-        @media #{variables-custom.$M500} {
+        @media #{vars.$M500} {
             font-size: 9vw;
         }
     }
@@ -58,36 +58,36 @@
         h2 {
             font-weight: bold;
             font-style: normal;
-            color: variables-custom.$color-blue-grey-1;
+            color: vars.$color-blue-grey-1;
         }
         h2 {
             font-size: 2.8vw;
-            @media #{variables-custom.$M1440} {
+            @media #{vars.$M1440} {
                 font-size: 2.8vw;
             }
-            @media #{variables-custom.$M991} {
+            @media #{vars.$M991} {
                 font-size: 5vw;
             }
-            @media #{variables-custom.$M500} {
+            @media #{vars.$M500} {
                 font-size: 8vw;
             }
             &.color-blue {
-                color: variables-custom.$color-blue-dark-2;
+                color: vars.$color-blue-dark-2;
             }
         }
         h3 {
             font-size: 2vw;
-            @media #{variables-custom.$M1440} {
+            @media #{vars.$M1440} {
                 font-size: 2rem;
             }
-            @media #{variables-custom.$M991} {
+            @media #{vars.$M991} {
                 font-size: 4vw;
             }
-            @media #{variables-custom.$M500} {
+            @media #{vars.$M500} {
                 font-size: 7vw;
             }
             &.color-blue {
-                color: variables-custom.$color-blue-dark-2;
+                color: vars.$color-blue-dark-2;
             }
         }
         a.btn-cta-post {
@@ -116,10 +116,10 @@
                 }
             }
             .border-left_green {
-                border-left: 5px solid variables-custom.$color-green-1 !important;
+                border-left: 5px solid vars.$color-green-1 !important;
             }
             .border-left_blue {
-                border-left: 5px solid variables-custom.$color-blue-dark-2;
+                border-left: 5px solid vars.$color-blue-dark-2;
             }
         }
         // CSS CONTENEDOR FRASE DESTACADA
@@ -135,10 +135,10 @@
                 }
             }
             .border-left_green {
-                border-left: 5px solid variables-custom.$color-green-1 !important;
+                border-left: 5px solid vars.$color-green-1 !important;
             }
             .border-left_blue {
-                border-left: 5px solid variables-custom.$color-blue-dark-2;
+                border-left: 5px solid vars.$color-blue-dark-2;
             }
         }
         // CSS CONTENEDOR UL
@@ -149,13 +149,13 @@
                     margin-bottom: 10px;
                     position: relative;
                     font-size: 1rem;
-                    @media #{variables-custom.$M1440} {
+                    @media #{vars.$M1440} {
                         font-size: 1.2vw;
                     }
-                    @media #{variables-custom.$M991} {
+                    @media #{vars.$M991} {
                         font-size: 2vw;
                     }
-                    @media #{variables-custom.$M500} {
+                    @media #{vars.$M500} {
                         font-size: 4vw;
                     }
                     &::before {
@@ -167,7 +167,7 @@
                         width: 8px;
                         height: 8px;
                         border-radius: 50%;
-                        background-color: variables-custom.$color-green-1;
+                        background-color: vars.$color-green-1;
                     }
                 }
             }

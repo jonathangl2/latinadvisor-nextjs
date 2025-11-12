@@ -1,4 +1,4 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS CONOCENOS ---------- */
 
@@ -13,16 +13,16 @@
         }
         &-team {
             h3 {
-                color: variables-custom.$color-grey-5;
+                color: vars.$color-grey-5;
                 font-weight: 300;
                 font-style: normal;
-                border-left: 5px solid variables-custom.$color-green-1;
-                @media #{variables-custom.$M991} {
+                border-left: 5px solid vars.$color-green-1;
+                @media #{vars.$M991} {
                     padding: 3rem 1.5rem;
                     border-left: 0px;
-                    border-bottom: 5px solid variables-custom.$color-green-1;
+                    border-bottom: 5px solid vars.$color-green-1;
                 }
-                @media #{variables-custom.$M500} {
+                @media #{vars.$M500} {
                     padding: 2rem 0rem;
                 }
                 span {
@@ -32,7 +32,7 @@
                 }
             }
             // h5 {
-            //     color: variables-custom.$color-grey-6;
+            //     color: vars.$color-grey-6;
             // }
             .team-member {
                 position: relative;
@@ -50,14 +50,14 @@
                     height: 100%;
                     max-height: 35%;
                     min-height: 120px;
-                    background-color: variables-custom.$color-blue-grey-1;
+                    background-color: vars.$color-blue-grey-1;
                     bottom: 0;
                     left: 0;
                     padding: 1rem;
                     text-align: center;
                     z-index: 1;
                     transition: 0.5s all ease-in;
-                    @media #{variables-custom.$M991} {
+                    @media #{vars.$M991} {
                         display: block;
                         max-height: 30%;
                     }
@@ -85,7 +85,7 @@
         &:nth-last-of-type(1){
             &::after {
                 content: '';
-                background-image: url('/assets/images/conocenos/word-familia.png');
+                background-image: url('#{vars.$site-url}/assets/images/conocenos/word-familia.png');
                 background-size: 100%;
                 background-repeat: no-repeat;
                 background-position: 100% 100%;
@@ -108,7 +108,7 @@
         max-width: 90vw !important;
         margin-top: 4rem;
         margin: 4rem auto !important;
-        @media #{variables-custom.$m1280} {
+        @media #{vars.$m1280} {
             max-width: 70vw !important;
         }
         .modal-content {
@@ -134,15 +134,15 @@
     }
     &-description {
         h3 {
-            color: variables-custom.$color-blue-grey-1;
+            color: vars.$color-blue-grey-1;
         }
         hr {
             width: 40px;
-            border-bottom: 2px solid variables-custom.$color-blue-grey-1;
+            border-bottom: 2px solid vars.$color-blue-grey-1;
             margin: 1rem auto;
         }
         a {
-            color: variables-custom.$color-grey-1;
+            color: vars.$color-grey-1;
             i {
                 &:before {
                     top: 5px;

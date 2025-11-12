@@ -472,10 +472,10 @@ let funciones = {
             return `<div class="item px-5 pt-5 d-flex align-items-center">
                 <div class="card card-team">
                     <div class="card-body">
-                        <div class="img-bg" style="background-image: url('/assets/images/conocenos/team/${data?.img_bg}');">
+                        <div class="img-bg" style="background-image: url('https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/conocenos/team/${data?.img_bg}');">
                             <p>${data.description_team}</p>
                         </div>
-                        <div class="img-front" style="background-image: url('/assets/images/conocenos/team/${data.img_front}');"></div>
+                        <div class="img-front" style="background-image: url('https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/conocenos/team/${data.img_front}');"></div>
                     </div>
                     <div class="card-footer">
                         <h3>${data.name_team}</h3>
@@ -485,7 +485,7 @@ let funciones = {
             </div>`;
         };
 
-        fetch('/assets/db/la_home.json').then(response => {
+        fetch('https://jonathangl2.github.io/latinadvisor-nextjs/assets/db/la_home.json').then(response => {
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             return response.json();
         }).then(({ data }) => {
@@ -527,7 +527,7 @@ let funciones = {
             return `<div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="card card-post card-postBlog">
                     <div class="card-body">
-                        <img src="/assets/images/blog/posts/${data.img}" alt="" class="img-fluid mb-3">
+                        <img src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/blog/posts/${data.img}" alt="" class="img-fluid mb-3">
                         <h3 class="mb-3"><strong>${data.title}</strong></h3>
                         <p>${data.descripcion}</p>
                         <a href="blog/${data.link}" class="mt-4 btn btn-sm btn-cta-post">Sigue leyendo <i class="icon icon-arrow-right-green"></i></a>
@@ -537,7 +537,7 @@ let funciones = {
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            fetch('/assets/db/la_home.json').then(response => {
+            fetch('https://jonathangl2.github.io/latinadvisor-nextjs/assets/db/la_home.json').then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
                 }
@@ -571,7 +571,7 @@ let funciones = {
             </div>`;
         };
 
-        fetch('/assets/db/la_home.json').then((response) => response.json()).then(({ data }) => {
+        fetch('https://jonathangl2.github.io/latinadvisor-nextjs/assets/db/la_home.json').then((response) => response.json()).then(({ data }) => {
             
             const section = data.benefits[location];
             if (!section) return console.warn(`No se encontraron beneficios para: ${location}`);

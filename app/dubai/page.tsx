@@ -2,14 +2,15 @@
 import BannerVideo from "@/components/BannerVideo";
 import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
+import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
 
 export default function Dubai() {
 	return (
 		<>
 			<BannerVideo
-				imageSrc="/assets/images/dubai/dubai-estudia-y-trabaja.webp"
-				imageSrcResponsive="/assets/images/dubai/dubai-estudia-y-trabaja-responsive.webp"
+				imageSrc={getAssetUrl("/assets/images/dubai/dubai-estudia-y-trabaja.webp")}
+				imageSrcResponsive="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/dubai/dubai-estudia-y-trabaja-responsive.webp"
 				videoSrc="https://www.youtube.com/embed/ky8n2saU2Wo?si=LWt-AmyzdzyjEDJi"
 				title="Estudia y Trabaja en Dubái"
 				subtitle="Tu Oportunidad de Vida y Crecimiento Profesional"
@@ -121,7 +122,7 @@ export default function Dubai() {
 								
 								</div>
 								<div className="col-12 col-lg-6 information mt-5 mt-lg-0">
-									<img src="/assets/images/dubai/programas-academicos-dubai.webp" alt="" className="img-fluid w-100 mb-4"/>
+									<img src={getAssetUrl("/assets/images/dubai/programas-academicos-dubai.webp")} alt="" className="img-fluid w-100 mb-4"/>
 								</div>
 							</div>
 						</div>
@@ -143,7 +144,7 @@ export default function Dubai() {
 							</div>
 							<div className="row d-flex justify-content-between align-items-center">
 								<div className="col-12 col-lg-6 information order-1 order-lg-0 mt-5 mt-lg-0">
-									<img src="/assets/images/dubai/requisitos-para-tu-aventura-academica-en-dubai.webp" alt="" className="img-fluid w-100 mb-4"/>
+									<img src={getAssetUrl("/assets/images/dubai/requisitos-para-tu-aventura-academica-en-dubai.webp")} alt="" className="img-fluid w-100 mb-4"/>
 								</div>
 								<div className="col-12 col-lg-6 ps-lg-5 information order-0 order-lg-1">
 									<h3 className="mb-4">Lista de Requisitos:</h3>

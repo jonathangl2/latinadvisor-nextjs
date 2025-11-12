@@ -1,5 +1,7 @@
-$url--montserrat: '/assets/fonts/montserrat/';
-$url--olivier: '/assets/fonts/olivier/';
+@use '../variables-custom' as vars;
+
+$url--montserrat: '#{vars.$site-url}/assets/fonts/montserrat/';
+$url--olivier: '#{vars.$site-url}/assets/fonts/olivier/';
 
 /* FONT MONTSERRAT */
 

@@ -1,4 +1,4 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS ESCRIBENOS ---------- */
 
@@ -7,17 +7,17 @@
         .caption_gracias {
             h1 {
                 font-size: 4.5vw !important;
-                @media #{variables-custom.$M991} {
+                @media #{vars.$M991} {
                     font-size: 3rem !important;
                 }
-                @media #{variables-custom.$M500} {
+                @media #{vars.$M500} {
                     font-size: 1.7rem !important;
                 }
             }
         }
         .location {
-            color: variables-custom.$color-grey-1;
-            // border-bottom: 1px solid variables-custom.$color-grey-2;
+            color: vars.$color-grey-1;
+            // border-bottom: 1px solid vars.$color-grey-2;
             &:last-child {
                 border-bottom: 0px;
             }
@@ -31,7 +31,7 @@
         h3,
         h2 {
             line-height: 1;
-            color: variables-custom.$color-blue-dark-1;
+            color: vars.$color-blue-dark-1;
         }
         .btn-back {
             display: inline-flex !important;
@@ -44,16 +44,16 @@
         }
         form {
             .form-control {
-                background-color: variables-custom.$color-grey-light-3;
+                background-color: vars.$color-grey-light-3;
                 background-image: none;
                 border-radius: 20px;
                 border: 0px;
                 padding: 0rem 1rem;
                 margin-bottom: 1rem;
                 height: 45px;
-                color: variables-custom.$color-grey-2;
+                color: vars.$color-grey-2;
                 &::placeholder {
-                    color: variables-custom.$color-grey-2;
+                    color: vars.$color-grey-2;
                 }
             }
             .iti {
@@ -89,7 +89,7 @@
                 background-position: calc(100% - 22px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), calc(100% - 2.5em) 0.5em !important;
                 background-size: 7px 7px, 7px 7px, 1px 1.5em !important;
                 background-repeat: no-repeat !important;
-                color: variables-custom.$color-grey-2;
+                color: vars.$color-grey-2;
                 &:focus,
                 &:hover,
                 &:active {
@@ -105,11 +105,11 @@
             }
             label.form-check-label{
                 a{
-                    color: variables-custom.$color-grey-2 !important;
+                    color: vars.$color-grey-2 !important;
                     &:focus,
                     &:hover,
                     &:active {
-                        color: variables-custom.$color-green-1 !important;   
+                        color: vars.$color-green-1 !important;   
                     }
                 }   
             }
@@ -131,7 +131,7 @@
                 }
 
                 & .custom-control-input:checked~.custom-control-label::after {
-                    background-color: variables-custom.$color-grey-1;
+                    background-color: vars.$color-grey-1;
                     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
                 }
 
@@ -146,7 +146,7 @@
 
                     &::before {
                         border-radius: 0rem;
-                        background-color: variables-custom.$color-grey-light-3;
+                        background-color: vars.$color-grey-light-3;
                         border: 0px;
                         width: 1.3rem;
                         height: 1.3rem;
@@ -176,11 +176,11 @@
 
                     a {
                         font-size: 0.9rem !important;
-                        color: variables-custom.$color-blue-grey-1 !important;
+                        color: vars.$color-blue-grey-1 !important;
                         &:hover,
                         &:focus,
                         &.active {
-                            color: variables-custom.$color-blue-dark-1 !important;
+                            color: vars.$color-blue-dark-1 !important;
                         }
                     }
 
@@ -204,7 +204,7 @@ section#internal_banner {
     &.container-landing-page {
         & .internal_banner_img {
             height: 94vh !important;
-            @media #{variables-custom.$m1024} {
+            @media #{vars.$m1024} {
                 height: 100% !important;
             }
         }
@@ -217,10 +217,10 @@ section#internal_banner {
     &-landing-page,
     &-ebooksGuias {
         margin-top: 3.5rem;
-        @media #{variables-custom.$m1024} {
+        @media #{vars.$m1024} {
             margin-top: 4.1rem;
         }
-        @media #{variables-custom.$m1680} {
+        @media #{vars.$m1680} {
             margin-top: 4.4rem;
         }
         &:after {
@@ -232,13 +232,13 @@ section#internal_banner {
             bottom: 7% !important;
             left: 50%;
             transform: translate(-50%, 0%) !important;
-            @media #{variables-custom.$m1024} {
+            @media #{vars.$m1024} {
                 top: 45%;
                 bottom: auto !important;
                 transform: translate(-50%, -50%) !important;
             }
             img {
-                @media #{variables-custom.$m1024} {
+                @media #{vars.$m1024} {
                     padding: 0rem 4vw 0rem 1vw;
                 }
             }
@@ -247,24 +247,24 @@ section#internal_banner {
                 font-weight: 400;
                 margin-bottom: 1rem;
                 padding: 0rem 2rem;
-                @media #{variables-custom.$m1024} {
+                @media #{vars.$m1024} {
                     font-size: 1.6vw;
                     padding: 0 6vw 0 4vw;
                 }
             }
             .cta-form {
-                @media #{variables-custom.$m1024} {
+                @media #{vars.$m1024} {
                     padding-right: 10vw;
                 }
                 .btn {
-                    @media #{variables-custom.$m1024} {
+                    @media #{vars.$m1024} {
                         padding-top: 0.3rem;
                         padding-bottom: 0.3rem;
                         padding-left: 2rem;
                     }
                     i.icon {
                         &:before {
-                            @media #{variables-custom.$m1024} {
+                            @media #{vars.$m1024} {
                                 width: 42px !important;
                                 max-width: 42px !important;
                                 height: 44px;
@@ -277,7 +277,7 @@ section#internal_banner {
         & .titulo-formulario {
             font-size: 3rem;
             line-height: .8;
-            @media #{variables-custom.$m1024} {
+            @media #{vars.$m1024} {
                 line-height: 1;
                 font-size: 6vw;
             }
@@ -286,7 +286,7 @@ section#internal_banner {
             font-weight: 400;
         }
         & .subtitulo-secundario-formulario {
-            color: variables-custom.$color-grey-6;
+            color: vars.$color-grey-6;
         }
         form {
             button[type="submit"] {
@@ -304,7 +304,7 @@ section#internal_banner {
                 letter-spacing: 0.5px;
                 display: inline-flex !important;
                 align-items: center !important;
-                @media #{variables-custom.$m1024} {
+                @media #{vars.$m1024} {
                     // line-height: 0 !important;
                     padding-top: 0.3rem;
                     padding-bottom: 0.3rem;
@@ -313,7 +313,7 @@ section#internal_banner {
                 i.icon {
                     margin-right: 0rem !important;
                     &:before {
-                        @media #{variables-custom.$m1024} {
+                        @media #{vars.$m1024} {
                             width: 42px !important;
                             max-width: 42px !important;
                             height: 44px;
@@ -325,9 +325,9 @@ section#internal_banner {
                 h2,
                 h3,
                 h4 {
-                    color: variables-custom.$color-blue-grey-1;
+                    color: vars.$color-blue-grey-1;
                     margin-bottom: 1rem;
-                    @media #{variables-custom.$m1024} {
+                    @media #{vars.$m1024} {
                         margin-bottom: 2.5rem;
                     }
                 }
@@ -335,12 +335,12 @@ section#internal_banner {
                     font-weight: bold;
                     font-style: normal;
                     &.text--xl {
-                        @media #{variables-custom.$m1024} {
+                        @media #{vars.$m1024} {
                             font-size: 3.2vw !important;
                         }
                     }
                     &.text--xxl {
-                        @media #{variables-custom.$m1024} {
+                        @media #{vars.$m1024} {
                             font-size: 4.7vw !important;
                         }
                     }
@@ -349,7 +349,7 @@ section#internal_banner {
                 h5,
                 ul {
                     margin-bottom: 1rem;
-                    @media #{variables-custom.$m1024} {
+                    @media #{vars.$m1024} {
                         margin-bottom: 2rem;
                         font-size: 1.4vw !important;
                     }
@@ -360,13 +360,13 @@ section#internal_banner {
                         margin-bottom: 10px;
                         position: relative;
                         font-size: 1.1rem;
-                        @media #{variables-custom.$m1024} {
+                        @media #{vars.$m1024} {
                             font-size: 1.4vw !important;
                         }
-                        @media #{variables-custom.$M991} {
+                        @media #{vars.$M991} {
                             font-size: 2vw;
                         }
-                        @media #{variables-custom.$M500} {
+                        @media #{vars.$M500} {
                             font-size: 4vw;
                         }
                         &::before {
@@ -378,7 +378,7 @@ section#internal_banner {
                             width: 8px;
                             height: 8px;
                             border-radius: 50%;
-                            background-color: variables-custom.$color-green-1;
+                            background-color: vars.$color-green-1;
                         }
                     }
                 }
@@ -395,20 +395,20 @@ section#internal_banner {
             border: 0px !important;
             border-radius: 20px;
             box-shadow: 0px 7px 20px -8px #dfdfe0 !important;
-            @media #{variables-custom.$m992}{
+            @media #{vars.$m992}{
                 margin-top: -4.5vw;
             }
-            @media #{variables-custom.$m1366}{
+            @media #{vars.$m1366}{
                 margin-top: -4vw;
             }
-            @media #{variables-custom.$m1920}{
+            @media #{vars.$m1920}{
                 margin-top: -3vw;
             }
             .card-header{
                 padding: 1rem 1rem;
                 border: 0px !important;
                 margin: 0 !important;
-                background: variables-custom.$color-blue-dark-3 !important;
+                background: vars.$color-blue-dark-3 !important;
                 border-radius: 20px 20px 0 0 !important;
                 box-shadow: none !important;
                 h3,h4,p{
@@ -418,15 +418,15 @@ section#internal_banner {
                     font-size: 0.9rem !important;
                 }
                 .text-green-1{
-                    color: variables-custom.$color-green-1 !important;
+                    color: vars.$color-green-1 !important;
                 }
             }
             .card-body{
                 padding: 2rem 0.4rem;
-                @media #{variables-custom.$m768}{
+                @media #{vars.$m768}{
                     padding: 1rem 1rem;
                 }
-                @media #{variables-custom.$m1680}{
+                @media #{vars.$m1680}{
                     padding: 2rem 2.5rem;
                 }
             }
@@ -441,7 +441,7 @@ section#internal_banner {
         .caption{
             bottom: auto !important;
             padding: 2rem 2rem;
-            @media #{variables-custom.$m1024}{
+            @media #{vars.$m1024}{
                 padding: 0rem;
             } 
             h2{
@@ -453,19 +453,19 @@ section#internal_banner {
                 color: #fff;
                 font-weight: 500 !important;
                 span{
-                    background-color: variables-custom.$color-green-2;
-                    color: variables-custom.$color-blue-dark-4 !important;
+                    background-color: vars.$color-green-2;
+                    color: vars.$color-blue-dark-4 !important;
                     font-weight: normal !important
                 }
                 &.text--xxl {
-                    @media #{variables-custom.$M500} {
+                    @media #{vars.$M500} {
                         line-height: 2;
                         font-size: 5vw;
                     }
                 }
             }
             h5{
-                color: variables-custom.$color-green-2;
+                color: vars.$color-green-2;
                 letter-spacing: 4px;
                 font-weight: 600;
                 padding: 0px !important;
@@ -485,18 +485,18 @@ section#internal_banner {
                 h2,
                 h3,
                 h4 {
-                    color: variables-custom.$color-blue-dark-1;
+                    color: vars.$color-blue-dark-1;
                 }
                 h2 {
                     font-weight: bold;
                     font-style: normal;
                     &.text--xl {
-                        @media #{variables-custom.$m1024} {
+                        @media #{vars.$m1024} {
                             font-size: 3.2vw !important;
                         }
                     }
                     &.text--xxl {
-                        @media #{variables-custom.$m1024} {
+                        @media #{vars.$m1024} {
                             font-size: 4.7vw !important;
                         }
                     }
@@ -505,7 +505,7 @@ section#internal_banner {
                     font-size: 0.95rem !important;
                 }
                 .subtitulo-siglas{
-                    color: variables-custom.$color-blue-dark-2 !important;
+                    color: vars.$color-blue-dark-2 !important;
                     font-weight: 600;
                 }
             }
@@ -518,7 +518,7 @@ section#internal_banner {
                         &:before{
                             max-width: 52px;
                             margin: 0 auto;
-                            @media #{variables-custom.$m1680}{
+                            @media #{vars.$m1680}{
                                 max-width: 60px;
                             }
                         }
@@ -527,16 +527,16 @@ section#internal_banner {
                     h4{
                         font-weight: 400;
                         span{
-                            color: variables-custom.$color-green-2;
+                            color: vars.$color-green-2;
                             font-weight: bold !important;
                             font-size: 2vw;
-                            @media #{variables-custom.$M1440} {
+                            @media #{vars.$M1440} {
                                 font-size: 2rem;
                             }
-                            @media #{variables-custom.$M991} {
+                            @media #{vars.$M991} {
                                 font-size: 4vw;
                             }
-                            @media #{variables-custom.$M500} {
+                            @media #{vars.$M500} {
                                 font-size: 7vw;
                             }
                         }
@@ -549,16 +549,16 @@ section#internal_banner {
                         width: 100%;
                         max-width: 100px;
                         margin: 0 auto;
-                        @media #{variables-custom.$m1440}{
+                        @media #{vars.$m1440}{
                             max-width: 115px;
                         }
-                        @media #{variables-custom.$m1920}{
+                        @media #{vars.$m1920}{
                             max-width: 120px;
                         }
                     }
                 }
                 h4{
-                    color: variables-custom.$color-green-1;
+                    color: vars.$color-green-1;
                     font-weight: 600;
                 }
             }
@@ -566,7 +566,7 @@ section#internal_banner {
                 text-align: center;
                 border-bottom: 2px solid #fff;
                 h2{
-                    color: variables-custom.$color-blue-dark-3;
+                    color: vars.$color-blue-dark-3;
                     font-weight: 800;
                 }
                 h4 {
@@ -577,7 +577,7 @@ section#internal_banner {
                 &:nth-last-child(1){
                     border-bottom: 0px;
                 }
-                @media #{variables-custom.$m992}{
+                @media #{vars.$m992}{
                     border-bottom: 0px;
                     border-right: 2px solid #fff;
                     &:nth-last-child(1){
@@ -592,7 +592,7 @@ section#internal_banner {
             & .titulo-formulario {
                 font-size: 2.8rem;
                 line-height: .8;
-                @media #{variables-custom.$m1024} {
+                @media #{vars.$m1024} {
                     line-height: 0.8;
                     font-size: 5.5vw;
                 }
@@ -600,16 +600,16 @@ section#internal_banner {
         }
         &#container-magic-offer-metricas{
             .container{
-                @media #{variables-custom.$m1366} {
+                @media #{vars.$m1366} {
                     max-width: 1366px;
                 }
-                @media #{variables-custom.$m1440} {
+                @media #{vars.$m1440} {
                     max-width: 1366px;
                 }
-                @media #{variables-custom.$m1680} {
+                @media #{vars.$m1680} {
                     max-width: 1440px;
                 }
-                @media #{variables-custom.$m1920} {
+                @media #{vars.$m1920} {
                     max-width: 1680px;
                 }
             }
@@ -622,10 +622,10 @@ section#internal_banner {
             min-height: 450px;
             object-fit: cover;
             width: 100%;
-            @media #{variables-custom.$m768}{
+            @media #{vars.$m768}{
                 height: 75vh;
             }
-            @media #{variables-custom.$m1024}{
+            @media #{vars.$m1024}{
                 height: auto;
                 max-height: 650px;
                 object-position: bottom;
@@ -638,7 +638,7 @@ section#internal_banner {
                 padding: 2rem 1rem;
                 border: 0px !important;
                 margin: 0 !important;
-                background: variables-custom.$color-blue-dark-3 !important;
+                background: vars.$color-blue-dark-3 !important;
                 border-radius: 20px 20px 0 0 !important;
                 box-shadow: none !important;
                 .titulo-formulario,
@@ -648,25 +648,25 @@ section#internal_banner {
             }
             .card-body{
                 padding: 2rem 0.4rem;
-                @media #{variables-custom.$m768}{
+                @media #{vars.$m768}{
                     padding: 1rem 2rem;
                 }
-                @media #{variables-custom.$m1680}{
+                @media #{vars.$m1680}{
                     padding: 2rem 4rem;
                 }
             }
         }
         &#container-magic-offer-beneficios{
-            @media #{variables-custom.$m992}{
+            @media #{vars.$m992}{
                 margin-top: -20vw;
             }
-            @media #{variables-custom.$m1366}{
+            @media #{vars.$m1366}{
                 margin-top: -16vw;
             }
-            @media #{variables-custom.$m1440}{
+            @media #{vars.$m1440}{
                 margin-top: -14vw;
             }
-            @media #{variables-custom.$m1920}{
+            @media #{vars.$m1920}{
                 margin-top: -12vw;
             }
         }

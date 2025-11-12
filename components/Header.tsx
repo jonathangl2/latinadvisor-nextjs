@@ -10,7 +10,7 @@ export default function Header() {
         
         <Link className="navbar-brand py-0 px-lg-4 d-flex align-items-center" href="/">
           <img 
-            src="/assets/images/Logo-color.svg" 
+            src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/Logo-color.svg" 
             className="logo-image img-fluid" 
             alt="LatinAdvisor Logo"
           />

@@ -1,4 +1,4 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS MIGRACION ---------- */
 
@@ -11,10 +11,10 @@ header{
                         text-transform: uppercase !important;
                         font-size: 13px !important;
                         padding: 1.8rem 2rem !important;
-                        @media #{variables-custom.$M1440} {
+                        @media #{vars.$M1440} {
                             padding: 1.5rem 1.5rem !important;
                         }
-                        @media #{variables-custom.$M1024} {
+                        @media #{vars.$M1024} {
                             padding: 1rem;
                             margin: 0px;
                         }
@@ -65,7 +65,7 @@ header{
                     .navbar-nav{
                         .nav-item{
                             .nav-link{
-                                color: variables-custom.$color-blue-dark-1 !important;
+                                color: vars.$color-blue-dark-1 !important;
                                 font-size: 0.85rem !important;
                                 font-weight: 500 !important;
                                 padding: 1rem 1.5rem !important;
@@ -91,12 +91,12 @@ header{
                                         background-color: transparent !important;
                                         font-size: 13px !important;
                                         text-transform: uppercase;
-                                        color: variables-custom.$color-grey-2 !important;
+                                        color: vars.$color-grey-2 !important;
                                     }
                                 }
                                 .accordion-body{
                                     &_url{
-                                        color: variables-custom.$color-grey-2;
+                                        color: vars.$color-grey-2;
                                         text-decoration: none !important;
                                         font-size: 0.8rem;
                                         margin-bottom: 0.5rem !important;
@@ -144,7 +144,7 @@ header{
                                         text-align: left;
                                     }
                                     h5{
-                                        color: variables-custom.$color-blue-dark-1 !important;
+                                        color: vars.$color-blue-dark-1 !important;
                                         font-size: 0.85rem;
                                         font-weight: 500;
                                         display: flex;   
@@ -153,7 +153,7 @@ header{
                                         text-transform: uppercase;         
                                     }
                                     p{
-                                        color: variables-custom.$color-grey-2 !important;
+                                        color: vars.$color-grey-2 !important;
                                         font-size: 0.8rem;
                                         text-transform: none !important;
                                     }
@@ -162,7 +162,7 @@ header{
                                     &:active,
                                     &.active{
                                         h5{
-                                            color: variables-custom.$color-green-1 !important;
+                                            color: vars.$color-green-1 !important;
                                         }
                                     }   
                                 }
@@ -179,10 +179,10 @@ header{
                         text-transform: uppercase !important;
                         font-size: 14px !important;
                         padding: 2rem 2rem !important;
-                        @media #{variables-custom.$M1440} {
+                        @media #{vars.$M1440} {
                             padding: 1rem !important;
                         }
-                        @media #{variables-custom.$M1024} {
+                        @media #{vars.$M1024} {
                             padding: 1rem;
                             margin: 0px;
                         }
@@ -201,7 +201,7 @@ header{
                         .dropdown-item {
                             margin: 0;
                             border-radius: 0px;
-                            color: variables-custom.$color-grey-3;
+                            color: vars.$color-grey-3;
                             text-transform: uppercase;
                             font-size: 14px;      
                             padding: 1rem;         
@@ -210,7 +210,7 @@ header{
                             &:focus,
                             &:active,
                             &.active {
-                                background-color: variables-custom.$color-grey-light-3;
+                                background-color: vars.$color-grey-light-3;
                                 box-shadow: none;
                             }
                         }
@@ -234,7 +234,7 @@ header{
         // CALCULATOR
         &_calculatorTitle{
             h2{
-                color: variables-custom.$color-blue-grey-2;
+                color: vars.$color-blue-grey-2;
                 font-size: 3rem;
                 font-weight: 500 !important;
             }
@@ -250,7 +250,7 @@ header{
                 object-position: center;
             }
             h4{
-                color: variables-custom.$color-blue-grey-3;
+                color: vars.$color-blue-grey-3;
                 font-weight: 500;
             }
             button{
@@ -287,7 +287,7 @@ header{
                     }
 
                     & .custom-control-input:checked~.custom-control-label::after {
-                        background-color: variables-custom.$color-grey-1;
+                        background-color: vars.$color-grey-1;
                         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26l2.974 2.99L8 2.193z'/%3e%3c/svg%3e");
                     }
 
@@ -302,7 +302,7 @@ header{
 
                         &::before {
                             border-radius: 0rem;
-                            background-color: variables-custom.$color-grey-light-3;
+                            background-color: vars.$color-grey-light-3;
                             border: 0px;
                             width: 1.3rem;
                             height: 1.3rem;
@@ -332,11 +332,11 @@ header{
 
                         a {
                             font-size: 0.9rem !important;
-                            color: variables-custom.$color-blue-grey-1 !important;
+                            color: vars.$color-blue-grey-1 !important;
                             &:hover,
                             &:focus,
                             &.active {
-                                color: variables-custom.$color-blue-dark-1 !important;
+                                color: vars.$color-blue-dark-1 !important;
                             }
                         }
 
@@ -356,7 +356,7 @@ header{
                                 content: '';
                                 width: 5px;
                                 height: 5px;
-                                background-color: variables-custom.$color-grey-1;
+                                background-color: vars.$color-grey-1;
                                 border-radius: 50%;
                                 display: block;
                                 position: absolute;
@@ -370,7 +370,7 @@ header{
                     & thead{
                         tr{
                             th{
-                                color: variables-custom.$color-grey-2 !important;
+                                color: vars.$color-grey-2 !important;
                             }
                         }
                     }
@@ -406,25 +406,25 @@ header{
                     letter-spacing: 0.5px;
                     display: inline-flex !important;
                     align-items: center !important;
-                    color: variables-custom.$color-green-1 !important;
+                    color: vars.$color-green-1 !important;
                 }
             }
         }
         &_calculatorSummary{
             h4{
-                color: variables-custom.$color-blue-dark-2 !important;
+                color: vars.$color-blue-dark-2 !important;
                 font-weight: 500;
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
-                @media #{variables-custom.$M768}{
+                @media #{vars.$M768}{
                     justify-content: center;
                 }
                 span{
                     margin-left: 2rem;
                     font-weight: 600;
                     font-size: 4vw;
-                    @media #{variables-custom.$M768}{
+                    @media #{vars.$M768}{
                         margin-left: 1rem;
                         font-size: 3rem;
                     }
@@ -432,13 +432,13 @@ header{
             }
             .btn-resetCalculator{
                 font-size: 1rem !important;
-                color: variables-custom.$color-white;
+                color: vars.$color-white;
             }
         }
         // AGENDAMIENTO CITA
         &_agendarCitaTitle{
             h2{
-                color: variables-custom.$color-blue-grey-2;
+                color: vars.$color-blue-grey-2;
                 font-size: 2rem;
                 font-weight: 500 !important;
             }
@@ -448,7 +448,7 @@ header{
                 position: relative;
                 padding: 0.8rem 2rem 1.5rem 2rem !important;
                 box-shadow: 2px 0px 5px 1px rgba(0,0,0,0.04%);
-                background-color: variables-custom.$color-white;
+                background-color: vars.$color-white;
                 border-radius: 15px;
                 width: 100%;
                 max-width: 70%;
@@ -457,14 +457,14 @@ header{
                 justify-content: space-between;
                 button{
                     background-color: transparent !important;
-                    color: variables-custom.$color-blue-grey-2;
+                    color: vars.$color-blue-grey-2;
                     text-align: center;
                     font-weight: 300;
                     position: relative;
                     z-index: 2;
                     span{
-                        background-color: variables-custom.$color-grey-light-3;
-                        color: variables-custom.$color-white !important;
+                        background-color: vars.$color-grey-light-3;
+                        color: vars.$color-white !important;
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
@@ -482,7 +482,7 @@ header{
                     &.verified{
                         font-weight: 500;
                         span{
-                            background-color: variables-custom.$color-blue-grey-2;
+                            background-color: vars.$color-blue-grey-2;
                         }
                     }
                 }
@@ -490,7 +490,7 @@ header{
                     content: '';
                     width: 75%;
                     height: 4px;
-                    background-color: variables-custom.$color-grey-light-3;
+                    background-color: vars.$color-grey-light-3;
                     display: block;
                     position: absolute;
                     left: 50%;
@@ -501,7 +501,7 @@ header{
             }
             .btn-nextStepCita{
                 font-size: 1rem !important;
-                color: variables-custom.$color-white;
+                color: vars.$color-white;
             }
         }
     }
@@ -518,18 +518,18 @@ header{
                 font-weight: 600;
                 text-align: left;
                 text-transform: uppercase;
-                color: variables-custom.$color-blue-dark-5 !important;
+                color: vars.$color-blue-dark-5 !important;
                 &.active,
                 &:focus,
                 &:hover{
-                    background-color: variables-custom.$color-green-2;
+                    background-color: vars.$color-green-2;
                 }
             }
         }
     }
     &-tabsMenu{
         &_title{
-            color: variables-custom.$color-blue-dark-1 !important;
+            color: vars.$color-blue-dark-1 !important;
             font-size: 0.7;
             text-transform: uppercase;
             text-align: left;
@@ -564,7 +564,7 @@ header{
                     text-align: left;
                 }
                 h5{
-                    color: variables-custom.$color-blue-dark-1 !important;
+                    color: vars.$color-blue-dark-1 !important;
                     font-size: 0.85rem;
                     font-weight: 500;
                     display: flex;   
@@ -573,7 +573,7 @@ header{
                     text-transform: uppercase;         
                 }
                 p{
-                    color: variables-custom.$color-grey-2 !important;
+                    color: vars.$color-grey-2 !important;
                     font-size: 0.8rem;
                     text-transform: none !important;
                 }
@@ -585,7 +585,7 @@ header{
                     align-items: center;
                     justify-content: center;
                     &::before {
-                        content: url(/assets/images/icons/arrow-right-blue.svg);
+                        content: url(#{vars.$site-url}/assets/images/icons/arrow-right-blue.svg);
                         display: block;
                         position: absolute;
                         z-index: 9;
@@ -602,24 +602,24 @@ header{
                 &:active,
                 &.active{
                     h5{
-                        color: variables-custom.$color-green-1 !important;
+                        color: vars.$color-green-1 !important;
                     }
                     i{
                         &::before{
-                            content: url(/assets/images/icons/arrow-right-green.svg);
+                            content: url(#{vars.$site-url}/assets/images/icons/arrow-right-green.svg);
                         }
                     }
                 }   
             }
         }
         .tab-content{
-            background-color: variables-custom.$color-grey-bg-tabMenu;
+            background-color: vars.$color-grey-bg-tabMenu;
             right: 0;
             .tab-pane{
                 padding: 1.2rem 1rem;
                 height: 100%;
                 .tab-pane_url{
-                    color: variables-custom.$color-grey-2;
+                    color: vars.$color-grey-2;
                     text-decoration: none !important;
                     font-size: 0.8rem;
                     margin-bottom: 0.8rem !important;
@@ -646,13 +646,13 @@ header{
 section#contact-us_cita{
     width: 100%;
     position: relative;
-    background-color: variables-custom.$color-green-1;
-    background-image: url('/assets/images/migracion/banner-agenda-cita.png');
+    background-color: vars.$color-green-1;
+    background-image: url('#{vars.$site-url}/assets/images/migracion/banner-agenda-cita.png');
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     .contact-us-label {
-        @media #{variables-custom.$M1440} {
+        @media #{vars.$M1440} {
             padding-left: 4vw;
         }
         h2,h4,h5,p {
@@ -666,7 +666,7 @@ section#contact-us_cita{
             font-weight: 600;
             font-style: normal;
             font-size: 3vw;
-            @media #{variables-custom.$M991} {
+            @media #{vars.$M991} {
                 font-size: 2rem;
                 line-height: 1;
             }
@@ -680,12 +680,12 @@ section#contact-us_cita{
         }
     }
     .contact-us-cta {
-        @media #{variables-custom.$M1440} {
+        @media #{vars.$M1440} {
             padding-left: 4vw;
         }
         a.btn-blue-dark {
             font-family: 'Montserrat', sans-serif !important;
-            color: variables-custom.$color-white;
+            color: vars.$color-white;
             font-size: 1rem !important;
             font-weight: 500 !important;
             text-transform: uppercase !important;
@@ -696,9 +696,9 @@ section#contact-us_cita{
 section#contact-us_migracion {
     width: 100%;
     position: relative;
-    background-color: variables-custom.$color-green-1;
+    background-color: vars.$color-green-1;
     .contact-us-label {
-        @media #{variables-custom.$M1440} {
+        @media #{vars.$M1440} {
             padding-left: 4vw;
         }
         h2,h4,h5,p {
@@ -712,7 +712,7 @@ section#contact-us_migracion {
             font-weight: 600;
             font-style: normal;
             font-size: 3vw;
-            @media #{variables-custom.$M991} {
+            @media #{vars.$M991} {
                 font-size: 2rem;
                 line-height: 1;
             }
@@ -728,7 +728,7 @@ section#contact-us_migracion {
     .contact-us-cta {
         a.btn-border-blue-dark {
             font-family: 'Montserrat', sans-serif !important;
-            color: variables-custom.$color-blue-dark-2 !important;
+            color: vars.$color-blue-dark-2 !important;
             font-size: 1rem !important;
             font-weight: 500 !important;
             text-transform: uppercase !important;

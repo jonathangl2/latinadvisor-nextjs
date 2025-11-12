@@ -16,10 +16,10 @@ export default function Home() {
         <div className="row">
           <div className="col-12 px-0">
             <video autoPlay muted loop id="bgVideo" className="d-block d-md-none">
-              <source src="/assets/documents/video-vertical-bg.mp4" type="video/mp4" />
+              <source src="./assets/documents/video-vertical-bg.mp4" type="video/mp4" />
             </video>
             <video autoPlay muted loop id="bgVideo" className="d-none d-md-block">
-              <source src="/assets/documents/video-horizontal-bg.mp4" type="video/mp4" />
+              <source src="./assets/documents/video-horizontal-bg.mp4" type="video/mp4" />
             </video>
           </div>
           <div className="caption">
@@ -37,7 +37,7 @@ export default function Home() {
                 >
                   <div className="card card-ctaDestination">
                     <img
-                      src="/assets/images/home/estudiar-en-australia.webp"
+                      src="./assets/images/home/estudiar-en-australia.webp"
                       alt="Estudiar en Australia"
                     />
                     <h5 className="card-ctaDestination_title">Estudiar en Australia</h5>
@@ -52,7 +52,7 @@ export default function Home() {
                 >
                   <div className="card card-ctaDestination">
                     <img
-                      src="/assets/images/home/estudiar-en-dubai.webp"
+                      src="./assets/images/home/estudiar-en-dubai.webp"
                       alt="Estudiar en Dubái"
                     />
                     <h5 className="card-ctaDestination_title">Estudiar en Dubái</h5>
@@ -74,15 +74,15 @@ export default function Home() {
 
             {[
               {
-                img: "/assets/images/home/renovacion-visa-de-estudios.webp",
+                img: "./assets/images/home/renovacion-visa-de-estudios.webp",
                 title: "Renovación de visa de estudio",
               },
               {
-                img: "/assets/images/home/procesos-migratorios-otras-visas.webp",
+                img: "./assets/images/home/procesos-migratorios-otras-visas.webp",
                 title: "Procesos Migratorios y otras visas",
               },
               {
-                img: "/assets/images/home/work-and-holiday.webp",
+                img: "./assets/images/home/work-and-holiday.webp",
                 title: "Work and Holiday",
               },
             ].map((item, i) => (

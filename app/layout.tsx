@@ -2,9 +2,11 @@ import type { Metadata } from 'next'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import Script from 'next/script'
+import { getAssetUrl } from '@/lib/url'
 import './globals.css'
 import "@/styles/scss/main.scss";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 export const metadata: Metadata = {
   title: 'Inicio | Latinadvisor | Estamos construyendo sueños',
@@ -23,10 +25,10 @@ export default function RootLayout({
       <head>
 
         {/* Tus CSS locales desde public */}
-        <link rel="stylesheet" href="/assets/css/owlcarousel/owl.carousel.min.css" />
-        <link rel="stylesheet" href="/assets/css/owlcarousel/owl.theme.default.min.css" />
-        <link rel="stylesheet" href="/assets/css/nice-select/nice-select.css" />
-        <link rel="stylesheet" href="/assets/css/intl-tel-input/intlTelInput.css" />
+        <link rel="stylesheet" href={getAssetUrl("assets/css/owlcarousel/owl.carousel.min.css")} />
+        <link rel="stylesheet" href={getAssetUrl("assets/css/owlcarousel/owl.theme.default.min.css")} />
+        <link rel="stylesheet" href={getAssetUrl("assets/css/nice-select/nice-select.css")} />
+        <link rel="stylesheet" href={getAssetUrl("assets/css/intl-tel-input/intlTelInput.css")} />
 
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
@@ -122,16 +124,16 @@ export default function RootLayout({
 
         <Script async defer crossOrigin="anonymous" src="https://www-cdn.icef.com/scripts/iasbadgeid.js"></Script>
 
-        <Script src="/assets/js/jquery-3.7.1.min.js" strategy="beforeInteractive" />
+        <Script src={getAssetUrl("/assets/js/jquery-3.7.1.min.js")} strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" strategy="beforeInteractive" />
         <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/moment.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/owlcarousel/owl.carousel.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/nice-select/jquery.nice-select.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/intl-tel-input/intlTelInput.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/intl-tel-input/intlTelInput-jquery.min.js" strategy="beforeInteractive" />
-        <Script src="/assets/js/latinadvisor_functions.js?v=3.2.3" strategy="afterInteractive"  />
-        <Script src="/assets/js/latinadvisor_functionsUpdate.js?v=1.5.1" strategy="afterInteractive" />
+        <Script src={getAssetUrl("/assets/js/moment.min.js")} strategy="beforeInteractive" />
+        <Script src={getAssetUrl("/assets/js/owlcarousel/owl.carousel.min.js")} strategy="beforeInteractive" />
+        <Script src={getAssetUrl("/assets/js/nice-select/jquery.nice-select.min.js")} strategy="beforeInteractive" />
+        <Script src={getAssetUrl("/assets/js/intl-tel-input/intlTelInput.min.js")} strategy="beforeInteractive" />
+        <Script src={getAssetUrl("/assets/js/intl-tel-input/intlTelInput-jquery.min.js")} strategy="beforeInteractive" />
+        <Script src={getAssetUrl("/assets/js/latinadvisor_functions.js?v=3.2.3")} strategy="afterInteractive"  />
+        <Script src={getAssetUrl("/assets/js/latinadvisor_functionsUpdate.js?v=1.5.1")} strategy="afterInteractive" />
       </body>
     </html>
   )

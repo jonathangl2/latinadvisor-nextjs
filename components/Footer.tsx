@@ -55,7 +55,7 @@ export default function Footer() {
               <div className="col-12">
                 <Link href="/" className="d-flex justify-content-center">
                   <img
-                    src="/assets/images/Logo-color-blanco.svg"
+                    src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/Logo-color-blanco.svg"
                     alt="Latinadvisor"
                     className="logo-image"
                   />
@@ -209,7 +209,7 @@ export default function Footer() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-12 col-md-6 d-none d-lg-inline container_modalsuscribe_img px-0">
                     <img
-                      src="/assets/images/koala_newsletter.png"
+                      src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/koala_newsletter.png"
                       alt="Newsletter"
                       className="img-fluid w-100"
                     />

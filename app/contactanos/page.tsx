@@ -1,5 +1,6 @@
 import BannerInterno from "@/components/BannerInterno";
 import FormEmbed from "@/components/FormEmbed";
+import { getAssetUrl } from "@/lib/url";
 import Image from "next/image";
 import Script from "next/script";
 
@@ -7,7 +8,7 @@ export default function ContactoPage() {
   return (
     <>
       <BannerInterno
-        imageSrc="/assets/images/escribenos/banner-escribenos.png"
+        imageSrc={getAssetUrl("/assets/images/escribenos/banner-escribenos.png")}
         title="CONTÁCTANOS"
         className="english-course"
       />

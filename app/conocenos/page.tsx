@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import BannerInterno from "@/components/BannerInterno";
+import { getAssetUrl } from "@/lib/url";
 
 export default function ConocenosPage() {
   useEffect(() => {
@@ -20,7 +21,7 @@ export default function ConocenosPage() {
   return (
     <>
       <BannerInterno
-        imageSrc="/assets/images/conocenos/banner-conocenos.png"
+        imageSrc={getAssetUrl("/assets/images/conocenos/banner-conocenos.png")}
         title="QUIÉNES SOMOS"
         className="english-course"
       />

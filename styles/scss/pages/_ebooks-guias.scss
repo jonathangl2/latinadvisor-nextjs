@@ -1,4 +1,4 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS EBOOKS Y GUIAS ---------- */
 
@@ -11,7 +11,7 @@
         &-details{
 
             h2{
-                color: variables-custom.$color-blue-dark-2;
+                color: vars.$color-blue-dark-2;
                 font-weight: bold;
                 font-style: normal;
             }
@@ -20,22 +20,22 @@
                 padding: 1rem 2rem;
                 margin-top: 1rem;
                 margin-bottom: -5rem;
-                @media #{variables-custom.$M991} {
+                @media #{vars.$M991} {
                     margin: 1rem auto;
                 }
             }
 
             h1.title-detail{
                 font-style: normal;
-                color: variables-custom.$color-blue-dark-2;
+                color: vars.$color-blue-dark-2;
                 line-height: 0.95;
                 span{
                     font-weight: 900;
                     font-size: 5rem;
-                    @media #{variables-custom.$M991} {
+                    @media #{vars.$M991} {
                         font-size: 3.5rem;
                     }
-                    @media #{variables-custom.$M500} {
+                    @media #{vars.$M500} {
                         font-size: 3rem;
                     }
                 }
@@ -44,7 +44,7 @@
 
         &-descriptionForm{
             h2{
-                color: variables-custom.$color-blue-dark-2;
+                color: vars.$color-blue-dark-2;
                 span{
                     font-weight: 900;
                 }
@@ -53,15 +53,15 @@
 
         .card-post {
             h4 {
-                color: variables-custom.$color-blue-grey-1;
+                color: vars.$color-blue-grey-1;
                 font-size: 1.6rem;
-                @media #{variables-custom.$M1440} {
+                @media #{vars.$M1440} {
                     font-size: 1.8vw;
                 }
-                @media #{variables-custom.$M991} {
+                @media #{vars.$M991} {
                     font-size: 4vw;
                 }
-                @media #{variables-custom.$M500} {
+                @media #{vars.$M500} {
                     font-size: 5.5vw;
                 }
             }
@@ -91,20 +91,20 @@
             border: 0px !important;
             border-radius: 20px;
             box-shadow: 0px 7px 20px -8px #dfdfe0 !important;
-            @media #{variables-custom.$m992}{
+            @media #{vars.$m992}{
                 margin-top: -12vw;
             }
-            @media #{variables-custom.$m1366}{
+            @media #{vars.$m1366}{
                 margin-top: -10vw;
             }
-            @media #{variables-custom.$m1920}{
+            @media #{vars.$m1920}{
                 margin-top: -9vw;
             }
             .card-header{
                 padding: 1rem 1rem;
                 border: 0px !important;
                 margin: 0 !important;
-                background: variables-custom.$color-blue-dark-3 !important;
+                background: vars.$color-blue-dark-3 !important;
                 border-radius: 20px 20px 0 0 !important;
                 box-shadow: none !important;
                 h2{
@@ -113,10 +113,10 @@
             }
             .card-body{
                 padding: 2rem 1rem;
-                @media #{variables-custom.$m768}{
+                @media #{vars.$m768}{
                     padding: 1rem 2rem;
                 }
-                @media #{variables-custom.$m1680}{
+                @media #{vars.$m1680}{
                     padding: 2rem 4rem;
                 }
             }
@@ -128,7 +128,7 @@
 #container-ebooksGuias-form{
     &::before{
         content: '';
-        background-image: url('/assets/images/ebooks-guias/icon-plane.svg');
+        background-image: url('#{vars.$site-url}/assets/images/ebooks-guias/icon-plane.svg');
         background-size: 100%;
         background-repeat: no-repeat;
         background-position: 0% 0%;
@@ -142,13 +142,13 @@
         min-height: 350px;
         top: -7rem;
 
-        @media #{variables-custom.$m992}{
+        @media #{vars.$m992}{
             width: 35vw;
             min-height: 500px;
             top: -11rem;
         }
 
-        @media #{variables-custom.$m1440}{
+        @media #{vars.$m1440}{
             width: 33vw;
             min-height: 500px;
             top: -15rem;

@@ -1,11 +1,11 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS DONDE ESTUDIAR ---------- */
 
 .container {
     &-australia {
         h4 {
-            // color: variables-custom.$color-grey-6;
+            // color: vars.$color-grey-6;
         }
         &-tabs {
             display: flex;
@@ -14,20 +14,20 @@
             .nav-item {
                 .nav-link {
                     width: 100%;
-                    color: variables-custom.$color-grey-6;
-                    border-bottom: 1px solid variables-custom.$color-grey-5;
+                    color: vars.$color-grey-6;
+                    border-bottom: 1px solid vars.$color-grey-5;
                     padding: 1rem 4rem;
                     position: relative;
                     font-size: 1.8rem;
                     text-align: center;
                     transition: .5s all ease;
-                    @media #{variables-custom.$M1440} {
+                    @media #{vars.$M1440} {
                         font-size: 2vw;
                     }
-                    @media #{variables-custom.$M991} {
+                    @media #{vars.$M991} {
                         font-size: 4vw;
                     }
-                    @media #{variables-custom.$M500} {
+                    @media #{vars.$M500} {
                         font-size: 6vw;
                     }
                     &:hover,
@@ -39,7 +39,7 @@
                         &:after {
                             content: '';
                             position: absolute;
-                            background-color: variables-custom.$color-green-1;
+                            background-color: vars.$color-green-1;
                             left: 0;
                             width: 100%;
                             height: 5px;
@@ -62,7 +62,7 @@
                 h2,
                 h3,
                 h4 {
-                    color: variables-custom.$color-blue-grey-1;
+                    color: vars.$color-blue-grey-1;
                     margin-bottom: 2.5rem;
                 }
                 h3 {
@@ -73,7 +73,7 @@
                 h5,
                 ul {
                     margin-bottom: 2rem;
-                    // color: variables-custom.$color-grey-6;
+                    // color: vars.$color-grey-6;
                 }
                 ul {
                     li {
@@ -81,13 +81,13 @@
                         margin-bottom: 10px;
                         position: relative;
                         font-size: 1.1rem;
-                        @media #{variables-custom.$M1440} {
+                        @media #{vars.$M1440} {
                             font-size: 1.2vw;
                         }
-                        @media #{variables-custom.$M991} {
+                        @media #{vars.$M991} {
                             font-size: 2vw;
                         }
-                        @media #{variables-custom.$M500} {
+                        @media #{vars.$M500} {
                             font-size: 4vw;
                         }
                         &::before {
@@ -99,7 +99,7 @@
                             width: 8px;
                             height: 8px;
                             border-radius: 50%;
-                            background-color: variables-custom.$color-green-1;
+                            background-color: vars.$color-green-1;
                         }
                     }
                 }
@@ -116,10 +116,10 @@
                         left: 50%;
                         bottom: 0;
                         transform: translateX(-50%);
-                        background-image: url(/assets/images/australia/avion-lineas.svg);
+                        background-image: url(#{vars.$site-url}/assets/images/australia/avion-lineas.svg);
                         background-repeat: no-repeat;
                         z-index: 2;
-                        @media #{variables-custom.$m768} {
+                        @media #{vars.$m768} {
                             position: absolute;
                             width: 100%;
                             height: 80%;
@@ -127,28 +127,28 @@
                             background-position: center;
                             left: 50%;
                         }
-                        @media #{variables-custom.$m992} {
+                        @media #{vars.$m992} {
                             height: 100%;
                         }
                     }
                     h2,
                     h3 {
-                        @media #{variables-custom.$m768} {
+                        @media #{vars.$m768} {
                             padding-right: 3vw;
                         }
                     }
                     h2 {
                         font-size: 7rem;
-                        @media #{variables-custom.$m992} {
+                        @media #{vars.$m992} {
                             font-size: 10.5vw;
                         }
                     }
                     h3 {
                         font-size: 3rem;
-                        @media #{variables-custom.$m375} {
+                        @media #{vars.$m375} {
                             font-size: 3.5rem;
                         }
-                        @media #{variables-custom.$m992} {
+                        @media #{vars.$m992} {
                             font-size: 5.5vw;
                         }
                     }
@@ -164,10 +164,10 @@
                 &::before {
                     max-width: 10vw;
                     margin: 0 auto;
-                    @media #{variables-custom.$M991} {
+                    @media #{vars.$M991} {
                         max-width: 30vw;
                     }
-                    @media #{variables-custom.$M500} {
+                    @media #{vars.$M500} {
                         max-width: 40vw;
                     }
                 }

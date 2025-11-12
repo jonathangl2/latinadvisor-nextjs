@@ -1,3 +1,8 @@
+@use 'env' as *;
+
+$base-path: $basePath;
+$site-url: $siteUrl;
+
 /*COLORS*/
 
 $color-white: #fff;
@@ -194,7 +199,7 @@ $m375: "screen and (min-width : 375px)" !default;
         .icon-arrow-right-white,
         .icon-arrow-left-white {
             &:before {
-                content: url(/assets/images/icons/arrow-right-blue.svg);
+                content: url(#{$site-url}/assets/images/icons/arrow-right-blue.svg);
             }
         }
     }
@@ -241,13 +246,13 @@ $m375: "screen and (min-width : 375px)" !default;
         .icon-arrow-right-white,
         .icon-arrow-left-white {
             &:before {
-                content: url(/assets/images/icons/arrow-right-green.svg);
+                content: url(#{$site-url}/assets/images/icons/arrow-right-green.svg);
             }
         }
         .icon-arrow-right-blue,
         .icon-arrow-left-blue {
             &:before {
-                content: url(/assets/images/icons/arrow-right-green.svg);
+                content: url(#{$site-url}/assets/images/icons/arrow-right-green.svg);
             }
         }
     }

@@ -2,6 +2,7 @@
 import BannerVideo from "@/components/BannerVideo";
 import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
+import { getAssetUrl } from "@/lib/url";
 
 import Link from "next/link";
 import Script from "next/script";
@@ -10,8 +11,8 @@ export default function Australia() {
 	return (
 		<>
 			<BannerVideo
-				imageSrc="/assets/images/australia/australia-vive-estudia-y-trabaja.webp"
-				imageSrcResponsive="/assets/images/australia/australia-vive-estudia-y-trabaja-responsive.webp"
+				imageSrc={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja.webp")}
+				imageSrcResponsive={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja-responsive.webp")}
 				videoSrc="https://www.youtube.com/embed/sWrccL-TBBI?si=yyw_93IOSsITT0ix"
 				title="Vive, estudia y trabaja en el extranjero"
 				subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -39,8 +40,8 @@ export default function Australia() {
 						<div className="col-12 col-lg-10 my-4">
 							<div className="row d-flex justify-content-between align-items-center">
 								<div className="col-12 col-lg-6 information order-1 order-lg-0 pt-5 py-lg-0">
-									<img src="/assets/images/australia/cursos-de-ingles-australia.webp" alt="" className="img-fluid w-100 mb-lg-4"/>
-									<img src="/assets/images/australia/cursos-vocacionales-australia.webp" alt="" className="img-fluid w-100 d-none d-lg-block"/>
+									<img src={getAssetUrl("/assets/images/australia/cursos-de-ingles-australia.webp")} alt="" className="img-fluid w-100 mb-lg-4"/>
+									<img src={getAssetUrl("/assets/images/australia/cursos-vocacionales-australia.webp")} alt="" className="img-fluid w-100 d-none d-lg-block"/>
 								</div>
 								<div className="col-12 col-lg-6 ps-lg-5 section-australia_courses order-0 order-lg-1">
 									<div className="row">
@@ -105,7 +106,7 @@ export default function Australia() {
 							<a href="/australia/perth" className="map-au-city perth">Perth</a>
 							<a href="/australia/tasmania" className="map-au-city tasmania">Tasmania</a>
 							<a href="/australia/cairns" className="map-au-city cairns">Cairns</a>
-							<img src="/assets/images/donde-estudiar/mapa-australia-linea-punto.svg" alt="" className="img-fluid" />
+							<img src={getAssetUrl("/assets/images/donde-estudiar/mapa-australia-linea-punto.svg")} alt="" className="img-fluid" />
 						</div>
 					</div>
 				</section>
@@ -221,7 +222,7 @@ export default function Australia() {
 									
 								</div>
 								<div className="col-12 mt-5 information">
-									<img src="/assets/images/australia/requisitos-visa-estudiante-australia.webp" className="w-100" alt="" />
+									<img src={getAssetUrl("/assets/images/australia/requisitos-visa-estudiante-australia.webp")} className="w-100" alt="" />
 								</div>
 							</div>
 						</div>

@@ -1,9 +1,9 @@
-@use "../variables-custom";
+@use "../variables-custom" as vars;
 
 /* ---------- START CSS FOOTER ---------- */
 
 footer#principal_footer {
-    background-color: variables-custom.$color-blue-dark-1;
+    background-color: vars.$color-blue-dark-1;
     min-height: 260px;
     color: #fff;
     p {
@@ -12,13 +12,13 @@ footer#principal_footer {
         font-style: normal;
     }
     .contact-information {
-        @media #{variables-custom.$m1440} {
+        @media #{vars.$m1440} {
             padding-left: 0rem !important;
         }
         .logo-image {
             max-width: 350px;
             // margin-left: -2vw;
-            @media #{variables-custom.$M1440} {
+            @media #{vars.$M1440} {
                 margin-left: -1rem;
             }
         }
@@ -42,7 +42,7 @@ footer#principal_footer {
         }
         .container-cta-subscribe{
             h2{
-                color: variables-custom.$color-green-1;
+                color: vars.$color-green-1;
                 font-weight: 700;
                 font-size: 1.5rem !important;
             }
@@ -51,7 +51,7 @@ footer#principal_footer {
             }
 
             .btn-escribenos{
-                color: variables-custom.$color-blue-dark-1 !important;
+                color: vars.$color-blue-dark-1 !important;
                 text-transform: capitalize;
                 font-size: 1.1rem;
                 padding-left: 2rem;
@@ -60,7 +60,7 @@ footer#principal_footer {
                 &:focus,
                 &:active,
                 &.active {
-                    color: variables-custom.$color-green-1 !important;
+                    color: vars.$color-green-1 !important;
                 }
             }
         }
@@ -71,21 +71,21 @@ footer#principal_footer {
         }
     }
     .locations {
-        // @media #{variables-custom.$m1440} {
+        // @media #{vars.$m1440} {
         //     padding-left: 0rem !important;
         // }
         &-item {
             margin-bottom: 1.2rem;
-            @media #{variables-custom.$M991} {
+            @media #{vars.$M991} {
                 margin-bottom: 1rem;
             }
             &-name {
                 padding-left: 2vw;
-                color: variables-custom.$color-green-1;
+                color: vars.$color-green-1;
                 font-weight: bold;
                 display: flex;
                 align-items: center;
-                @media #{variables-custom.$M1440} {
+                @media #{vars.$M1440} {
                     padding-left: 1.5rem;
                 }
                 i{
@@ -96,7 +96,7 @@ footer#principal_footer {
                 display: flex;
                 align-items: center;
                 padding-left: 3vw;
-                 @media #{variables-custom.$M1440} {
+                 @media #{vars.$M1440} {
                     padding-left: 4rem;
                 }
                 i {
@@ -124,12 +124,12 @@ footer#principal_footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    @media #{variables-custom.$m992}{
+    @media #{vars.$m992}{
         bottom: 50%;
         transform: translateY(50%);
     }
     .sm-principal{
-        background-color: variables-custom.$color-white;
+        background-color: vars.$color-white;
         width: 54px;
         flex-direction: column;
         border-radius: 25px;
@@ -145,10 +145,10 @@ footer#principal_footer {
             display: flex;
             align-items: center;
             background-color: transparent !important;
-            color: variables-custom.$color-blue-dark-5 !important;
+            color: vars.$color-blue-dark-5 !important;
             transition: .5s all ease;
             i {
-                color: variables-custom.$color-blue-dark-5 !important;
+                color: vars.$color-blue-dark-5 !important;
             }
             &.link-sm-yt{
                 height: 28px;
@@ -159,7 +159,7 @@ footer#principal_footer {
                 height: 44px;
             }
         }
-        @media #{variables-custom.$M991}{
+        @media #{vars.$M991}{
             display: none !important;
         }
     }
@@ -168,7 +168,7 @@ footer#principal_footer {
 #fixed-whatsapp {
     width: 60px;
     height: 60px;
-    background-color: variables-custom.$color-blue-dark-5;
+    background-color: vars.$color-blue-dark-5;
     color: #FFF;
     border-radius: 50px;
     text-align: center;
@@ -211,7 +211,7 @@ footer#principal_footer {
             width: 100%;
             
             .container-cta-subscribe_modal {    
-                background-color: variables-custom.$color-blue-dark-1;
+                background-color: vars.$color-blue-dark-1;
                 position: relative;
                 
                 .row{
@@ -220,7 +220,7 @@ footer#principal_footer {
 
                 h3{
                     font-size: 2.5rem;
-                    color: variables-custom.$color-green-1;
+                    color: vars.$color-green-1;
                     text-transform: uppercase;
                     font-weight: 700;
                 }
@@ -232,14 +232,14 @@ footer#principal_footer {
                 }
             
                 .btn-escribenos{
-                    color: variables-custom.$color-blue-dark-1 !important;
+                    color: vars.$color-blue-dark-1 !important;
                     text-transform: capitalize !important;
                     font-size: 1.1rem;
                     &:hover,
                     &:focus,
                     &:active,
                     &.active {
-                        color: variables-custom.$color-green-1 !important;
+                        color: vars.$color-green-1 !important;
                     }
                 }
             
@@ -266,7 +266,7 @@ footer#principal_footer {
         top: 0rem;
         color: #ffffff;
         opacity: 1;
-        background-color: variables-custom.$color-blue-dark-1;
+        background-color: vars.$color-blue-dark-1;
         border-radius: 50%;
         width: 50px;
         height: 50px;
@@ -291,10 +291,10 @@ footer#principal_footer {
                 height: 100%;
             }
             .container-cta-subscribe_AUD {
-                background-color: variables-custom.$color-green-2;
+                background-color: vars.$color-green-2;
                 h5{
                     font-size: 0.85rem;
-                    color: variables-custom.$color-blue-dark-1;
+                    color: vars.$color-blue-dark-1;
                     display: flex;
                     justify-content: center;
                     align-items: top;
@@ -326,7 +326,7 @@ footer#principal_footer {
             .custom-checkbox {
                 .custom-control-label a{
                     font-size: 0.65rem !important;
-                    color: variables-custom.$color-white !important;
+                    color: vars.$color-white !important;
                     line-height: 0.7 !important;
                 }
                 .custom-control-input {
