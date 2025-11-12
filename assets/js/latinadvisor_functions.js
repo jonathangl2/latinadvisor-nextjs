@@ -435,32 +435,11 @@ let funciones = {
     },
     showTabAustralia: function() {
         jQuery(document).ready(function() {
-
-            // OLD 
-
-            // setTimeout(function() {
-            //     let hash = jQuery(location).attr('hash').substr(1);
-            //     jQuery('#tab-' + hash).trigger("click");
-            //     funciones.smoothScrollTabs(jQuery('#internal_banner .caption'));
-            // }, 2000);
-
-            // jQuery(window).on('hashchange', function() {
-            //     let hash = jQuery(location).attr('hash').substr(1);
-            //     jQuery('#tab-' + hash).trigger("click");
-            // });
-
-            // jQuery('.nav-link').click(function(event) {
-            //     let hash = jQuery(this).attr('id').substr(4);
-            //     jQuery(location).attr('hash', hash);
-            // });
-
             //V2
             setTimeout(function() {
                 let hash = jQuery(location).attr('hash').substr(1);
                 funciones.smoothScrollTabs(jQuery('#'+hash));
             }, 1000);
-
-
         });
     },
     // ---------------------------

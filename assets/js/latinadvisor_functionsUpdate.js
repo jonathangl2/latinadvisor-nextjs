@@ -11,9 +11,12 @@ jQuery(document).ready(function() {
 
   // --- START JAVASCRIPT FOR CALCULATOR ---
 
-  jQuery('#offcanvasNavbar').on('hide.bs.dropdown', function (e) {
-    if (e.clickEvent) {
-      e.preventDefault();
+  // Cuando el offcanvasNavbar está visible y se hace click en un nav-link, cerrar el offcanvas
+  jQuery('#offcanvasNavbar .nav-link').on('click.closeOffcanvas', function () {
+    const offcanvasEl = document.getElementById('offcanvasNavbar');
+    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+    if (bsOffcanvas) {
+      bsOffcanvas.hide();
     }
   });
 
