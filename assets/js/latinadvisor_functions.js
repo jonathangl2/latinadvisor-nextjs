@@ -157,7 +157,7 @@ let funciones = {
         );
     },
     smoothScrollTabs: function(target) {
-        jQuery('body,html').animate({ 'scrollTop': target.offset().top - 400 },
+        jQuery('body,html').animate({ 'scrollTop': target.offset().top - 200 },
             1000
         );
     },
