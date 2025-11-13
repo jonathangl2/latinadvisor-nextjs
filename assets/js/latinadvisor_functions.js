@@ -74,18 +74,17 @@ jQuery(document).ready(function() {
         loop: true,
         mouseDrag: false,
         dots: false,
-        items: 1,
         center: true,
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: false,
-        nav: false,
+        nav: true,
         navText: ['<span><i class="fas fa-chevron-left"></i></span>', '<span><i class="fas fa-chevron-right"></i></span>'],
         responsiveClass: true,
         responsive: {
-            0: {
-                items: 1
-            }
+            0: { items: 1 },
+            720: { items: 2, dots: true },
+            1024: { items: 3, dots: true }
         },
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
@@ -158,7 +157,7 @@ let funciones = {
         );
     },
     smoothScrollTabs: function(target) {
-        jQuery('body,html').animate({ 'scrollTop': target.offset().top - 100 },
+        jQuery('body,html').animate({ 'scrollTop': target.offset().top - 400 },
             1000
         );
     },
@@ -395,30 +394,30 @@ let funciones = {
     showCityWhereStudy: function() {
         jQuery(document).ready(function() {
 
-            jQuery('.container-donde-estudiar-city').hide();
+            //jQuery('.container-donde-estudiar-city').hide();
 
-            setTimeout(function() {
-                let hash = jQuery(location).attr('hash');
-                if (hash) {
-                    toggleCity(hash);
-                }
-            }, 2000);
+            // setTimeout(function() {
+            //     let hash = jQuery(location).attr('hash');
+            //     if (hash) {
+            //         toggleCity(hash);
+            //     }
+            // }, 2000);
 
-            jQuery(window).on('hashchange', function() {
-                let changeHash = jQuery(location).attr('hash');
-                toggleCity(changeHash);
-            });
+            // jQuery(window).on('hashchange', function() {
+            //     let changeHash = jQuery(location).attr('hash');
+            //     toggleCity(changeHash);
+            // });
 
-            jQuery('.map-au .map-au-city').click(function(event) {
-                event.preventDefault();
-                let target = jQuery(this).attr('href');
-                jQuery(location).attr('hash', target);
-            });
+            // jQuery('.map-au .map-au-city').click(function(event) {
+            //     event.preventDefault();
+            //     let target = jQuery(this).attr('href');
+            //     jQuery(location).attr('hash', target);
+            // });
 
-            jQuery('#response .view-more').click(function(event) {
-                event.preventDefault();
-                funciones.smoothScrollMap(jQuery('.map-au'));
-            });
+            // jQuery('#response .view-more').click(function(event) {
+            //     event.preventDefault();
+            //     funciones.smoothScrollMap(jQuery('.map-au'));
+            // });
 
         });
 
