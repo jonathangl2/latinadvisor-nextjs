@@ -161,8 +161,8 @@
             }
             p{
                 color: white;
-                font-size: 1.4rem;
-                padding: 1rem 1rem;
+                font-size: 1.5rem;
+                padding: 0 1rem 1rem 1rem;
             }
         }    
         &_contentCta{
@@ -181,10 +181,13 @@
             a{
                 background-color: vars.$color-blue-grey-4;
                 color: vars.$color-blue-dark-5;
-                padding: 1rem 5rem;
+                padding: 0.8rem 3.5rem;
                 border-radius: 35px;
                 font-weight: 600;
                 text-decoration: none;
+                @media #{vars.$m1024} {
+                    padding: 1rem 5rem;
+                }
                 &:hover{
                     background-color: rgba(19, 206, 195, 0.8);
                     color: white;

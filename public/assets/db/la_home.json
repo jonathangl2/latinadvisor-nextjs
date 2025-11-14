@@ -3,143 +3,164 @@
         "home": {
             "team": [
                 {
-                    "img_bg": "img-rosario-bg.webp",
-                    "img_front": "img-rosario.webp",
+                    "img_bg": "img-roshi-bg.webp",
+                    "img_front": "img-roshi.webp",
                     "name_team": "Roshi",
                     "name_position": "Directora General",
-                    "description_team": "Roshi es una persona con un corazón tan grande que necesita una tarjeta de presentación doble para que quepa todo su amor por los demás. Enamorada de Melbourne hace más de 15 años, es el alma de toda fiesta, líder por naturaleza, foodie y soñadora, siempre dispuesta a dar el 300 % en todo."
+                    "description_team": "Es una persona con un corazón tan grande que necesita una tarjeta de presentación doble para que quepa todo su amor por los demás. Enamorada de Melbourne hace más de 15 años, es el alma de toda fiesta, líder por naturaleza, foodie y soñadora, siempre dispuesta a dar el 300 % en todo."
                 },
                 {
                     "img_bg": "img-johanna-bg.webp",
                     "img_front": "img-johanna.webp",
                     "name_team": "Joha",
-                    "name_position": "Asesora Estudiantil",
+                    "name_position": "Lider Comercial y asesora",
                     "description_team": "Si alguien puede ser una reina del optimismo desenfrenado es Joha, siempre buscando lo bueno en cada situación y convirtiendo cada día en una aventura emocionante. Con su contagiosa risa, energía positiva y su capacidad para encontrar la magia en lo ordinario, es la compañera perfecta para aquellos que necesitan un poco más de brillo en sus vidas."
                 },
                 {
-                    "img_bg": "img-martha-bg.webp",
-                    "img_front": "img-martha.webp",
-                    "name_team": "Marthica",
-                    "name_position": "Asesora Estudiantil",
-                    "description_team": "La encarnación viviente del instinto maternal, siempre tiene un consejo acertado para cualquier situación. Marthica es como una mamá universal: preocupada, previsora y con una habilidad mágica para saber exactamente qué necesitas escuchar. Es la fan número 1 de los atardeceres y la ciudad de Brisbane."
-                },
-                {
-                    "img_bg": "img-andre-bg.webp",
-                    "img_front": "img-andre.webp",
-                    "name_team": "Andre",
-                    "name_position": "Servicios estudiantiles",
-                    "description_team":"André es la reina de la multitarea que hace que los pulpos se sientan inútiles con solo mirarla. Es super recursiva y siempre está en movimiento, es la prueba viviente de que el tiempo es relativo y que la productividad puede ser un deporte extremo. Es la mano derecha de todos los estudiantes y es un haz realizando eventos."
-                },
-                {
-                    "img_bg": "img-poncho-bg.webp",
-                    "img_front": "img-poncho.webp",
+                    "img_bg": "img-andres-bg.webp",
+                    "img_front": "img-andres.webp",
                     "name_team": "Andrés",
-                    "name_position": "Líder de visas",
-                    "description_team":"Andrés es como una mezcla perfecta de un algodón de azúcar y un reloj suizo: dulce, tierno y siempre a tiempo. Con su combinación única de dulzura y disciplina, él demuestra que puedes ser un rayo de sol organizado y eficiente, todo al mismo tiempo."
+                    "name_position": "Soporte de admisiones y ventas",
+                    "description_team": "Andrés es como una mezcla perfecta de un algodón de azúcar y un reloj suizo: dulce, tierno y siempre a tiempo. Con su combinación única de dulzura y disciplina, él demuestra que puedes ser un rayo de sol organizado y eficiente, todo al mismo tiempo."
                 },
                 {
-                    "img_bg": "img-sandra-bg.webp",
-                    "img_front": "img-sandra.webp",
+                    "img_bg": "img-sandrita-bg.webp",
+                    "img_front": "img-sandrita.webp",
                     "name_team": "Sandrita",
                     "name_position": "Soporte de admisiones y ventas",
-                    "description_team":"Sandrita es una fuerza de la naturaleza: apasionada, responsable y siempre lista para abrazar lo auténtico en la vida. Con su amor por lo artesanal, su conexión con la naturaleza y su fe inquebrantable, es la persona que todos quieren tener cerca cuando buscan inspiración, dirección o simplemente una buena conversación sobre la vida."
+                    "description_team": "Es una fuerza de la naturaleza: apasionada, responsable y siempre lista para abrazar lo auténtico en la vida. Con su amor por lo artesanal, su conexión con la naturaleza y su fe inquebrantable, es la persona que todos quieren tener cerca cuando buscan inspiración, dirección o simplemente una buena conversación sobre la vida."
                 },
                 {
                     "img_bg": "img-mafe-bg.webp",
                     "img_front": "img-mafe.webp",
                     "name_team": "Mafe",
-                    "name_position": "Asesora Estudiantil",
-                    "description_team":"Mafe es la reina de la diversión que hace que los DJ se sientan intimidados con su lista de reproducción. Es como un tornado de energía positiva, siempre listo para decir 'sí' a cualquier aventura que se le presente. Aunque a veces se carga de mil actividades, Mafe siempre tiene una sonrisa en el rostro y una anécdota graciosa para contar."
+                    "name_position": "Soporte comercial",
+                    "description_team": "Es la reina de la diversión que hace que los DJ se sientan intimidados con su lista de reproducción. Es como un tornado de energía positiva, siempre listo para decir \"sí\" a cualquier aventura que se le presente. Aunque a veces se carga de mil actividades, Mafe siempre tiene una sonrisa en el rostro y una anécdota graciosa para contar."
                 },
                 {
                     "img_bg": "img-yuly-bg.webp",
                     "img_front": "img-yuly.webp",
                     "name_team": "Yuly",
                     "name_position": "Manager de casos de migración",
-                    "description_team":"Yuly es una mente brillante envuelta en un paquete de dulzura, Es tan inteligente que las calculadoras le piden ayuda con las cuentas y las enciclopedias le piden que las actualice. Pero no se dejen engañar por su cerebro de genio: también tiene un corazón tan grande que necesita un GPS para encontrar la salida."
+                    "description_team": "Es una mente brillante envuelta en un paquete de dulzura. Es tan inteligente que las calculadoras le piden ayuda con las cuentas y las enciclopedias le piden que las actualice. Pero no se dejen engañar por su cerebro de genio: también tiene un corazón tan grande que necesita un GPS para encontrar la salida."
                 },
                 {
                     "img_bg": "img-diana-bg.webp",
                     "img_front": "img-diana.webp",
                     "name_team": "Diana",
                     "name_position": "Marketing Manager",
-                    "description_team":"Dianis es una explosión de creatividad, tan brillante que los arcoíris le piden consejo sobre combinaciones de colores, si fuera un personaje de un cuento de hadas, sería una mezcla entre un hada madrina y un genio de la lámpara, siempre lista para resolver cualquier problema con un toque de magia y una sonrisa."
+                    "description_team": "Dianis es una explosión de creatividad, tan brillante que los arcoíris le piden consejo sobre combinaciones de colores, si fuera un personaje de un cuento de hadas, sería una mezcla entre un hada madrina y un genio de la lámpara, siempre lista para resolver cualquier problema con un toque de magia y una sonrisa."
                 },
                 {
                     "img_bg": "img-juancho-bg.webp",
                     "img_front": "img-juancho.webp",
                     "name_team": "Juancho",
                     "name_position": "Líder en admisiones",
-                    "description_team":"Juancho vivió en Australia y aunque está de regreso en casa, sigue enamorado de este país. Siempre dispuesto a compartir sus conocimientos, devora libros como si fueran chocolates, su organización impecable y su devoción por los valores que guían su vida, es la compañía perfecta para aquellos que buscan risas, sabiduría y un ejemplo de cómo vivir plenamente."
-                },
-                {
-                    "img_bg": "img-juan-carlos-bg.webp",
-                    "img_front": "img-juan-carlos.webp",
-                    "name_team": "Juan Carlos",
-                    "name_position": "Agente Migratorio",
-                    "description_team":"Es el tipo de persona que sigue las reglas al pie de la letra, incluso en los juegos de mesa, asegurándose de que todos lancen los dados correctamente y sigan las instrucciones al milímetro. Tiene un corazón de oro y sus intenciones siempre son las mejores. Es como un superhéroe de la ley y el orden, sin capa, pero con una libreta de multas imaginaria."
-                },
-                {
-                    "img_bg": "img-johnny-bg.webp",
-                    "img_front": "img-johnny.webp",
-                    "name_team": "Johnny",
-                    "name_position": "Consultor de procesos migratorios",
-                    "description_team":"Si alguna vez necesitas una dosis de risas, Johnny es él que podría hacer reír a una estatua con una sola frase. Es la combinación perfecta de humor, charla y amor paternal. Con su capacidad para hacer reír a todos a su alrededor y su dedicación como papá."
-                },
-                {
-                    "img_bg": "img-carlos-bg.webp",
-                    "img_front": "img-carlos.webp",
-                    "name_team": "Carlos",
-                    "name_position": "Asesor y soporte de visas",
-                    "description_team":"El maestro del misterio que hace que los ninjas parezcan charlatanes, su mente es como una biblioteca enciclopédica, capaz de almacenar información y resolver problemas complejos con la misma facilidad con la que podría resolver un crucigrama en su almuerzo. Es como un enigma envuelto en un acertijo, con un corazón gentil y una mente brillante."
+                    "description_team": "Juancho vivió en Australia y aunque está de regreso en casa, sigue enamorado de este país. Siempre dispuesto a compartir sus conocimientos, devora libros como si fueran chocolates, su organización impecable y su devoción por los valores que guían su vida, es la compañía perfecta para aquellos que buscan risas, sabiduría y un ejemplo de cómo vivir plenamente."
                 },
                 {
                     "img_bg": "img-meli-bg.webp",
                     "img_front": "img-meli.webp",
                     "name_team": "Meli",
                     "name_position": "Contadora",
-                    "description_team":"Meli llegó a ordenarnos la vida, siempre está calculando y planeando cada paso, como si su vida fuera un juego de ajedrez en el que cada movimiento está estratégicamente calculado,  Puede que parezca que tiene un algoritmo para cada decisión, pero en realidad es solo su increíble capacidad para anticipar y prepararse para cualquier eventualidad."
+                    "description_team": "Meli llegó a ordenarnos la vida, siempre está calculando y planeando cada paso, como si su vida fuera un juego de ajedrez en el que cada movimiento está estratégicamente calculado,  Puede que parezca que tiene un algoritmo para cada decisión, pero en realidad es solo su increíble capacidad para anticipar y prepararse para cualquier eventualidad."
+                },
+                {
+                    "img_bg": "img-milena-bg.webp",
+                    "img_front": "img-milena.webp",
+                    "name_team": "Milena",
+                    "name_position": "Asistente legal de migración",
+                    "description_team": "Es esa persona que convierte cualquier lugar en hogar. Tiene un corazón tan grande que podría declarar independencia y una amabilidad que parece sacada de otro tiempo. Trabajadora, sencilla y siempre lista para tender una mano, es la prueba viviente de que la bondad también puede ser una fuerza imparable."
+                },
+                {
+                    "img_bg": "img-zoe-bg.webp",
+                    "img_front": "img-zoe.webp",
+                    "name_team": "Zoe",
+                    "name_position": "Líder de visas",
+                    "description_team": "Es la armonía hecha persona: disciplinada, amorosa y tan organizada que hasta el caos se rinde ante ella. Tiene la dulzura de quien te corrige con una sonrisa y la firmeza de quien sabe exactamente hacia dónde va. Su compromiso y responsabilidad hacen que todo funcione sin esfuerzo aparente. Si Zoe está al mando, puedes estar tranquilo: todo saldrá bien y a tiempo."
+                },
+                {
+                    "img_bg": "img-johnny-bg.webp",
+                    "img_front": "img-johnny.webp",
+                    "name_team": "Johnny",
+                    "name_position": "Consultor de procesos migratorios",
+                    "description_team": "Si alguna vez necesitas una dosis de risas, Johnny es él que podría hacer reír a una estatua con una sola frase. Es la combinación perfecta de humor, charla y amor paternal. Con su capacidad para hacer reír a todos a su alrededor y su dedicación como papá."
+                },
+                {
+                    "img_bg": "img-carlos-bg.webp",
+                    "img_front": "img-carlos.webp",
+                    "name_team": "Carlos",
+                    "name_position": "Asistente legal de migración",
+                    "description_team": "Es la definición de la calma metódica. Organizado, detallista y paciente, tiene la habilidad de convertir los trámites más enredados en procesos claros y sin estrés. Su forma de trabajar transmite confianza: revisa cada detalle con precisión y guía cada paso con serenidad. Con él, todo fluye, porque sabe cómo hacer que lo complejo se vuelva manejable."
                 },
                 {
                     "img_bg": "img-juan-david-bg.webp",
                     "img_front": "img-juan-david.webp",
                     "name_team": "Juan David",
                     "name_position": "Asesor y soporte de visas",
-                    "description_team":"Desde el momento en que el sol asoma por el horizonte, Juan David ya está en movimiento, Es la personificación de la energía matutina y la disciplina personal, con una habilidad para mantenerse en forma y organizada que haría que los cronómetros se sintieran inútiles. Con su amor por el ejercicio y su enfoque en la organización, es la inspiración perfecta."
-                }
+                    "description_team": "Desde el momento en que el sol asoma por el horizonte, Juan David ya está en movimiento, Es la personificación de la energía matutina y la disciplina personal, con una habilidad para mantenerse en forma y organizada que haría que los cronómetros se sintieran inútiles. Con su amor por el ejercicio y su enfoque en la organización, es la inspiración perfecta."
+                },
+                {
+                    "img_bg": "img-johana-bg.webp",
+                    "img_front": "img-johana.webp",
+                    "name_team": "Johana",
+                    "name_position": "Gerente de Experiencia del Cliente",
+                    "description_team": "Es la combinación exacta entre elegancia y energía. Puede pasar de una reunión impecablemente organizada a una fiesta sin perder ni un ápice de estilo. Es aventurera de alma, asistente de precisión y amante de la eficiencia como pocos. Donde otros ven caos, ella ve oportunidades… y quizá una próxima historia que contar."
+                },
+                {
+                    "img_bg": "img-natalia-bg.webp",
+                    "img_front": "img-natalia.webp",
+                    "name_team": "Natalia",
+                    "name_position": "Asistente legal de migración",
+                    "description_team": "Tiene el don de hacer que lo complejo parezca sencillo, con una calma que contagia incluso en medio del caos. Su precisión y paciencia hacen que todo funcione sin esfuerzo aparente. Habla con suavidad, actúa con seguridad y transmite confianza. Trabajar con ella es tener un ancla en la tormenta: firme, confiable y siempre profesional."
+                },
+                {
+                    "img_bg": "img-cami-bg.webp",
+                    "img_front": "img-cami.webp",
+                    "name_team": "Cami",
+                    "name_position": "Asesora Estudiantil",
+                    "description_team": "La más joven del equipo, llena de alegría y entusiasmo. Ama el deporte, viajar, y los libros, tanto como acompañar a los estudiantes en su camino. Tiene el don de guiar con empatía y hacer que todo fluya con confianza. Disfruta cada logro como propio, porque ver los sueños cumplirse es su mayor motivación."
+                },
+                {
+                    "img_bg": "img-marthica-bg.webp",
+                    "img_front": "img-marthica.webp",
+                    "name_team": "Marthica",
+                    "name_position": "Lider Comercial",
+                    "description_team": "Empática y apasionada por ayudar a las personas a convertir sus metas en planes reales. Su calidez se nota al escuchar y acompañar; su experiencia, al anticipar y hablar con honestidad. Marthica sabe que detrás de cada sueño hay una estrategia bien hecha. Amante de los atardeceres, la luna, el mar y de Brisbane, su nuevo hogar."
+                } 
             ]
         },
         "blog": {
-            "post_previews":[
+            "post_previews": [
                 {
-                    "title":"Impacto de las Reformas Migratorias 2025 en la Comunidad Latina",
-                    "descripcion":"Las reformas migratorias de 2025 han cambiado radicalmente las reglas del juego para los latinos que sueñan con estudiar, trabajar o establecerse en destinos clave como Australia y Dubái. Mientras uno se cierra a perfiles de clase media y privilegia a profesionales altamente calificados, el otro abre puertas rápidas pero enfrenta problemas de saturación laboral y altos costos de vida.",
-                    "img":"reformas-migratorias.webp",
-                    "link":"impacto-reformas-migratorias-2025-latinos.html"
+                    "title": "Impacto de las Reformas Migratorias 2025 en la Comunidad Latina",
+                    "descripcion": "Las reformas migratorias de 2025 han cambiado radicalmente las reglas del juego para los latinos que sueñan con estudiar, trabajar o establecerse en destinos clave como Australia y Dubái. Mientras uno se cierra a perfiles de clase media y privilegia a profesionales altamente calificados, el otro abre puertas rápidas pero enfrenta problemas de saturación laboral y altos costos de vida.",
+                    "img": "reformas-migratorias.webp",
+                    "link": "impacto-reformas-migratorias-2025-latinos.html"
                 },
                 {
-                    "title":"5 Trabajos Comunes en Dubai para Estudiantes Internacionales Latinoamericanos",
-                    "descripcion":"¿Te imaginas combinar tus estudios con un trabajo que no solo cubra tus gastos, sino que también impulse tu carrera hacia un futuro exitoso? ¿Cuáles son los trabajos más buscados? ¿Cuánto podrías ganar realmente? ¿Qué ventajas adicionales podrías disfrutar? Sigue leyendo y descubre cómo hacerlo.",
-                    "img":"trabajos-dubai.png",
-                    "link":"trabajos-para-estudiantes-internacionales-en-dubai.html"
+                    "title": "5 Trabajos Comunes en Dubai para Estudiantes Internacionales Latinoamericanos",
+                    "descripcion": "¿Te imaginas combinar tus estudios con un trabajo que no solo cubra tus gastos, sino que también impulse tu carrera hacia un futuro exitoso? ¿Cuáles son los trabajos más buscados? ¿Cuánto podrías ganar realmente? ¿Qué ventajas adicionales podrías disfrutar? Sigue leyendo y descubre cómo hacerlo.",
+                    "img": "trabajos-dubai.png",
+                    "link": "trabajos-para-estudiantes-internacionales-en-dubai.html"
                 },
                 {
-                    "title":"Descubre Dubai: Actividades para Estudiantes Internacionales",
-                    "descripcion":"¡Prepárate para vivir la mejor experiencia de tu vida en Dubai! 🌟 Desde amaneceres dorados en el desierto hasta noches vibrantes bajo las estrellas, esta ciudad lo tiene todo. Como estudiante internacional, no solo te sumergirás en una educación de primera clase, sino que también disfrutarás de un abanico de actividades únicas y emocionantes.",
-                    "img":"aventura-dubai.png",
-                    "link":"actividades-para-estudiantes-internacionales-en-dubai.html"
+                    "title": "Descubre Dubai: Actividades para Estudiantes Internacionales",
+                    "descripcion": "¡Prepárate para vivir la mejor experiencia de tu vida en Dubai! 🌟 Desde amaneceres dorados en el desierto hasta noches vibrantes bajo las estrellas, esta ciudad lo tiene todo. Como estudiante internacional, no solo te sumergirás en una educación de primera clase, sino que también disfrutarás de un abanico de actividades únicas y emocionantes.",
+                    "img": "aventura-dubai.png",
+                    "link": "actividades-para-estudiantes-internacionales-en-dubai.html"
                 },
                 {
-                    "title":"Beneficios de estudiar en Dubai",
-                    "descripcion":"Dubai, una de las ciudades más seguras del mundo, te ofrece la oportunidad de avanzar en campos como tecnología, ingeniería y medicina. Disfruta de buenos salarios, transporte público eficiente y una residencia sin necesidad de demostrar solvencia económica. Además, Dubai facilita la creación de empresas y es libre de discriminación. Aprovecha estas oportunidades si tienes más de 18 años.",
-                    "img":"dubai.png",
-                    "link":"beneficios-estudiar-en-dubai.html"
+                    "title": "Beneficios de estudiar en Dubai",
+                    "descripcion": "Dubai, una de las ciudades más seguras del mundo, te ofrece la oportunidad de avanzar en campos como tecnología, ingeniería y medicina. Disfruta de buenos salarios, transporte público eficiente y una residencia sin necesidad de demostrar solvencia económica. Además, Dubai facilita la creación de empresas y es libre de discriminación. Aprovecha estas oportunidades si tienes más de 18 años.",
+                    "img": "dubai.png",
+                    "link": "beneficios-estudiar-en-dubai.html"
                 },
                 {
-                    "title":"Vive la Vida Australiana: actividades y estilo de vida",
-                    "descripcion":"¡Descubre el estilo de vida australiano y las increíbles actividades que te esperan en este paraíso! Tanto migrantes como nativos disfrutan de una vida activa y saludable, valorando deportes, playas y parques en una sociedad diversa y multicultural. Sigue leyendo y te contaremos todo lo que puedes vivir en las 5 principales ciudades del país.",
-                    "img":"vidaaustraliana.png",
-                    "link":"vive-la-vida-australiana.html"
+                    "title": "Vive la Vida Australiana: actividades y estilo de vida",
+                    "descripcion": "¡Descubre el estilo de vida australiano y las increíbles actividades que te esperan en este paraíso! Tanto migrantes como nativos disfrutan de una vida activa y saludable, valorando deportes, playas y parques en una sociedad diversa y multicultural. Sigue leyendo y te contaremos todo lo que puedes vivir en las 5 principales ciudades del país.",
+                    "img": "vidaaustraliana.png",
+                    "link": "vive-la-vida-australiana.html"
                 }
             ]
         },
@@ -198,6 +219,356 @@
                     "description": "Dubái está catalogada como una de las ciudades más seguras y modernas del mundo, con transporte eficiente, playas espectaculares y una arquitectura única."
                 }
             ]
-        }
+        },
+        "ciudades": [
+            {
+                "slug": "melbourne",
+                "title": "Melbourne",
+                "description": "<h5>Melbourne es la capital del estado de Victoria (VIC) y es una ciudad fascinante llena de contrastes, cosmopolita y multicultural; <strong>ha sido elegida por 7 años consecutivos como la mejor ciudad del mundo por su calidad de vida.</strong></h5>\n<h5>Cada Rincón de la ciudad está llena de cafés, bares y restaurantes de todas las cocinas del mundo. Aquí podrás encontrar diferentes actividades, como los festivales de comida, festivales de cine internacional, eventos deportivos como el Australian Open de tenis y la formula 1 – Grand Prix Moto GP, la famosa Carrera de caballos y el festival de comedia. <strong>Esto es de gran ventaja para los estudiantes internacionales, pues al tener actividades tan diversas durante el año, las posibilidades de empleo son mucho mayores.</strong></h5>\n<h5>Melbourne es la ciudad de las 4 estaciones, ya que en un mismo día puedes experimentar frío, lluvia, calor y viento, es decir, <strong>puedes sentir las temperaturas de las 4 estaciones: Invierno, Otoño, Primavera y Verano;</strong> así que las personas en Melbourne siempre cargan un abrigo y una sombrilla.</h5>\n<h5>Es una ciudad amigable con los estudiantes internacionales porque su transporte público facilita la movilidad dentro de la misma ciudad y a diferentes suburbios. <strong>El Sistema de transporte cuenta con una tarjeta llamada Myki Card que sirve para desplazarse en tren, tram y buses.</strong> La Myki la puedes encontrar en dos modalidades:</h5>\n<ul class=\"ps-lg-5\"><li><strong>Myki Card Pass:</strong> se carga por 7, 14 o 28 días y la puedes utilizar ilimitadamente durante este período de tiempo. Se consigue en cualquier estación de tren o en un 7/11.</li><li><strong>Myki Money:</strong> Se carga con dinero, el monto lo eliges tú. Con esta opción debes asegurarte de que cada vez que utilices el transporte público debes hacer touch in (cuando entras) y touch off (cuando sales).De esta manera la tarjeta estará cobrando el dinero de acuerdo a la distancia y tiempo que viaje.</li></ul>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-premio.svg",
+                        "description": "Elegida por 7 años consecutivos como la mejor ciudad del mundo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima cambiante."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "4.9 millones de habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Buena oferta laboral."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida alto."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en tren, tram y buses."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playas."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Ciudad Multicultural y artística con variedad de actividades para el día y la noche."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/melbourne/brighton-beach-melbourne.webp",
+                    "/assets/images/australia/melbourne/ciudad-de-noche-melbourne.webp",
+                    "/assets/images/australia/melbourne/tram-en-melbourne.webp",
+                    "/assets/images/australia/melbourne/12-apostoles-melbourne.webp",
+                    "/assets/images/australia/melbourne/parque-melbourne.webp",
+                    "/assets/images/australia/melbourne/rio-yarra-melbourne.webp"
+                ]
+            },
+            {
+                "slug": "brisbane",
+                "title": "Brisbane",
+                "description": "<h5>Brisbane, más conocida como “Brissy”, es la capital del estado de Queensland (QLD).</h5>\n<h5>Si amas el verano, esta ciudad es perfecta para ti, pues vas a tener un excelente clima durante todo el año, incluyendo los días de invierno, para que lo disfrutes en todo momento; <strong>Brisbane también es conocida como la ciudad del “eterno verano”</strong> así que el clima no será un problema para ti.</h5>\n<h5>Es una ciudad relativamente pequeña, pero en constante crecimiento y con un ambiente más tranquilo que el que encontrarás en Melbourne o Sidney.</h5>\n<h5>En Brisbane puedes movilizarte de diferentes formas: Bus, tren y ferrie, (estos últimos también son conocidos como “City Cat”)<strong> y a ellos puedes ingresar obteniendo la tarjeta Go Card, que se carga con el monto que desees y la vas utilizando en los diferentes medios de transporte.</strong></h5>\n<h5>Al rededor de esta ciudad encontrarás fascinantes playas y pueblos para visitar como Sunshine Coast y Byron Bay. <strong>Brisbane es el punto ideal para emprender road trips por la Costa Este Australiana.</strong></h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima cálido."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "2.28 millones de habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Oferta laboral estable."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida bajo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en bus, tren, ferries (city cat)"
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "No tiene playa."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Variedad de actividades para el día y la noche."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/brisbane/brisbane-ciudad.webp",
+                    "/assets/images/australia/brisbane/brisbane-letrero.webp",
+                    "/assets/images/australia/brisbane/brisbane-playa.webp",
+                    "/assets/images/australia/brisbane/ferri-brisbane.webp",
+                    "/assets/images/australia/brisbane/brisbane-puente.webp",
+                    "/assets/images/australia/brisbane/brisbane-rueda.webp"
+                ]
+            },
+            {
+                "slug": "sydney",
+                "title": "Sydney",
+                "description": "<h5>Sydney es la capital de New South Wales (NSW) y <strong>es la ciudad de referencia número uno, cuando se piensa en Australia,</strong> ya sea por los juegos pirotécnicos en fin de año o por la arquitectura de la Opera House, que es su monumento emblema.</h5>\n<h5>Además, sus playas como Bondi Beach & Manly son muy famosas por la belleza de olas y la cantidad de surfistas que se pueden encontrar practicando surf.</h5>\n<h5>Sydney se destaca por su clima cálido, la hermosa vista alrededor de la Opera House y el Harbor Bridge. Aunque el costo de vida de Sydney es un poco más elevado, también <strong>es una ciudad cosmopolita con muchas opciones para visitar, conocer y divertirse de diferentes maneras.</strong></h5>\n<h5><strong>Su Sistema de transporte está basado en tren, bus y en ferrie, al que se accede por medio de la tarjeta Opal,</strong> que se carga con el monto que elijas y cada vez que utilices uno de estos medios debes hacer touch on (al ingresar) y touch off (al salir).</h5>\n<h5>Es una ciudad mucho más grande que las demás, por lo que la recomendación que se le hace a los estudiantes, es que puedan <strong>vivir y trabajar en la misma zona para que optimicen el tiempo de transporte de un lugar a otro.</strong></h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima soleado mediterráneo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "5.23 millones habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Buena oferta laboral."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida alto."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en buses, tren y ferries"
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playas y Surf."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Ciudad multicultural con variedad de actividades. Alto turismo por ser la ciudad más visitada de Australia."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/sydney/bondi-iceberg-sydney.webp",
+                    "/assets/images/australia/sydney/ciudad-de-sydney.webp",
+                    "/assets/images/australia/sydney/opera-house-nocturna.webp",
+                    "/assets/images/australia/sydney/opera-house-sydney.webp",
+                    "/assets/images/australia/sydney/puente-sydney.webp",
+                    "/assets/images/australia/sydney/universidad-sydney.webp"
+                ]
+            },
+            {
+                "slug": "gold-coast",
+                "title": "Gold Coast",
+                "description": "<h5>Es una ciudad hermosa, conocida por lo ideal de sus playas para practicar surfing y por la calidad de vida que ofrece. <strong>Le llaman la ciudad del surf porque en verano sus playas se llenan de surfistas.</strong></h5>\n<h5>Es una ciudad turística ya que a sus alrededores se encuentran diferentes playas y a una hora de viaje por carretera, puedes estar en la ciudad de Brisbane. <strong>La mejor manera para desplazarse es a través del tranvía o en bicicleta.</strong></h5>\n<h5>Su estilo de vida es mucho más económico que el que se tiene en Melbourne o Sydney y podrías elegir vivir en frente de la playa. <strong>La oferta laboral es variable, en verano es alta y en invierno baja.</strong></h5>\n<h5>También encontrarás parques temáticos como Movie World, Sea World, Wet’ and Wild & Dream World, perfectos para toda la familia o un plan entre amigos.</h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima Tropical."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "638.000 habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Oferta laboral variable se basa mucho en temporadas."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida bajo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en tranvía, buses o bicicleta."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playas y Surf. Muchos turistas en verano."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Ambiente playero y joven, variedad de actividades, con planes nocturnos."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/gold-coast/atardecer-gold-coast.webp",
+                    "/assets/images/australia/gold-coast/gold-coast-ciudad.webp",
+                    "/assets/images/australia/gold-coast/boulevar-gold-coast.webp",
+                    "/assets/images/australia/gold-coast/gold-coast-noche.webp",
+                    "/assets/images/australia/gold-coast/playa-gold-coast.webp",
+                    "/assets/images/australia/gold-coast/surf-gold-coast.webp"
+                ]
+            },
+            {
+                "slug": "adelaide",
+                "title": "Adelaide",
+                "description": "<h5>Adelaide es la capital de South Australia (SA), es una ciudad sofisticada en su arquitectura y en desarrollo. <strong>El costo de vida en Adelaide es uno de los más bajos de Australia y es, además, una ciudad multicultural.</strong></h5>\n<h5>Su clima es mucho más seco y cálido que el de Melbourne o Sydney, su cultura gastronómica y vinícola es mundialmente reconocida.</h5>\n<h5><strong>Adelaide es considerada la capital australiana del vino</strong> y sus imponentes viñedos se extienden a lo largo de toda la región. Cuenta con numerosas bodegas y es la puerta de entrada a 18 regiones vinícolas.</h5>\n<h5>El Sistema de transporte de esta ciudad entre diferentes áreas metropolitanas se realiza en tren, pero dentro de la ciudad es más usual movilizarse en bus o bicicleta, <strong>así que, si eres amante del deporte y del medio ambiente, esta ciudad es una buena opción para ti.</strong></h5>\n<h5>Para el transporte público hay una tarjeta que se llama Metrocard, sirve para viajar en tren y bus, <strong>esta se puede pagar mensual y así es más económico o simplemente la cargas de acuerdo al uso que le vayas a dar.</strong> Otra opción son los tickets para estos transportes, cuando no tienes la tarjeta, pero esta opción sale más costosa. Debes tener en cuenta que el costo del transporte también cambia de acuerdo al horario; en las horas pico o “peak hours” es a un precio un poco más alto que en las horas normales.</h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima mediterráneo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "1.3 millones de habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Oferta laboral estable."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida bajo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en buses, bicicleta, tren y tram."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playas."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Mayor actividad diurna que nocturna."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/adelaide/adelaide-ciudad.webp",
+                    "/assets/images/australia/adelaide/adelaide-noche.webp",
+                    "/assets/images/australia/adelaide/cube-d-Arenberg-adelaide.webp",
+                    "/assets/images/australia/adelaide/isla-canguro-adelaide.webp",
+                    "/assets/images/australia/adelaide/playa-adelaide.webp",
+                    "/assets/images/australia/adelaide/vinedos-adelaide.webp"
+                ]
+            },
+            {
+                "slug": "perth",
+                "title": "Perth",
+                "description": "<h5>Perth es la capital de Western Australia (WA), es una ciudad ideal para hacer picnics y explorar sus playas mientras disfrutas de un ambiente 100% australiano, algo ideal si quieres integrarte en su cultura y tradiciones.</h5>\n<h5>Por su estilo de vida relajado, no es una ciudad que ofrezca vida nocturna, así que, si estás buscando este tipo de actividades, tal vez esta no sea la ciudad ideal para ti. <strong>Es una ciudad moderna y en desarrollo, perfecta para familias por su estilo de vida tranquila.</strong></h5>\n<h5>Perth se considera una ciudad aislada ya que es la más distante del resto de las ciudades de Australia, durante todo el año se tiene un clima excelente, <strong>el transporte público es a través de bus, tren y ferrie; y la mejor opción para los estudiantes internacionales es el bus, ya que para ellos es gratis.</strong> Perth es conocida también por la isla de “Rottnest Island” donde se encuentran los Quokkas, un animal único de esta región y que siempre están sonriendo.</h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima mediterráneo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "1.660.000 habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Oferta laboral estable."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida alto."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en buses, tren y ferries."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playas más salvajes y menos explotadas de Australia."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Mayor actividad diurna que nocturna."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/perth/atardecer-ciudad-perth.webp",
+                    "/assets/images/australia/perth/barcos-perth.webp",
+                    "/assets/images/australia/perth/ciudad-perth.webp",
+                    "/assets/images/australia/perth/crawley-edge-boatshed-perth.webp",
+                    "/assets/images/australia/perth/puente-perth.webp",
+                    "/assets/images/australia/perth/quoakka-animal-mas-feliz-del-mundo-perth.webp"
+                ]
+            },
+            {
+                "slug": "hobart",
+                "title": "Hobart",
+                "description": "<h5>Tasmania es una isla que hace parte del continente australiano y, si buscas una conexión intensa con la naturaleza, esta es la ciudad indicada. <strong>Hobart, la capital de Tasmania, es una increíble ciudad costera, con un ambiente fresco, moderno e inclusivo que tiene, además, unos paisajes de ensueño y estarás respirando siempre aire puro.</strong> Es una de las ciudades más económicas de Tasmania para vivir en Australia.</h5>\n<h5>Más conocida por el animal emblemático “el demonio de Tasmania” una especie en vía de extinción, es una ciudad llena de vegetación, donde <strong>estarás rodeado de montañas, bosques y reservas naturales; aquí podrás disfrutar de un paseo en bicicleta o en bote.</strong></h5>\n<h5><strong>En Tasmania no hay mucho inmigrante de habla hispana, por lo que resulta más fácil aprender a hablar inglés.</strong> El mayor medio de transporte son los buses o bicicletas y su gastronomía es famosa por los pescados, los mariscos, los quesos y los viñedos.</h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima Frío."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "533 308 habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Poca oferta laboral."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida bajo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Transporte en buses o bicicleta."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playas y Surf."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Poca actividad nocturna. Mayor actividad al aire libre y montañas."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/hobart/hobart-tasmania-casa-campo.webp",
+                    "/assets/images/australia/hobart/hobart-tasmania.webp",
+                    "/assets/images/australia/hobart/hobart.webp",
+                    "/assets/images/australia/hobart/naturaleza-hobart.webp",
+                    "/assets/images/australia/hobart/puente-hobart.webp",
+                    "/assets/images/australia/hobart/puerto-hobart-tasmania.webp"
+                ]
+            },
+            {
+                "slug": "cairns",
+                "title": "cairns",
+                "description": "<h5>Es una ciudad ubicada en el noreste de Australia, en el estado de Queensland, bien al norte de su capital, Brisbane.</h5>\n<h5><strong>Cairns es una ciudad netamente turística, es la puerta de entrada a la gran barrera de corales “The great Barrier reef”, la mayor barrera de corales del mundo,</strong> considerada patrimonio de la humanidad. Es un paraíso para buzos y apasionados por la naturaleza.</h5>\n<h5>Si buscas aventuras emocionantes, conectar con experiencias aborígenes o, simplemente deseas sumergirte en un exótico bosque pluvial tropical, estudiando en Cairns podrás acceder fácilmente a todo esto.</h5>",
+                "features": [
+                    {
+                        "icon": "/assets/images/icons/icon-clima.svg",
+                        "description": "Clima tropical."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-habitantes.svg",
+                        "description": "150.041 habitantes."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-trabajo.svg",
+                        "description": "Poca oferta laboral."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-costo-vida.svg",
+                        "description": "Costo de vida bajo."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-transporte.svg",
+                        "description": "Bicicleta, autobús."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ambiente.svg",
+                        "description": "Playa sin surf, buceo y actividades al aire libre."
+                    },
+                    {
+                        "icon": "/assets/images/icons/icon-ocio.svg",
+                        "description": "Ambiente relajado y viajero con actividades nocturnas limitadas."
+                    }
+                ],
+                "imagenes": [
+                    "/assets/images/australia/cairns/barrera-de-coral-cairns.webp",
+                    "/assets/images/australia/cairns/bucear-cairns.webp",
+                    "/assets/images/australia/cairns/cairns-australia.webp",
+                    "/assets/images/australia/cairns/cairns.webp",
+                    "/assets/images/australia/cairns/pez-payaso-cairns.webp",
+                    "/assets/images/australia/cairns/vida-marina-cairns.webp"
+                ]
+            }
+        ]
     }
 }

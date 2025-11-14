@@ -6,9 +6,10 @@
     &-home,
     &-australia,
     &-dubai,
-    &-escribenos{
+    &-escribenos,
+    &-cityAus{
         &_title{
-            font-size: 2rem;
+            font-size: 1.85rem;
             font-weight: bold;
             color: vars.$color-blue-dark-1;
             @media #{vars.$m768}{
@@ -538,7 +539,8 @@
         #carousel-featuredLatinadvisor,
         #carousel-teamLatinadvisor,
         #carousel-benefits-australia,
-        #carousel-benefits-dubai{
+        #carousel-benefits-dubai,
+        #carousel-donde-estudiar{
             .owl-nav {
                 .owl-prev,
                 .owl-next {
@@ -553,6 +555,7 @@
                     display: inline-block;
                     background-color: transparent;
                     opacity: 0.8;
+                    font-size: 2rem;
                     &:hover,
                     &:focus {
                         opacity: 1;
@@ -564,18 +567,19 @@
                     @media #{vars.$M500} {
                         top: 45%;
                         width: 4rem;
+                        font-size: 1.5rem;
                     }
                 }
                 .owl-prev {
-                    left: -4rem;
+                    left: -5rem;
                     @media #{vars.$M1024} {
-                        left: -1rem;
+                        left: -3rem;
                     }
                 }
                 .owl-next {
-                    right: -4rem;
+                    right: -5rem;
                     @media #{vars.$M1024} {
-                        right: -1rem;
+                        right: -3rem;
                     }
                 }
             }
@@ -597,6 +601,11 @@
                 .owl-next {
                     color: vars.$color-white !important;
                 }
+            }
+        }
+        #carousel-donde-estudiar{
+            .owl-dots{
+                padding-top: 1rem;
             }
         }
     }

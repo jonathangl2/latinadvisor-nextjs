@@ -2,15 +2,16 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
+import { getAssetUrl } from '@/lib/url'
 
 export default function Header() {
   return (
     <header id="principal_header">
       <nav id="principal_navbar" className="navbar navbar_v3 fixed-top navbar-expand-lg navbar-primary py-0 align-items-lg-stretch">
         
-        <Link className="navbar-brand py-0 px-lg-4 d-flex align-items-center" href="/">
+        <Link className="navbar-brand py-0 px-lg-4 d-flex align-items-center" href={getAssetUrl("/")}>
           <img 
-            src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/Logo-color.svg" 
+            src={getAssetUrl("/assets/images/Logo-color.svg")}
             className="logo-image img-fluid" 
             alt="LatinAdvisor Logo"
           />
@@ -20,7 +21,7 @@ export default function Header() {
         <div className="collapse navbar-collapse d-none d-lg-flex col-lg-9" id="">
           <ul className="navbar-nav ms-auto align-items-lg-stretch principal-menu me-4">
             <li className="nav-item">
-              <Link className="nav-link" href="/">Home</Link>
+              <Link className="nav-link" href={getAssetUrl("/")}>Inicio</Link>
             </li>
             <li className="nav-item dropdown">
                 <a
@@ -36,11 +37,11 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="destinosDropdown">
                   {[
                     {
-                      url: "/australia",
+                      url: getAssetUrl("/australia"),
                       title: "australia",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/dubai"),
                       title: "dubái",
                     }
                   ].map((item, i) => (
@@ -66,19 +67,19 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="serviciosDropdown">
                   {[
                     {
-                      url: "/australia",
+                      url: getAssetUrl("/australia"),
                       title: "ESTUDIAR EN AUSTRALIA",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/dubai"),
                       title: "ESTUDIAR EN DUBÁI",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "WORK AND HOLIDAY VISA",
                     }
                   ].map((item, i) => (
@@ -104,35 +105,35 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="procesosDropdown">
                   {[
                     {
-                      url: "/australia",
+                      url: getAssetUrl("/australia"),
                       title: "visitor visa australia",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Postgraduate Visa Australia",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Training Visa Australia",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Sponsor Visa Australia",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Partner Visa Australia",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Skilled Visa - EOI Australia (Visa por puntos)",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Homologaciones de Estudios (Skills assessment)",
                     },
                     {
-                      url: "/dubai",
+                      url: getAssetUrl("/australia"),
                       title: "Apelaciones ante el Tribunal",
                     }
                   ].map((item, i) => (
@@ -158,27 +159,27 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="recursosDropdown">
                   {[
                     {
-                      url: "/blog",
+                      url: getAssetUrl("/blog"),
                       title: "blog",
                     },
                     {
-                      url: "/ebooks-guias",
+                      url: getAssetUrl("/ebooks-guias"),
                       title: "ebooks y guías",
                     },
                     {
-                      url: "/eventos",
+                      url: getAssetUrl("/eventos"),
                       title: "eventos",
                     },
                     {
-                      url: "/testimonios",
+                      url: getAssetUrl("/testimonios"),
                       title: "testimonios",
                     },
                     {
-                      url: "/dubpodcastai",
+                      url: getAssetUrl("/podcast"),
                       title: "podcast",
                     },
                     {
-                      url: "/promociones",
+                      url: getAssetUrl("/promociones"),
                       title: "promociones",
                     }
                   ].map((item, i) => (
@@ -191,10 +192,10 @@ export default function Header() {
                 </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/conocenos">Nosotros</Link>
+              <Link className="nav-link" href={getAssetUrl("/conocenos")}>Nosotros</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/contactanos">Contáctanos</Link>
+              <Link className="nav-link" href={getAssetUrl("/contactanos")}>Contáctanos</Link>
             </li>
           </ul>
         </div>
@@ -211,19 +212,19 @@ export default function Header() {
           <div className="offcanvas-body">
             <ul className="navbar-nav mx-auto align-items-lg-stretch principal-menu">
               <li className="nav-item">
-                <Link className="nav-link" href="/">Home</Link>
+                <Link className="nav-link" href={getAssetUrl("/")}>Inicio</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/australia">Australia</Link>
+                <Link className="nav-link" href={getAssetUrl("/australia")}>Australia</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/dubai">Dubái</Link>
+                <Link className="nav-link" href={getAssetUrl("/dubai")}>Dubái</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/conocenos">Nosotros</Link>
+                <Link className="nav-link" href={getAssetUrl("/conocenos")}>Nosotros</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/contactanos">Contáctanos</Link>
+                <Link className="nav-link" href={getAssetUrl("/contactanos")}>Contáctanos</Link>
               </li>
             </ul>
           </div>

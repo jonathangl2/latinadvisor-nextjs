@@ -14,16 +14,16 @@ export default function Australia() {
 				imageSrc={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja.webp")}
 				imageSrcResponsive={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja-responsive.webp")}
 				videoSrc="https://www.youtube.com/embed/sWrccL-TBBI?si=yyw_93IOSsITT0ix"
-				title="Vive, estudia y trabaja en el extranjero"
-				subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+				title="Estudiar y Trabajar en Australia"
+				subtitle="Tu Futuro Empieza Aquí"
 			/>
 			
 			<section className="section-australia container-fluid">
 				<section className="container">
 					<div className="row d-flex justify-content-center py-5">
-						<div className="col-12 col-lg-11 mt-lg-5 py-5 section-australia_contentCta">
-							<p className="">Australia es uno de los destinos más populares para estudiantes internacionales que buscan una experiencia académica de calidad, oportunidades laborales reales y opciones de migrar de forma permanente.  Con ciudades costeras vibrantes, una economía estable y paisajes naturales incomparables, vivir en Australia es mucho más que una aventura: es una inversión en tu futuro.</p>
-							<a href="" className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+						<div className="col-12 col-lg-11 mt-lg-5 py-lg-5 section-australia_contentCta">
+							<p className="">Australia es uno de los destinos más populares para estudiantes internacionales que buscan una experiencia académica de calidad, oportunidades laborales reales y opciones de migrar de forma permanente. Con ciudades costeras vibrantes, una economía estable y paisajes naturales incomparables, vivir en Australia es mucho más que una aventura: es una inversión en tu futuro.</p>
+							<a href="#contactForm" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>
 					</div>
 				</section>
@@ -32,9 +32,9 @@ export default function Australia() {
 			<CarouselBeneficios title="5 Beneficios Clave de Estudiar en Australia" location="australia" />
 
 			<section className="section-australia container-fluid">
-				<section className="container py-5">
+				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
-						<div className="col-12 col-lg-10 mb-4">
+						<div className="col-12 col-lg-10 mb-lg-4">
 							<h2 className="section-australia_title text-center text-uppercase mb-4">Amplía Oferta académica en Australia</h2>
 						</div>
 						<div className="col-12 col-lg-10 my-4">
@@ -82,8 +82,8 @@ export default function Australia() {
 				</section>	
 			</section>
 
-			<section className="section-australia container-fluid bg-grey-light-3">
-				<section className="container py-5">
+			<section id="ciudades" className="section-australia container-fluid bg-grey-light-3">
+				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
 							<h2 className="section-australia_title text-center text-uppercase mb-4">Descubre las Ciudades Más Populares para Estudiantes</h2>
@@ -96,24 +96,24 @@ export default function Australia() {
 					</div>
 				</section>
 				<section className="container-donde-estudiar container-fluid">
-					<div className="row px-4 pb-5 justify-content-center align-items-md-end">
+					<div className="row px-3 px-lg-4 pb-5 justify-content-center align-items-md-end">
 						<div className="col-12 col-lg-10 map-au">
-							<a href="/australia/melbourne" className="map-au-city melbourne">Melbourne</a>
-							<a href="/australia/brisbane" className="map-au-city brisbane">Brisbane</a>
-							<a href="/australia/sydney" className="map-au-city sydney">Sydney</a>
-							<a href="/australia/gold-coast" className="map-au-city gold-coast">Gold Coast</a>
-							<a href="/australia/adelaide" className="map-au-city adelaide">Adelaide</a>
-							<a href="/australia/perth" className="map-au-city perth">Perth</a>
-							<a href="/australia/tasmania" className="map-au-city tasmania">Tasmania</a>
-							<a href="/australia/cairns" className="map-au-city cairns">Cairns</a>
-							<img src={getAssetUrl("/assets/images/donde-estudiar/mapa-australia-linea-punto.svg")} alt="" className="img-fluid" />
+							<a href={getAssetUrl("/australia/melbourne")} className="map-au-city melbourne">Melbourne</a>
+							<a href={getAssetUrl("/australia/brisbane")} className="map-au-city brisbane">Brisbane</a>
+							<a href={getAssetUrl("/australia/sydney")} className="map-au-city sydney">Sydney</a>
+							<a href={getAssetUrl("/australia/gold-coast")} className="map-au-city gold-coast">Gold Coast</a>
+							<a href={getAssetUrl("/australia/adelaide")} className="map-au-city adelaide">Adelaide</a>
+							<a href={getAssetUrl("/australia/perth")} className="map-au-city perth">Perth</a>
+							<a href={getAssetUrl("/australia/hobart")} className="map-au-city tasmania">Hobart</a>
+							<a href={getAssetUrl("/australia/cairns")} className="map-au-city cairns">Cairns</a>
+							<img src={getAssetUrl("/assets/images/australia/mapa-australia-linea-punto.svg")} alt="" className="img-fluid" />
 						</div>
 					</div>
 				</section>
 			</section>
 
 			<section className="section-australia container-fluid">
-				<section className="container py-5">
+				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 mb-4">
 							<h2 className="section-australia_title text-center  text-uppercase mb-4">Requisitos Esenciales para tu Visa de Estudiante en Australia</h2>
@@ -231,12 +231,12 @@ export default function Australia() {
 			</section>
 
 			<section className="section-australia container-fluid bg-blue-grey-4">
-				<section className="container py-5">
+				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
-						<div className="col-12 mb-4">
+						<div className="col-12 mb-lg-4">
 							<h2 className="section-australia_title text-white text-center  text-uppercase mb-4">Historias de Éxito de <br/>Nuestros Estudiantes</h2>
 						</div>
-						<div className="col-12 mb-4">
+						<div className="col-12 mb-lg-4">
 
 							<Script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js"></Script>
 							<iframe
@@ -252,10 +252,10 @@ export default function Australia() {
 				</section>
 			</section>
 
-			<section className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
+			<section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
 				<div className="row d-flex justify-content-center">
-					<div className="col-11 col-lg-10 py-5 mt-lg-5">
-						<h2 className="section-australia_title text-center text-uppercase mb-4">¿Listo para Impulsar tu <br/>Futuro en Australia?</h2>
+					<div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
+						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Listo para Impulsar tu <span className="d-inline-block d-lg-block fw-bold">Futuro en Australia?</span></h2>
 					</div>
 					<div className="col-11 col-lg-10 pb-5">
 						<div className="row d-flex justify-content-center">

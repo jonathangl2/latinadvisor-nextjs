@@ -1,4 +1,5 @@
 "use client";
+import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
 import Script from "next/script";
 
@@ -12,19 +13,16 @@ export default function Footer() {
     <footer id="principal_footer" className="container-fluid">
       <div className="container">
         <div className="row py-5 py-lg-4 d-flex justify-content-center">
-
-          <div className="pb-4 pt-lg-3 pb-lg-0 col-12 col-sm-9 col-lg-4 contact-information order-2 order-lg-0">
+          <span id='iasBadge' data-account-id='3865'></span>
+          <div className="pb-4 pt-lg-3 pb-lg-0 ps-4 ps-lg-3 col-12 col-sm-9 col-lg-4 contact-information order-2 order-lg-0">
             <div className="row">
-              <div className="col-12"> 
-                <span id='iasBadge' data-account-id='3865'></span>
-              </div>
-              <div className="col-12 mb-2">
+              <div className="col-12 mb-3 mb-lg-2">
                 <p className="contact-information-item"><i className="icon icon-phone"></i> (+57) 301 572 4665 - (+57) 300 604 6321</p>
               </div>
-              <div className="col-12 mb-2">
+              <div className="col-12 mb-3 mb-lg-2">
                 <p className="contact-information-item"><i className="icon icon-phone"></i> (+61) 423 165 193 </p>
               </div>
-              <div className="col-12 mb-2">
+              <div className="col-12 mb-3 mb-lg-2">
                 <p className="contact-information-item"><i className="icon icon-mail"></i> Marketing@latinadvisor.com.au</p>
               </div>
               <div className="col-12 mb-3 mb-lg-0">
@@ -55,13 +53,13 @@ export default function Footer() {
               <div className="col-12">
                 <Link href="/" className="d-flex justify-content-center">
                   <img
-                    src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/Logo-color-blanco.svg"
+                    src={getAssetUrl("/assets/images/Logo-color-blanco.svg")}
                     alt="Latinadvisor"
                     className="logo-image"
                   />
                 </Link>
               </div>
-              <div className="col-10 d-flex align-items-center justify-content-center mt-4 mb-5">
+              <div className="col-10 d-flex align-items-center justify-content-center mt-3 mt-lg-4 mb-4 mb-lg-5">
                 <Link href="/contactanos?utm_web=Web%20contactanos" className="btn btn-round btn-green-1 text-uppercase btn-sm me-2 px-4 py-3 w-100">
                   Contáctanos
                 </Link>
@@ -209,7 +207,7 @@ export default function Footer() {
                 <div className="row d-flex justify-content-center">
                   <div className="col-12 col-md-6 d-none d-lg-inline container_modalsuscribe_img px-0">
                     <img
-                      src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/koala_newsletter.png"
+                      src={getAssetUrl("/assets/images/koala_newsletter.png")}
                       alt="Newsletter"
                       className="img-fluid w-100"
                     />

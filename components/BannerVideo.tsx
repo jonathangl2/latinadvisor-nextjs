@@ -4,7 +4,7 @@ interface BannerVideoProps {
   imageSrc: string;
   imageSrcResponsive: string;
   videoSrc: string;
-  title: string;
+  title: any;
   subtitle?: string;
 }
 
@@ -31,10 +31,10 @@ export default function BannerVideo({
           />
           <div className="caption">
             <div className="row d-flex justify-content-center">
-              <div className="col-11">
-                <h1>{title}</h1>
+              <div className="col-11 mb-3">
+                <h1 dangerouslySetInnerHTML={{ __html: title }}></h1>
                 {subtitle && (
-                  <p className="text-white mt-2 mb-3">{subtitle}</p>
+                  <p className="text-white mt-2">{subtitle}</p>
                 )}
               </div>
               <div className="col-10 col-lg-8">

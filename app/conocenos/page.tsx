@@ -10,10 +10,10 @@ export default function ConocenosPage() {
       if (
         window.funciones?.getTeamLatinAdvisorHome
       ) {
-        console.log("✅ Ejecutando funciones.getTeamLatinAdvisorHome()");
         window.funciones.getTeamLatinAdvisorHome();
         clearInterval(checkInterval);
       }
+      
     }, 300);
     return () => clearInterval(checkInterval);
   }, []);
@@ -23,7 +23,7 @@ export default function ConocenosPage() {
       <BannerInterno
         imageSrc={getAssetUrl("/assets/images/conocenos/banner-conocenos.png")}
         title="QUIÉNES SOMOS"
-        className="english-course"
+        className="internal_page"
       />
 
       <section className="container-conocenos container-fluid pt-5">

@@ -351,10 +351,13 @@ body {
             width: 100%;
             text-align: center;
             position: absolute;
-            bottom: 15%;
+            bottom: 0%;
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 10;
+            @media #{vars.$m768} {
+                bottom: 15%;
+            }
             h1 {
                 color: vars.$color-blue-dark-2; 
                 color: #fff;
@@ -377,6 +380,59 @@ body {
             }
             a {
                 margin-top: 1.8rem;
+            }
+        }
+        &.banner-cityAus{
+            text-transform: uppercase;
+            @media #{vars.$m992}{
+                min-height: 450px;
+            }
+            &::before {
+                background-color: rgba(0,0,0,0.18);
+            }
+            .internal_banner_img{
+                max-height: 240px;
+                @media #{vars.$m768}{
+                    max-height: 350px;
+                }
+                @media #{vars.$m992}{
+                    max-height: 500px;
+                }
+            }
+            .caption h1{
+                font-size: 6.2rem;
+                @media #{vars.$M1440} {
+                    font-size: 6rem;
+                }
+                @media #{vars.$M991} {
+                    font-size: 2.5rem;
+                }
+                @media #{vars.$M500} {
+                    font-size: 2rem;
+                }
+            }
+        }
+        &.internal_page{
+            min-height: 200px;
+            &::before {
+                background-color: #fff;
+                @media #{vars.$m992}{
+                    background-color: rgba(0,0,0,0.3);
+                }
+            }
+            .caption {
+                h1 {
+                    color: vars.$color-blue-dark-5; 
+                    @media #{vars.$m992} {
+                        color: #fff;
+                    }
+                }
+            }
+            .internal_banner_img{
+                display: none;
+                @media #{vars.$m992} {
+                    display: block;
+                }
             }
         }
     }

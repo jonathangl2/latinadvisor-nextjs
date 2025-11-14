@@ -6,6 +6,13 @@ footer#principal_footer {
     background-color: vars.$color-blue-dark-1;
     min-height: 260px;
     color: #fff;
+    .container{
+        position: relative;
+        padding-top: 4rem;
+        @media #{vars.$m992}{
+            padding-top: 0;
+        }
+    }
     p {
         color: #fff;
         font-weight: normal;
@@ -64,11 +71,19 @@ footer#principal_footer {
                 }
             }
         }
-        #iasBadge{
-            margin-top: -6rem;
-            margin-bottom: 2rem;
-            display: flex;
+        @media #{vars.$m992}{
+            &:nth-of-type(1){
+                margin-top: 4rem !important;
+            }
         }
+    }
+    #iasBadge{
+        position: absolute;
+        margin-top: -4rem;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+        display: flex;
+        top: 0;
     }
     .locations {
         // @media #{vars.$m1440} {
@@ -85,7 +100,8 @@ footer#principal_footer {
                 font-weight: bold;
                 display: flex;
                 align-items: center;
-                @media #{vars.$M1440} {
+                padding-left: .9rem;
+                @media #{vars.$m1024} {
                     padding-left: 1.5rem;
                 }
                 i{
@@ -95,8 +111,8 @@ footer#principal_footer {
             &-adress {
                 display: flex;
                 align-items: center;
-                padding-left: 3vw;
-                 @media #{vars.$M1440} {
+                padding-left: 3.4rem;
+                 @media #{vars.$m1024}{
                     padding-left: 4rem;
                 }
                 i {

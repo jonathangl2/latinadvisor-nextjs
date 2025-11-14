@@ -1,6 +1,7 @@
 "use client";
 
 import FormEmbed from "@/components/FormEmbed";
+import { getAssetUrl } from "@/lib/url";
 import Script from "next/script";
 import { useEffect } from "react";
 
@@ -16,10 +17,10 @@ export default function Home() {
         <div className="row">
           <div className="col-12 px-0">
             <video autoPlay muted loop id="bgVideo" className="d-block d-md-none">
-              <source src="./assets/documents/video-vertical-bg.mp4" type="video/mp4" />
+              <source src={getAssetUrl("/assets/documents/video-vertical-bg.mp4")} type="video/mp4" />
             </video>
             <video autoPlay muted loop id="bgVideo" className="d-none d-md-block">
-              <source src="./assets/documents/video-horizontal-bg.mp4" type="video/mp4" />
+              <source src={getAssetUrl("/assets/documents/video-horizontal-bg.mp4")} type="video/mp4" />
             </video>
           </div>
           <div className="caption">
@@ -31,9 +32,7 @@ export default function Home() {
             <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination">
               <div className="col-10 col-lg-4">
                 <a
-                  href="#studyplans"
-                  className="scrolling triggerTabInitial"
-                  data-tab="tab-australia"
+                  href={getAssetUrl("/australia")}
                 >
                   <div className="card card-ctaDestination">
                     <img
@@ -46,13 +45,11 @@ export default function Home() {
               </div>
               <div className="col-10 col-lg-4">
                 <a
-                  href="#studyplans"
-                  className="scrolling triggerTabInitial"
-                  data-tab="tab-dubai"
+                  href={getAssetUrl("/dubai")}
                 >
                   <div className="card card-ctaDestination">
                     <img
-                      src="./assets/images/home/estudiar-en-dubai.webp"
+                      src={getAssetUrl("/assets/images/home/estudiar-en-dubai.webp")}
                       alt="Estudiar en Dubái"
                     />
                     <h5 className="card-ctaDestination_title">Estudiar en Dubái</h5>
@@ -74,15 +71,15 @@ export default function Home() {
 
             {[
               {
-                img: "./assets/images/home/renovacion-visa-de-estudios.webp",
+                img: getAssetUrl("/assets/images/home/renovacion-visa-de-estudios.webp"),
                 title: "Renovación de visa de estudio",
               },
               {
-                img: "./assets/images/home/procesos-migratorios-otras-visas.webp",
+                img: getAssetUrl("/assets/images/home/procesos-migratorios-otras-visas.webp"),
                 title: "Procesos Migratorios y otras visas",
               },
               {
-                img: "./assets/images/home/work-and-holiday.webp",
+                img: getAssetUrl("/assets/images/home/work-and-holiday.webp"),
                 title: "Work and Holiday",
               },
             ].map((item, i) => (

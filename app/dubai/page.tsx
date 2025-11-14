@@ -10,7 +10,7 @@ export default function Dubai() {
 		<>
 			<BannerVideo
 				imageSrc={getAssetUrl("/assets/images/dubai/dubai-estudia-y-trabaja.webp")}
-				imageSrcResponsive="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/dubai/dubai-estudia-y-trabaja-responsive.webp"
+				imageSrcResponsive={getAssetUrl("/assets/images/dubai/dubai-estudia-y-trabaja-responsive.webp")}
 				videoSrc="https://www.youtube.com/embed/ky8n2saU2Wo?si=LWt-AmyzdzyjEDJi"
 				title="Estudia y Trabaja en Dubái"
 				subtitle="Tu Oportunidad de Vida y Crecimiento Profesional"
@@ -18,10 +18,10 @@ export default function Dubai() {
 			
 			<section className="section-australia container-fluid">
 				<section className="container">
-					<div className="row d-flex justify-content-center py-5">
+					<div className="row d-flex justify-content-center py-3 py-lg-5">
 						<div className="col-12 col-lg-11 mt-lg-5 py-5 section-australia_contentCta">
 							<p className="">Descubre por qué Dubái es el destino favorito para estudiantes internacionales, con un proceso de visado fácil, oportunidades laborales y una experiencia transformadora.</p>
-							<a href="" className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+							<a href="#contactForm" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>
 					</div>
 				</section>
@@ -29,7 +29,7 @@ export default function Dubai() {
 
 
 			<section className="section-australia container-fluid bg-grey-light-3">
-				<section className="container py-5">
+				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
 							<h2 className="section-australia_title text-center text-uppercase mb-4">¿Por Qué Dubái es el Destino Ideal para Ti?</h2>
@@ -96,7 +96,7 @@ export default function Dubai() {
 			<CarouselBeneficios title="5 Beneficios Exclusivos que Dubái Ofrece a Estudiantes Internacionales" location="dubai" />
 
 			<section className="section-dubai container-fluid">
-				<section className="container py-5">
+				<section className="container pt-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
 							<h2 className="section-australia_title text-center text-uppercase mb-4">Amplía tus Horizontes: Programas Académicos en Dubái</h2>
@@ -122,7 +122,7 @@ export default function Dubai() {
 								
 								</div>
 								<div className="col-12 col-lg-6 information mt-5 mt-lg-0">
-									<img src={getAssetUrl("/assets/images/dubai/programas-academicos-dubai.webp")} alt="" className="img-fluid w-100 mb-4"/>
+									<img src={getAssetUrl("/assets/images/dubai/programas-academicos-dubai.webp")} alt="" className="img-fluid w-100 mb-lg-4"/>
 								</div>
 							</div>
 						</div>
@@ -131,7 +131,7 @@ export default function Dubai() {
 			</section>
 
 			<section className="section-australia container-fluid bg-grey-light-3">
-				<section className="container py-5">
+				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
 							<h2 className="section-australia_title text-center text-uppercase mb-4">Requisitos Sencillos para tu Aventura Académica en Dubái</h2>
@@ -161,10 +161,10 @@ export default function Dubai() {
 				</section>
 			</section>	
 
-			<section className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
+			<section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
 				<div className="row d-flex justify-content-center">
-					<div className="col-11 col-lg-10 py-5 mt-lg-5">
-						<h2 className="section-australia_title text-center text-uppercase mb-4">¿Listo para Estudiar y <br/>Trabajar en Dubái??</h2>
+					<div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
+						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Listo para Estudiar y <br/>Trabajar en Dubái??</h2>
 					</div>
 					<div className="col-11 col-lg-10 pb-5">
 						<div className="row d-flex justify-content-center">
