@@ -1,3 +1,7 @@
+// Detecta la URL base automáticamente
+const BASE_URL = window.location.origin + (window.location.pathname.includes("latinadvisor-nextjs") ? "/latinadvisor-nextjs" : "");
+
+
 jQuery(document).ready(function() {
 
     let scrollDown = jQuery('#principal_banner .scrolling, .scrolling');
@@ -78,13 +82,13 @@ jQuery(document).ready(function() {
         autoplay: true,
         autoplayTimeout: 4000,
         autoplayHoverPause: false,
-        nav: true,
+        nav: false,
         navText: ['<span><i class="fas fa-chevron-left"></i></span>', '<span><i class="fas fa-chevron-right"></i></span>'],
         responsiveClass: true,
         responsive: {
             0: { items: 1 },
-            720: { items: 2, dots: true },
-            1024: { items: 3, dots: true }
+            720: { items: 2, dots: true, nav: true },
+            1024: { items: 3, dots: true, nav: true }
         },
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
@@ -450,10 +454,10 @@ let funciones = {
             return `<div class="item px-5 pt-5 d-flex align-items-center">
                 <div class="card card-team">
                     <div class="card-body">
-                        <div class="img-bg" style="background-image: url('https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/conocenos/team/${data?.img_bg}');">
+                        <div class="img-bg" style="background-image: url('${BASE_URL}/assets/images/conocenos/team/${data?.img_bg}');">
                             <p>${data.description_team}</p>
                         </div>
-                        <div class="img-front" style="background-image: url('https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/conocenos/team/${data.img_front}');"></div>
+                        <div class="img-front" style="background-image: url('${BASE_URL}/assets/images/conocenos/team/${data.img_front}');"></div>
                     </div>
                     <div class="card-footer">
                         <h3>${data.name_team}</h3>
@@ -463,7 +467,7 @@ let funciones = {
             </div>`;
         };
 
-        fetch('https://jonathangl2.github.io/latinadvisor-nextjs/assets/db/la_home.json').then(response => {
+        fetch(`${BASE_URL}/assets/db/la_home.json`).then(response => {
             if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
             return response.json();
         }).then(({ data }) => {
@@ -486,13 +490,13 @@ let funciones = {
                 autoplay: false,
                 autoplayTimeout: 6000,
                 autoplayHoverPause: true,
-                nav: true,
+                nav: false,
                 navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
                 responsiveClass: true,
                 responsive: {
                     0: { items: 1 },
-                    720: { items: 2, dots: true },
-                    1024: { items: 3, dots: true }
+                    720: { items: 2, dots: true, nav: true, },
+                    1024: { items: 3, dots: true,  nav: true, }
                 }
             });
         }).catch(error => {
@@ -505,7 +509,7 @@ let funciones = {
             return `<div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="card card-post card-postBlog">
                     <div class="card-body">
-                        <img src="https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/blog/posts/${data.img}" alt="" class="img-fluid mb-3">
+                        <img src="${BASE_URL}/assets/images/blog/posts/${data.img}" alt="" class="img-fluid mb-3">
                         <h3 class="mb-3"><strong>${data.title}</strong></h3>
                         <p>${data.descripcion}</p>
                         <a href="blog/${data.link}" class="mt-4 btn btn-sm btn-cta-post">Sigue leyendo <i class="icon icon-arrow-right-green"></i></a>
@@ -515,7 +519,7 @@ let funciones = {
         }
 
         document.addEventListener("DOMContentLoaded", function() {
-            fetch('https://jonathangl2.github.io/latinadvisor-nextjs/assets/db/la_home.json').then(response => {
+            fetch(`${BASE_URL}/assets/db/la_home.json`).then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok ' + response.statusText);
                 }
@@ -549,7 +553,7 @@ let funciones = {
             </div>`;
         };
 
-        fetch('https://jonathangl2.github.io/latinadvisor-nextjs/assets/db/la_home.json').then((response) => response.json()).then(({ data }) => {
+        fetch(`${BASE_URL}/assets/db/la_home.json`).then((response) => response.json()).then(({ data }) => {
             
             const section = data.benefits[location];
             if (!section) return console.warn(`No se encontraron beneficios para: ${location}`);
@@ -563,19 +567,19 @@ let funciones = {
             jQuery(`#carousel-benefits-${location}`).owlCarousel({
                 loop: true,
                 mouseDrag: false,
-                dots: false,
+                dots: true,
                 items: 1,
                 center: false,
                 autoplay: false,
                 autoplayTimeout: 8000,
                 autoplayHoverPause: true,
-                nav: true,
+                nav: false,
                 navText: ['<i class="icon icon-arrow-white-left"></i>', '<i class="icon icon-arrow-white-right"></i>'],
                 responsiveClass: true,
                 responsive: {
                     0: { items: 1 },
-                    768: { items: 2, dots: true },
-                    1024: { items: 2, dots: true }
+                    768: { items: 2, nav: true },
+                    1024: { items: 2, nav: true }
                 }
             });
         }).catch((error) => console.error('Error cargando beneficios:', error));

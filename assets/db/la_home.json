@@ -10,8 +10,8 @@
                     "description_team": "Es una persona con un corazón tan grande que necesita una tarjeta de presentación doble para que quepa todo su amor por los demás. Enamorada de Melbourne hace más de 15 años, es el alma de toda fiesta, líder por naturaleza, foodie y soñadora, siempre dispuesta a dar el 300 % en todo."
                 },
                 {
-                    "img_bg": "img-joha-bg.webp",
-                    "img_front": "img-joha.webp",
+                    "img_bg": "img-johanna-bg.webp",
+                    "img_front": "img-johanna.webp",
                     "name_team": "Joha",
                     "name_position": "Lider Comercial y asesora",
                     "description_team": "Si alguien puede ser una reina del optimismo desenfrenado es Joha, siempre buscando lo bueno en cada situación y convirtiendo cada día en una aventura emocionante. Con su contagiosa risa, energía positiva y su capacidad para encontrar la magia en lo ordinario, es la compañera perfecta para aquellos que necesitan un poco más de brillo en sus vidas."
@@ -127,28 +127,7 @@
                     "name_team": "Marthica",
                     "name_position": "Lider Comercial",
                     "description_team": "Empática y apasionada por ayudar a las personas a convertir sus metas en planes reales. Su calidez se nota al escuchar y acompañar; su experiencia, al anticipar y hablar con honestidad. Marthica sabe que detrás de cada sueño hay una estrategia bien hecha. Amante de los atardeceres, la luna, el mar y de Brisbane, su nuevo hogar."
-                },
-                {
-                    "img_bg": "img-juan-carlos-bg.webp",
-                    "img_front": "img-juan-carlos.webp",
-                    "name_team": "Juan Carlos",
-                    "name_position": "Agente Migratorio",
-                    "description_team": "Es el tipo de persona que sigue las reglas al pie de la letra, incluso en los juegos de mesa, asegurándose de que todos lancen los dados correctamente y sigan las instrucciones al milímetro. Tiene un corazón de oro y sus intenciones siempre son las mejores. Es como un superhéroe de la ley y el orden, sin capa, pero con una libreta de multas imaginaria."
-                },
-                {
-                    "img_bg": "img-christina-bg.webp",
-                    "img_front": "img-christina.webp",
-                    "name_team": "Christina",
-                    "name_position": "Agente Migratorio",
-                    "description_team": "Con una mente tan clara que podría organizar un país en un Excel. Profesional hasta la médula, vive entre planes, lecturas y actualizaciones migratorias. Su visión siempre va dos pasos adelante y su pasión por el conocimiento la convierte en una brújula confiable en cualquier tormenta."
-                },
-                {
-                    "img_bg": "img-renatto-bg.webp",
-                    "img_front": "img-renatto.webp",
-                    "name_team": "Renatto",
-                    "name_position": "Agente Migratorio",
-                    "description_team": "Es el alma mexicana del equipo, siempre con una actitud positiva y una sonrisa que abre puertas. Trabajador, claro y con un enfoque práctico, logra resultados sin perder el buen humor. Tiene la mezcla ideal entre carisma y profesionalismo: alguien en quien puedes confiar con los ojos cerrados, porque todo lo que hace lo respalda con resultados sólidos y experiencia."
-                }
+                } 
             ]
         },
         "blog": {
