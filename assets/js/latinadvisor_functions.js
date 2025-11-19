@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
     jQuery('.carousel-donde-estudiar').owlCarousel({
         loop: true,
         mouseDrag: false,
-        dots: false,
+        dots: true,
         center: true,
         autoplay: true,
         autoplayTimeout: 4000,
@@ -87,8 +87,8 @@ jQuery(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: { items: 1 },
-            720: { items: 2, dots: true, nav: true },
-            1024: { items: 3, dots: true, nav: true }
+            720: { items: 2, nav: true },
+            1024: { items: 3, nav: true }
         },
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
