@@ -52,6 +52,13 @@
                     "description_team": "Dianis es una explosión de creatividad, tan brillante que los arcoíris le piden consejo sobre combinaciones de colores, si fuera un personaje de un cuento de hadas, sería una mezcla entre un hada madrina y un genio de la lámpara, siempre lista para resolver cualquier problema con un toque de magia y una sonrisa."
                 },
                 {
+                    "img_bg": "img-alexa-bg.webp",
+                    "img_front": "img-alexa.webp",
+                    "name_team": "Alexa",
+                    "name_position": "Marketing Manager & Analista de Ads",
+                    "description_team": "Es la mente estratégica que convierte el caos en planes perfectos, ella esta detrás de cada plan que parece salir perfecto sin que nadie entienda cómo lo hizo. Meticulosa, estratégica y ordenada, analiza cada detalle como si fuera una obra de precisión. Su amabilidad y buen corazón hacen que trabajar con ella sea tan cómodo como efectivo. Siempre alegre, es la mezcla ideal entre disciplina, claridad y humanidad. Con ella, todo fluye y todo funciona."
+                },
+                {
                     "img_bg": "img-juancho-bg.webp",
                     "img_front": "img-juancho.webp",
                     "name_team": "Juancho",
@@ -120,6 +127,20 @@
                     "name_team": "Marthica",
                     "name_position": "Lider Comercial",
                     "description_team": "Empática y apasionada por ayudar a las personas a convertir sus metas en planes reales. Su calidez se nota al escuchar y acompañar; su experiencia, al anticipar y hablar con honestidad. Marthica sabe que detrás de cada sueño hay una estrategia bien hecha. Amante de los atardeceres, la luna, el mar y de Brisbane, su nuevo hogar."
+                },
+                {
+                    "img_bg": "img-renatto-bg.webp",
+                    "img_front": "img-renatto.webp",
+                    "name_team": "Renatto",
+                    "name_position": "Agente Migratorio",
+                    "description_team": "Es el alma mexicana del equipo, siempre con una actitud positiva y una sonrisa que abre puertas. Trabajador, claro y con un enfoque práctico, logra resultados sin perder el buen humor. Tiene la mezcla ideal entre carisma y profesionalismo: alguien en quien puedes confiar con los ojos cerrados, porque todo lo que hace lo respalda con resultados sólidos y experiencia."
+                },
+                {
+                    "img_bg": "img-christina-bg.webp",
+                    "img_front": "img-christina.webp",
+                    "name_team": "Christina",
+                    "name_position": "Agente Migratorio",
+                    "description_team": "Con una mente tan clara que podría organizar un país en un Excel. Profesional hasta la médula, vive entre planes, lecturas y actualizaciones migratorias. Su visión siempre va dos pasos adelante y su pasión por el conocimiento la convierte en una brújula confiable en cualquier tormenta. Y aunque no habla español —por ahora— está aprendiendo con una dedicación tan impecable como todo lo que hace."
                 } 
             ]
         },
