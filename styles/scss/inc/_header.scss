@@ -25,6 +25,8 @@ header {
     .navbar#principal_navbar {
         color: vars.$color-grey-2;
         background-color: vars.$color-grey-nav-rgba !important;
+        width: 100%;
+        transition: all 2s ease-out;
         @media #{vars.$M1440} {
             max-height: 90px;
         }
@@ -43,6 +45,10 @@ header {
         }
         &.bg-header {
             background-color: vars.$color-grey-nav !important;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1030;
         }
         .navbar-toggler {
             .navbar-toggler-icon {

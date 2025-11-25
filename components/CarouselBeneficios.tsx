@@ -10,7 +10,6 @@ export default function CarouselBeneficios({ title, location }: CarouselBenefici
   useEffect(() => {
     const checkInterval = setInterval(() => {
       if (window.funciones?.getBeneficios) {
-        console.log(`🚀 Ejecutando funciones.getBeneficios('${location}')`);
         window.funciones.getBeneficios(location);
         clearInterval(checkInterval);
       }

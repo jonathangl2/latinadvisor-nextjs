@@ -77,7 +77,7 @@ jQuery(document).ready(function() {
     jQuery('.carousel-donde-estudiar').owlCarousel({
         loop: true,
         mouseDrag: false,
-        dots: false,
+        dots: true,
         center: true,
         autoplay: true,
         autoplayTimeout: 4000,
@@ -87,8 +87,8 @@ jQuery(document).ready(function() {
         responsiveClass: true,
         responsive: {
             0: { items: 1 },
-            720: { items: 2, dots: true, nav: true },
-            1024: { items: 3, dots: true, nav: true }
+            720: { items: 2, nav: true },
+            1024: { items: 3, nav: true }
         },
         animateIn: 'fadeIn',
         animateOut: 'fadeOut'
@@ -583,7 +583,64 @@ let funciones = {
                 }
             });
         }).catch((error) => console.error('Error cargando beneficios:', error));
-    }
+    },
+    getTestimoniosDubaiAdvisor: () => {
+        
+        const htmlTestimoniosCArousel = (data) => {
+            return `<div class="item px-5 pt-5 d-flex align-items-center">
+                <div class=="row">
+                    <div class="col-12 col-lg-6>
+                    
+                    </div>
+                    <div class="col-12 col-lg-6>
+                    
+                    </div>
+                </div>
+                <div class="card card-team">
+                    <div class="card-body">
+                        <div class="img-bg" style="background-image: url('${BASE_URL}/assets/images/conocenos/team/${data?.img_bg}');">
+                            <p>${data.description_team}</p>
+                        </div>
+                        <div class="img-front" style="background-image: url('${BASE_URL}/assets/images/conocenos/team/${data.img_front}');"></div>
+                    </div>
+                    <div class="card-footer">
+                        <h3>${data.name_team}</h3>
+                        <h4>${data.name_position}</h4>
+                    </div>
+                </div>
+            </div>`;
+        };
+
+        fetch(`${BASE_URL}/assets/db/la_home.json`).then(response => {
+            if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
+            return response.json();
+        }).then(({ data }) => {
+
+            const HTMLfinal = data.testimonios.dubai.map(item => htmlTeamCArousel(item)).join("");
+            const contentElement = document.getElementById('carousel-testimoniosDubai');
+            if (!contentElement) {
+                console.warn('⚠️ No se encontró #carousel-testimoniosDubai');
+                return;
+            }
+
+            contentElement.innerHTML = HTMLfinal;
+
+            jQuery('#carousel-testimoniosDubai').owlCarousel({
+                loop: true,
+                mouseDrag: false,
+                dots: false,
+                items: 1,
+                center: false,
+                autoplay: false,
+                autoplayTimeout: 6000,
+                autoplayHoverPause: true,
+                nav: false,
+                navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
+            });
+        }).catch(error => {
+            console.error('❌ Error en fetch:', error);
+        });
+    },
 };
 
 function setCookie(name, value, daysToLive) {

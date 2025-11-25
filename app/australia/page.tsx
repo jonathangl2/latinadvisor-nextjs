@@ -236,7 +236,7 @@ export default function Australia() {
 						<div className="col-12 mb-lg-4">
 							<h2 className="section-australia_title text-white text-center  text-uppercase mb-4">Historias de Éxito de <br/>Nuestros Estudiantes</h2>
 						</div>
-						<div className="col-12 mb-lg-4">
+						<div className="col-12 mb-lg-4 section-australia_reputation">
 
 							<Script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js"></Script>
 							<iframe

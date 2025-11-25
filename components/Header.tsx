@@ -7,7 +7,7 @@ import { getAssetUrl } from '@/lib/url'
 export default function Header() {
   return (
     <header id="principal_header">
-      <nav id="principal_navbar" className="navbar navbar_v3 fixed-top navbar-expand-lg navbar-primary py-0 align-items-lg-stretch">
+      <nav id="principal_navbar" className="navbar navbar_v3 navbar-expand-lg navbar-primary py-0 align-items-lg-stretch">
         
         <Link className="navbar-brand py-0 px-lg-4 d-flex align-items-center" href={getAssetUrl("/")}>
           <img 

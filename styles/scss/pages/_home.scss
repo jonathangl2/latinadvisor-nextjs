@@ -20,6 +20,9 @@ section#principal_banner {
     video{
         width: 101%;
     }
+    img{
+        width: 100%;
+    }
     &::after {
         content: '';
         width: 101%;

@@ -16,12 +16,21 @@ export default function Home() {
       <section id="principal_banner" className="container-fluid">
         <div className="row">
           <div className="col-12 px-0">
-            <video autoPlay muted loop id="bgVideo" className="d-block d-md-none">
+            
+            {/* <video autoPlay muted loop id="bgVideo" className="d-block d-md-none">
               <source src={getAssetUrl("/assets/documents/video-vertical-bg.mp4")} type="video/mp4" />
-            </video>
+            </video> */}
+
+            {/* Video solo en desktop */}
             <video autoPlay muted loop id="bgVideo" className="d-none d-md-block">
               <source src={getAssetUrl("/assets/documents/video-horizontal-bg.mp4")} type="video/mp4" />
             </video>
+            {/* Imagen fallback para móviles */}
+            <img
+              src={getAssetUrl("/assets/images/home/bg-mobile.webp")}
+              alt="Background mobile"
+              className="d-block d-md-none"
+            />
           </div>
           <div className="caption">
             <h1>
@@ -29,8 +38,8 @@ export default function Home() {
             </h1>
             <p className="text-white mt-2 mb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
           
-            <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination">
-              <div className="col-10 col-lg-4">
+            <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination mx-auto w-100">
+              <div className="col-11 col-lg-4">
                 <a
                   href={getAssetUrl("/australia")}
                 >
@@ -43,7 +52,7 @@ export default function Home() {
                   </div>
                 </a>
               </div>
-              <div className="col-10 col-lg-4">
+              <div className="col-11 col-lg-4">
                 <a
                   href={getAssetUrl("/dubai")}
                 >
@@ -115,7 +124,7 @@ export default function Home() {
                 <strong>Latinadvisor?</strong>
               </h2> */}
               <br></br>
-              <p className="mt-5 mb-3">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</p>
+              <p className="mt-5 mb-3 pt-4">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</p>
               <ul>
                 <li>Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas. </li>
                 <li>Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.</li>

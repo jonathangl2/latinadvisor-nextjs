@@ -327,7 +327,7 @@ body {
             width: 100%;
             height: 100%;
             z-index: 1;
-            background-color: rgba(0,0,0,0.3);
+            background-color: rgba(0,0,0,0.1);
             position: absolute;
             left: 0;
             top: 0;
@@ -356,7 +356,7 @@ body {
             transform: translate(-50%, -50%);
             z-index: 10;
             @media #{vars.$m768} {
-                bottom: 15%;
+                bottom: 8%;
             }
             h1 {
                 color: vars.$color-blue-dark-2; 
@@ -383,15 +383,15 @@ body {
             }
         }
         &.banner-cityAus{
-            text-transform: uppercase;
+            text-transform: uppercase; 
             @media #{vars.$m992}{
-                min-height: 450px;
+                min-height: 400px;
             }
             &::before {
                 background-color: rgba(0,0,0,0.18);
             }
             .internal_banner_img{
-                max-height: 240px;
+                max-height: 220px;
                 @media #{vars.$m768}{
                     max-height: 350px;
                 }
@@ -399,16 +399,24 @@ body {
                     max-height: 500px;
                 }
             }
-            .caption h1{
-                font-size: 6.2rem;
-                @media #{vars.$M1440} {
-                    font-size: 6rem;
+            .caption { 
+                
+                bottom: 25%;
+                @media #{vars.$m768} {
+                    bottom: 10%;
                 }
-                @media #{vars.$M991} {
-                    font-size: 2.5rem;
-                }
-                @media #{vars.$M500} {
-                    font-size: 2rem;
+                  
+                h1{
+                    font-size: 6.2rem;
+                    @media #{vars.$M1440} {
+                        font-size: 6rem;
+                    }
+                    @media #{vars.$M991} {
+                        font-size: 2.5rem;
+                    }
+                    @media #{vars.$M500} {
+                        font-size: 2rem;
+                    }
                 }
             }
         }
@@ -417,7 +425,7 @@ body {
             &::before {
                 background-color: #fff;
                 @media #{vars.$m992}{
-                    background-color: rgba(0,0,0,0.3);
+                    background-color: rgba(0,0,0,0.1);
                 }
             }
             .caption {

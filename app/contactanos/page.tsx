@@ -8,7 +8,7 @@ export default function ContactoPage() {
   return (
     <>
       <BannerInterno
-        imageSrc={getAssetUrl("/assets/images/escribenos/banner-escribenos.png")}
+        imageSrc={getAssetUrl("/assets/images/banners/contactanos.webp")}
         title="CONTÁCTANOS"
         className="internal_page"
       />

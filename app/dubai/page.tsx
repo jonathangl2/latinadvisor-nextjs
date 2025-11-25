@@ -2,6 +2,8 @@
 import BannerVideo from "@/components/BannerVideo";
 import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
+import InstagramEmbed from "@/components/InstagramEmbed";
+
 import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
 
@@ -147,7 +149,7 @@ export default function Dubai() {
 									<img src={getAssetUrl("/assets/images/dubai/requisitos-para-tu-aventura-academica-en-dubai.webp")} alt="" className="img-fluid w-100 mb-4"/>
 								</div>
 								<div className="col-12 col-lg-6 ps-lg-5 information order-0 order-lg-1">
-									<h3 className="mb-4">Lista de Requisitos:</h3>
+									<h3 className="mb-4">Documentación básica:</h3>
 									<ul>
 										<li><strong>Pasaporte con vigencia</strong> mínima de 6 meses.</li>
 										<li><strong>Inscripción a un programa académico</strong> en una institución aprobada.</li>
@@ -160,6 +162,22 @@ export default function Dubai() {
 					</div>
 				</section>
 			</section>	
+
+			<section className="section-australia container-fluid bg-blue-grey-4">
+				<section className="container py-3 py-lg-5">
+					<div className="row d-flex justify-content-center py-5">
+						<div className="col-12 col-lg-10 mb-lg-4">
+							<h2 className="section-australia_title text-white text-center  text-uppercase mb-4">Experiencias reales: Lo que dicen nuestros estudiantes</h2>
+						</div>
+						<div className="col-12 mb-lg-4 section-australia_reputation">
+							<div
+								id="carousel-testimoniosDubai"
+								className="carousel-testimoniosDubai owl-carousel owl-theme"
+							></div>
+						</div>
+					</div>
+				</section>
+			</section>
 
 			<section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
 				<div className="row d-flex justify-content-center">

@@ -21,7 +21,7 @@ export default function ConocenosPage() {
   return (
     <>
       <BannerInterno
-        imageSrc={getAssetUrl("/assets/images/conocenos/banner-conocenos.png")}
+        imageSrc={getAssetUrl("/assets/images/banners/quienes-somos.webp")}
         title="QUIÉNES SOMOS"
         className="internal_page"
       />

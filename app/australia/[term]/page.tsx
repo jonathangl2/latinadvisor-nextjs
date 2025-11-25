@@ -66,6 +66,7 @@ export default async function AustraliaCityPage({ params }: { params: Promise<{ 
       <BannerInterno
         imageSrc={getAssetUrl(`/assets/images/australia/${ciudad.slug}/banner-${ciudad.slug}-australia.webp`)}
         title={ciudad.title}
+        btnCtaForm={true}
         className="banner-cityAus"
       />
 
@@ -73,14 +74,21 @@ export default async function AustraliaCityPage({ params }: { params: Promise<{ 
         <div id="response" className="col-12 pb-5 pb-lg-0">
            <div id={ciudad.slug} className="container-donde-estudiar-city row d-flex justify-content-center">
             <div className="col-12 featured-information">
-              <div className="row px-4 d-flex">
-                <div className="col-12 col-lg-5 offset-lg-1 pt-3 pb-lg-5 ps-lg-0">
-                  <div
-                    className="ciudad-description"
-                    dangerouslySetInnerHTML={{ __html: ciudad.description }}
-                  />
+              <div className="row px-4 d-flex justify-content-center">
+                <div className="col-12 col-lg-5 offset-lg-1 pt-3 pb-lg-5 ps-lg-0 order-0">
+                  <div className="row d-flex justify-content-center">
+                    <div className="col-12">
+                      <div
+                        className="ciudad-description"
+                        dangerouslySetInnerHTML={{ __html: ciudad.description }}
+                      />
+                    </div>
+                    <div className="d-block d-sm-none col-12 col-lg-11 section-australia_contentCta d-flex justify-content-center my-4">
+                      <a href={getAssetUrl("/australia/#contactForm")} className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+                    </div>
+                  </div>
                 </div>
-                <div className="col-12 col-lg-5 offset-lg-1 pb-5 ps-lg-0 pe-lg-5">
+                <div className="col-12 col-lg-5 offset-lg-1 pb-5 ps-lg-0 pe-lg-5 order-2 order-lg-1">
                   {ciudad.features?.length > 0 && (
                     <div className="row">
 
@@ -93,21 +101,21 @@ export default async function AustraliaCityPage({ params }: { params: Promise<{ 
                     </div>
                   )}
                 </div>
-                <div className="col-12 col-lg-11 d-flex justify-content-end">
-                  <a href={getAssetUrl("/australia#ciudades")} className="view-more mt-4">Ver más ciudades <i className="icon icon-arrow-right ms-2"></i></a>
+                <div className="col-12 col-lg-11 d-flex justify-content-end order-3 order-lg-2">
+                  <a href={getAssetUrl("/australia#ciudades")} className="view-more mb-5 mb-lg-2 mt-lg-4">Ver más ciudades <i className="icon icon-arrow-right ms-2"></i></a>
+                </div>
+                <div className="col-12 col-lg-10 mt-5 pb-5 order-1 order-lg-3">
+                  {ciudad.imagenes?.length > 0 && (
+                    <div id="carousel-donde-estudiar" className="carousel-donde-estudiar owl-carousel owl-theme owl-loaded owl-drag">
+                      {ciudad.imagenes.map((img: string, i: number) => (
+                        <div key={i} className="item px-3">
+                          <img src={getAssetUrl(img)} className="img-fluid" />
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
-            </div>
-            <div className="col-12 col-lg-10 pb-5">
-              {ciudad.imagenes?.length > 0 && (
-                <div id="carousel-donde-estudiar" className="carousel-donde-estudiar owl-carousel owl-theme owl-loaded owl-drag">
-                  {ciudad.imagenes.map((img: string, i: number) => (
-                    <div key={i} className="item px-3">
-                      <img src={getAssetUrl(img)} className="img-fluid" />
-                    </div>
-                  ))}
-                </div>
-              )}
             </div>
           </div>
         </div>
