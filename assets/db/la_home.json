@@ -588,13 +588,23 @@
             "dubai": [
                 {
                     "name": "Shirley Toro",
-                    "url": "https://www.instagram.com/reel/DMG4wbQPev2/?utm_source=ig_web_copy_link",
-                    "testimonial": "Agradezco profundamente el apoyo, la orientación y el profesionalismo brindado durante todo mi proceso de estudios en el exterior. Me sentí acompañada, informada y con la confianza necesaria para tomar esta decisión tan importante.\nGracias por hacer de todo este camino algo claro, organizado y humano."
+                    "url": "https://www.instagram.com/reel/DMG4wbQPev2",
+                    "testimonial": "Agradezco profundamente el apoyo, la orientación y el profesionalismo brindado durante todo mi proceso de estudios en el exterior. Me sentí acompañada, informada y con la confianza necesaria para tomar esta decisión tan importante.<br/><br/>Gracias por hacer de todo este camino algo claro, organizado y humano."
                 },
                 {
                     "name": "Alejandro Rodríguez",
-                    "url": "https://www.instagram.com/latinadvisor/reel/DNrNEhE0p6q/",
+                    "url": "https://www.instagram.com/reel/DNrNEhE0p6q",
                     "testimonial": "Gracias a LatinAdvisor hoy estoy rumbo a Dubái. Iniciaré un diplomado en negocios y un curso de inglés en Nest Academy. ¡Un sueño que por fin se hace real!"
+                },
+                {
+                    "name": "Camilo Wiesner",
+                    "url": "https://www.instagram.com/reel/DOO_YhICXcP",
+                    "testimonial": "LatinAdvisor ha sido de mis mejores decisiones para estudiar en el exterior. Me acompañaron en cada paso, primero rumbo a Australia y ahora en Dubái, siempre explicando todo con claridad.<br/><br/>De verdad hacen que todo el proceso sea mucho más fácil."
+                },
+                {
+                    "name": "Jimmy León",
+                    "url": "https://www.instagram.com/reel/DLDWZqEP5rb",
+                    "testimonial": "Desde Bogotá despego hacia un sueño llamado Dubái. Agradezco a LatinAdvisor por acompañarme y hacer posible este camino. Pronto les compartiré mi experiencia."
                 }
             ]
         }
