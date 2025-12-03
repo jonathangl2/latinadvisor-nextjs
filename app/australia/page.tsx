@@ -13,7 +13,7 @@ export default function Australia() {
 			<BannerVideo
 				imageSrc={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja.webp")}
 				imageSrcResponsive={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja-responsive.webp")}
-				videoSrc="https://www.youtube.com/embed/sWrccL-TBBI?si=yyw_93IOSsITT0ix"
+				videoSrc="https://www.youtube.com/embed/b2rIxmDX2HA?si=U7v_GBW7vKiBh9Mg"
 				title="Estudiar y Trabajar en Australia"
 				subtitle="Tu Futuro Empieza Aquí"
 			/>

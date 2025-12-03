@@ -56,7 +56,7 @@
                     "img_front": "img-alexa.webp",
                     "name_team": "Alexa",
                     "name_position": "Marketing Manager & Analista de Ads",
-                    "description_team": "Es la mente estratégica que convierte el caos en planes perfectos, ella esta detrás de cada plan que parece salir perfecto sin que nadie entienda cómo lo hizo. Meticulosa, estratégica y ordenada, analiza cada detalle como si fuera una obra de precisión. Su amabilidad y buen corazón hacen que trabajar con ella sea tan cómodo como efectivo. Siempre alegre, es la mezcla ideal entre disciplina, claridad y humanidad. Con ella, todo fluye y todo funciona."
+                    "description_team": "Es la mente estratégica que convierte el caos en planes perfectos. Meticulosa y ordenada, analiza cada detalle como una obra de precisión. Su amabilidad y buen corazón hacen que trabajar con ella sea tan cómodo como efectivo. Siempre alegre, es la mezcla ideal entre disciplina, claridad y humanidad."
                 },
                 {
                     "img_bg": "img-juancho-bg.webp",
@@ -588,13 +588,23 @@
             "dubai": [
                 {
                     "name": "Shirley Toro",
-                    "url": "https://www.instagram.com/reel/DMG4wbQPev2/?utm_source=ig_web_copy_link",
-                    "testimonial": "Agradezco profundamente el apoyo, la orientación y el profesionalismo brindado durante todo mi proceso de estudios en el exterior. Me sentí acompañada, informada y con la confianza necesaria para tomar esta decisión tan importante.\nGracias por hacer de todo este camino algo claro, organizado y humano."
+                    "url": "https://www.instagram.com/reel/DMG4wbQPev2",
+                    "testimonial": "Agradezco profundamente el apoyo, la orientación y el profesionalismo brindado durante todo mi proceso de estudios en el exterior. Me sentí acompañada, informada y con la confianza necesaria para tomar esta decisión tan importante.<br/><br/>Gracias por hacer de todo este camino algo claro, organizado y humano."
                 },
                 {
                     "name": "Alejandro Rodríguez",
-                    "url": "https://www.instagram.com/latinadvisor/reel/DNrNEhE0p6q/",
+                    "url": "https://www.instagram.com/reel/DNrNEhE0p6q",
                     "testimonial": "Gracias a LatinAdvisor hoy estoy rumbo a Dubái. Iniciaré un diplomado en negocios y un curso de inglés en Nest Academy. ¡Un sueño que por fin se hace real!"
+                },
+                {
+                    "name": "Camilo Wiesner",
+                    "url": "https://www.instagram.com/reel/DOO_YhICXcP",
+                    "testimonial": "LatinAdvisor ha sido de mis mejores decisiones para estudiar en el exterior. Me acompañaron en cada paso, primero rumbo a Australia y ahora en Dubái, siempre explicando todo con claridad.<br/><br/>De verdad hacen que todo el proceso sea mucho más fácil."
+                },
+                {
+                    "name": "Jimmy León",
+                    "url": "https://www.instagram.com/reel/DLDWZqEP5rb",
+                    "testimonial": "Desde Bogotá despego hacia un sueño llamado Dubái. Agradezco a LatinAdvisor por acompañarme y hacer posible este camino. Pronto les compartiré mi experiencia."
                 }
             ]
         }

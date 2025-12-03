@@ -21,7 +21,7 @@ export default function InstagramEmbed({ url }: { url: string }) {
         className="instagram-media"
         data-instgrm-permalink={url}
         data-instgrm-version="14"
-        style={{ background: "#fff", border: 0, margin: 0, padding: 0 }}
+        style={{ background: "transparent", border: 0, margin: 0, padding: 0, width: "100%" }}
       />
     </div>
   );

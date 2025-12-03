@@ -3,7 +3,6 @@ import Image from "next/image";
 import BannerInterno from "@/components/BannerInterno";
 import { getAssetUrl } from "@/lib/url";
 import { console } from "inspector";
-import React from "react";
 import fs from "fs";
 import path from "path";
 

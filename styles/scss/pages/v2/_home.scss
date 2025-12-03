@@ -608,6 +608,18 @@
                 padding-top: 1rem;
             }
         }
+        #carousel-testimoniosDubai{
+            .content-user{
+                span{
+                    font-size: 6rem;
+                    margin-bottom: 3rem;
+                }
+                h3{
+                    font-weight: 500;
+                    color: vars.$color-blue-dark-1 !important;
+                }
+            }
+        }
     }
 }
 

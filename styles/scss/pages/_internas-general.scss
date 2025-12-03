@@ -2,6 +2,13 @@
 
 /* --------- START CSS GENERAL CONTENT - INTERNAL PAGES --------- */
 
+:root {
+  color-scheme: light;
+  --background-color: ;
+  --text-color: vars.$color-grey-1;;
+}
+
+
 body {
     background-color: #fff;
     position: relative;

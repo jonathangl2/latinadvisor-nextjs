@@ -24,6 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <head>
 
+        <meta name="color-scheme" content="light" />
+
         {/* Tus CSS locales desde public */}
         <link rel="stylesheet" href={getAssetUrl("assets/css/owlcarousel/owl.carousel.min.css")} />
         <link rel="stylesheet" href={getAssetUrl("assets/css/owlcarousel/owl.theme.default.min.css")} />

@@ -1,13 +1,18 @@
-"use client";
 import BannerVideo from "@/components/BannerVideo";
 import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
-import InstagramEmbed from "@/components/InstagramEmbed";
+import CarouselTestimoniosDubai from "@/components/CarouselTestimoniosDubai";
+import { loadHomeJson } from "@/lib/loadJson";
+
 
 import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
 
 export default function Dubai() {
+	
+	const data = loadHomeJson();
+  	const testimoniosDubai = data.data.testimonios.dubai;
+
 	return (
 		<>
 			<BannerVideo
@@ -22,7 +27,7 @@ export default function Dubai() {
 				<section className="container">
 					<div className="row d-flex justify-content-center py-3 py-lg-5">
 						<div className="col-12 col-lg-11 mt-lg-5 py-5 section-australia_contentCta">
-							<p className="">Descubre por qué Dubái es el destino favorito para estudiantes internacionales, con un proceso de visado fácil, oportunidades laborales y una experiencia transformadora.</p>
+							<p className="">Descubre por qué Dubái es el destino favorito para estudiantes internacionales, con un proceso de <strong>visado fácil, rápido, sin requisito de solvencia económica</strong> y con grandes oportunidades laborales.</p>
 							<a href="#contactForm" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>
 					</div>
@@ -51,7 +56,7 @@ export default function Dubai() {
 											<i className="icon-requirements icon-proceso-facil-rapido"></i>
 										</div>
 										<div className="col">
-											<p className="">Proceso de visado <strong>fácil y rápido.</strong></p> 
+											<p className="">Proceso de visado <strong>fácil, rápido y sin solvencia económica.</strong></p> 
 										</div>
 									</div>
 								</div>
@@ -163,17 +168,14 @@ export default function Dubai() {
 				</section>
 			</section>	
 
-			<section className="section-australia container-fluid bg-blue-grey-4">
+			<section className="section-dubai section-australia container-fluid bg-blue-grey-4">
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-lg-4">
 							<h2 className="section-australia_title text-white text-center  text-uppercase mb-4">Experiencias reales: Lo que dicen nuestros estudiantes</h2>
 						</div>
-						<div className="col-12 mb-lg-4 section-australia_reputation">
-							<div
-								id="carousel-testimoniosDubai"
-								className="carousel-testimoniosDubai owl-carousel owl-theme"
-							></div>
+						<div className="col-12 mb-lg-4">
+							<CarouselTestimoniosDubai items={testimoniosDubai} />
 						</div>
 					</div>
 				</section>

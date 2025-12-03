@@ -46,7 +46,7 @@ section#principal_banner {
         transform: translate(-50%, 0%);
         z-index: 10;
         @media #{vars.$m768}{
-            bottom: -15%;    
+            bottom: -10%;    
              transform: translate(-50%, -45%);
         }
         h1 {
@@ -71,7 +71,7 @@ section#principal_banner {
             }
         }
         a {
-            margin-top: 1.8rem;
+            margin-top: 1.5rem;
         }
         p{
             color: white;
