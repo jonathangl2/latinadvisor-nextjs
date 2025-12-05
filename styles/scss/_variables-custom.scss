@@ -63,6 +63,12 @@ $m992: "screen and (min-width : 992px)" !default;
 $m768: "screen and (min-width : 768px)" !default;
 $m375: "screen and (min-width : 375px)" !default;
 
+/* TEXT COLORS */
+
+.text-green-2{
+    color: $color-green-2;
+}
+
 /* BACKGROUNDS */
 
 .bg-blue-grey-1 {
@@ -232,16 +238,15 @@ $m375: "screen and (min-width : 375px)" !default;
 }
 
 .btn-green-1 {
-    color: $color-blue-dark-1;
-    background-color: $color-green-1;
+    color: $color-blue-dark-1 !important;
+    background-color: $color-green-1 !important;
     border: 2px solid $color-green-1;
     line-height: 1 !important;
     &:hover,
     &:focus,
     &:active,
     &.active {
-        color: $color-green-1 !important;
-        background-color: rgba(255, 255, 255, 0.2) !important;
+        background-color: rgba(151, 213, 57, 0.9) !important;
         border: 2px solid $color-green-1 !important;
         .icon-arrow-right-white,
         .icon-arrow-left-white {
@@ -367,7 +372,7 @@ $m375: "screen and (min-width : 375px)" !default;
     height: 45px;
   }
   @media #{$M768} {
-    display: none;
+    top: 60%;
   }
 }
 

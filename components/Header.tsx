@@ -75,7 +75,7 @@ export default function Header() {
                       title: "ESTUDIAR EN DUBÁI",
                     },
                     {
-                      url: getAssetUrl("/australia"),
+                      url: getAssetUrl("/australia/renovaciondevisa"),
                       title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
                     },
                     {

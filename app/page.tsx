@@ -82,21 +82,26 @@ export default function Home() {
               {
                 img: getAssetUrl("/assets/images/home/renovacion-visa-de-estudios.webp"),
                 title: "Renovación de visa de estudio",
+                url: 'renovaciondevisa'
               },
               {
                 img: getAssetUrl("/assets/images/home/procesos-migratorios-otras-visas.webp"),
                 title: "Procesos Migratorios y otras visas",
+                url: ''
               },
               {
                 img: getAssetUrl("/assets/images/home/work-and-holiday.webp"),
                 title: "Work and Holiday",
+                url: ''
               },
             ].map((item, i) => (
               <div className="col-10 col-lg-4 mb-5 mb-lg-0" key={i}>
-                <div className="card card-ourServices">
-                  <img src={item.img} alt={item.title} />
-                  <h3 className="card-ourServices_title">{item.title}</h3>
-                </div>
+                <a href={getAssetUrl("/australia/"+item.url)}>
+                  <div className="card card-ourServices">
+                    <img src={item.img} alt={item.title} />
+                    <h3 className="card-ourServices_title">{item.title}</h3>
+                  </div>
+                </a>
               </div>
             ))}
           </div>

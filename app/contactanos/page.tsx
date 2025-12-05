@@ -1,8 +1,15 @@
 import BannerInterno from "@/components/BannerInterno";
 import FormEmbed from "@/components/FormEmbed";
 import { getAssetUrl } from "@/lib/url";
+import { Metadata } from "next";
 import Image from "next/image";
 import Script from "next/script";
+
+
+export const metadata:Metadata = {
+  title: "Contáctanos | LatinAdvisor",
+  description: "Envíanos un mensaje, llámanos o visítanos. Déjanos saber tus inquietudes o síguenos en nuestras redes sociales.  Tú aventura en Australia comienza aquí."
+}
 
 export default function ContactoPage() {
   return (

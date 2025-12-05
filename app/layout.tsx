@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: 'Inicio | Latinadvisor | Estamos construyendo sueños',
   description: 'Planifica tu viaje y encuentra toda la información en cuanto a visa, tramites y asesoría gratuita para estudiar inglés u otros cursos en Australia.',
   keywords: 'Estudiar en Australia, Agencia de estudios, Agencia de viajes, Agencia de estudios en el exterior, Agencias de estudios en Australia, Agencias de estudios en Melbourne, Agencias de estudios en Brisbane, Agencias de estudios en Sydney, Agencias de estudios en Adelaide, Agencias de estudios en Gold Coast, Estudia en el exterior, Estudia en el extranjero, Cursos de ingles, Viajar Australia, Becas para estudiar ingles en el extranjero, Becas para estudiar en el extranjero',
-  authors: [{ name: 'LatinAdvisor' }]
+  authors: [{ name: 'LatinAdvisor' }],
+  themeColor: "#ffffff",
 }
 
 export default function RootLayout({

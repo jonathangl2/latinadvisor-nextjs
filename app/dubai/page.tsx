@@ -3,10 +3,15 @@ import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
 import CarouselTestimoniosDubai from "@/components/CarouselTestimoniosDubai";
 import { loadHomeJson } from "@/lib/loadJson";
-
-
 import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata:Metadata = {
+	title: "Estudia y Trabaja en Dubái | LatinAdvisor",
+	description: "Descubre las oportunidades laborales en Dubai para estudiantes internacionales y experimenta una vida llena de lujo y cultura. Con una infraestructura moderna, seguridad y calidad de vida excepcionales, Dubai ofrece una mezcla única de tradición y modernidad. Disfruta de un mercado laboral competitivo en sectores como tecnología e ingeniería, mientras estudias o trabajas en una de las ciudades más emocionantes del mundo. ¡Planifica tu viaje y conéctate con tu futuro profesional hoy mismo!",
+	keywords: "Estudiar en Dubai, Cursos de inglés en Dubai, Educación internacional en Dubai, Programas de estudio en Dubai, Aprender inglés en el extranjero, Estudios vocacionales en Dubai, Cursos de inglés de negocios en Dubai, Bachelors en Dubai, Formación técnica en Dubai, Estudios en administración en Dubai, Programas de gestión en Dubai, Ciencia en computación en Dubai, Cursos de marketing digital en Dubai, Estudios de hospitalidad en Dubai, Curso de gestión de proyectos en Dubai, Carreras en Dubai, Oportunidades laborales en Dubai, Residencia estudiantil en Dubai, Trabajo en Dubai para estudiantes, Calidad de vida en Dubai, Vivir en Dubai como estudiante, Infraestructura en Dubai, Vivienda en Dubai, Estudios de contabilidad en Dubai, Cursos de publicidad digital en Dubai, Formación en eventos deportivos en Dubai, Cursos de gestión hotelera en Dubai, Análisis de datos en Dubai, Inteligencia artificial en Dubai, Viajar a Dubai, Vida estudiantil en Dubai, Seguridad en Dubai, Opciones de ocio en Dubai, Cultura y vida en Dubai, Transporte en Dubai"
+}
 
 export default function Dubai() {
 	

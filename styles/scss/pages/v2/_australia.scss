@@ -128,10 +128,12 @@
             text-align: center;
             position: absolute;
             left: 50%;
-            bottom: 10%;
+            top: 7%;
             transform: translate(-50%, 0%);
             z-index: 10;
+            height: 100%;
             @media #{vars.$m768}{
+                top: auto;
                 bottom: -10%;    
                 //transform: translate(-50%, -45%);
             }
@@ -218,11 +220,83 @@
             }
         }
         &_reputation{
+            min-height: 320px;
+            @media #{vars.$m768}{
+                min-height: 350px;
+            }
             iframe{
                 width: 100%;
                 min-height: 380px;
                 @media #{vars.$m768}{
                     min-height: 350px;
+                }
+            }
+        }
+    }
+    &-australiaRenovacion{
+        .information{
+            img{
+                border-radius: 15px;
+            }
+        }
+        .caption{
+            height: 80%;
+            display: flex;
+            align-items: center;
+            justify-content: start;  
+            flex-direction: column;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            @media #{vars.$m1024}{
+                justify-content: space-around;
+                height: 100%;
+            }
+        }
+        &_courses{
+            h3{
+                color: vars.$color-green-2;
+                font-weight: bold;
+                font-size: 1.3rem;
+            }
+        }
+        &_agentes{
+            margin-bottom: 3rem;
+            .card{
+                display: flex;
+                align-items: stretch;
+                flex-direction: row;
+                border: 0px;
+                box-shadow: none;
+                background-color: transparent;
+
+                .card-header{
+                    border: 0px;
+                    border-radius: 30px 0 0 30px;
+                    padding: 0;
+                    width: 30%;
+                    background-color: transparent;
+                    overflow: hidden;
+                    img{
+                        margin: 0 !important;
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+                .card-body{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    background-color: vars.$color-white;
+                    border-radius: 0 30px 30px 0;
+                    h5{
+                        color: vars.$color-grey-1;
+                        font-weight: bold;
+                    }
+                    p{
+                        color: vars.$color-grey-1;
+                    }
                 }
             }
         }

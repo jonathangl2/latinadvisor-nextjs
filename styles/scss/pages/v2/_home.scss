@@ -609,10 +609,20 @@
             }
         }
         #carousel-testimoniosDubai{
+            .instagram-embed-wrapper{
+                overflow: hidden;
+                iframe{
+                    margin-bottom: -9.6rem !important;
+                }
+            }
             .content-user{
                 span{
-                    font-size: 6rem;
-                    margin-bottom: 3rem;
+                    font-size: 4.2rem;
+                    margin-bottom: 2rem;
+                    @media #{vars.$m768}{
+                        font-size: 6rem;
+                        margin-bottom: 3rem;
+                    }
                 }
                 h3{
                     font-weight: 500;

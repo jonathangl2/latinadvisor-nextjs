@@ -8,6 +8,22 @@
   --text-color: vars.$color-grey-1;;
 }
 
+html{
+    color-scheme: light !important;
+    forced-color-adjust: none !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    filter: none !important;
+    background: #ffffff !important;
+    color: vars.$color-grey-1 !important;
+  }
+}
+
+html, body {
+  background-color: #ffffff !important;
+}
 
 body {
     background-color: #fff;

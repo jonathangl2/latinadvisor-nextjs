@@ -1,11 +1,17 @@
-"use client";
 import BannerVideo from "@/components/BannerVideo";
 import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
 import { getAssetUrl } from "@/lib/url";
+import { Metadata } from "next";
 
 import Link from "next/link";
 import Script from "next/script";
+
+export const metadata:Metadata = {
+  	title: "Estudiar y Trabajar en Australia | LatinAdvisor",
+  	description: "Australia es un país con oportunidades. Déjate seducir con sus encantos y diversidad. Un país lleno de contrastes y de multiculturalidad que te encantará.",
+	keywords: "Trabaja en el exterior, Como viajar al exterior, Visa de estudiante, Visa de estudiante para Australia , Viajar por Australia, Trabajar en Australia, Estudia ingles y trabaja en Australia , Vivir en Australia, Tipos de visa para Australia, Koalas, canguros animales de Australia, Vivir en Australia, Melbourne, Sydney, Brisbane, gold coast, Adelaide , Trabajar en Australia, Melbourne, Sydney, Brisbane, gold coast, Adelaide, Estudiar en Australia, Melbourne, Sydney, Brisbane, gold coast, Adelaide, Visa Sponsor."
+}
 
 export default function Australia() {
 	return (
@@ -122,7 +128,7 @@ export default function Australia() {
 							<div className="row">
 								<div className="col-12 mb-3 information">
 									<p className="mb-4">El gobierno australiano busca mejorar constantemente el proceso de visas, enfocándose en que los solicitantes tengan una intención genuina de estudiar. Por eso, evalúan factores como tu edad, historial académico y laboral, recursos económicos y la calidad de la institución educativa que elijas.</p>
-									<h3 className="mb-4">Lista de Requisitos:</h3>
+									<h3 className="mb-4">Lista de requisitos:</h3>
 								</div>
 
 								<div className="col-12 col-md-6 ps-lg-4 information">
