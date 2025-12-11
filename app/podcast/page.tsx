@@ -1,6 +1,13 @@
 import BannerInterno from "@/components/BannerInterno";
 import PodcastGrid from "@/components/PodcastGrid";
 import { getAssetUrl } from "@/lib/url";
+import { Metadata } from "next";
+
+
+export const metadata:Metadata = {
+  title: "Preguntas frecuentes, exterior y procesos | LatinAdvisor",
+  description: "Encuentra las preguntas más frecuentes acerca de tu Aventura en Australia y todas las respuestas a tus dudas de vivir en el exterior y los procesos."
+}
 
 export default function PodcastPage() {
 

@@ -27,7 +27,7 @@ export default function Australia() {
 			<section className="section-australia container-fluid">
 				<section className="container">
 					<div className="row d-flex justify-content-center py-5">
-						<div className="col-12 col-lg-11 mt-lg-5 py-lg-5 section-australia_contentCta">
+						<div className="col-12 col-lg-11 mt-lg-3 py-lg-5 section-australia_contentCta">
 							<p className="">Australia es uno de los destinos más populares para estudiantes internacionales que buscan una experiencia académica de calidad, oportunidades laborales reales y opciones de migrar de forma permanente. Con ciudades costeras vibrantes, una economía estable y paisajes naturales incomparables, vivir en Australia es mucho más que una aventura: es una inversión en tu futuro.</p>
 							<a href="#contactForm" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>

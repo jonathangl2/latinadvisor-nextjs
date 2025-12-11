@@ -5,6 +5,8 @@ import { getAssetUrl } from "@/lib/url";
 import { console } from "inspector";
 import fs from "fs";
 import path from "path";
+import { Metadata } from "next";
+
 
 export async function generateStaticParams() {
   try {

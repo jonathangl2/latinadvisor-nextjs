@@ -1,29 +1,52 @@
-"use client";
-
-import BannerInterno from "@/components/BannerInterno";
-import FormEmbed from "@/components/FormEmbed";
 import { getAssetUrl } from "@/lib/url";
+import { Metadata } from 'next';
+import AgentesClient from "./AgentesClient";
+
+export const metadata:Metadata = {
+	title: "Renovación de Visa | LatinAdvisor",
+}
 
 export default function RenovacionPage() {
-  return (
-    <>
+
+	const agentes = [
+    {
+      img: "/assets/images/australia/renovacion/asesora-rosario-min.webp",
+      name: "Rosario Orejuela",
+      city: "Melbourne",
+      url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
+    },
+    {
+      img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
+      name: "María Camila",
+      city: "Brisbane",
+      url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
+    },
+    {
+      img: "/assets/images/australia/renovacion/asesora-johanna-min.webp",
+      name: "Johanna Gravenhorst",
+      city: "Melbourne",
+      url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
+    },
+  ];
+
+	return (
+		<>
 			{/* ====================== HERO / PRINCIPAL BANNER ====================== */}
 			<section className="section-australia section-australiaRenovacion container-fluid">
 				<div className="row">
 					<div className="col-12 px-0 section-australia_content mb-md-4">
 						<img
 							src={getAssetUrl("/assets/images/australia/renovacion/renovar-visa-estudiante-australia-min.webp")}
-							alt=""
+							alt="Background renovacion de visa estudiante australia latinadvisor"
 							className="img-fluid w-100 d-none d-md-block"
 						/>
 						<img 
 							src={getAssetUrl("/assets/images/australia/renovacion/renovar-visa-estudiante-australia-responsive-min.webp")}
-							alt=""
+							alt="Background renovacion de visa estudiante australia latinadvisor"
 							className="img-fluid w-100 d-block d-md-none"
 						/>
 						<div className="caption">
-								<h1>Renovación de visa de<br/>estudiante en Australia</h1>
-								<a href="#agentes" className="btn btn-lg btn-round px-5 py-3 btn-green-1 scrolling mb-lg-4 d-none d-lg-block">¡APLICAR AHORA!<br/>Evaluemos tu elegibilidad</a>
+							<h1><div className="d-inline d-md-block">Renovación de visa </div>de estudiante en Australia</h1>
 						</div>
 					</div>
 				</div>
@@ -32,7 +55,7 @@ export default function RenovacionPage() {
 			<section className="section-australia container-fluid">
 				<section className="container">
 					<div className="row d-flex justify-content-center py-4">
-						<div className="col-12 col-lg-10 py-5 section-australia_contentCta">
+						<div className="col-12 col-lg-10 pt-4 pb-5 section-australia_contentCta">
 							<p className="">La renovación de la visa de estudiante es la mejor opción para quedarte y seguir viviendo tu experiencia en este país lleno de oportunidades. Al extender tu estadía podrás continuar con tus estudios, trabajar legalmente hasta <strong>24 horas semanales</strong>, fortalecer tu perfil profesional y, lo más importante, abrir la puerta a <strong>nuevas oportunidades migratorias</strong>.</p>
 							<a href="#agentes" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>
@@ -162,45 +185,13 @@ export default function RenovacionPage() {
 						<div className="col-12 col-lg-9 mb-4">
 							<h2 className="section-australia_title text-center text-uppercase mb-4">¡Agenda tu asesoría virtual o presencial sin costo!</h2>
 						</div>
-						<div className="col-12 col-lg-10">
+						<div className="col-12 col-lg-10 pb-5 pb-lg-0">
 							<div className="row d-flex justify-content-center">
 								<div className="col-12 col-lg-10 mb-4">
 									<h5>Selecciona una asesora:</h5>
 								</div>
 								<div className="col-12 col-lg-10">
-									<div className="row">
-										{[
-											{
-												img: "/assets/images/australia/renovacion/asesora-rosario-min.webp",
-												name: "Rosario Orejuela",
-												city: "Melbourne"
-											},
-											{
-												img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
-												name: "María Camila",
-												city: "Brisbane"
-											},
-											{
-												img: "/assets/images/australia/renovacion/asesora-johanna-min.webp",
-												name: "Johanna Gravenhorst",
-												city: "Melbourne"
-											}
-										].map((agent, idx) => (
-											<div className="col-12 col-lg-6 section-australiaRenovacion_agentes" key={idx}>
-												<a href={getAssetUrl("/australia#contactForm")}>
-													<div className="card">
-														<div className="card-header">
-															<img src={getAssetUrl(agent.img)} alt="" className="img-fluid w-100 my-lg-4"/>
-														</div>
-														<div className="card-body ps-4">
-															<h5>{agent.name}</h5>
-															<p>{agent.city}</p>
-														</div>
-													</div>
-												</a>
-											</div>
-										))}
-									</div>
+									<AgentesClient agentes={agentes} />
 								</div>
 							</div>
 						</div>
@@ -208,23 +199,6 @@ export default function RenovacionPage() {
 				</section>
 			</section>
 
-      {/* <section className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
-        <div className="row d-flex justify-content-center">
-          <div className="col-11 col-lg-10 py-5 mt-lg-5">
-            <div className="row d-flex justify-content-center">
-              <div className="col-12 col-sm-9 col-lg-6">
-                <FormEmbed
-                  formSrc="https://api.leadconnectorhq.com/widget/form/1Hc0dJ19yyTGDsdjYhVI"
-                  formName="1. Formulario - Web global"
-                  formId="1Hc0dJ19yyTGDsdjYhVI"
-                  formHeight={2822}
-                  title="1. Formulario - Web global"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
-    </>
-  );
+		</>
+	);
 }

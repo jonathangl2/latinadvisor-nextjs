@@ -22,7 +22,7 @@ export default function CarouselTestimoniosDubai({ items }: any) {
           <SwiperSlide key={index}>
             <div className="item px-2 px-lg-5 pt-5 d-flex align-items-center">
               <div className="row d-flex justify-content-center align-items-center">
-                <div className="col-10 col-sm-6 col-lg-4 mb-5 mb-lg-0 px-0">
+                <div className="col-11 col-sm-6 col-lg-4 mb-5 mb-lg-0 px-0">
                   <InstagramEmbed url={item.url} />
                 </div>
                 <div className="content-user col-12 col-lg-6 d-flex flex-column justify-content-center ps-lg-5 text-center">

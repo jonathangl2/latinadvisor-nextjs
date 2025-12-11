@@ -114,7 +114,7 @@
             overflow: hidden;
             @media #{vars.$m992} {
                 min-height: 600px;
-                max-height: 700px;
+                //max-height: 700px;
             }
             img{
                 object-fit: cover;
@@ -134,7 +134,7 @@
             height: 100%;
             @media #{vars.$m768}{
                 top: auto;
-                bottom: -10%;    
+                bottom: -20%;    
                 //transform: translate(-50%, -45%);
             }
 
@@ -240,16 +240,15 @@
             }
         }
         .caption{
-            height: 80%;
+            height: 88%;
             display: flex;
-            align-items: center;
-            justify-content: start;  
-            flex-direction: column;
+            align-items: start;
+            justify-content: center;
             top: 50%;
             transform: translate(-50%,-50%);
             @media #{vars.$m1024}{
                 justify-content: space-around;
-                height: 100%;
+                height: 80%;
             }
         }
         &_courses{
@@ -260,7 +259,10 @@
             }
         }
         &_agentes{
-            margin-bottom: 3rem;
+            margin-bottom: 1.6rem;
+            @media #{vars.$m768}{
+                margin-bottom: 2.5rem;
+            }
             .card{
                 display: flex;
                 align-items: stretch;

@@ -7,7 +7,7 @@ import Script from "next/script";
 
 
 export const metadata:Metadata = {
-  title: "Contáctanos | LatinAdvisor",
+  title: "Escríbenos, déjanos tus datos | LatinAdvisor",
   description: "Envíanos un mensaje, llámanos o visítanos. Déjanos saber tus inquietudes o síguenos en nuestras redes sociales.  Tú aventura en Australia comienza aquí."
 }
 

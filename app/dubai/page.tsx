@@ -5,7 +5,7 @@ import CarouselTestimoniosDubai from "@/components/CarouselTestimoniosDubai";
 import { loadHomeJson } from "@/lib/loadJson";
 import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
-import { Metadata } from "next";
+import { Metadata } from 'next';
 
 export const metadata:Metadata = {
 	title: "Estudia y Trabaja en Dubái | LatinAdvisor",
@@ -31,7 +31,7 @@ export default function Dubai() {
 			<section className="section-australia container-fluid">
 				<section className="container">
 					<div className="row d-flex justify-content-center py-3 py-lg-5">
-						<div className="col-12 col-lg-11 mt-lg-5 py-5 section-australia_contentCta">
+						<div className="col-12 col-lg-11 mt-lg-3 py-5 section-australia_contentCta">
 							<p className="">Descubre por qué Dubái es el destino favorito para estudiantes internacionales, con un proceso de <strong>visado fácil, rápido, sin requisito de solvencia económica</strong> y con grandes oportunidades laborales.</p>
 							<a href="#contactForm" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
 						</div>

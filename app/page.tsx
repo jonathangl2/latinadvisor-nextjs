@@ -7,7 +7,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    console.log("Página principal cargada ✅");
+    console.log("Página principal cargada.");
   }, []);
 
   return (
