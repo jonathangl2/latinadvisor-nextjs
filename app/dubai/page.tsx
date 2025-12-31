@@ -189,7 +189,7 @@ export default function Dubai() {
 			<section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
 				<div className="row d-flex justify-content-center">
 					<div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
-						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Listo para Estudiar y <br/>Trabajar en Dubái??</h2>
+						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Listo para Estudiar y <br/>Trabajar en Dubái?</h2>
 					</div>
 					<div className="col-11 col-lg-10 pb-5">
 						<div className="row d-flex justify-content-center">
@@ -198,7 +198,7 @@ export default function Dubai() {
 									formSrc="https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR"
 									formName="3. Formulario - Web Dubai"
 									formId="k6czEex6PZdfeLpophBR"
-									formHeight={1416}
+									formHeight={1445}
 									title="3. Formulario - Web Dubai"
 								/>
 							</div>
@@ -207,5 +207,6 @@ export default function Dubai() {
 				</div>
 			</section>
 		</>
+		
 	);
 }

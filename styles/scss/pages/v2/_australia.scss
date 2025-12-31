@@ -7,6 +7,9 @@
     &-australia,
     &-dubai{
         position: relative;
+        h2 > span{
+            font-weight: bold !important;
+        }
         & > div {
             z-index: 1;
             position: relative;
@@ -301,6 +304,33 @@
                     }
                 }
             }
+        }
+    }
+    &-australiaWorkAndHoliday{
+        .caption{
+            h1{
+                color: vars.$color-blue-dark-5;
+                span{
+                    font-size: 1.2rem !important;
+                }
+            }
+        }
+        .information{
+            h5{
+                color: vars.$color-grey-1;
+            }
+            ul{
+                li{
+                    span{
+                        font-weight: 500;
+                        color: vars.$color-green-2;
+                    }
+                }
+            }
+        }
+        &_alert{
+            background-color: vars.$color-green-2 !important;
+            color: vars.$color-blue-dark-5 !important;
         }
     }
 }

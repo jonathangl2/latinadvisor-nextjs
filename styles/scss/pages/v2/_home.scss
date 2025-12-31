@@ -608,7 +608,8 @@
                 padding-top: 1rem;
             }
         }
-        #carousel-testimoniosDubai{
+        #carousel-testimoniosDubai,
+        #carousel-testimonios{
             .instagram-embed-wrapper{
                 overflow: hidden;
                 iframe{
@@ -624,10 +625,19 @@
                         margin-bottom: 3rem;
                     }
                 }
-                h3{
+                h4{
                     font-weight: 500;
                     color: vars.$color-blue-dark-1 !important;
                 }
+            }
+        }
+        #carousel-testimonios{
+            .swiper-button-prev {
+                left: -1.2rem; 
+            }
+
+            .swiper-button-next {
+                right: -1.2rem;    
             }
         }
     }

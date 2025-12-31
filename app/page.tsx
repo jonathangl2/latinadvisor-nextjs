@@ -92,7 +92,7 @@ export default function Home() {
               {
                 img: getAssetUrl("/assets/images/home/work-and-holiday.webp"),
                 title: "Work and Holiday",
-                url: ''
+                url: 'workandholiday'
               },
             ].map((item, i) => (
               <div className="col-10 col-lg-4 mb-5 mb-lg-0" key={i}>

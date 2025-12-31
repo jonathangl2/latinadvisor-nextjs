@@ -79,7 +79,7 @@ export default function Header() {
                       title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
                     },
                     {
-                      url: getAssetUrl("/australia"),
+                      url: getAssetUrl("/australia/workandholiday"),
                       title: "WORK AND HOLIDAY VISA",
                     }
                   ].map((item, i) => (
