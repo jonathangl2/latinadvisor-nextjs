@@ -87,7 +87,7 @@ export default function Home() {
               {
                 img: getAssetUrl("/assets/images/home/procesos-migratorios-otras-visas.webp"),
                 title: "Procesos Migratorios y otras visas",
-                url: ''
+                url: 'migration'
               },
               {
                 img: getAssetUrl("/assets/images/home/work-and-holiday.webp"),

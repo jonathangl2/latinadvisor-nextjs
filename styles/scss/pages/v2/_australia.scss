@@ -333,6 +333,40 @@
             color: vars.$color-blue-dark-5 !important;
         }
     }
+    &-australiaMigration{
+        h2 > span{
+            font-weight: 300 !important;
+        }
+        .card-ourServicesMigration{
+            border: 0px;
+            border-radius: 20px;
+            background-color: vars.$color-blue-dark-5;
+            padding: 1rem 2rem;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+            &_title{
+                color: vars.$color-white;
+                font-weight: 300;
+                font-size: 1.125rem;
+                text-align: center;
+            }
+        }
+        &_agents{
+            h5{
+                font-weight: 600;
+            }
+            .img-agent{
+                width: 150px !important;
+                height: 150px !important;
+                object-fit: cover;
+                object-position: center;
+                border-radius: 15px !important;
+            }
+        }
+    }
 }
 
 /* ---------- END CSS AUSTRALIA V2 ---------- */

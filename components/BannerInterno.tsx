@@ -5,15 +5,19 @@ export default function BannerInterno({ imageSrc, title, btnCtaForm = false, cla
   return (
     <section id="internal_banner" className={`container-fluid ${className}`}>
       <div className="row">
-        <div className="col-12 px-0">
-          <div className="position-relative w-100">
-            <img
-              src={imageSrc}
-              alt={title}
-              className="internal_banner_img object-cover"
-            />
+      
+        {imageSrc && (
+          <div className="col-12 px-0">
+            <div className="position-relative w-100">
+              <img
+                src={imageSrc}
+                alt={title}
+                className="internal_banner_img object-cover"
+              />
+            </div>
           </div>
-        </div>
+        )}
+        
         <div className="caption">
           <h1>{title}</h1>
           <div className="row w-100 mx-0 justify-content-center d-flex">

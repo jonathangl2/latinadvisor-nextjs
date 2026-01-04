@@ -9,25 +9,25 @@ export const metadata:Metadata = {
 export default function RenovacionPage() {
 
 	const agentes = [
-    {
-      img: "/assets/images/australia/renovacion/asesora-rosario-min.webp",
-      name: "Rosario Orejuela",
-      city: "Melbourne",
-      url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
-    },
-    {
-      img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
-      name: "María Camila",
-      city: "Brisbane",
-      url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
-    },
-    {
-      img: "/assets/images/australia/renovacion/asesora-johanna-min.webp",
-      name: "Johanna Gravenhorst",
-      city: "Melbourne",
-      url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
-    },
-  ];
+		{
+			img: "/assets/images/australia/renovacion/asesora-rosario-min.webp",
+			name: "Rosario Orejuela",
+			city: "Melbourne",
+			url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
+		},
+		{
+			img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
+			name: "María Camila",
+			city: "Brisbane",
+			url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
+		},
+		{
+			img: "/assets/images/australia/renovacion/asesora-johanna-min.webp",
+			name: "Johanna Gravenhorst",
+			city: "Melbourne",
+			url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
+		},
+	];
 
 	return (
 		<>
