@@ -11,6 +11,10 @@ export const metadata:Metadata = {
 }
 
 export default function MigrationPage() {
+
+    const data = loadHomeJson();
+	const migrationProcesses = data.data.migration_processes.au;
+
     return (
         <>
             <BannerInterno
@@ -40,49 +44,16 @@ export default function MigrationPage() {
 							<h2 className="section-australia_title text-center text-uppercase">Tipos de visas y servicios</h2>
 						</div>
                         <div className="col-12 col-lg-11 pt-4 pb-5">
-                            <div className="row d-flex align-items-stretch">
-                                {[
-                                    {
-                                        title: "Visitor Visa Australia",
-                                        url: 'visitor-visa-australia'
-                                    },
-                                    {
-                                        title: "Postgraduate Visa Australia",
-                                        url: 'postgraduate-visa-australia'
-                                    },
-                                    {
-                                        title: "Training Visa Australia",
-                                        url: 'training-visa-australia'
-                                    },
-                                    {
-                                        title: "Sponsor Visa Australia",
-                                        url: 'sponsor-visa-australia'
-                                    },
-                                    {
-                                        title: "Partner Visa Australia",
-                                        url: 'partner-visa-australia'
-                                    },
-                                    {
-                                        title: "Skilled Visa - EOI Australia (Visa por puntos)",
-                                        url: 'skilled-visa-eoi-australia'
-                                    },
-                                    {
-                                        title: "Homologaciones de Estudios (Skills assessment)",
-                                        url: 'homologaciones-de-estudios-skills-assessment'
-                                    },
-                                    {
-                                        title: "Apelaciones ante el Tribunal",
-                                        url: 'apelaciones-ante-el-tribunal'
-                                    },
-                                ].map((item, i) => (
+                            <div className="row d-flex align-items-stretch justify-content-center">
+                                { migrationProcesses.map((item: any, i: number) => (
                                     <div className="col-10 col-lg-3 mb-4" key={i}>
-                                        <a href={getAssetUrl("/australia/migration/"+item.url)}>
+                                        <a href={getAssetUrl("/australia/migration/"+item.slug)}>
                                             <div className="card card-ourServicesMigration">
                                                 <h3 className="card-ourServicesMigration_title">{item.title}</h3>
                                             </div>
                                         </a>
                                     </div>
-                                ))}
+                                )) }
                             </div>
                         </div>
                     </div>
@@ -125,14 +96,14 @@ export default function MigrationPage() {
                                         },
                                     ].map((item, i) => (
                                         <div className="row d-flex align-items-stretch py-4 py-lg-5" key={i}>
-                                            <div className="col-12 col-lg-12 order-0">
+                                            <div className="col-12 col-lg-12 order-0 mb-4 mb-lg-0">
                                                 <h5>En la ciudad de {item.city}:</h5>
                                             </div>
-                                            <div className="col-12 col-lg-8 d-flex align-items-center order-1">
+                                            <div className="col-12 col-lg-8 py-4 d-flex align-items-center order-1">
                                                 <img
                                                     src={getAssetUrl(item.img)}
                                                     alt=""
-                                                    className="img-fluid w-100 my-lg-4 img-agent me-lg-5"
+                                                    className="img-fluid w-100 my-lg-4 img-agent me-5"
                                                 />
                                                 <h4><strong>{item.name}</strong></h4>
                                             </div>
@@ -146,6 +117,19 @@ export default function MigrationPage() {
                                     ))}
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <section className="section-australia section-australiaMigration">
+                <section className="container">
+                    <div className="row d-flex justify-content-center pt-4">
+						<div className="col-12 col-lg-10 pt-5 pb-5">
+							<h2 className="section-australia_title text-center text-uppercase">Nuestros equipo</h2>
+						</div>
+                        <div className="col-12 col-lg-11 pt-2 pb-5">
+                            
                         </div>
                     </div>
                 </section>

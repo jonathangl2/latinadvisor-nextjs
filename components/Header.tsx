@@ -1,10 +1,14 @@
-'use client'
 
 import Link from 'next/link'
 import Image from 'next/image'
 import { getAssetUrl } from '@/lib/url'
+import { loadHomeJson } from '@/lib/loadJson';
 
 export default function Header() {
+
+  const data = loadHomeJson();
+  const migrationProcesses = data.data.migration_processes.au;
+
   return (
     <header id="principal_header">
       <nav id="principal_navbar" className="navbar navbar_v3 navbar-expand-lg navbar-primary py-0 align-items-lg-stretch">
@@ -103,42 +107,9 @@ export default function Header() {
                   Procesos migratorios y otras visas
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="procesosDropdown">
-                  {[
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "visitor visa australia",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Postgraduate Visa Australia",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Training Visa Australia",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Sponsor Visa Australia",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Partner Visa Australia",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Skilled Visa - EOI Australia (Visa por puntos)",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Homologaciones de Estudios (Skills assessment)",
-                    },
-                    {
-                      url: getAssetUrl("/australia"),
-                      title: "Apelaciones ante el Tribunal",
-                    }
-                  ].map((item, i) => (
+                  { migrationProcesses.map((item:any, i:number) => (
                     <li key={i}>
-                      <Link href={item.url} className="dropdown-item">
+                      <Link href={getAssetUrl("/australia/migration/"+item.slug)} className="dropdown-item">
                         {item.title}
                       </Link>
                     </li>

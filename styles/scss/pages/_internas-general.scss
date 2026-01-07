@@ -470,8 +470,23 @@ body {
             min-height: 250px;
             background-color: vars.$color-blue-dark-5;
             .caption {
+                top: 50%;
+                bottom: auto !important;
                 h1 {
                     color: vars.$color-white;
+                }
+            }
+            &_subpage{
+                .caption {
+                    top: 50%;
+                    bottom: auto !important;
+                    h1 {
+                        @media #{vars.$m1024} {
+                            width: 80%;
+                            margin: 0 auto;
+                            font-size: 3.2rem;
+                        };
+                    }
                 }
             }
         }
