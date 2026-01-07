@@ -633,6 +633,84 @@
                     "testimonial": "Excellent service, a professional team always ready to provide timely and concise responses. Their customer care is outstanding, making every interaction pleasant and efficient. I would certainly recommend this place to anyone looking for quality service."
                 }
             ]
+        },
+        "migration_processes":{ 
+            "au": [
+                {
+                    "slug": "visitor-visa-australia",
+                    "title": "Visitor Visa Australia",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "postgraduate-visa-australia",
+                    "title": "Postgraduate Visa Australia",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "training-visa-australia",
+                    "title": "Training Visa Australia",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "sponsor-visa-australia",
+                    "title": "Sponsor Visa Australia",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "partner-visa-australia",
+                    "title": "Partner Visa Australia",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "skilled-visa-eoi-australia",
+                    "title": "Skilled Visa - EOI Australia (Visa por puntos)",
+                    "custom_title": "Skilled Visa - EOI Australia<br>(Visa por puntos)",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "homologaciones-de-estudios-skills-assessment",
+                    "title": "Homologaciones de Estudios (Skills assessment)",
+                    "custom_title": "Homologaciones de Estudios<br>(Skills assessment)",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445
+                },
+                {
+                    "slug": "apelaciones-ante-el-tribunal",
+                    "title": "Apelaciones ante el Tribunal",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
+                    "formName": "3. Formulario - Web Dubai",
+                    "formId": "k6czEex6PZdfeLpophBR",
+                    "formHeight": 1445   
+                }
+            ]
         }
     }
 }
