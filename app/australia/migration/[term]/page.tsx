@@ -75,9 +75,27 @@ export default async function MigrationProcessesPage({ params }: { params: Promi
             <div id="response" className="col-12 py-5">
                 <div id={visa.slug} className="row d-flex justify-content-center">
                     <div className="col-12 col-lg-10 information py-4">
-                        <div className="ciudad-description" dangerouslySetInnerHTML={{ __html: visa.description }} />
+                        <div className="ciudad-description" dangerouslySetInnerHTML={{ __html: visa.description }}></div>
+                        <h2>Skilled Migration Visa</h2>
+                        <p>La Visa de Migración Calificada está diseñada para profesionales cuyas habilidades son necesarias para cubrir vacantes en distintas regiones de Australia.</p> 
+                        <p>Las ocupaciones y requisitos asociados se actualizan de forma periódica, de acuerdo con las prioridades y cambios en el mercado laboral australiano. </p>
+                        <p>Australia ofrece diferentes caminos para profesionales calificados que buscan vivir y trabajar allí de manera permanente. Entre ellos se incluyen: </p>
+                        <ol>
+                          <li>Subclass 189 – Visa Independiente Calificada - Skilled Independent Visa: Es una visa permanente, no requiere patrocinio (ni de estado ni de empleador).</li>
+                          <li>Subclass 190 – Visa Nominada por Estado - Skilled Nominated Visa: Visa permanente, requiere nominación por un estado o territorio.</li>
+                          <li>Subclass 491 – Visa Regional Calificada - Skilled Work Regional (Provisional) Visa: Visa provisional de hasta 5 años, con posibilidad de transición a residencia permanente (subclass 191). Dos vías: 
+                              <ul>
+                                <li>Nombrado por estado.</li>
+                                <li>Patrocinio familiar en zona regional.</li>
+                                <li>Debes vivir y trabajar en áreas regionales designadas.</li>
+                              </ul>
+                          </li>
+                          <li>Subclass 191 – Permanent Residence (Skilled Regional) Es una visa de residencia permanente creada para quienes han vivido y trabajado en zonas regionales de Australia bajo una visa provisional (491 o 494), y cumple la función de cerrar el ciclo migratorio convirtiéndolo en un estatus permanente.</li>
+                        </ol>
                     </div>
                 </div>
+
+                
             </div>
         </section>
 

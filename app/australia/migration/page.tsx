@@ -5,6 +5,7 @@ import { getAssetUrl } from "@/lib/url";
 import { Metadata } from 'next';
 import Australia from '../page';
 import BannerInterno from "@/components/BannerInterno";
+import CarouselTeamMigration from "@/components/CarouselTeamMigration";
 
 export const metadata:Metadata = {
     title: "Migration | LatinAdvisor",
@@ -14,7 +15,7 @@ export default function MigrationPage() {
 
     const data = loadHomeJson();
 	const migrationProcesses = data.data.migration_processes.au;
-
+    const migrationTeam = data.data.migration_team.au;
     return (
         <>
             <BannerInterno
@@ -124,12 +125,12 @@ export default function MigrationPage() {
 
             <section className="section-australia section-australiaMigration">
                 <section className="container">
-                    <div className="row d-flex justify-content-center pt-4">
+                    <div className="row d-flex justify-content-center pt-4 pt-lg-5">
 						<div className="col-12 col-lg-10 pt-5 pb-5">
-							<h2 className="section-australia_title text-center text-uppercase">Nuestros equipo</h2>
+							<h2 className="section-australia_title text-center text-uppercase">Nuestro equipo</h2>
 						</div>
-                        <div className="col-12 col-lg-11 pt-2 pb-5">
-                            
+                        <div className="col-12 col-lg-10 pt-2 section-australiaMigration_team">
+                            <CarouselTeamMigration items={migrationTeam} />
                         </div>
                     </div>
                 </section>

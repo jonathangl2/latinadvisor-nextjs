@@ -366,6 +366,29 @@
                 border-radius: 15px !important;
             }
         }
+        &_team{
+            .swiper{
+                padding: 1rem;
+                .swiper-slide{
+                    height: 100%;
+                }
+            }
+            .card-teamMigration{
+                border: 0px;
+                border-radius: 25px;
+                box-shadow: 3px 6px 7px -1px #dfdfe0 !important;
+                .img-team{
+                    width: 150px !important;
+                    height: 150px !important;
+                    object-fit: cover;
+                    object-position: center;
+                    border-radius: 15px !important;
+                }
+                h3,h4{
+                    color: vars.$color-blue-dark-5;
+                }
+            }
+        }
     }
 }
 
