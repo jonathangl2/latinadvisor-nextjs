@@ -647,8 +647,149 @@
                     "body": [
                         {
                             "__component": "sections.content-section",
-                            "background": "light",
-                            "blocks": []
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "La Subclass 600 es una visa temporal diseñada para personas que desean entrar a Australia por un periodo corto, ya sea por turismo, negocios, cursos breves o para visitar a familiares."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Principales categorías (Streams):"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "La visa cuenta con varios tipos para adaptarse al propósito del viaje:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Tourist Stream:"
+                                                },
+                                                {
+                                                    "value": " ideal para vacaciones, visitas familiares o cruceros. Estancias típicas de 3, 6 o 12 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Sponsored Family Stream:"
+                                                },
+                                                {
+                                                    "value": " para quienes tienen un familiar ciudadano o residente permanente en Australia que actúa como patrocinador. Puede requerir un depósito de garantía (“bond”) para asegurar el regreso."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Requisitos generales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Motivo legítimo y temporal:"
+                                                },
+                                                {
+                                                    "value": " debes demostrar que solo planeas una visita breve y regresarás a tu país."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Pruebas de fondos suficientes:"
+                                                },
+                                                {
+                                                    "value": " para cubrir gastos durante la estancia."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Salud y carácter:"
+                                                },
+                                                {
+                                                    "value": " podrías precisar exámenes médicos y certificado de antecedentes penales."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "4. Pasaporte válido:"
+                                                },
+                                                {
+                                                    "value": " durante al menos 6 meses más allá del ingreso."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "5. Restricciones laborales:"
+                                                },
+                                                {
+                                                    "value": " no se permite trabajar bajo esta visa; solo actividades permitidas como turismo, negocios o cursos breves."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                    },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Tiempos de procesamiento (dependen del stream):"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Tourist Stream (offshore):"
+                                                },
+                                                {
+                                                    "value": " entre ~13 y 26 días para el 50 % y 90 % de los casos."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Sponsored Family:"
+                                                },
+                                                {
+                                                    "value": " entre 34 y 49 días."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ] 
                 },
