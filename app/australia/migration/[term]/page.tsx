@@ -6,6 +6,7 @@ import fs from "fs";
 import path from "path";
 import { Metadata } from "next";
 import FormEmbed from "@/components/FormEmbed";
+import { JSX } from "react";
 
 
 export async function generateStaticParams() {
@@ -54,6 +55,96 @@ export async function generateMetadata({ params }: { params: Promise<{ term: str
   };
 }
 
+type TextFragment = {
+  type: "span" | "strong";
+  value: string;
+};
+
+function renderText(text: any) {
+  // ✅ Caso 1: texto plano
+  if (typeof text === "string") {
+    return text;
+  }
+
+  // ✅ Caso 2: array de partes (span / strong / texto)
+  if (Array.isArray(text)) {
+    return text.map((part, i) => {
+      if (part?.type === "strong") {
+        return <strong key={i}>{part.value}</strong>;
+      }
+
+      if (part?.type === "span") {
+        return <span key={i}>{part.value}</span>;
+      }
+
+      // texto plano sin wrapper
+      return <>{part?.value}</>;
+    });
+  }
+
+  // fallback de seguridad
+  return null;
+}
+
+
+
+function renderBlocks(blocks: any[]) {
+  return blocks.map((block, i) => {
+    switch (block.__component) {
+
+      case "content.heading": {
+        const Tag = `h${block.level}` as keyof JSX.IntrinsicElements;
+        return <Tag key={i}>{block.text}</Tag>; // ❗ intacto
+      }
+
+      case "content.paragraph":
+        return <p key={i}>{renderText(block.text)}</p>;
+
+      case "content.list": {
+        const ListTag = block.ordered ? "ol" : "ul";
+
+        return (
+          <ListTag key={i}>
+            {block.items.map((item: any, idx: number) => (
+              <li key={idx}>
+                {renderText(item.text)}
+
+                {item.children && (
+                  <ul className="ps-4">
+                    {item.children.map((child: any[], cidx: number) => (
+                      <li key={cidx}>{renderText(child)}</li>
+                    ))}
+                  </ul>
+                )}
+              </li>
+            ))}
+          </ListTag>
+        );
+      }
+
+      default:
+        return null;
+    }
+  });
+}
+
+
+function renderSections(sections: any[], slug: string) {
+  return sections.map((section, i) => (
+    <section key={i} className={`row py-5 bg-${section.background}`} > 
+      <div className="col-12">
+        <div className="container">
+          <div id={slug} className="row d-flex justify-content-center">
+            <div className="col-12 col-lg-10 information ">
+              {renderBlocks(section.blocks)}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  ));
+}
+
 export default async function MigrationProcessesPage({ params }: { params: Promise<{ term: string }> }) {
 
   const { term } = await params;
@@ -71,32 +162,10 @@ export default async function MigrationProcessesPage({ params }: { params: Promi
             className="internal_migration internal_migration_subpage"
         />
 
-        <section className="section-australiaMigration container-donde-estudiar container-fluid">
-            <div id="response" className="col-12 py-5">
-                <div id={visa.slug} className="row d-flex justify-content-center">
-                    <div className="col-12 col-lg-10 information py-4">
-                        <div className="ciudad-description" dangerouslySetInnerHTML={{ __html: visa.description }}></div>
-                        <h2>Skilled Migration Visa</h2>
-                        <p>La Visa de Migración Calificada está diseñada para profesionales cuyas habilidades son necesarias para cubrir vacantes en distintas regiones de Australia.</p> 
-                        <p>Las ocupaciones y requisitos asociados se actualizan de forma periódica, de acuerdo con las prioridades y cambios en el mercado laboral australiano. </p>
-                        <p>Australia ofrece diferentes caminos para profesionales calificados que buscan vivir y trabajar allí de manera permanente. Entre ellos se incluyen: </p>
-                        <ol>
-                          <li>Subclass 189 – Visa Independiente Calificada - Skilled Independent Visa: Es una visa permanente, no requiere patrocinio (ni de estado ni de empleador).</li>
-                          <li>Subclass 190 – Visa Nominada por Estado - Skilled Nominated Visa: Visa permanente, requiere nominación por un estado o territorio.</li>
-                          <li>Subclass 491 – Visa Regional Calificada - Skilled Work Regional (Provisional) Visa: Visa provisional de hasta 5 años, con posibilidad de transición a residencia permanente (subclass 191). Dos vías: 
-                              <ul>
-                                <li>Nombrado por estado.</li>
-                                <li>Patrocinio familiar en zona regional.</li>
-                                <li>Debes vivir y trabajar en áreas regionales designadas.</li>
-                              </ul>
-                          </li>
-                          <li>Subclass 191 – Permanent Residence (Skilled Regional) Es una visa de residencia permanente creada para quienes han vivido y trabajado en zonas regionales de Australia bajo una visa provisional (491 o 494), y cumple la función de cerrar el ciclo migratorio convirtiéndolo en un estatus permanente.</li>
-                        </ol>
-                    </div>
-                </div>
-
-                
-            </div>
+        <section className="section-australiaMigration_bodyDynamics container-fluid">
+            
+            { renderSections(visa.body, visa.slug) }
+            
         </section>
 
         <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">

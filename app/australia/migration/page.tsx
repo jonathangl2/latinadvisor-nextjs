@@ -78,21 +78,21 @@ export default function MigrationPage() {
                                             img: "/assets/images/conocenos/team/img-juan-carlos.webp",
                                             name: "Juan Carlos",
                                             city: "Brisbane",
-                                            url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
+                                            url: "https://api.whatsapp.com/send?phone=61426844177&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20los%20Procesos%20Migratorios.%20Gracias.",
                                             description: "Aenean vehicula ultricies cursus. Donec bibendum interdum nibh vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu lorem in turpis convallis accumsan. Ut consequat id nulla faucibus bibendum. Proin cursus orci nunc, at porttitor elit condimentum a. <br/><strong class='mt-4 d-block'>Subtitulo:</strong> <br/>Aenean vehicula ultricies cursus. Donec bibendum interdum nibh vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu lorem in turpis convallis accumsan. Ut consequat id nulla faucibus bibendum. Proin cursus orci nunc, at porttitor elit condimentum a."
                                         },
                                         {
                                             img: "/assets/images/conocenos/team/img-renatto.webp",
                                             name: "Renatto",
                                             city: "Sydney",
-                                            url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
+                                            url: "https://api.whatsapp.com/send?phone=61426844177&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20los%20Procesos%20Migratorios.%20Gracias.",
                                             description: "Aenean vehicula ultricies cursus. Donec bibendum interdum nibh vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu lorem in turpis convallis accumsan. Ut consequat id nulla faucibus bibendum. Proin cursus orci nunc, at porttitor elit condimentum a. <br/><strong class='mt-4 d-block'>Subtitulo:</strong> <br/>Aenean vehicula ultricies cursus. Donec bibendum interdum nibh vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu lorem in turpis convallis accumsan. Ut consequat id nulla faucibus bibendum. Proin cursus orci nunc, at porttitor elit condimentum a."
                                         },
                                         {
                                             img: "/assets/images/conocenos/team/img-christina.webp",
                                             name: "Christina",
                                             city: "Adelaide",
-                                            url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
+                                            url: "https://latinadvisor.setmore.com/christina-toftegaard",
                                             description: "Aenean vehicula ultricies cursus. Donec bibendum interdum nibh vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu lorem in turpis convallis accumsan. Ut consequat id nulla faucibus bibendum. Proin cursus orci nunc, at porttitor elit condimentum a. <br/><strong class='mt-4 d-block'>Subtitulo:</strong> <br/>Aenean vehicula ultricies cursus. Donec bibendum interdum nibh vestibulum dictum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam eu lorem in turpis convallis accumsan. Ut consequat id nulla faucibus bibendum. Proin cursus orci nunc, at porttitor elit condimentum a."
                                         },
                                     ].map((item, i) => (
@@ -109,7 +109,7 @@ export default function MigrationPage() {
                                                 <h4><strong>{item.name}</strong></h4>
                                             </div>
                                             <div className="col-12 col-lg-4 section-australia_contentCta d-flex align-items-center py-4 order-3 order-lg-2">
-                                                <a href={item.url} className="btn scrolling">¡Agenda ahora!</a>
+                                                <a href={item.url} target="_blank" className="btn scrolling">¡Agenda ahora!</a>
                                             </div>
                                             <div className="col-12 order-2 order-lg-3">
                                                 <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
