@@ -643,7 +643,14 @@
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "light",
+                            "blocks": []
+                        }
+                    ] 
                 },
                 {
                     "slug": "postgraduate-visa-australia",
@@ -670,7 +677,232 @@
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Visa Subclass 482 – Temporary Skill Shortage (Skills in Demand)"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es una visa temporal que permite a empleadores australianos contratar trabajadores calificados extranjeros cuando no encuentran talento local adecuado."
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Existen tres vías principales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "Short-Term Stream:"
+                                                },
+                                                {
+                                                    "value": " para ocupaciones de la Short-Term Skilled Occupation List (STSOL). Permite trabajar hasta 2 años (o hasta 4 años si aplica un acuerdo internacional Trade Obligation)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "Medium-Term Stream:"
+                                                },
+                                                {
+                                                    "value": " para ocupaciones de la Medium and Long-Term Strategic Skills List (MLTSSL). Se puede trabajar hasta 4 años y existe una vía hacia la residencia permanente (Subclass 186)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "Labour Agreement Stream:"
+                                                },
+                                                {
+                                                    "value": " para empleadores que tienen un acuerdo laboral con el gobierno australiano."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "__component": "sections.content-section",
+                            "background": "blue-dark",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Permite incluir familiares directos (cónyuge y dependientes) en la solicitud."
+                                }
+                            ]
+                        },
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Requiere:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "Ser nominado por un "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "empleador aprobado"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": "Tener experiencia laboral y evaluación de habilidades según la ocupación."
+                                        },
+                                        {
+                                            "text": "Cumplir con los requisitos de salud, carácter e inglés."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": [
+                                        {
+                                            "type": "strong",
+                                            "value": "Procesamiento típico:"
+                                        },
+                                        {
+                                            "value": " entre 4 a 11 meses, dependiendo del stream."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": [
+                                        {
+                                            "type": "strong",
+                                            "value": "Transición a residencia permanente:"
+                                        },
+                                        {
+                                            "value": " Usualmente a través de la expansión a la Subclass 186 (Temporary Residence Transition Stream)."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Visa Subclass 186 – Employer Nomination Scheme visa"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es una visa temporal que permite a empleadores australianos contratar trabajadores calificados extranjeros cuando no encuentran talento local adecuado."
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Existen tres vías principales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "Short-Term Stream:"
+                                                },
+                                                {
+                                                    "value": " para ocupaciones de la Short-Term Skilled Occupation List (STSOL). Permite trabajar hasta 2 años (o hasta 4 años si aplica un acuerdo internacional Trade Obligation)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "Medium-Term Stream:"
+                                                },
+                                                {
+                                                    "value": " para ocupaciones de la Medium and Long-Term Strategic Skills List (MLTSSL). Se puede trabajar hasta 4 años y existe una vía hacia la residencia permanente (Subclass 186)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "Labour Agreement Stream:"
+                                                },
+                                                {
+                                                    "value": " para empleadores que tienen un acuerdo laboral con el gobierno australiano."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Otros requisitos clave:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type":"strong",
+                                                    "value": "1. "
+                                                },
+                                                {
+                                                    "value": "Ocupación incluida en la "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": " lista de ocupaciones elegibles."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type":"strong",
+                                                    "value": "2. Evaluación favorable de habilidades, inglés,"
+                                                },
+                                                {
+                                                    "value": " y certificados de"
+                                                },
+                                                {
+                                                    "type":"strong",
+                                                    "value": " salud y carácter,"
+                                                },  
+                                                {
+                                                    "value": " salvo algunas exenciones."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "partner-visa-australia",
@@ -689,7 +921,106 @@
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Skilled Migration Visa"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "La Visa de Migración Calificada está diseñada para profesionales cuyas habilidades son necesarias para cubrir vacantes en distintas regiones de Australia."
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": [
+                                        { "type": "span", "value": "Las ocupaciones" },
+                                        { "type": "", "value": " y requisitos asociados se actualizan de forma periódica, de acuerdo con las prioridades y cambios en el mercado laboral australiano." }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Australia ofrece diferentes caminos para profesionales calificados que buscan vivir y trabajar allí de manera permanente. Entre ellos se incluyen:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "1. Subclass 189"
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": " – Visa Independiente Calificada – Skilled Independent Visa:"
+                                                },
+                                                {
+                                                    "value": " Es una visa permanente, no requiere patrocinio (ni de estado ni de empleador)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "2. Subclass 190"
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": " – Visa Nominada por Estado (Skilled Nominated Visa):"
+                                                },
+                                                {
+                                                    "value": " Visa permanente, requiere nominación por un estado o territorio."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "3. Subclass 491"
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "– Visa Regional Calificada (Skilled Work Regional - Provisional) Visa:"
+                                                },
+                                                {
+                                                    "value": " Visa provisional de hasta 5 años, con posibilidad de transición a residencia permanente (subclass 191). Dos vías:"
+                                                }
+                                            ],
+                                            "children": [
+                                                "Nombrado por estado.",
+                                                "Patrocinio familiar en zona regional.",
+                                                "Debes vivir y trabajar en áreas regionales designadas."
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "span",
+                                                    "value": "4. Subclass 191"
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": " – Permanent Residence (Skilled Regional):"
+                                                },
+                                                {
+                                                    "value": "Visa de residencia permanente creada para quienes han vivido y trabajado en zonas regionales de Australia bajo una visa provisional (491 o 494), y cumple la función de cerrar el ciclo migratorio convirtiéndolo en un estatus permanente."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "homologaciones-de-estudios-skills-assessment",
@@ -699,7 +1030,177 @@
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Evaluación de Habilidades"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": [
+                                        {
+                                            "value": "El "
+                                        },
+                                        {
+                                            "type": "span",
+                                            "value": "Skills Assessment"
+                                        },
+                                        {
+                                            "value": " es una evaluación oficial aplicada por autoridades autorizadas que verifica si tus "
+                                        },
+                                        {
+                                            "type": "strong",
+                                            "value": "calificaciones académicas, experiencia laboral"
+                                        },
+                                        {
+                                            "value": " y, en ocasiones, tu "
+                                        },
+                                        {
+                                            "type": "strong",
+                                            "value": "registro profesional"
+                                        },
+                                        {
+                                            "value": ", cumplen los estándares requeridos para ejercer en la ocupación nominada en Australia."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": [
+                                        {
+                                            "value": "Es un requisito "
+                                        },
+                                        {
+                                            "type": "strong",
+                                            "value": "obligatorio"
+                                        },
+                                        {
+                                            "value": " para muchas visas \"skilled\", como Subclass 189, 190 y 491, y algunas patrocinadas por empleadores."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "¿Quién realiza la evaluación?"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Cada ocupación está vinculada a una autoridad evaluadora designada (por ejemplo, Engineers Australia, Australian Computer Society, VETASSESS, etc.), que define sus propios criterios, plazos y aranceles."
+                                }
+                            ]
+                        },
+                        {
+                            "__component": "sections.content-section",
+                            "background": "light",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "¿Cómo funciona? (pasos generales)"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Verifica si tu ocupación"
+                                                },
+                                                {
+                                                    "value": " figura en la Skilled Occupation List (MLTSSL, STSOL, ROL, etc.) y de ser así, cuál es tu autoridad designada."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Investiga los requisitos específicos"
+                                                },
+                                                {
+                                                    "value": " (documentación, pruebas de inglés, experiencia, IP \"resume\", certificados, testigos profesionales)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Envía tu solicitud"
+                                                },
+                                                {
+                                                    "value": " según los criterios del organismo evaluador."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "4. Recibes el resultado"
+                                                },
+                                                {
+                                                    "value": " de la evaluación: si es positiva, obtienes una carta válida para migración; si no, podrías ser rechazado o recibir instrucciones para superar los déficits."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Tiempos y costos:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Cada autoridad establece sus propios tiempos y tarifas; pueden variar desde semanas hasta varios meses."
+                                        },
+                                        {
+                                            "text": "En general, se solicita documentación completa y certificada, incluyendo traducción si no está en inglés."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Importancia en el proceso migratorio:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Es uno de los primeros pasos críticos antes de presentar una Expression of Interest (EOI) o postulaciones de visa."
+                                        },
+                                        {
+                                            "text": "Sin una evaluación positiva, no podrás avanzar en las visas calificadas."
+                                        },
+                                        {
+                                            "text": "Una evaluación exitosa valida tu perfil ante el Departamento de Home Affairs como profesional competente."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "apelaciones-ante-el-tribunal",
