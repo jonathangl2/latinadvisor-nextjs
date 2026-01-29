@@ -794,13 +794,82 @@
                     ] 
                 },
                 {
-                    "slug": "postgraduate-visa-australia",
-                    "title": "Postgraduate Visa Australia",
+                    "slug": "temporary-visa-australia",
+                    "title": "Temporary Visa Australia",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 485 Temporary Graduate visa"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es una visa temporal post estudios para estudiantes internacionales que han completado con éxito un curso en Australia. Permite residir, trabajar y estudiar en el país durante un tiempo limitado después de graduarse, sirviendo como puente hacia el mundo laboral o distintas rutas migratorias permanentes."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Vías o \"streams\" disponibles:"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Hay tres modalidades principales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Post‑Higher Education Work Stream (grado, máster o PhD):"
+                                                },
+                                                {
+                                                    "value": " Estancias entre 2 y 4 años según el nivel académico."
+                                                }
+                                            ],
+                                            "children": [
+                                                "Licenciatura/Coursework: hasta 2 años",
+                                                "Máster con investigación o doctorado: hasta 3 años"
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Post‑Vocational Education Work Stream "
+                                                },
+                                                {
+                                                    "value": " (títulos vocacionales tipo diploma): Estancia de alrededor de 18 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Second Post‑Higher Education Work Stream: "
+                                                },
+                                                {
+                                                    "value": " Solo para graduados que estén en zonas regionales y ya tengan un 485 previo; permite entre 1 y 2 años  adicionales según ubicación"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "training-visa-australia",
@@ -1052,7 +1121,176 @@
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 820 – Temporary Partner Visa (visa temporal)"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Esta visa permite que el cónyuge o pareja de hecho de un ciudadano/australiano viva temporalmente en Australia mientras se procesa la residencia permanente. Se solicita desde dentro del país."
+                                        },
+                                        {
+                                            "text": "Proporciona derechos para vivir, trabajar y estudiar en Australia, además de acceso a Medicare (sistema de salud pública), y permite incluir hijos dependientes."
+                                        },
+                                        {
+                                            "text": "Al presentar la solicitud, se concede una Bridging Visa A, que mantiene tu estatus legal durante la tramitación; si necesitas viajar al extranjero mientras esperas, puedes solicitar una Bridging Visa"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Plazos de procesamiento (2025):"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "75 % de las solicitudes se resuelven en "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "12–18 meses"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text" : [
+                                                {
+                                                    "value": "90 % en "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "18–24 meses,"
+                                                },
+                                                {
+                                                    "value": "dependiendo de la documentación y el volumen de solicitudes."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 801 – Permanent Partner Visa (visa permanente)"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es la visa de residencia permanente que se otorga tras haber cumplido la etapa temporal (Subclass 820). No requiere nueva tarifa: la cuota se paga al presentar la solicitud combinada inicialmente."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Requisitos:"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Para ser elegible, se debe:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Haber pasado mínimo dos años desde la presentación de la solicitud del 820."
+                                        },
+                                        {
+                                            "text": "Continuar en una relación genuina y estable con el patrocinador."
+                                        },
+                                        {
+                                            "text": "Cumplir con los requisitos de salud, carácter y documentación actualizada (comprobantes de vida compartida, finanzas compartidas, etc.)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Derechos otorgados:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Residencia permanente:"
+                                                },
+                                                {
+                                                    "value": " en Australia, con acceso a Medicare, estudios, trabajo full-time y beneficios sociales."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": "Posibilidad de patrocinar familiares, viajar libremente (normalmente por 5 años), y posterior elegibilidad para solicitar ciudadanía australiana."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 3,
+                                    "text": "Tiempos de procesamiento estimados:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "25 % listo en unos "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "6 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "50 % en "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "10 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "En otros estudios se estiman hasta "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "12–24 meses,"
+                                                },
+                                                {
+                                                    "value": " según la complejidad del caso."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "skilled-visa-eoi-australia",
