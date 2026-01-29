@@ -826,7 +826,7 @@
                                 },
                                 {
                                     "__component": "content.list",
-                                    "ordered": false,
+                                    "ordered": true,
                                     "items": [
                                         {
                                             "text": [
