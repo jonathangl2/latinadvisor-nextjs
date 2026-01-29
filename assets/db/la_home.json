@@ -866,6 +866,32 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Requisitos clave:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Tener 35  años o menos al solicitar."
+                                        },
+                                        {
+                                            "text": "Haber tenido una visa de estudiante (Subclass 500) o una visa puente dentro de los últimos 6 meses."
+                                        },
+                                        {
+                                            "text": "Haber completado una cualificación válida en una institución registrada en CRICOS, respetando la duración mínima según el stream."
+                                        },
+                                        {
+                                            "text": "Nivel de inglés obligatorio: mínimo IELTS 6.5 con al menos 5.5 en cada banda; algunos pasaportes exentos."
+                                        },
+                                        {
+                                            "text": "Exámenes de salud y certificados de buen carácter, además de seguro médico adecuado."
+                                        }
+                                    ]
                                 }
                             ]
                         }
