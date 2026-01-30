@@ -640,15 +640,21 @@
                     "slug": "visitor-visa-australia",
                     "title": "Visitor Visa Australia",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
-                    "formName": "3. Formulario - Web Dubai",
-                    "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445,
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/eOEbvVHcNS6XffkKUJqW",
+                    "formName": "7. Formulario - Perfilamiento  Visa de Turismo",
+                    "formId": "eOEbvVHcNS6XffkKUJqW",
+                    "formHeight": 1397,
                     "body": [
                         {
                             "__component": "sections.content-section",
                             "background": "transparent",
                             "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 600 Visitor visa",
+                                    "url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600"
+                                },
                                 {
                                     "__component": "content.paragraph",
                                     "text": "La Subclass 600 es una visa temporal diseñada para personas que desean entrar a Australia por un periodo corto, ya sea por turismo, negocios, cursos breves o para visitar a familiares."
@@ -697,7 +703,7 @@
                                 },
                                 {
                                     "__component": "content.list",
-                                    "ordered": false,
+                                    "ordered": true,
                                     "items": [
                                         {
                                             "text": [
@@ -714,7 +720,7 @@
                                             "text": [
                                                 {
                                                     "type": "strong",
-                                                    "value": "2. Pruebas de fondos suficientes:"
+                                                    "value": "2. Pruebas de fondos suficientes"
                                                 },
                                                 {
                                                     "value": " para cubrir gastos durante la estancia."
@@ -736,7 +742,7 @@
                                             "text": [
                                                 {
                                                     "type": "strong",
-                                                    "value": "4. Pasaporte válido:"
+                                                    "value": "4. Pasaporte válido"
                                                 },
                                                 {
                                                     "value": " durante al menos 6 meses más allá del ingreso."
@@ -747,18 +753,29 @@
                                             "text": [
                                                 {
                                                     "type": "strong",
-                                                    "value": "5. Restricciones laborales:"
+                                                    "value": "5. No se permite trabajar"
                                                 },
                                                 {
-                                                    "value": " no se permite trabajar bajo esta visa; solo actividades permitidas como turismo, negocios o cursos breves."
+                                                    "value": " bajo esta visa; solo actividades permitidas como turismo, negocios o cursos breves."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "6. Estudio permitido por hasta 3 meses,"
+                                                },
+                                                {
+                                                    "value": " siempre que sea parte de un programa breve no laboral."
                                                 }
                                             ]
                                         }
                                     ]
-                                    },
+                                },
                                 {
                                     "__component": "content.heading",
-                                    "level": 2,
+                                    "level": 5,
                                     "text": "Tiempos de procesamiento (dependen del stream):"
                                 },
                                 {
@@ -809,7 +826,8 @@
                                 {
                                     "__component": "content.heading",
                                     "level": 2,
-                                    "text": "Subclass 485 Temporary Graduate visa"
+                                    "text": "Subclass 485 Temporary Graduate visa",
+                                    "url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485"
                                 },
                                 {
                                     "__component": "content.paragraph",
@@ -877,7 +895,7 @@
                                     "ordered": false,
                                     "items": [
                                         {
-                                            "text": "Tener 35  años o menos al solicitar."
+                                            "text": "Tener 35 años o menos al solicitar."
                                         },
                                         {
                                             "text": "Haber tenido una visa de estudiante (Subclass 500) o una visa puente dentro de los últimos 6 meses."
@@ -901,10 +919,186 @@
                     "slug": "training-visa-australia",
                     "title": "Training Visa Australia",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
-                    "formName": "3. Formulario - Web Dubai",
-                    "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/xbCvx3RDTvRpWKq9ordh",
+                    "formName": "6. Formulario - Perfilamiento Training Visa 407",
+                    "formId": "xbCvx3RDTvRpWKq9ordh",
+                    "formHeight": 1526,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 407 Training visa",
+                                    "url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es una visa temporal diseñada para que extranjeros participen en programas de capacitación ocupacional dentro del lugar de trabajo en Australia. Sirve para mejorar habilidades profesionales, completar requisitos de registro/licencia, o avanzar en el desarrollo profesional. No está destinada a cubrir faltantes laborales generales."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Tipos de capacitación que permite"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Formación para registro/licencia profesional:"
+                                                },
+                                                {
+                                                    "value": " Requisitos prácticos para obtener habilitación profesional en Australia o el país de origen."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Mejora de habilidades:"
+                                                },
+                                                {
+                                                    "value": " Programas estructurados y adaptados al ocupante en una ocupación elegible, con al menos 12 meses de experiencia reciente (últimos 24 meses)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Desarrollo de capacidades desde el exterior:"
+                                                },
+                                                {
+                                                    "value": " Para estudiantes o profesionales enviados desde el extranjero (educación, gobierno, empleo), hasta por"
+                                                },
+                                                {
+                                                    "type":"strong",
+                                                    "value": "6 meses."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Requisitos esenciales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Patrocinador autorizado: "
+                                                },
+                                                {
+                                                    "value": "Puede ser una empresa registrada, institución gubernamental o entidad internacional autorizada como Temporary Activity Sponsor (TAS)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Nombramiento formal del patrocinador: "
+                                                },
+                                                {
+                                                    "value": "Debe presentar un plan de capacitación estructurado y personalizado."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Experiencia previa del solicitante: "
+                                                },
+                                                {
+                                                    "value": "Mínimo 12 meses de trabajo o estudios de tiempo completo en la ocupación nominada durante los últimos 24 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Entrenamiento basado en el lugar de trabajo: "
+                                                },
+                                                {
+                                                    "value": "Al menos 70 % del tiempo en el ambiente laboral (mín. 30 h/semana)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Requisitos personales:"
+                                                },
+                                                {
+                                                    "value": "Inglés funcional, salud y carácter (certificados de antecedentes, seguro médico, acuerdo de valores, etc.)"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Derechos y condiciones importantes:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Duración: "
+                                                },
+                                                {
+                                                    "value": "Hasta 2 años, según el programa aprobado."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Trabajo permitido: "
+                                                },
+                                                {
+                                                    "value": "Solo en tareas relacionadas con el entrenamiento y limitadas al patrocinador."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "No conduce a residencia permanente "
+                                                },
+                                                {
+                                                    "value": "directamente, aunque puede abrir puertas a otras vías más adelante."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "sponsor-visa-australia",
@@ -1622,15 +1816,21 @@
             "au":[
                 {
                     "name": "Johana Cantor",
-                    "role": "Asesor estudiantil",
-                    "image": "/assets/images/conocenos/team/img-juan-carlos.webp",
+                    "role": "Asesora estudiantil",
+                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
                     "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
                 },
                 {
                     "name": "Johana Cantor",
-                    "role": "Asesor estudiantil",
-                    "image": "/assets/images/conocenos/team/img-renatto.webp",
+                    "role": "Asesora estudiantil",
+                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                },
+                {
+                    "name": "Johana Cantor",
+                    "role": "Asesora estudiantil",
+                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
                 }
             ]
         }
