@@ -358,6 +358,10 @@
             h5{
                 font-weight: 600;
             }
+            p{
+                margin-bottom: 0.9rem;
+                font-size: 1.1rem;
+            }
             .img-agent{
                 width: 150px !important;
                 height: 150px !important;
@@ -365,12 +369,86 @@
                 object-position: center;
                 border-radius: 15px !important;
             }
+            .information{   
+                h5{
+                    margin: 2rem auto 0.9rem;
+                    color: vars.$color-grey-1;
+                }
+                ul{
+                    margin-bottom: 1rem;
+                    li{
+                        font-size: 1.1rem;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 8px;
+                            left: 0;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background-color: vars.$color-grey-1
+                        }
+                    }
+                }
+                strong{
+                    font-weight: 600;
+                }
+            }
         }
         &_team{
             .swiper{
-                padding: 1rem;
-                .swiper-slide{
+                padding: 1rem 5rem;
+                &::before,
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    width: 6rem;
                     height: 100%;
+                    z-index: 2;
+                }
+
+                &::before{
+                    left: 0;
+                    background: linear-gradient(to right, vars.$color-white, transparent);
+                }
+
+                &::after{
+                    right: 0;
+                    background: linear-gradient(to left, vars.$color-white, transparent);
+                }
+
+                .swiper-wrapper{
+                    display: flex;
+                    align-items: stretch;
+                }
+                .swiper-slide{
+                    height: auto;
+                    display: flex;
+                }
+
+                .swiper-button-next, .swiper-button-prev{
+                    color: vars.$color-grey-1;
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        color: vars.$color-blue-dark-5;
+                    }
+                }
+
+                .swiper-button-prev {
+                    left: 0rem; 
+                }
+                .swiper-button-next {
+                    right: 0rem;    
+                }
+                .swiper-pagination-bullet{
+                    margin-top: 1rem;
+                    background: vars.$color-grey-1;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    background: vars.$color-blue-dark-5;
                 }
             }
             .card-teamMigration{
@@ -394,6 +472,16 @@
                 background-color: vars.$color-blue-dark-5 !important;
                 color: vars.$color-white !important;
             }
+            a{
+                h2,h3,h4{
+                    color: vars.$color-blue-dark-2;
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        text-decoration: underline;
+                    }
+                }
+            }
             h2{
                 margin-top: 3rem;
                 margin-bottom: 1.5rem;
@@ -405,15 +493,15 @@
             }
             h2,h3,h4{
                 color: vars.$color-blue-dark-5;
+                margin-top: 3rem;
+                margin-bottom: 1.5rem;
             }
             h5,p{
                 margin-bottom: 1.1rem
             }
             h5{
                 font-weight: 600;
-                &:nth-of-type(1){
-                    margin-top: 1rem;
-                }
+                margin-top: 2.5rem;
             }
             strong{
                 font-weight: 600;
@@ -440,8 +528,7 @@
                 &::before {
                     content: "";
                     position: absolute;
-                    transform: translateY(-50%);
-                    top: 50%;
+                    top: 8px;
                     left: 0;
                     width: 6px;
                     height: 6px;

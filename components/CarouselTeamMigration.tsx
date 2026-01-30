@@ -10,7 +10,7 @@ export default function CarouselTeamMigration({ items }: any) {
       <Swiper
         modules={[Navigation,Pagination]}
         loop={true}
-        spaceBetween={30}
+        spaceBetween={40}
         slidesPerView={1} // default (mobile)
         breakpoints={{
           768: {
@@ -29,7 +29,7 @@ export default function CarouselTeamMigration({ items }: any) {
               <div className="card-body px-4 px-lg-5">              
                 <div className="col-12 py-4 d-flex align-items-center">
                     <img
-                        src={getAssetUrl(item.image)}
+                        src={item.image}
                         alt=""
                         className="img-fluid img-team me-5"
                     />

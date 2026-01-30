@@ -23,7 +23,7 @@ export default function Header() {
 
         {/* NAVBAR DESKTOP */}
         <div className="collapse navbar-collapse d-none d-lg-flex col-lg-9" id="">
-          <ul className="navbar-nav ms-auto align-items-lg-stretch principal-menu me-4">
+          <ul className="navbar-nav ms-auto align-items-lg-stretch principal-menu me-2">
             <li className="nav-item">
               <Link className="nav-link" href={getAssetUrl("/")}>Inicio</Link>
             </li>
@@ -171,6 +171,40 @@ export default function Header() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" href={getAssetUrl("/contactanos")}>Contáctanos</Link>
+            </li>
+          </ul>
+          <ul className="navbar-nav ms-3 me-4 align-items-lg-stretch principal-menu ps-3 border-start h-100">
+            <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="langDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Idioma
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="langDropdown">
+                  {[
+                    {
+                      url: getAssetUrl("/"),  
+                      title: "ES",
+                      icon: "fi fi-es"
+                    },
+                    {
+                      url: getAssetUrl("/"),
+                      title: "EN",
+                      icon: "fi fi-us"
+                    }
+                  ].map((item, i) => (
+                    <li key={i}>
+                      <Link href={item.url} className="dropdown-item">
+                        <span className={item.icon}></span>  {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
             </li>
           </ul>
         </div>

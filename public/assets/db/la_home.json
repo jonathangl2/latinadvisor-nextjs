@@ -640,6 +640,180 @@
                     "slug": "visitor-visa-australia",
                     "title": "Visitor Visa Australia",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/eOEbvVHcNS6XffkKUJqW",
+                    "formName": "7. Formulario - Perfilamiento  Visa de Turismo",
+                    "formId": "eOEbvVHcNS6XffkKUJqW",
+                    "formHeight": 1397,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 600 Visitor visa",
+                                    "url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "La Subclass 600 es una visa temporal diseñada para personas que desean entrar a Australia por un periodo corto, ya sea por turismo, negocios, cursos breves o para visitar a familiares."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Principales categorías (Streams):"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "La visa cuenta con varios tipos para adaptarse al propósito del viaje:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Tourist Stream:"
+                                                },
+                                                {
+                                                    "value": " ideal para vacaciones, visitas familiares o cruceros. Estancias típicas de 3, 6 o 12 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Sponsored Family Stream:"
+                                                },
+                                                {
+                                                    "value": " para quienes tienen un familiar ciudadano o residente permanente en Australia que actúa como patrocinador. Puede requerir un depósito de garantía (“bond”) para asegurar el regreso."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Requisitos generales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Motivo legítimo y temporal:"
+                                                },
+                                                {
+                                                    "value": " debes demostrar que solo planeas una visita breve y regresarás a tu país."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Pruebas de fondos suficientes"
+                                                },
+                                                {
+                                                    "value": " para cubrir gastos durante la estancia."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Salud y carácter:"
+                                                },
+                                                {
+                                                    "value": " podrías precisar exámenes médicos y certificado de antecedentes penales."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "4. Pasaporte válido"
+                                                },
+                                                {
+                                                    "value": " durante al menos 6 meses más allá del ingreso."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "5. No se permite trabajar"
+                                                },
+                                                {
+                                                    "value": " bajo esta visa; solo actividades permitidas como turismo, negocios o cursos breves."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "6. Estudio permitido por hasta 3 meses,"
+                                                },
+                                                {
+                                                    "value": " siempre que sea parte de un programa breve no laboral."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Tiempos de procesamiento (dependen del stream):"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Tourist Stream (offshore):"
+                                                },
+                                                {
+                                                    "value": " entre ~13 y 26 días para el 50 % y 90 % de los casos."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Sponsored Family:"
+                                                },
+                                                {
+                                                    "value": " entre 34 y 49 días."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ] 
+                },
+                {
+                    "slug": "temporary-visa-australia",
+                    "title": "Temporary Visa Australia",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
@@ -647,28 +821,284 @@
                     "body": [
                         {
                             "__component": "sections.content-section",
-                            "background": "light",
-                            "blocks": []
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 485 Temporary Graduate visa",
+                                    "url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es una visa temporal post estudios para estudiantes internacionales que han completado con éxito un curso en Australia. Permite residir, trabajar y estudiar en el país durante un tiempo limitado después de graduarse, sirviendo como puente hacia el mundo laboral o distintas rutas migratorias permanentes."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Vías o \"streams\" disponibles:"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Hay tres modalidades principales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Post‑Higher Education Work Stream (grado, máster o PhD):"
+                                                },
+                                                {
+                                                    "value": " Estancias entre 2 y 4 años según el nivel académico."
+                                                }
+                                            ],
+                                            "children": [
+                                                "Licenciatura/Coursework: hasta 2 años",
+                                                "Máster con investigación o doctorado: hasta 3 años"
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Post‑Vocational Education Work Stream "
+                                                },
+                                                {
+                                                    "value": " (títulos vocacionales tipo diploma): Estancia de alrededor de 18 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Second Post‑Higher Education Work Stream: "
+                                                },
+                                                {
+                                                    "value": " Solo para graduados que estén en zonas regionales y ya tengan un 485 previo; permite entre 1 y 2 años  adicionales según ubicación"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Requisitos clave:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Tener 35 años o menos al solicitar."
+                                        },
+                                        {
+                                            "text": "Haber tenido una visa de estudiante (Subclass 500) o una visa puente dentro de los últimos 6 meses."
+                                        },
+                                        {
+                                            "text": "Haber completado una cualificación válida en una institución registrada en CRICOS, respetando la duración mínima según el stream."
+                                        },
+                                        {
+                                            "text": "Nivel de inglés obligatorio: mínimo IELTS 6.5 con al menos 5.5 en cada banda; algunos pasaportes exentos."
+                                        },
+                                        {
+                                            "text": "Exámenes de salud y certificados de buen carácter, además de seguro médico adecuado."
+                                        }
+                                    ]
+                                }
+                            ]
                         }
-                    ] 
-                },
-                {
-                    "slug": "postgraduate-visa-australia",
-                    "title": "Postgraduate Visa Australia",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
-                    "formName": "3. Formulario - Web Dubai",
-                    "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    ]
                 },
                 {
                     "slug": "training-visa-australia",
                     "title": "Training Visa Australia",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-                    "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
-                    "formName": "3. Formulario - Web Dubai",
-                    "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formSrc": "https://api.leadconnectorhq.com/widget/form/xbCvx3RDTvRpWKq9ordh",
+                    "formName": "6. Formulario - Perfilamiento Training Visa 407",
+                    "formId": "xbCvx3RDTvRpWKq9ordh",
+                    "formHeight": 1526,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 407 Training visa",
+                                    "url":"https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/employer-nomination-scheme-186"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es una visa temporal diseñada para que extranjeros participen en programas de capacitación ocupacional dentro del lugar de trabajo en Australia. Sirve para mejorar habilidades profesionales, completar requisitos de registro/licencia, o avanzar en el desarrollo profesional. No está destinada a cubrir faltantes laborales generales."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Tipos de capacitación que permite"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": true,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "1. Formación para registro/licencia profesional:"
+                                                },
+                                                {
+                                                    "value": " Requisitos prácticos para obtener habilitación profesional en Australia o el país de origen."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "2. Mejora de habilidades:"
+                                                },
+                                                {
+                                                    "value": " Programas estructurados y adaptados al ocupante en una ocupación elegible, con al menos 12 meses de experiencia reciente (últimos 24 meses)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "3. Desarrollo de capacidades desde el exterior:"
+                                                },
+                                                {
+                                                    "value": " Para estudiantes o profesionales enviados desde el extranjero (educación, gobierno, empleo), hasta por"
+                                                },
+                                                {
+                                                    "type":"strong",
+                                                    "value": "6 meses."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Requisitos esenciales:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Patrocinador autorizado: "
+                                                },
+                                                {
+                                                    "value": "Puede ser una empresa registrada, institución gubernamental o entidad internacional autorizada como Temporary Activity Sponsor (TAS)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Nombramiento formal del patrocinador: "
+                                                },
+                                                {
+                                                    "value": "Debe presentar un plan de capacitación estructurado y personalizado."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Experiencia previa del solicitante: "
+                                                },
+                                                {
+                                                    "value": "Mínimo 12 meses de trabajo o estudios de tiempo completo en la ocupación nominada durante los últimos 24 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Entrenamiento basado en el lugar de trabajo: "
+                                                },
+                                                {
+                                                    "value": "Al menos 70 % del tiempo en el ambiente laboral (mín. 30 h/semana)."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Requisitos personales:"
+                                                },
+                                                {
+                                                    "value": "Inglés funcional, salud y carácter (certificados de antecedentes, seguro médico, acuerdo de valores, etc.)"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Derechos y condiciones importantes:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Duración: "
+                                                },
+                                                {
+                                                    "value": "Hasta 2 años, según el programa aprobado."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Trabajo permitido: "
+                                                },
+                                                {
+                                                    "value": "Solo en tareas relacionadas con el entrenamiento y limitadas al patrocinador."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "No conduce a residencia permanente "
+                                                },
+                                                {
+                                                    "value": "directamente, aunque puede abrir puertas a otras vías más adelante."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "sponsor-visa-australia",
@@ -911,7 +1341,176 @@
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/k6czEex6PZdfeLpophBR",
                     "formName": "3. Formulario - Web Dubai",
                     "formId": "k6czEex6PZdfeLpophBR",
-                    "formHeight": 1445
+                    "formHeight": 1445,
+                    "body": [
+                        {
+                            "__component": "sections.content-section",
+                            "background": "transparent",
+                            "blocks": [
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 820 – Temporary Partner Visa (visa temporal)"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Esta visa permite que el cónyuge o pareja de hecho de un ciudadano/australiano viva temporalmente en Australia mientras se procesa la residencia permanente. Se solicita desde dentro del país."
+                                        },
+                                        {
+                                            "text": "Proporciona derechos para vivir, trabajar y estudiar en Australia, además de acceso a Medicare (sistema de salud pública), y permite incluir hijos dependientes."
+                                        },
+                                        {
+                                            "text": "Al presentar la solicitud, se concede una Bridging Visa A, que mantiene tu estatus legal durante la tramitación; si necesitas viajar al extranjero mientras esperas, puedes solicitar una Bridging Visa"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Plazos de procesamiento (2025):"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "75 % de las solicitudes se resuelven en "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "12–18 meses"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text" : [
+                                                {
+                                                    "value": "90 % en "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "18–24 meses,"
+                                                },
+                                                {
+                                                    "value": "dependiendo de la documentación y el volumen de solicitudes."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Subclass 801 – Permanent Partner Visa (visa permanente)"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Es la visa de residencia permanente que se otorga tras haber cumplido la etapa temporal (Subclass 820). No requiere nueva tarifa: la cuota se paga al presentar la solicitud combinada inicialmente."
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 5,
+                                    "text": "Requisitos:"
+                                },
+                                {
+                                    "__component": "content.paragraph",
+                                    "text": "Para ser elegible, se debe:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": "Haber pasado mínimo dos años desde la presentación de la solicitud del 820."
+                                        },
+                                        {
+                                            "text": "Continuar en una relación genuina y estable con el patrocinador."
+                                        },
+                                        {
+                                            "text": "Cumplir con los requisitos de salud, carácter y documentación actualizada (comprobantes de vida compartida, finanzas compartidas, etc.)"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 2,
+                                    "text": "Derechos otorgados:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "type": "strong",
+                                                    "value": "Residencia permanente:"
+                                                },
+                                                {
+                                                    "value": " en Australia, con acceso a Medicare, estudios, trabajo full-time y beneficios sociales."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": "Posibilidad de patrocinar familiares, viajar libremente (normalmente por 5 años), y posterior elegibilidad para solicitar ciudadanía australiana."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "__component": "content.heading",
+                                    "level": 3,
+                                    "text": "Tiempos de procesamiento estimados:"
+                                },
+                                {
+                                    "__component": "content.list",
+                                    "ordered": false,
+                                    "items": [
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "25 % listo en unos "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "6 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "50 % en "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "10 meses."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "text": [
+                                                {
+                                                    "value": "En otros estudios se estiman hasta "
+                                                },
+                                                {
+                                                    "type": "strong",
+                                                    "value": "12–24 meses,"
+                                                },
+                                                {
+                                                    "value": " según la complejidad del caso."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     "slug": "skilled-visa-eoi-australia",
@@ -1217,15 +1816,21 @@
             "au":[
                 {
                     "name": "Johana Cantor",
-                    "role": "Asesor estudiantil",
-                    "image": "/assets/images/conocenos/team/img-juan-carlos.webp",
+                    "role": "Asesora estudiantil",
+                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
                     "description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
                 },
                 {
                     "name": "Johana Cantor",
-                    "role": "Asesor estudiantil",
-                    "image": "/assets/images/conocenos/team/img-renatto.webp",
+                    "role": "Asesora estudiantil",
+                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                },
+                {
+                    "name": "Johana Cantor",
+                    "role": "Asesora estudiantil",
+                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
                 }
             ]
         }

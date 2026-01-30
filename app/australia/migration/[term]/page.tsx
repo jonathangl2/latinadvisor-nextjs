@@ -68,7 +68,7 @@ function renderText(text: any) {
 
   // ✅ Caso 2: array de partes (span / strong / texto)
   if (Array.isArray(text)) {
-    return text.map((part, i) => {
+    return text.map((part: any, i: number) => {
       if (part?.type === "strong") {
         return <strong key={i}>{part.value}</strong>;
       }
@@ -94,7 +94,7 @@ function renderBlocks(blocks: any[]) {
 
       case "content.heading": {
         const Tag = `h${block.level}` as keyof JSX.IntrinsicElements;
-        return <Tag key={i}>{block.text}</Tag>; // ❗ intacto
+        return block.url ? <a href={block.url} target="_blank"><Tag key={i}>{block.text}</Tag></a> : <Tag key={i}>{block.text}</Tag>; 
       }
 
       case "content.paragraph":
@@ -162,11 +162,12 @@ export default async function MigrationProcessesPage({ params }: { params: Promi
             className="internal_migration internal_migration_subpage"
         />
 
-        <section className="section-australiaMigration_bodyDynamics container-fluid">
-            
-            { renderSections(visa.body, visa.slug) }
-            
-        </section>
+        {visa?.body?.length > 0 && (
+          <section className="section-australiaMigration_bodyDynamics container-fluid">
+            {renderSections(visa.body, visa.slug)}
+          </section>
+        )}
+
 
         <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
             <div className="row d-flex justify-content-center">
