@@ -74,7 +74,13 @@ function renderText(text: any) {
       }
 
       if (part?.type === "span") {
-        return <span key={i}>{part.value}</span>;
+        return part.url ? (
+          <a key={i} href={part.url} target="_blank" rel="noopener noreferrer">
+        <span>{part.value}</span>
+          </a>
+        ) : (
+          <span key={i}>{part.value}</span>
+        );
       }
 
       // texto plano sin wrapper
@@ -94,7 +100,7 @@ function renderBlocks(blocks: any[]) {
 
       case "content.heading": {
         const Tag = `h${block.level}` as keyof JSX.IntrinsicElements;
-        return block.url ? <a href={block.url} target="_blank"><Tag key={i}>{block.text}</Tag></a> : <Tag key={i}>{block.text}</Tag>; 
+        return block.url ? <a href={block.url} target="_blank"><Tag key={i}>{renderText(block.text)}</Tag></a> : <Tag key={i}>{renderText(block.text)}</Tag>;
       }
 
       case "content.paragraph":
@@ -107,6 +113,7 @@ function renderBlocks(blocks: any[]) {
           <ListTag key={i}>
             {block.items.map((item: any, idx: number) => (
               <li key={idx}>
+
                 {renderText(item.text)}
 
                 {item.children && (
