@@ -6,24 +6,38 @@ import { console } from "inspector";
 import fs from "fs";
 import path from "path";
 import { Metadata } from "next";
+import { locales, type Locale } from '@/lib/i18n';
+
+
 
 
 export async function generateStaticParams() {
   try {
+    // 1. Lee las ciudades del JSON
     const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const json = JSON.parse(fileContent);
-    
     const ciudades = json.data?.ciudades || [];
     
-    return ciudades.map((ciudad: any) => ({
-      term: ciudad.slug,
-    }));
+    // 2. Genera combinaciones: cada ciudad × cada idioma
+    const params = [];
+    for (const locale of locales) {
+      for (const ciudad of ciudades) {
+        params.push({
+          locale: locale,      // es, en, pt
+          term: ciudad.slug,   // melbourne, sydney, etc.
+        });
+      }
+    }
+    
+    
+    return params;
   } catch (err) {
     console.error("❌ Error generando params:", err);
     return [];
   }
 }
+
 
 function getCiudadData(term: string) {
   try {
@@ -38,7 +52,12 @@ function getCiudadData(term: string) {
   }
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ term: string }> }) {
+// Metadata dinámica
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locale: Locale; term: string }> 
+}): Promise<Metadata> {
   const { term } = await params;
   const ciudad = getCiudadData(term);
   
@@ -54,10 +73,15 @@ export async function generateMetadata({ params }: { params: Promise<{ term: str
   };
 }
 
-export default async function AustraliaCityPage({ params }: { params: Promise<{ term: string }> }) {
+export default async function AustraliaCityPage({ 
+    params 
+  }: { 
+    params: Promise<{ locale: Locale; term: string }> 
+  }) {
 
-  const { term } = await params;
+  const { locale, term } = await params;
   const ciudad = getCiudadData(term);
+
   if (!ciudad) {
     notFound();
   }

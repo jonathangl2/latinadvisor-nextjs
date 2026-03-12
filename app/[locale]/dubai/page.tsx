@@ -6,6 +6,9 @@ import { loadHomeJson } from "@/lib/loadJson";
 import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
 import { Metadata } from 'next';
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
 
 export const metadata:Metadata = {
 	title: "Estudia y Trabaja en Dubái | LatinAdvisor",
@@ -13,7 +16,14 @@ export const metadata:Metadata = {
 	keywords: "Estudiar en Dubai, Cursos de inglés en Dubai, Educación internacional en Dubai, Programas de estudio en Dubai, Aprender inglés en el extranjero, Estudios vocacionales en Dubai, Cursos de inglés de negocios en Dubai, Bachelors en Dubai, Formación técnica en Dubai, Estudios en administración en Dubai, Programas de gestión en Dubai, Ciencia en computación en Dubai, Cursos de marketing digital en Dubai, Estudios de hospitalidad en Dubai, Curso de gestión de proyectos en Dubai, Carreras en Dubai, Oportunidades laborales en Dubai, Residencia estudiantil en Dubai, Trabajo en Dubai para estudiantes, Calidad de vida en Dubai, Vivir en Dubai como estudiante, Infraestructura en Dubai, Vivienda en Dubai, Estudios de contabilidad en Dubai, Cursos de publicidad digital en Dubai, Formación en eventos deportivos en Dubai, Cursos de gestión hotelera en Dubai, Análisis de datos en Dubai, Inteligencia artificial en Dubai, Viajar a Dubai, Vida estudiantil en Dubai, Seguridad en Dubai, Opciones de ocio en Dubai, Cultura y vida en Dubai, Transporte en Dubai"
 }
 
-export default function Dubai() {
+export default async function Dubai({
+    params
+  }: {
+    params: Promise<{ locale: Locale }>
+  }) {
+
+	const { locale } = await params;
+  	const dict = await getDictionary(locale);
 	
 	const data = loadHomeJson();
   	const testimoniosDubai = data.data.testimonios.dubai;

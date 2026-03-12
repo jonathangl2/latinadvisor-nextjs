@@ -2,6 +2,9 @@ import BannerInterno from "@/components/BannerInterno";
 import PodcastGrid from "@/components/PodcastGrid";
 import { getAssetUrl } from "@/lib/url";
 import { Metadata } from "next";
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
 
 
 export const metadata:Metadata = {
@@ -9,7 +12,14 @@ export const metadata:Metadata = {
   description: "Encuentra las preguntas más frecuentes acerca de tu Aventura en Australia y todas las respuestas a tus dudas de vivir en el exterior y los procesos."
 }
 
-export default function PodcastPage() {
+export default async function PodcastPage({
+    params
+  }: {
+    params: Promise<{ locale: Locale }>
+  }) {
+  
+    const { locale } = await params;
+    const dict = await getDictionary(locale);
 
   const episodes = [
     "https://open.spotify.com/embed-podcast/episode/71ZD7zgHQjUecehtiO0p4X",

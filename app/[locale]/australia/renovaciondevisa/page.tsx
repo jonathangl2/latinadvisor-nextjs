@@ -1,12 +1,22 @@
 import { getAssetUrl } from "@/lib/url";
 import { Metadata } from 'next';
 import AgentesClient from "./AgentesClient";
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
 
 export const metadata:Metadata = {
 	title: "Renovación de Visa | LatinAdvisor",
 }
 
-export default function RenovacionPage() {
+export default async function RenovacionPage({
+		params
+	}: {
+		params: Promise<{ locale: Locale }>
+	}) {
+
+	const { locale } = await params;
+	const dict = await getDictionary(locale);
 
 	const agentes = [
 		{

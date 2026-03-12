@@ -1,14 +1,18 @@
-"use client";
-
 import FormEmbed from "@/components/FormEmbed";
 import { getAssetUrl } from "@/lib/url";
 import Script from "next/script";
-import { useEffect } from "react";
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 
-export default function Home() {
-  useEffect(() => {
-    console.log("Página principal cargada.");
-  }, []);
+export const generateStaticParams = generateLocaleParams;
+
+export default async function Home({
+    params
+  }: {
+    params: Promise<{ locale: Locale }>
+  }) {
+
+  const { locale } = await params;
+  const dict = await getDictionary(locale);
 
   return (
     <>
@@ -45,7 +49,7 @@ export default function Home() {
                 >
                   <div className="card card-ctaDestination">
                     <img
-                      src="./assets/images/home/estudiar-en-australia.webp"
+                      src={getAssetUrl("/assets/images/home/estudiar-en-australia.webp")}
                       alt="Estudiar en Australia"
                     />
                     <h5 className="card-ctaDestination_title">Estudiar en Australia</h5>

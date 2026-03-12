@@ -4,12 +4,22 @@ import { loadHomeJson } from "@/lib/loadJson";
 import { getAssetUrl } from "@/lib/url";
 import { Metadata } from 'next';
 import Australia from '../page';
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
 
 export const metadata:Metadata = {
 	title: "Renovación de Visa | LatinAdvisor",
 }
 
-export default function WorkAndHolidayPage() {
+export default async function WorkAndHolidayPage({
+		params
+	}: {
+		params: Promise<{ locale: Locale }>
+	}) {
+
+	const { locale } = await params;
+	const dict = await getDictionary(locale);
 	
 	const data = loadHomeJson();
 	const testimonios = data.data.testimonios.australia;

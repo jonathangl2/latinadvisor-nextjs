@@ -109,7 +109,7 @@ export default function Footer() {
                 },
                 {
                   name: "BRISBANE",
-                  address: "310 Edward Street Brisbane City QLD 4000",
+                  address: "Level 1/70 St Pauls Ter, Spring Hill QLD 4000",
                 },
                 {
                   name: "ADELAIDE",

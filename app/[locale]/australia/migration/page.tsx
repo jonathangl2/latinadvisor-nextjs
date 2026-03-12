@@ -6,12 +6,22 @@ import { Metadata } from 'next';
 import Australia from '../page';
 import BannerInterno from "@/components/BannerInterno";
 import CarouselTeamMigration from "@/components/CarouselTeamMigration";
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
 
 export const metadata:Metadata = {
     title: "Migration | LatinAdvisor",
 }
 
-export default function MigrationPage() {
+export default async function MigrationPage({
+        params
+    }: {
+        params: Promise<{ locale: Locale }>
+    }) {
+
+    const { locale } = await params;
+    const dict = await getDictionary(locale);
 
     const data = loadHomeJson();
 	const migrationProcesses = data.data.migration_processes.au;

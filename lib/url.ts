@@ -12,9 +12,12 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "";
  * @param path - Ruta relativa (ej: "/assets/images/logo.png")
  * @returns URL completa con base path
  */
-export function getAssetUrl(path: string): string {
+export function getAssetUrl(path: string, locale?: string): string {
   // Asegura que el path empiece con /
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  if (locale) {
+    return `${SITE_URL}/${locale}${cleanPath}`;
+  }
   return `${SITE_URL}${cleanPath}`;
 }
 
@@ -26,7 +29,10 @@ export function getAssetUrl(path: string): string {
  */
 export function getRoutePath(path: string): string {
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  return `${BASE_PATH}${cleanPath}`;
+  if (locale) {
+    return `${SITE_URL}/${locale}${cleanPath}`;
+  }
+  return `${SITE_URL}${cleanPath}`;
 }
 
 /**

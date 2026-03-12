@@ -1,0 +1,11 @@
+{
+  "nav": {
+    "home": "Home",
+    "destinations": "Destinations",
+    "about": "About Us"
+  },
+  "home": {
+    "title": "Live, study and work abroad",
+    "cta": "Start now"
+  }
+}

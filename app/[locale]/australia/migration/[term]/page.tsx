@@ -7,6 +7,7 @@ import path from "path";
 import { Metadata } from "next";
 import FormEmbed from "@/components/FormEmbed";
 import { JSX } from "react";
+import { locales, type Locale } from '@/lib/i18n';
 
 
 export async function generateStaticParams() {
@@ -14,12 +15,20 @@ export async function generateStaticParams() {
     const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const json = JSON.parse(fileContent);
-    
     const mpVisas = json.data?.migration_processes.au || [];
     
-    return mpVisas.map((visa: any) => ({
-      term: visa.slug,
-    }));
+    // Combina cada idioma con cada visa
+    const params = [];
+    for (const locale of locales) {
+      for (const visa of mpVisas) {
+        params.push({
+          locale: locale,
+          term: visa.slug,
+        });
+      }
+    }
+    
+    return params;
   } catch (err) {
     console.error("❌ Error generando params:", err);
     return [];
@@ -39,8 +48,14 @@ function getVisaData(term: string) {
   }
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ term: string }> }) {
-  const { term } = await params;
+// Metadata dinámica
+export async function generateMetadata({ 
+  params 
+}: { 
+  params: Promise<{ locale: Locale; term: string }> 
+}): Promise<Metadata> {
+  
+  const { locale, term } = await params;
   const visa = getVisaData(term);
   
   if (!visa) {

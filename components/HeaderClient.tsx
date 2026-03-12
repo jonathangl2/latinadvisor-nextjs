@@ -1,21 +1,38 @@
+'use client';
 
-import Link from 'next/link'
-import Image from 'next/image'
-import { getAssetUrl } from '@/lib/url'
-import { loadHomeJson } from '@/lib/loadJson';
+import Link from 'next/link';
+import { getAssetUrl } from '@/lib/url';
+import { usePathname, useParams } from 'next/navigation';
 
-export default function Header() {
+type Props = {
+  migrationProcesses: any[];
+};
 
-  const data = loadHomeJson();
-  const migrationProcesses = data.data.migration_processes.au;
+export default function HeaderClient({ migrationProcesses }: Props) {
+  
+  const pathname = usePathname();
+  const { locale } = useParams();
+
+  const localePath = (path: string) => `/${locale}${path}`;
+  const assetPath = (path: string) => getAssetUrl(path);
+  
+  const languages = [
+    {
+      code: 'es', label: 'ES', icon: 'fi fi-es'
+    },
+    {
+      code: 'en', label: 'EN', icon: 'fi fi-us'
+    }
+  ];
+  const activeLang = languages.find(l => l.code === locale) ?? languages[0];
 
   return (
     <header id="principal_header">
       <nav id="principal_navbar" className="navbar navbar_v3 navbar-expand-lg navbar-primary py-0 align-items-lg-stretch">
         
-        <Link className="navbar-brand py-0 px-lg-4 d-flex align-items-center" href={getAssetUrl("/")}>
+        <Link className="navbar-brand py-0 px-lg-4 d-flex align-items-center" href={localePath("/")}>
           <img 
-            src={getAssetUrl("/assets/images/Logo-color.svg")}
+            src={assetPath("/assets/images/Logo-color.svg")}
             className="logo-image img-fluid" 
             alt="LatinAdvisor Logo"
           />
@@ -25,7 +42,7 @@ export default function Header() {
         <div className="collapse navbar-collapse d-none d-lg-flex col-lg-9" id="">
           <ul className="navbar-nav ms-auto align-items-lg-stretch principal-menu me-2">
             <li className="nav-item">
-              <Link className="nav-link" href={getAssetUrl("/")}>Inicio</Link>
+              <Link className="nav-link" href={localePath("/")}>Inicio</Link>
             </li>
             <li className="nav-item dropdown">
                 <a
@@ -41,11 +58,11 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="destinosDropdown">
                   {[
                     {
-                      url: getAssetUrl("/australia"),
+                      url: localePath("/australia"),
                       title: "australia",
                     },
                     {
-                      url: getAssetUrl("/dubai"),
+                      url: localePath("/dubai"),
                       title: "dubái",
                     }
                   ].map((item, i) => (
@@ -71,23 +88,23 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="serviciosDropdown">
                   {[
                     {
-                      url: getAssetUrl("/australia"),
+                      url: localePath("/australia"),
                       title: "ESTUDIAR EN AUSTRALIA",
                     },
                     {
-                      url: getAssetUrl("/dubai"),
+                      url: localePath("/dubai"),
                       title: "ESTUDIAR EN DUBÁI",
                     },
                     {
-                      url: getAssetUrl("/australia/renovaciondevisa"),
+                      url: localePath("/australia/renovaciondevisa"),
                       title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
                     },
                     {
-                      url: getAssetUrl("/australia/migration"),
+                      url: localePath("/australia/migration"),
                       title: "PROCESOS MIGRATORIOS",
                     },
                     {
-                      url: getAssetUrl("/australia/workandholiday"),
+                      url: localePath("/australia/workandholiday"),
                       title: "WORK AND HOLIDAY VISA",
                     }
                   ].map((item, i) => (
@@ -113,7 +130,7 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="procesosDropdown">
                   { migrationProcesses.map((item:any, i:number) => (
                     <li key={i}>
-                      <Link href={getAssetUrl("/australia/migration/"+item.slug)} className="dropdown-item">
+                      <Link href={localePath("/australia/migration/"+item.slug)} className="dropdown-item">
                         {item.title}
                       </Link>
                     </li>
@@ -134,27 +151,27 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="recursosDropdown">
                   {[
                     {
-                      url: getAssetUrl("/blog"),
+                      url: localePath("/blog"),
                       title: "blog",
                     },
                     {
-                      url: getAssetUrl("/ebooks-guias"),
+                      url: localePath("/ebooks-guias"),
                       title: "ebooks y guías",
                     },
                     {
-                      url: getAssetUrl("/eventos"),
+                      url: localePath("/eventos"),
                       title: "eventos",
                     },
                     {
-                      url: getAssetUrl("/testimonios"),
+                      url: localePath("/testimonios"),
                       title: "testimonios",
                     },
                     {
-                      url: getAssetUrl("/podcast"),
+                      url: localePath("/podcast"),
                       title: "podcast",
                     },
                     {
-                      url: getAssetUrl("/promociones"),
+                      url: localePath("/promociones"),
                       title: "promociones",
                     }
                   ].map((item, i) => (
@@ -167,45 +184,44 @@ export default function Header() {
                 </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href={getAssetUrl("/conocenos")}>Nosotros</Link>
+              <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href={getAssetUrl("/contactanos")}>Contáctanos</Link>
+              <Link className="nav-link" href={localePath("/contactanos")}>Contáctanos</Link>
             </li>
           </ul>
           <ul className="navbar-nav ms-3 me-4 align-items-lg-stretch principal-menu ps-3 border-start h-100">
+            
             <li className="nav-item dropdown">
-                <a
-                  className="nav-link dropdown-toggle"
-                  href="#"
-                  id="langDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Idioma
-                </a>
-                <ul className="dropdown-menu" aria-labelledby="langDropdown">
-                  {[
-                    {
-                      url: getAssetUrl("/"),  
-                      title: "ES",
-                      icon: "fi fi-es"
-                    },
-                    {
-                      url: getAssetUrl("/"),
-                      title: "EN",
-                      icon: "fi fi-us"
-                    }
-                  ].map((item, i) => (
-                    <li key={i}>
-                      <Link href={item.url} className="dropdown-item">
-                        <span className={item.icon}></span>  {item.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+              <a
+                className="nav-link dropdown-toggle d-flex align-items-center gap-2"
+                href="#"
+                id="langDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <span className={activeLang.icon}></span>
+                {activeLang.label}
+              </a>
+
+              <ul className="dropdown-menu dropdown-menu-end dropdown-lang" aria-labelledby="langDropdown">
+                {languages.map(lang => (
+                  <li key={lang.code}>
+                    <Link
+                      href={`/${lang.code}`}
+                      className={`dropdown-item d-flex align-items-center gap-2 ${
+                        lang.code === locale ? 'active fw-bold' : ''
+                      }`}
+                    >
+                      <span className={lang.icon}></span>
+                      {lang.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </li>
+            
           </ul>
         </div>
 
@@ -221,19 +237,19 @@ export default function Header() {
           <div className="offcanvas-body">
             <ul className="navbar-nav mx-auto align-items-lg-stretch principal-menu">
               <li className="nav-item">
-                <Link className="nav-link" href={getAssetUrl("/")}>Inicio</Link>
+                <Link className="nav-link" href={localePath("/")}>Inicio</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href={getAssetUrl("/australia")}>Australia</Link>
+                <Link className="nav-link" href={localePath("/australia")}>Australia</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href={getAssetUrl("/dubai")}>Dubái</Link>
+                <Link className="nav-link" href={localePath("/dubai")}>Dubái</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href={getAssetUrl("/conocenos")}>Nosotros</Link>
+                <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href={getAssetUrl("/contactanos")}>Contáctanos</Link>
+                <Link className="nav-link" href={localePath("/contactanos")}>Contáctanos</Link>
               </li>
             </ul>
           </div>

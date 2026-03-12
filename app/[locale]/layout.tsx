@@ -1,10 +1,13 @@
 import { Metadata } from 'next'
-import Header from '@/components/Header'
+import HeaderServer from '@/components/HeaderServer'
 import Footer from '@/components/Footer'
 import Script from 'next/script'
 import { getAssetUrl } from '@/lib/url'
 import './globals.css'
 import "@/styles/scss/main.scss";
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -20,13 +23,19 @@ export const viewport = {
   colorScheme: "light",
 };
 
-export default function RootLayout({
+
+export default async function RootLayout({
   children,
+  params
 }: {
   children: React.ReactNode
+  params: Promise<{ locale: Locale }>
 }) {
+
+  const { locale } = await params;
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <head>
 
         <meta name="color-scheme" content="light" />
@@ -125,7 +134,7 @@ export default function RootLayout({
           ></iframe>
         </noscript>
 
-        <Header />
+        <HeaderServer locale={locale} />
         <main>{children}</main>
         <Footer />
 

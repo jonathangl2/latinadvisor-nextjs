@@ -3,9 +3,13 @@ import CarouselBeneficios from "@/components/CarouselBeneficios";
 import FormEmbed from "@/components/FormEmbed";
 import { getAssetUrl } from "@/lib/url";
 import { Metadata } from "next";
-
 import Link from "next/link";
 import Script from "next/script";
+
+import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+
+export const generateStaticParams = generateLocaleParams;
+
 
 export const metadata:Metadata = {
   	title: "Estudiar y Trabajar en Australia | LatinAdvisor",
@@ -13,7 +17,15 @@ export const metadata:Metadata = {
 	keywords: "Trabaja en el exterior, Como viajar al exterior, Visa de estudiante, Visa de estudiante para Australia , Viajar por Australia, Trabajar en Australia, Estudia ingles y trabaja en Australia , Vivir en Australia, Tipos de visa para Australia, Koalas, canguros animales de Australia, Vivir en Australia, Melbourne, Sydney, Brisbane, gold coast, Adelaide , Trabajar en Australia, Melbourne, Sydney, Brisbane, gold coast, Adelaide, Estudiar en Australia, Melbourne, Sydney, Brisbane, gold coast, Adelaide, Visa Sponsor."
 }
 
-export default function Australia() {
+export default async function Australia({
+    params
+  }: {
+    params: Promise<{ locale: Locale }>
+  }) {
+
+	const { locale } = await params;
+  	const dict = await getDictionary(locale);
+
 	return (
 		<>
 			<BannerVideo
