@@ -61,10 +61,10 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                       url: localePath("/australia"),
                       title: "australia",
                     },
-                    {
-                      url: localePath("/dubai"),
-                      title: "dubái",
-                    }
+                    // {
+                    //   url: localePath("/dubai"),
+                    //   title: "dubái",
+                    // }
                   ].map((item, i) => (
                     <li key={i}>
                       <Link href={item.url} className="dropdown-item">
@@ -91,10 +91,10 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                       url: localePath("/australia"),
                       title: "ESTUDIAR EN AUSTRALIA",
                     },
-                    {
-                      url: localePath("/dubai"),
-                      title: "ESTUDIAR EN DUBÁI",
-                    },
+                    // {
+                    //   url: localePath("/dubai"),
+                    //   title: "ESTUDIAR EN DUBÁI",
+                    // },
                     {
                       url: localePath("/australia/renovaciondevisa"),
                       title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
@@ -116,7 +116,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   ))}
                 </ul>
             </li>
-            <li className="nav-item dropdown">
+            {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -136,7 +136,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                     </li>
                   ))}
                 </ul>
-            </li>
+            </li> */}
             <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -150,30 +150,30 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="recursosDropdown">
                   {[
-                    {
-                      url: localePath("/blog"),
-                      title: "blog",
-                    },
-                    {
-                      url: localePath("/ebooks-guias"),
-                      title: "ebooks y guías",
-                    },
-                    {
-                      url: localePath("/eventos"),
-                      title: "eventos",
-                    },
-                    {
-                      url: localePath("/testimonios"),
-                      title: "testimonios",
-                    },
+                    // {
+                    //   url: localePath("/blog"),
+                    //   title: "blog",
+                    // },
+                    // {
+                    //   url: localePath("/ebooks-guias"),
+                    //   title: "ebooks y guías",
+                    // },
+                    // {
+                    //   url: localePath("/eventos"),
+                    //   title: "eventos",
+                    // },
+                    // {
+                    //   url: localePath("/testimonios"),
+                    //   title: "testimonios",
+                    // },
                     {
                       url: localePath("/podcast"),
                       title: "podcast",
                     },
-                    {
-                      url: localePath("/promociones"),
-                      title: "promociones",
-                    }
+                    // {
+                    //   url: localePath("/promociones"),
+                    //   title: "promociones",
+                    // }
                   ].map((item, i) => (
                     <li key={i}>
                       <Link href={item.url} className="dropdown-item">
@@ -242,9 +242,9 @@ export default function HeaderClient({ migrationProcesses }: Props) {
               <li className="nav-item">
                 <Link className="nav-link" href={localePath("/australia")}>Australia</Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" href={localePath("/dubai")}>Dubái</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
               </li>

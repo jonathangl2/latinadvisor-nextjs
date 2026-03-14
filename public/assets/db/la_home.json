@@ -13,7 +13,7 @@
                     "img_bg": "img-johanna-bg.webp",
                     "img_front": "img-johanna.webp",
                     "name_team": "Joha",
-                    "name_position": "Lider Comercial y asesora",
+                    "name_position": "Líder Comercial y asesora",
                     "description_team": "Si alguien puede ser una reina del optimismo desenfrenado es Joha, siempre buscando lo bueno en cada situación y convirtiendo cada día en una aventura emocionante. Con su contagiosa risa, energía positiva y su capacidad para encontrar la magia en lo ordinario, es la compañera perfecta para aquellos que necesitan un poco más de brillo en sus vidas."
                 },
                 {
@@ -27,7 +27,7 @@
                     "img_bg": "img-sandrita-bg.webp",
                     "img_front": "img-sandrita.webp",
                     "name_team": "Sandrita",
-                    "name_position": "Soporte de admisiones y ventas",
+                    "name_position": "Asesora estudiantil",
                     "description_team": "Es una fuerza de la naturaleza: apasionada, responsable y siempre lista para abrazar lo auténtico en la vida. Con su amor por lo artesanal, su conexión con la naturaleza y su fe inquebrantable, es la persona que todos quieren tener cerca cuando buscan inspiración, dirección o simplemente una buena conversación sobre la vida."
                 },
                 {
@@ -38,17 +38,10 @@
                     "description_team": "Es la reina de la diversión que hace que los DJ se sientan intimidados con su lista de reproducción. Es como un tornado de energía positiva, siempre listo para decir \"sí\" a cualquier aventura que se le presente. Aunque a veces se carga de mil actividades, Mafe siempre tiene una sonrisa en el rostro y una anécdota graciosa para contar."
                 },
                 {
-                    "img_bg": "img-yuly-bg.webp",
-                    "img_front": "img-yuly.webp",
-                    "name_team": "Yuly",
-                    "name_position": "Manager de casos de migración",
-                    "description_team": "Es una mente brillante envuelta en un paquete de dulzura. Es tan inteligente que las calculadoras le piden ayuda con las cuentas y las enciclopedias le piden que las actualice. Pero no se dejen engañar por su cerebro de genio: también tiene un corazón tan grande que necesita un GPS para encontrar la salida."
-                },
-                {
                     "img_bg": "img-diana-bg.webp",
                     "img_front": "img-diana.webp",
                     "name_team": "Diana",
-                    "name_position": "Marketing Manager",
+                    "name_position": "Gerente de Operaciones de Marketing",
                     "description_team": "Dianis es una explosión de creatividad, tan brillante que los arcoíris le piden consejo sobre combinaciones de colores, si fuera un personaje de un cuento de hadas, sería una mezcla entre un hada madrina y un genio de la lámpara, siempre lista para resolver cualquier problema con un toque de magia y una sonrisa."
                 },
                 {
@@ -70,7 +63,7 @@
                     "img_front": "img-meli.webp",
                     "name_team": "Meli",
                     "name_position": "Contadora",
-                    "description_team": "Meli llegó a ordenarnos la vida, siempre está calculando y planeando cada paso, como si su vida fuera un juego de ajedrez en el que cada movimiento está estratégicamente calculado,  Puede que parezca que tiene un algoritmo para cada decisión, pero en realidad es solo su increíble capacidad para anticipar y prepararse para cualquier eventualidad."
+                    "description_team": "Meli llegó a ordenarnos la vida, siempre está calculando y planeando cada paso, como si su vida fuera un juego de ajedrez en el que cada movimiento está estratégicamente calculado, Puede que parezca que tiene un algoritmo para cada decisión, pero en realidad es solo su increíble capacidad para anticipar y prepararse para cualquier eventualidad."
                 },
                 {
                     "img_bg": "img-milena-bg.webp",
@@ -111,21 +104,14 @@
                     "img_bg": "img-natalia-bg.webp",
                     "img_front": "img-natalia.webp",
                     "name_team": "Natalia",
-                    "name_position": "Asistente legal de migración",
+                    "name_position": "Manager de casos de migración",
                     "description_team": "Tiene el don de hacer que lo complejo parezca sencillo, con una calma que contagia incluso en medio del caos. Su precisión y paciencia hacen que todo funcione sin esfuerzo aparente. Habla con suavidad, actúa con seguridad y transmite confianza. Trabajar con ella es tener un ancla en la tormenta: firme, confiable y siempre profesional."
-                },
-                {
-                    "img_bg": "img-cami-bg.webp",
-                    "img_front": "img-cami.webp",
-                    "name_team": "Cami",
-                    "name_position": "Asesora Estudiantil",
-                    "description_team": "La más joven del equipo, llena de alegría y entusiasmo. Ama el deporte, viajar, y los libros, tanto como acompañar a los estudiantes en su camino. Tiene el don de guiar con empatía y hacer que todo fluya con confianza. Disfruta cada logro como propio, porque ver los sueños cumplirse es su mayor motivación."
                 },
                 {
                     "img_bg": "img-marthica-bg.webp",
                     "img_front": "img-marthica.webp",
                     "name_team": "Marthica",
-                    "name_position": "Lider Comercial",
+                    "name_position": "Líder comercial de migracion",
                     "description_team": "Empática y apasionada por ayudar a las personas a convertir sus metas en planes reales. Su calidez se nota al escuchar y acompañar; su experiencia, al anticipar y hablar con honestidad. Marthica sabe que detrás de cada sueño hay una estrategia bien hecha. Amante de los atardeceres, la luna, el mar y de Brisbane, su nuevo hogar."
                 },
                 {

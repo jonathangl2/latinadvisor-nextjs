@@ -9,7 +9,7 @@ export function generateLocaleParams() {
   }));
 }
 
-export async function getDictionary(locale: Locale) {
+export async function getDictionary(locale: any) {
   if (!locales.includes(locale)) {
     console.warn(`⚠️ Locale inválido: "${locale}", usando "${defaultLocale}"`);
     locale = defaultLocale;

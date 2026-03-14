@@ -15,9 +15,12 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "";
 export function getAssetUrl(path: string, locale?: string): string {
   // Asegura que el path empiece con /
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
+  
+  // Si hay locale, lo agrega
   if (locale) {
     return `${SITE_URL}/${locale}${cleanPath}`;
   }
+  
   return `${SITE_URL}${cleanPath}`;
 }
 
@@ -29,10 +32,7 @@ export function getAssetUrl(path: string, locale?: string): string {
  */
 export function getRoutePath(path: string): string {
   const cleanPath = path.startsWith("/") ? path : `/${path}`;
-  if (locale) {
-    return `${SITE_URL}/${locale}${cleanPath}`;
-  }
-  return `${SITE_URL}${cleanPath}`;
+  return `${BASE_PATH}${cleanPath}`;
 }
 
 /**

@@ -1,11 +1,17 @@
 import { loadHomeJson } from '@/lib/loadJson';
 import HeaderClient from './HeaderClient';
 
-export default function HeaderServer() {
+type Props = {
+  locale?: string;
+};
+
+export default function HeaderServer({ locale }: Props) {
   const data = loadHomeJson();
   const migrationProcesses = data.data.migration_processes.au;
 
   return (
-    <HeaderClient migrationProcesses={migrationProcesses} />
+    <HeaderClient 
+      migrationProcesses={migrationProcesses}
+    />
   );
 }

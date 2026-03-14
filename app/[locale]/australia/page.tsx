@@ -25,6 +25,7 @@ export default async function Australia({
 
 	const { locale } = await params;
   	const dict = await getDictionary(locale);
+ 	const localePath = (path: string) => `/${locale}${path}`;
 
 	return (
 		<>
@@ -116,14 +117,14 @@ export default async function Australia({
 				<section className="container-donde-estudiar container-fluid">
 					<div className="row px-3 px-lg-4 pb-5 justify-content-center align-items-md-end">
 						<div className="col-12 col-lg-10 map-au">
-							<a href={getAssetUrl("/australia/melbourne")} className="map-au-city melbourne">Melbourne</a>
-							<a href={getAssetUrl("/australia/brisbane")} className="map-au-city brisbane">Brisbane</a>
-							<a href={getAssetUrl("/australia/sydney")} className="map-au-city sydney">Sydney</a>
-							<a href={getAssetUrl("/australia/gold-coast")} className="map-au-city gold-coast">Gold Coast</a>
-							<a href={getAssetUrl("/australia/adelaide")} className="map-au-city adelaide">Adelaide</a>
-							<a href={getAssetUrl("/australia/perth")} className="map-au-city perth">Perth</a>
-							<a href={getAssetUrl("/australia/hobart")} className="map-au-city tasmania">Hobart</a>
-							<a href={getAssetUrl("/australia/cairns")} className="map-au-city cairns">Cairns</a>
+							<a href={localePath("/australia/melbourne")} className="map-au-city melbourne">Melbourne</a>
+							<a href={localePath("/australia/brisbane")} className="map-au-city brisbane">Brisbane</a>
+							<a href={localePath("/australia/sydney")} className="map-au-city sydney">Sydney</a>
+							<a href={localePath("/australia/gold-coast")} className="map-au-city gold-coast">Gold Coast</a>
+							<a href={localePath("/australia/adelaide")} className="map-au-city adelaide">Adelaide</a>
+							<a href={localePath("/australia/perth")} className="map-au-city perth">Perth</a>
+							<a href={localePath("/australia/hobart")} className="map-au-city tasmania">Hobart</a>
+							<a href={localePath("/australia/cairns")} className="map-au-city cairns">Cairns</a>
 							<img src={getAssetUrl("/assets/images/australia/mapa-australia-linea-punto.svg")} alt="" className="img-fluid" />
 						</div>
 					</div>

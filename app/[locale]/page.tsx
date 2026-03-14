@@ -4,7 +4,6 @@ import Script from "next/script";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 
 export const generateStaticParams = generateLocaleParams;
-
 export default async function Home({
     params
   }: {
@@ -13,6 +12,8 @@ export default async function Home({
 
   const { locale } = await params;
   const dict = await getDictionary(locale);
+  const localePath = (path: string) => `/${locale}${path}`;
+  const assetPath = (path: string) => getAssetUrl(path);
 
   return (
     <>
@@ -45,7 +46,7 @@ export default async function Home({
             <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination mx-auto w-100">
               <div className="col-11 col-lg-4">
                 <a
-                  href={getAssetUrl("/australia")}
+                  href={localePath("/australia")}
                 >
                   <div className="card card-ctaDestination">
                     <img
@@ -56,7 +57,7 @@ export default async function Home({
                   </div>
                 </a>
               </div>
-              <div className="col-11 col-lg-4">
+              {/* <div className="col-11 col-lg-4">
                 <a
                   href={getAssetUrl("/dubai")}
                 >
@@ -68,7 +69,7 @@ export default async function Home({
                     <h5 className="card-ctaDestination_title">Estudiar en Dubái</h5>
                   </div>
                 </a>
-              </div>
+              </div> */}
             </section>
           </div>
         </div>
@@ -100,7 +101,7 @@ export default async function Home({
               },
             ].map((item, i) => (
               <div className="col-10 col-lg-4 mb-5 mb-lg-0" key={i}>
-                <a href={getAssetUrl("/australia/"+item.url)}>
+                <a href={localePath("/australia/"+item.url)}>
                   <div className="card card-ourServices">
                     <img src={item.img} alt={item.title} />
                     <h3 className="card-ourServices_title">{item.title}</h3>

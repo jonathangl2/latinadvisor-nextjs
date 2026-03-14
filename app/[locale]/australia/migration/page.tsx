@@ -21,7 +21,7 @@ export default async function MigrationPage({
     }) {
 
     const { locale } = await params;
-    const dict = await getDictionary(locale);
+    const assetPath = (path: string) => getAssetUrl(path);
 
     const data = loadHomeJson();
 	const migrationProcesses = data.data.migration_processes.au;
@@ -34,7 +34,7 @@ export default async function MigrationPage({
                 className="internal_migration"
             />
 
-            <section className="section-australia section-australiaMigration container-fluid py-5">
+            {/* <section className="section-australia section-australiaMigration container-fluid py-5">
 				<section className="container py-lg-4">
 					<div className="row d-flex justify-content-center">
 						<div className="col-12 col-lg-12 pt-4 pb-4">
@@ -198,7 +198,7 @@ export default async function MigrationPage({
                         </div>
                     </div>
                 </section>
-            </section>
+            </section> */}
 
                             
             <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
