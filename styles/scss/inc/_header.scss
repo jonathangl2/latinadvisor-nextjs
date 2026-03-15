@@ -175,7 +175,9 @@ header {
         }
     }
     .navbar-expand-lg .navbar-nav{
-        height: 100%;
+        @media #{vars.$m1024} {
+            height: 100%;
+        }
     }
 }
 

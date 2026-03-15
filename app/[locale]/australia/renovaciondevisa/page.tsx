@@ -23,19 +23,21 @@ export default async function RenovacionPage({
 			img: "/assets/images/australia/renovacion/asesora-rosario-min.webp",
 			name: "Rosario Orejuela",
 			city: "Melbourne",
-			url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
+			url: "https://api.whatsapp.com/send?phone=61423165193&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20Renovaci%C3%B3n%20de%20Visa.%20Gracias.",
+			// url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
 		},
-		{
-			img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
-			name: "María Camila",
-			city: "Brisbane",
-			url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
-		},
+		// {
+		// 	img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
+		// 	name: "María Camila",
+		// 	city: "Brisbane",
+		// 	url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
+		// },
 		{
 			img: "/assets/images/australia/renovacion/asesora-johanna-min.webp",
 			name: "Johanna Gravenhorst",
 			city: "Melbourne",
-			url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
+			url: "https://api.whatsapp.com/send?phone=61452518562&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20Renovaci%C3%B3n%20de%20Visa.%20Gracias.",
+			// url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
 		},
 	];
 

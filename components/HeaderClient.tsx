@@ -8,6 +8,53 @@ type Props = {
   migrationProcesses: any[];
 };
 
+const languages = [
+  { code: 'es', label: 'ES', icon: 'fi fi-es' },
+  { code: 'en', label: 'EN', icon: 'fi fi-us' }
+];
+
+const langHtml = () => {
+
+    const { locale } = useParams();
+    const activeLang = languages.find(l => l.code === locale) ?? languages[0];
+    
+    return (
+      <ul className="navbar-nav ms-lg-3 me-lg-4 align-items-lg-stretch principal-menu ps-3 border-lg-start h-100">
+            
+        <li className="nav-item dropdown">
+          <a
+            className="nav-link dropdown-toggle d-flex align-items-center gap-2"
+            href="#"
+            id="langDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span className={activeLang.icon}></span>
+            {activeLang.label}
+          </a>
+
+          <ul className="dropdown-menu dropdown-menu-end dropdown-lang" aria-labelledby="langDropdown">
+            {languages.map(lang => (
+              <li key={lang.code}>
+                <Link
+                  href={`/${lang.code}`}
+                  className={`dropdown-item d-flex align-items-center gap-2 ${
+                    lang.code === locale ? 'active fw-bold' : ''
+                  }`}
+                >
+                  <span className={lang.icon}></span>
+                  {lang.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </li>
+        
+      </ul>
+    );
+};
+
 export default function HeaderClient({ migrationProcesses }: Props) {
   
   const pathname = usePathname();
@@ -15,16 +62,6 @@ export default function HeaderClient({ migrationProcesses }: Props) {
 
   const localePath = (path: string) => `/${locale}${path}`;
   const assetPath = (path: string) => getAssetUrl(path);
-  
-  const languages = [
-    {
-      code: 'es', label: 'ES', icon: 'fi fi-es'
-    },
-    {
-      code: 'en', label: 'EN', icon: 'fi fi-us'
-    }
-  ];
-  const activeLang = languages.find(l => l.code === locale) ?? languages[0];
 
   return (
     <header id="principal_header">
@@ -190,39 +227,9 @@ export default function HeaderClient({ migrationProcesses }: Props) {
               <Link className="nav-link" href={localePath("/contactanos")}>Contáctanos</Link>
             </li>
           </ul>
-          <ul className="navbar-nav ms-3 me-4 align-items-lg-stretch principal-menu ps-3 border-start h-100">
-            
-            <li className="nav-item dropdown">
-              <a
-                className="nav-link dropdown-toggle d-flex align-items-center gap-2"
-                href="#"
-                id="langDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span className={activeLang.icon}></span>
-                {activeLang.label}
-              </a>
+          
+          {langHtml()}
 
-              <ul className="dropdown-menu dropdown-menu-end dropdown-lang" aria-labelledby="langDropdown">
-                {languages.map(lang => (
-                  <li key={lang.code}>
-                    <Link
-                      href={`/${lang.code}`}
-                      className={`dropdown-item d-flex align-items-center gap-2 ${
-                        lang.code === locale ? 'active fw-bold' : ''
-                      }`}
-                    >
-                      <span className={lang.icon}></span>
-                      {lang.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </li>
-            
-          </ul>
         </div>
 
         {/* NAVBAR RESPONSIVE */}
@@ -239,12 +246,81 @@ export default function HeaderClient({ migrationProcesses }: Props) {
               <li className="nav-item">
                 <Link className="nav-link" href={localePath("/")}>Inicio</Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link" href={localePath("/australia")}>Australia</Link>
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="destinosDropdownResp"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Destinos
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="destinosDropdownResp">
+                  {[
+                    {
+                      url: localePath("/australia"),
+                      title: "australia",
+                    },
+                    // {
+                    //   url: localePath("/dubai"),
+                    //   title: "dubái",
+                    // }
+                  ].map((item, i) => (
+                    <li key={i}>
+                      <Link href={item.url} className="dropdown-item">
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </li>
               {/* <li className="nav-item">
                 <Link className="nav-link" href={localePath("/dubai")}>Dubái</Link>
               </li> */}
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="serviciosDropdownResp"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Servicios
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="serviciosDropdownResp">
+                  {[
+                    {
+                      url: localePath("/australia"),
+                      title: "ESTUDIAR EN AUSTRALIA",
+                    },
+                    // {
+                    //   url: localePath("/dubai"),
+                    //   title: "ESTUDIAR EN DUBÁI",
+                    // },
+                    {
+                      url: localePath("/australia/renovaciondevisa"),
+                      title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
+                    },
+                    {
+                      url: localePath("/australia/migration"),
+                      title: "PROCESOS MIGRATORIOS",
+                    },
+                    {
+                      url: localePath("/australia/workandholiday"),
+                      title: "WORK AND HOLIDAY VISA",
+                    }
+                  ].map((item, i) => (
+                    <li key={i}>
+                      <Link href={item.url} className="dropdown-item">
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
               <li className="nav-item">
                 <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
               </li>
@@ -252,6 +328,9 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                 <Link className="nav-link" href={localePath("/contactanos")}>Contáctanos</Link>
               </li>
             </ul>
+            
+            {langHtml()}
+
           </div>
         </div>
 

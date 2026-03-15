@@ -13,10 +13,13 @@ jQuery(document).ready(function() {
 
   // Cuando el offcanvasNavbar está visible y se hace click en un nav-link, cerrar el offcanvas
   jQuery('#offcanvasNavbar .nav-link').on('click.closeOffcanvas', function () {
-    const offcanvasEl = document.getElementById('offcanvasNavbar');
-    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
-    if (bsOffcanvas) {
-      bsOffcanvas.hide();
+    // Solo cerrar si NO es un dropdown-toggle
+    if (!jQuery(this).hasClass('dropdown-toggle')) {
+      const offcanvasEl = document.getElementById('offcanvasNavbar');
+      const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasEl);
+      if (bsOffcanvas) {
+        bsOffcanvas.hide();
+      }
     }
   });
 
@@ -265,7 +268,7 @@ const validationConfirmationScheduling = () => {
 
 
   }else{
-    $('#pills-verificarUsuario-tab').tab("show");
+    jQuery('#pills-verificarUsuario-tab').tab("show");
   }
 
 }

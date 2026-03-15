@@ -20,10 +20,12 @@ export default function AgentesClient({ agentes }: { agentes: any[] }) {
             key={idx}
           >
             <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#modalAgente"
-                onClick={() => openModal(agent.url)}
+                href={agent.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                // data-bs-toggle="modal"
+                // data-bs-target="#modalAgente"
+                // onClick={() => openModal(agent.url)}
                 style={{ cursor: "pointer" }}
             >
                 <div className="card">

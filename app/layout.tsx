@@ -41,6 +41,8 @@ export default async function RootLayout({
         <link rel="stylesheet" href={getAssetUrl("assets/css/nice-select/nice-select.css")} />
         <link rel="stylesheet" href={getAssetUrl("assets/css/intl-tel-input/intlTelInput.css")} />
 
+        <Script src={getAssetUrl("/assets/js/jquery-3.7.1.min.js")} strategy="beforeInteractive" />
+
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -135,14 +137,14 @@ export default async function RootLayout({
         {/* Scripts globales */}
         <Script async defer crossOrigin="anonymous" src="https://www-cdn.icef.com/scripts/iasbadgeid.js"></Script>
 
-        <Script src={getAssetUrl("/assets/js/jquery-3.7.1.min.js")} strategy="beforeInteractive" />
-        <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" strategy="beforeInteractive" />
-        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" strategy="beforeInteractive" />
-        <Script src={getAssetUrl("/assets/js/moment.min.js")} strategy="beforeInteractive" />
-        <Script src={getAssetUrl("/assets/js/owlcarousel/owl.carousel.min.js")} strategy="beforeInteractive" />
-        <Script src={getAssetUrl("/assets/js/nice-select/jquery.nice-select.min.js")} strategy="beforeInteractive" />
-        <Script src={getAssetUrl("/assets/js/intl-tel-input/intlTelInput.min.js")} strategy="beforeInteractive" />
-        <Script src={getAssetUrl("/assets/js/intl-tel-input/intlTelInput-jquery.min.js")} strategy="beforeInteractive" />
+        
+        <Script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" strategy="afterInteractive" />
+        <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" strategy="afterInteractive" />
+        <Script src={getAssetUrl("/assets/js/moment.min.js")} strategy="afterInteractive" />
+        <Script src={getAssetUrl("/assets/js/owlcarousel/owl.carousel.min.js")} strategy="afterInteractive" />
+        <Script src={getAssetUrl("/assets/js/nice-select/jquery.nice-select.min.js")} strategy="afterInteractive" />
+        <Script src={getAssetUrl("/assets/js/intl-tel-input/intlTelInput.min.js")} strategy="afterInteractive" />
+        <Script src={getAssetUrl("/assets/js/intl-tel-input/intlTelInput-jquery.min.js")} strategy="afterInteractive" />
         <Script src={getAssetUrl("/assets/js/latinadvisor_functions.js?v=3.2.3")} strategy="afterInteractive"  />
         <Script src={getAssetUrl("/assets/js/latinadvisor_functionsUpdate.js?v=1.5.1")} strategy="afterInteractive" />
       </body>

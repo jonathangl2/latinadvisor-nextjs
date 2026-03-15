@@ -40,6 +40,8 @@ footer#principal_footer {
         &-social {
             margin: 0px 4px;
             color: #fff;
+            display: flex;
+            align-items: center;
             i {
                 color: #fff;
                 &.fa-border {

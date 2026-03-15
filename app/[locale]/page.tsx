@@ -44,7 +44,7 @@ export default async function Home({
             <a href="#contactForm" className="btn btn-lg btn-round px-5 py-3 btn-green-1 text-uppercase scrolling mb-lg-4">Inicia ahora</a>
           
             <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination mx-auto w-100">
-              <div className="col-11 col-lg-4">
+              <div className="col-11 col-sm-8 col-lg-4">
                 <a
                   href={localePath("/australia")}
                 >
