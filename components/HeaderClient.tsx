@@ -153,7 +153,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   ))}
                 </ul>
             </li>
-            {/* <li className="nav-item dropdown">
+            <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -173,7 +173,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                     </li>
                   ))}
                 </ul>
-            </li> */}
+            </li>
             <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
@@ -321,6 +321,30 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   ))}
                 </ul>
               </li>
+
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="procesosDropdownResp"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Procesos migratorios y otras visas
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="procesosDropdownResp">
+                  { migrationProcesses.map((item:any, i:number) => (
+                    <li key={i}>
+                      <Link href={localePath("/australia/migration/"+item.slug)} className="dropdown-item">
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+
+
               <li className="nav-item">
                 <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
               </li>

@@ -7,6 +7,7 @@ import Australia from '../page';
 import BannerInterno from "@/components/BannerInterno";
 import CarouselTeamMigration from "@/components/CarouselTeamMigration";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+import BannerCarouselCustom from "@/components/BannerCarouselCustom";
 
 export const generateStaticParams = generateLocaleParams;
 
@@ -21,20 +22,34 @@ export default async function MigrationPage({
     }) {
 
     const { locale } = await params;
-    const assetPath = (path: string) => getAssetUrl(path);
-
+        
     const data = loadHomeJson();
 	const migrationProcesses = data.data.migration_processes.au;
     const migrationTeam = data.data.migration_team.au;
     return (
         <>
-            <BannerInterno
-                imageSrc=""
-                title="MIGRACIÓN"
-                className="internal_migration"
-            />
+            {  
+                <BannerCarouselCustom 
+                    items={[
+                        {
+                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
+                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
+                            title: "Holbein Yeltsein Garcia Engativa",
+                            description: "Después de una negacion de visa de estudiante con otra agencia, estaba realmente desanimado y no sabía qué hacer. Fue entonces que contacté a LatinAdvisor, y desde el primer momento sentí que estaba en las mejores manos.",
+                            image: "/assets/images/australia/migration/testimonio-holbein.png",
+                        },
+                        {
+                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
+                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
+                            title: "Carlos Enrique Serrano Pena",
+                            description: "Mi experiencia con LatinAdvisor ha sido muy positiva desde el inicio. Me Han acompañaron durante todo mi proceso con la visa 407, Vetassess, y visa 482. siempre resolviendo mis dudas de manera clara y rápida.",
+                            image: "/assets/images/australia/migration/testimonio-carlos.png",
+                        }
+                    ]}
+                />
+            }
 
-            {/* <section className="section-australia section-australiaMigration container-fluid py-5">
+            <section className="section-australia section-australiaMigration container-fluid py-5">
 				<section className="container py-lg-4">
 					<div className="row d-flex justify-content-center">
 						<div className="col-12 col-lg-12 pt-4 pb-4">
@@ -186,7 +201,7 @@ export default async function MigrationPage({
                     </div>
                 </section>
             </section>
-
+                                    
             <section className="section-australia section-australiaMigration">
                 <section className="container">
                     <div className="row d-flex justify-content-center pt-4 pt-lg-5">
@@ -198,8 +213,7 @@ export default async function MigrationPage({
                         </div>
                     </div>
                 </section>
-            </section> */}
-
+            </section>
                             
             <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
                 <div className="row d-flex justify-content-center">

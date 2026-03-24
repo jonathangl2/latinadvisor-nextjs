@@ -378,7 +378,10 @@ $m375: "screen and (min-width : 375px)" !default;
 
 .swiper-button-prev {
   left: 1rem; 
-  transform: translateY(-50%) rotate(180deg);
+  .swiper-navigation-icon{
+    transform: rotate(180deg);
+  }
+  
 }
 
 .swiper-button-next {

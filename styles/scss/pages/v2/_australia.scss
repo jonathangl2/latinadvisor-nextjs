@@ -428,11 +428,11 @@
                 }
 
                 .swiper-button-next, .swiper-button-prev{
-                    color: vars.$color-grey-1;
+                    color: vars.$color-grey-1 !important;
                     &:hover,
                     &:focus,
                     &:active{
-                        color: vars.$color-blue-dark-5;
+                        color: vars.$color-blue-dark-5 !important;
                     }
                 }
 
