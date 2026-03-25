@@ -185,33 +185,35 @@ export default async function MigrationProcessesPage({ params }: { params: Promi
         />
 
         {visa?.body?.length > 0 && (
-          <section className="section-australiaMigration_bodyDynamics container-fluid">
+          <section className="section-australiaMigration_bodyDynamics container-fluid mb-4">
             {renderSections(visa.body, visa.slug)}
           </section>
         )}
 
+        
+        { visa?.formSrc && visa?.formName && visa?.formId && visa?.formHeight && (
 
-        <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
-            <div className="row d-flex justify-content-center">
-                <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
-                    <h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Quieres Aplicar <br />a este tipo de visa?</h2>
-                </div>
-                <div className="col-11 col-lg-10 pb-5">
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-12 col-sm-9 col-lg-6">
-                            <FormEmbed
-                                formSrc={visa.formSrc}
-                                formName={visa.formName}
-                                formId={visa.formId}
-                                formHeight={visa.formHeight}
-                                title={visa.title}
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+          <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
+              <div className="row d-flex justify-content-center">
+                  <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
+                      <h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Quieres Aplicar <br />a este tipo de visa?</h2>
+                  </div>
+                  <div className="col-11 col-lg-10 pb-5">
+                      <div className="row d-flex justify-content-center">
+                          <div className="col-12 col-sm-9 col-lg-6">
+                              <FormEmbed
+                                  formSrc={visa.formSrc}
+                                  formName={visa.formName}
+                                  formId={visa.formId}
+                                  formHeight={visa.formHeight}
+                                  title={visa.title}
+                              />
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+        )}
     </>
   );
 }

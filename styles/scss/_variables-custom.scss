@@ -193,15 +193,16 @@ $m375: "screen and (min-width : 375px)" !default;
 }
 
 .btn-blue-dark {
-    background-color: $color-blue-dark-2;
-    border: 2px solid $color-blue-dark-2;
+    background-color: $color-blue-dark-5;
+    border: 2px solid $color-blue-dark-5;
+    color: $color-white;
     &:hover,
     &:focus,
     &:active,
     &.active {
-        color: $color-blue-dark-2 !important;
+        color: $color-blue-dark-5 !important;
         background-color: rgba(255, 255, 255, 0.2) !important;
-        border: 2px solid $color-blue-dark-2 !important;
+        border: 2px solid $color-blue-dark-5 !important;
         .icon-arrow-right-white,
         .icon-arrow-left-white {
             &:before {
@@ -212,15 +213,28 @@ $m375: "screen and (min-width : 375px)" !default;
 }
 
 .btn-grey-1 {
-    background-color: $color-grey-light-2;
-    border: 2px solid $color-grey-light-2;
+    background-color: $color-grey-light-1;
+    border: 2px solid $color-grey-light-1;
     &:hover,
     &:focus,
     &:active,
     &.active {
-        color: $color-grey-light-2 !important;
+        color: $color-grey-light-1 !important;
         background-color: rgba(255, 255, 255, 0.2) !important;
-        border: 2px solid $color-grey-light-2 !important;
+        border: 2px solid $color-grey-light-1 !important;
+    }
+}
+
+
+.btn-blue-grey-4 {
+    background-color: $color-blue-grey-4;
+    border: 2px solid $color-blue-grey-4 !important;
+    color: $color-blue-dark-5;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        background-color: transparent !important;
     }
 }
 
@@ -362,15 +376,16 @@ $m375: "screen and (min-width : 375px)" !default;
   align-items: center;
   border-radius: 50%;
   justify-content: center;
-  padding: 1rem;
   position: absolute;
   transform: translateY(-50%);
   top: 45%;
   z-index: 10;
+
   .swiper-navigation-icon{
     width: 45px;
     height: 45px;
   }
+
   @media #{$M768} {
     top: 60%;
   }
@@ -397,7 +412,7 @@ $m375: "screen and (min-width : 375px)" !default;
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px;
+  font-size: 20px !important;
 }
 
 .swiper-pagination{
@@ -409,10 +424,10 @@ $m375: "screen and (min-width : 375px)" !default;
 .swiper-pagination-bullet {
   background: white;
   opacity: 0.5;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  margin: 0 6px;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  margin: 0 6px !important;
   &:hover,
   &:focus,
   &:active {

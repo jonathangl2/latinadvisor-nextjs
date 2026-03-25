@@ -4,15 +4,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { ReactNode } from "react";
 import { getAssetUrl } from "@/lib/url";
+
 interface SlideItem {
     desktopImg: string;
     mobileImg: string;
     title?: string;
     description?: string;
-    image?: string;
+    image: string;
 }
 
 interface BannerCarouselCustomProps {
@@ -38,11 +39,17 @@ const renderSlide = (item: SlideItem) => (
             </div>
         </div>
         <div className="caption">
-            <div className="row w-100 mx-0 justify-content-end d-flex">
-                <div className="col-12 col-lg-6">
-                    <div className="card">
+            <div className="row w-100 mx-0 justify-content-end d-flex h-100">
+                <div className="col-12 col-lg-9 h-100">
+                    <div className="card card-migrationTestimonial border-0">
+                        <div className="card-header">
+                            <img src={getAssetUrl(item.image)} alt="" className="card-img img-fluid"/>
+                        </div>
                         <div className="card-body">
-
+                            <div className="container-testimonial">
+                                <h5>{item.title}</h5>
+                                <p>{item.description}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -54,13 +61,17 @@ const renderSlide = (item: SlideItem) => (
 export default function BannerCarouselCustom({ items }: BannerCarouselCustomProps) {
     return (
         <Swiper
-            modules={[Navigation, Pagination]}
+            modules={[Autoplay,Navigation, Pagination]}
             loop={true}
             spaceBetween={40}
             slidesPerView={1}
             pagination={{ clickable: true }}
             navigation={true}
-        >
+            autoplay={{           
+                delay: 30000,      
+                disableOnInteraction: true,
+            }}
+        className="section-australiaMigration_banner">
             {items.map((item, index) => (
                 <SwiperSlide key={index}>
                     {renderSlide(item)} {/* ✅ */}

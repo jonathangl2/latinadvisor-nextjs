@@ -10,7 +10,7 @@ type Props = {
 
 const languages = [
   { code: 'es', label: 'ES', icon: 'fi fi-es' },
-  { code: 'en', label: 'EN', icon: 'fi fi-us' }
+  { code: 'en', label: 'EN', icon: 'fi fi-au' }
 ];
 
 const langHtml = () => {

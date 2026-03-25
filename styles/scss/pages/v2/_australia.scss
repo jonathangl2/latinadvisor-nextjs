@@ -354,50 +354,153 @@
                 text-align: center;
             }
         }
+        .card-valuesMigration{
+            min-height: 200px;
+            .card-body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;   
+                }
+                h3,h4,h5{
+                    position: relative;
+                    color: vars.$color-white;
+                    text-align: center;
+                    padding: 0 1rem;
+                }
+            }
+        }
+        .card-migrationConsultations{
+            box-shadow: 3px 6px 7px -1px #dfdfe0 !important;
+            border: 0px;
+            padding: 1rem 2rem;
+            height: 100%;
+            border-radius: 20px;
+            transition: 0.3s ease-in-out all;
+            .card-body{
+                display: flex;
+                justify-content: start;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem 0;
+                img{
+                    height: 80px;
+                    object-fit: contain;
+                    object-position: center;
+                    margin-bottom: 2rem;
+                }
+                h5{
+                    strong{
+                        display: block;
+                    }
+                    span{
+                        color: vars.$color-blue-dark-5;
+                        font-weight: 600;
+                    }
+                }   
+            }
+            &:hover, &:focus, &:active{
+                transform: scale(1.06);
+            }
+        }
+        .card-agentsMigration{
+            border:0px;
+            box-shadow: 3px 6px 7px -1px #dfdfe0 !important;
+            border-radius: 20px;
+            overflow: hidden;
+            .btn{
+                border-radius: 30px;
+                padding: 0.6rem 1rem;
+                width: 80%;
+            }
+            .card-header{
+                border: 0px;
+                padding: 0px;
+                background-color: #EAE6DE !important;
+                overflow: hidden;
+                height: 200px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    object-position: center;
+                }
+            }
+            .card-body{
+                h4{
+                    color: vars.$color-blue-dark-5;
+                    font-weight: 600;
+                }
+                h5{
+                    color: vars.$color-grey-1;
+                }
+            }
+            .card-footer{
+                border: 0px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                transform: translateY(100%);
+                transition: 1s ease-in-out all;
+                background-color: vars.$color-grey-light-1 !important;
+                padding: 2rem;
+                border-radius: 20px;
+                p{
+                    font-size: 0.9rem !important;
+                }
+                &.show{
+                    transform: translateY(0);
+                }
+            }
+        }
+        &_banner{
+            &.swiper{
+                .swiper-button-next, .swiper-button-prev{
+                    color: vars.$color-white !important;
+                    &:hover,
+                    &:focus,
+                    &:active{
+                        color: vars.$color-blue-dark-5 !important;
+                    }
+                }
+                .swiper-pagination-bullet{
+                    background: vars.$color-white !important;
+                    opacity: 1;
+                }
+                .swiper-pagination-bullet-active{
+                    background: vars.$color-blue-dark-5 !important;
+                }
+            }
+        }
+        &_whyChooseUs{
+            background-image: url('#{vars.$site-url}/assets/images/australia/migration/bg-why-choose-us.jpg');
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 300px;
+        }
         &_agents{
-            h5{
+            h5 strong{
                 font-weight: 600;
             }
             p{
                 margin-bottom: 0.9rem;
                 font-size: 1.1rem;
             }
-            .img-agent{
-                width: 150px !important;
-                height: 150px !important;
-                object-fit: cover;
-                object-position: center;
-                border-radius: 15px !important;
-            }
-            .information{   
-                h5{
-                    margin: 2rem auto 0.9rem;
-                    color: vars.$color-grey-1;
-                }
-                ul{
-                    margin-bottom: 1rem;
-                    li{
-                        font-size: 1.1rem;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            top: 8px;
-                            left: 0;
-                            width: 6px;
-                            height: 6px;
-                            border-radius: 50%;
-                            background-color: vars.$color-grey-1
-                        }
-                    }
-                }
-                strong{
-                    font-weight: 600;
-                }
-            }
         }
         &_team{
             .swiper{
-                padding: 1rem 5rem;
+                padding: 1rem 5rem 3rem 5rem;
                 &::before,
                 &::after{
                     content: "";
@@ -443,12 +546,12 @@
                     right: 0rem;    
                 }
                 .swiper-pagination-bullet{
-                    margin-top: 1rem;
-                    background: vars.$color-grey-1;
+                    margin-top: 2rem !important;
+                    background: vars.$color-grey-1 !important;
                     opacity: 1;
                 }
                 .swiper-pagination-bullet-active{
-                    background: vars.$color-blue-dark-5;
+                    background: vars.$color-blue-dark-5 !important;
                 }
             }
             .card-teamMigration{
@@ -456,14 +559,26 @@
                 border-radius: 25px;
                 box-shadow: 3px 6px 7px -1px #dfdfe0 !important;
                 .img-team{
-                    width: 150px !important;
                     height: 150px !important;
+                    width: 100%;
                     object-fit: cover;
                     object-position: center;
                     border-radius: 15px !important;
+                    @media #{vars.$m768}{ 
+                        max-width: 150px !important;
+                        width: 150px !important;
+                    }
                 }
                 h3,h4{
                     color: vars.$color-blue-dark-5;
+                }
+                h4{
+                    span{
+                        margin-bottom: 0.5rem !important;
+                    }
+                    strong{
+                        font-size: 1rem;
+                    }
                 }
             }
         }
