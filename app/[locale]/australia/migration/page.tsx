@@ -23,6 +23,8 @@ export default async function MigrationPage({
     }) {
 
     const { locale } = await params;
+    const dict = await getDictionary(locale);
+    const localePath = (path: string) => `/${locale}${path}`;
         
     const data = loadHomeJson();
 	const migrationProcesses = data.data.migration_processes.au;
@@ -187,7 +189,7 @@ export default async function MigrationPage({
                             <div className="row d-flex align-items-stretch justify-content-center">
                                 { migrationProcesses.map((item: any, i: number) => (
                                     <div className="col-10 col-lg-3 mb-4" key={i}>
-                                        <a href={getAssetUrl("/australia/migration/"+item.slug)}>
+                                        <a href={localePath("/australia/migration/"+item.slug)}>
                                             <div className="card card-ourServicesMigration">
                                                 <h3 className="card-ourServicesMigration_title">{item.title}</h3>
                                             </div>

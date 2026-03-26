@@ -14,7 +14,7 @@ export default async function Home({
   const dict = await getDictionary(locale);
   const localePath = (path: string) => `/${locale}${path}`;
   const assetPath = (path: string) => getAssetUrl(path);
-
+  
   return (
     <>
       {/* ====================== HERO / PRINCIPAL BANNER ====================== */}
