@@ -110,7 +110,7 @@ export default async function WorkAndHolidayPage({
 						<div className="col-12 col-lg-10">
 							<div className="row d-flex justify-content-center">
 								<div className="col-12 col-lg-5 mb-3 information">
-									<img src={getAssetUrl("/assets/images/australia/work-and-holiday/requisitos-aplicar-work-and-holiday-australia.webp")} alt="" className="img-fluid w-100 my-lg-4"/>
+									<img src={getAssetUrl("/assets/images/australia/work-and-holiday/requisitos-para-aplicar-work-and-holiday-australia.webp")} alt="" className="img-fluid w-100 my-lg-4"/>
 								</div>
 								<div className="col-12 col-lg-6 information ps-lg-5 pt-5 pb-4">
 									<h5 className="mb-3">Para postular a la visa Work and Holiday Australia, debes cumplir con estas condiciones:</h5>
