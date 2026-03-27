@@ -47,6 +47,13 @@ export default async function MigrationPage({
                             title: "Carlos Enrique Serrano Pena",
                             description: "Mi experiencia con LatinAdvisor ha sido muy positiva desde el inicio. Me Han acompañaron durante todo mi proceso con la visa 407, Vetassess, y visa 482. siempre resolviendo mis dudas de manera clara y rápida.",
                             image: "/assets/images/australia/migration/migration-testimonio-carlos-enrique-serrano-pena.png",
+                        },
+                        {
+                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
+                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
+                            title: "Ramón Iglesias",
+                            description: "Mi aplicación para la Sponsorship 482 en Australia fuera rápida y eficaz. Su equipo me acompañó en cada paso con gran profesionalidad y conocimiento de las regulaciones australianas. Gracias a ellos, hoy vivo y trabajo en Australia.",
+                            image: "/assets/images/australia/migration/migration-testimonio-ramon-iglesias.png",
                         }
                     ]}
                 />
@@ -64,7 +71,7 @@ export default async function MigrationPage({
                                 <a href="#visas" className="btn scrolling mt-2 text-uppercase">¡Conoce nuestros servicios!</a>
                             </div>
                         </div>
-                        <div className="col-12 col-lg-7 pt-4 pb-5 information">
+                        <div className="col-12 col-lg-7 pt-4 pb-lg-5 information">
                             <div className="row">
                                 {
                                     [
@@ -118,7 +125,7 @@ export default async function MigrationPage({
                     </div>  
                     <div className="row d-flex justify-content-center">
                         <div className="col-12 col-lg-11 py-4">
-                            <div className="row d-flex align-items-stretch justify-content-center">
+                            <div className="row section-australiaMigration_consultations">
                                 {
                                     [
                                         {
@@ -138,7 +145,7 @@ export default async function MigrationPage({
                                             description:"<strong>Recibes tu Carta de asesoría. </strong> Un documento formal con análisis, estrategia y próximos pasos. Una guía que puedes consultar cuando lo necesites."
                                         }
                                     ].map((item:any, i:any) => (
-                                        <div className="col-12 col-sm-6 col-lg-3 d-flex mb-4" key={i}>
+                                        <div className="col-12 col-sm-6 col-lg-3 d-flex mb-4 container-migrationConsultations" key={i}>
                                             <div className="card card-migrationConsultations">
                                                 <div className="card-body">
                                                     <img
@@ -158,7 +165,7 @@ export default async function MigrationPage({
                 </section>
             </section>
 
-            <section className="section-australia section-australiaMigration container-fluid py-5">
+            <section className="section-australia section-australiaMigration container-fluid pt-4 pb-5">
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 col-lg-12 pb-3">
                         <h2 className="section-australia_title text-center text-uppercase">Porque elegir latinadvisor</h2>
@@ -166,12 +173,38 @@ export default async function MigrationPage({
                 </div>
             </section>
 
-            <section className="section-australia section-australiaMigration section-australiaMigration_whyChooseUs  container-fluid py-5 mb-5">
+            <section className="section-australia section-australiaMigration section-australiaMigration_whyChooseUs  container-fluid py-4 mb-5">
                 <section className="container">
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-12">
-                            
-                        </div>
+                    <div className="row container_whyChooseUsContent">
+                        {
+                            [
+                                {
+                                    percentage: "100%",
+                                    title: "Engineers Australia <br>Skills Assessment",
+                                    description: "de éxito."
+                                },
+                                {
+                                    percentage: "95%",
+                                    title: "Visa 482 ",
+                                    description: "(Skills in Demand / TSS)"
+                                },
+                                {
+                                    percentage: "100%",
+                                    title: "Appeals (ART / Tribunal)",
+                                    description: "Todos los casos han tenido resultados exitosos en audiencia cuando nuestros agentes migratorios han determinado previamente una probabilidad mínima del 50% de ganar el caso."
+                                }
+                            ].map((item:any, i:any) => (
+                                <div className="col-12 col-md-4 d-flex align-items-center container-whyChooseUs" key={i}>
+                                    <div className="card card-whyChooseUs border-0">
+                                        <div className="card-body px-3 px-md-0">
+                                            <h3 className="card-whyChooseUs_title" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
+                                            <h5 className="card-whyChooseUs_percentage">{item.percentage}</h5>
+                                            <p className="card-whyChooseUs_description mb-0">{item.description}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))
+                        }
                     </div>
                 </section>
             </section>

@@ -63,7 +63,7 @@ export default function BannerCarouselCustom({ items }: BannerCarouselCustomProp
         <Swiper
             modules={[Autoplay,Navigation, Pagination]}
             loop={true}
-            spaceBetween={40}
+            spaceBetween={0}
             slidesPerView={1}
             pagination={{ clickable: true }}
             navigation={true}

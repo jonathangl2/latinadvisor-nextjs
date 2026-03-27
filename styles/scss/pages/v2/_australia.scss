@@ -407,7 +407,9 @@
                 }   
             }
             &:hover, &:focus, &:active{
-                transform: scale(1.06);
+                @media #{vars.$m992}{
+                    transform: scale(1.06);
+                }
             }
         }
         .card-agentsMigration{
@@ -463,6 +465,32 @@
                 }
             }
         }
+        .card-whyChooseUs{
+            width: 100%;
+            border: 0px;
+            background-color: transparent;
+            padding: 1rem 1rem;
+            height: 100%;
+            &_title,
+            &_percentage,
+            &_description{
+                text-align: center;
+                color: vars.$color-blue-dark-5;
+            }
+
+            &_title,
+            &_description{
+                min-height: 35px;
+                font-size: 1.1rem;
+                line-height: 1.1;
+            }
+
+            &_percentage{
+                font-size: 3.5rem;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+        }
         &_banner{
             &.swiper{
                 .swiper-button-next, .swiper-button-prev{
@@ -487,7 +515,83 @@
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
-            min-height: 300px;
+            min-height: 260px;
+
+            .container_whyChooseUsContent{
+                display: flex;
+                align-items: stretch;
+                justify-content: start;
+                flex-wrap: nowrap;
+                overflow-x: scroll;
+                padding-bottom: 1rem;
+                &::-webkit-scrollbar {
+                    height: 6px; /* Define la altura de la barra horizontal */
+
+                }
+                &::-webkit-scrollbar-thumb {
+                    background-color: rgba(255, 255, 255, 0.2);
+                    border-radius: 6px;
+                }
+                &::-webkit-scrollbar-track {
+                    background-color: rgba(255, 255, 255, 0.1);
+                }
+
+                @media #{vars.$m768}{
+                    flex-wrap: wrap;
+                    overflow-x: hidden;
+                    justify-content: center;
+                    padding-bottom: 0rem;
+                }
+            }
+            
+
+            .container-whyChooseUs{
+                border-right: 1px solid vars.$color-white;
+                max-width: 300px;
+                @media #{vars.$m768}{
+                    max-width: 100%;
+                }
+                &:last-child{
+                    border-right: 0px;
+                    .card-whyChooseUs{
+                        &_description{
+                            font-size: 0.9rem !important;
+                        }
+                    }
+                }
+            }
+        }
+        &_consultations{
+            display: flex;
+            align-items: stretch;
+            justify-content: start;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+
+            &::-webkit-scrollbar {
+                height: 6px; /* Define la altura de la barra horizontal */
+
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 0, 0, .2);
+                border-radius: 6px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            @media #{vars.$m768}{
+                flex-wrap: wrap;
+                justify-content: center;
+                overflow-x: hidden;
+            }
+            .container-migrationConsultations{
+                max-width: 350px;
+                padding-bottom: 1rem;
+                @media #{vars.$m768}{
+                    max-width: 100%;
+                }
+            }
         }
         &_agents{
             h5 strong{
@@ -497,18 +601,50 @@
                 margin-bottom: 0.9rem;
                 font-size: 1.1rem;
             }
+            .contentHTMLCustom{
+                h5{
+                    margin: 2rem auto 0.9rem;
+                    color: vars.$color-grey-1;
+                    font-weight: 600;
+                }
+                ul{
+                    margin-bottom: 1rem;
+                    li{
+                        font-size: 1.1rem;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            top: 8px;
+                            left: 0;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background-color: vars.$color-grey-1
+                        }
+                    }
+                }
+                strong{
+                    font-weight: 600;
+                }
+            }
         }
         &_team{
             .swiper{
-                padding: 1rem 5rem 3rem 5rem;
+                padding: 1rem 1rem 4rem 1rem;
+                @media #{vars.$m768}{
+                    padding: 1rem 5rem 3rem 5rem;
+                }
                 &::before,
                 &::after{
                     content: "";
                     position: absolute;
                     top: 0;
-                    width: 6rem;
+                    width: 4rem;
                     height: 100%;
                     z-index: 2;
+                    @media #{vars.$m768}{
+                        width: 6rem;
+                    }
                 }
 
                 &::before{
@@ -532,6 +668,10 @@
 
                 .swiper-button-next, .swiper-button-prev{
                     color: vars.$color-grey-1 !important;
+                    display: none;
+                    @media #{vars.$m768}{
+                        display: flex;
+                    }
                     &:hover,
                     &:focus,
                     &:active{
@@ -559,14 +699,16 @@
                 border-radius: 25px;
                 box-shadow: 3px 6px 7px -1px #dfdfe0 !important;
                 .img-team{
-                    height: 150px !important;
+                    height: 100% !important;
+                    max-height: 200px;
                     width: 100%;
+                    max-width: 200px;
                     object-fit: cover;
                     object-position: center;
                     border-radius: 15px !important;
                     @media #{vars.$m768}{ 
                         max-width: 150px !important;
-                        width: 150px !important;
+                        max-height: 150px !important;
                     }
                 }
                 h3,h4{

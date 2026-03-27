@@ -2,8 +2,17 @@
 
 import { useEffect } from "react";
 
-export default function ModalAgente({ modalId, url }: { modalId: string; url: string }) {
-  // Recarga el script del iframe de LeadConnector solo si se usa
+export default function ModalAgente({
+  modalId,
+  url,
+  contentHtml
+}: {
+  modalId: string;
+  url?: string;
+  contentHtml?: string;
+}) {
+
+  // (lo dejo tal cual lo tienes)
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://link.msgsndr.com/js/form_embed.js";
@@ -13,7 +22,7 @@ export default function ModalAgente({ modalId, url }: { modalId: string; url: st
     return () => {
       document.body.removeChild(script);
     };
-  }, [url]);
+  }, [url, contentHtml]);
 
   return (
     <div
@@ -24,7 +33,6 @@ export default function ModalAgente({ modalId, url }: { modalId: string; url: st
     >
       <div className="modal-dialog modal-dialog-centered modal-xl">
         <div className="modal-content">
-          {/* Header opcional */}
           
           <button
             type="button"
@@ -33,17 +41,23 @@ export default function ModalAgente({ modalId, url }: { modalId: string; url: st
             aria-label="Close"
           ></button>
           
-
           <div className="modal-body p-0">
-            <iframe
-              src={url}
-              style={{
-                width: "100%",
-                height: "100%",
-                border: "none"
-              }}
-              scrolling="yes"
-            ></iframe>
+ 
+            {contentHtml ? (
+              <div className="p-4 p-lg-5 contentHTMLCustom"
+                dangerouslySetInnerHTML={{ __html: contentHtml }}
+              />
+            ) : url ? (
+              <iframe
+                src={url}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  border: "none"
+                }}
+              ></iframe>
+            ) : null}
+
           </div>
         </div>
       </div>

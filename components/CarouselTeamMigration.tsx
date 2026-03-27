@@ -12,13 +12,13 @@ export default function CarouselTeamMigration({ items }: any) {
         loop={true}
         spaceBetween={20}
         slidesPerView={1} // default (mobile)
-        breakpoints={{
+        breakpoints={{ 
           768: {
-            slidesPerView: 1,
+            slidesPerView: 1
           },
           992: {
             slidesPerView: 2, // desktop
-            spaceBetween: 40,
+            spaceBetween: 40
           },
         }}
         pagination={{ clickable: true }}
@@ -28,13 +28,13 @@ export default function CarouselTeamMigration({ items }: any) {
           <SwiperSlide key={index}>
             <div className="card card-teamMigration">
               <div className="card-body px-4 px-lg-5">              
-                <div className="col-12 py-4 d-flex flex-column flex-sm-row align-items-center">
+                <div className="col-12 pt-4 pb-lg-4 d-flex flex-column flex-sm-row align-items-center">
                     <img
                         src={item.image}
                         alt=""
                         className="img-fluid img-team me-lg-4 mb-4 mb-lg-0"
                     />
-                    <h4 className="d-flex flex-column">
+                    <h4 className="d-flex flex-column text-center text-lg-start">
                       <span>{item.name}</span> 
                       <strong>{item.role}</strong>
                     </h4>

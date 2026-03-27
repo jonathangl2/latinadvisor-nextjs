@@ -2318,45 +2318,63 @@
         "migration_team": {
             "au":[
                 {
+                    "name": "Juan Carlos Bedoya",
+                    "role": "Cofundador y Agente de Migración Principal",
+                    "image": "/assets/images/australia/migration/team/juan-carlos.png",
+                    "description": "Ingeniero y agente migratorio — dos mundos completamente diferentes, pero que me apasionan por igual. Como ingeniero, trabajó tiempo completo en la intersección de inteligencia artificial y salud. Como agente migratorio, cofundé Latin Advisor porque sé lo que se siente llegar a un país nuevo sin saber por dónde empezar. Empezamos sirviendo a la comunidad hispanohablante, pero nuestra misión crece con cada cliente que confía en nosotros. Me especializo en patrocinios de empleador, residencia permanente, apelaciones ante el ART y casos complejos."
+                },
+                {
+                    "name": "Christina Toftegaard",
+                    "role": "Agente de migración",
+                    "image": "/assets/images/australia/migration/team/christina.png",
+                    "description": "Inmigrante multilingüe que ofrece consultas de inmigración en inglés y danés. Con una diversa y sólida formación cultural europea/escandinava, y residiendo permanentemente en Australia desde 2008, me apasiona navegar el complejo marco legal australiano y apoyar a individuos, familias y empresas a lo largo de todo su proceso migratorio."
+                },
+                {
+                    "name": "Renatto Lopez",
+                    "role": "Agente de migración",
+                    "image": "/assets/images/australia/migration/team/renatto.png",
+                    "description": "Soy Agente Migratorio con formación en la University of Technology Sydney (UTS) y experiencia trabajando con procesos de Skills Assessment ante Engineers Australia. Asesoro a clientes en sus procesos migratorios hacia Australia con un enfoque claro, estratégico y orientado a resultados. Me caracterizo por ser una persona directa, profesional y enfocada en encontrar soluciones, brindando asesoría confiable y bien estructurada para ayudar a cada cliente a tomar decisiones informadas sobre su futuro en Australia."
+                },
+                {
                     "name": "Zoe Nuñez",
                     "role": "Líder del equipo de Visas de Estudiante y Paralegal de Migración",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/zoe.png",
                     "description": "Como líder del equipo de Visas de Estudiante y Paralegal de Migración en LatinAdvisor, utilizo mi formación en Turismo y Políticas Públicas para navegar las complejidades de la educación internacional y los procesos migratorios. Mi objetivo es transformar un proceso desafiante en una experiencia clara y fluida para nuestros estudiantes, acompañándolos en el inicio de su camino académico internacional."
                 },
                 {
                     "name": "Johana Cantor Bernal",
                     "role": "Gerente de Relacionamiento de Marketing",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/johana.png",
                     "description": "Como Customer Engagement Manager en LatinAdvisor, coordino las consultas migratorias con nuestros agentes registrados, organizo eventos migratorios en Australia y apoyó la ejecución de campañas y estrategias de marketing. Disfruto ser el puente entre nuestros clientes y los agentes migratorios, acompañándolos desde su primera consulta hasta el éxito de su proceso migratorio."
                 },
                 {
                     "name": "Natalia Gómez Martínez",
                     "role": "Líder del equipo paralegal",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/natalia.png",
                     "description": "Como líder del equipo de paralegales, apoyo estratégicamente a nuestros agentes migratorios, manteniéndome al día con las actualizaciones legislativas para asegurar que cada proceso cumpla con los estándares legales. Me especializo en la gestión de casos complejos, apelaciones ante el ART, patrocinios y acuerdos laborales. Me apasiona transformar desafíos legales en resultados positivos, trabajando con rigor y empatía para ayudar a nuestros clientes a construir su futuro en Australia."
                 },
                 {
                     "name": "Carlos Andres Ramirez Quintero",
                     "role": "Paralegal Senior",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/carlos.png",
                     "description": "En LatinAdvisor apoyo los procesos de visas y Skills Assessment mediante la preparación de casos, revisión de documentos y control de calidad. Me enfoco en organizar información compleja y revisar evidencia con atención al detalle para asegurar que cada aplicación sea clara, consistente y bien presentada. Valoro especialmente saber que nuestro trabajo tiene un impacto real en la vida de las personas que buscan construir su futuro en Australia."
                 },
                 {
                     "name": "Sandra Milena Benítez Cartagena",
                     "role": "Gerente de Oficina – Operaciones de Migración",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/milena.png",
                     "description": "En LatinAdvisor coordino procesos internos que apoyan el trabajo del equipo de migración, desde la revisión de documentos hasta el seguimiento de tareas y herramientas que facilitan cada caso. Disfruto especialmente aportar organización y claridad a los procesos, sabiendo que esto ayuda a que nuestros clientes puedan avanzar con mayor tranquilidad en su camino migratorio."
                 },
                 {
                     "name": "Johnny Fernando Benedetti Vela",
                     "role": "Director de Desarrollo de Negocios LATAM",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/johnny.png",
                     "description": "Como Director de Desarrollo de Negocios para Latinoamérica en LatinAdvisor, superviso nuestros procesos financieros y el desarrollo de contratos, actuando como enlace estratégico entre nuestro equipo de ventas, nuestros clientes y los especialistas en solicitudes de visas. Considero este puesto sumamente gratificante, ya que me permite garantizar una transparencia total y un flujo operativo fluido, brindando a nuestros clientes la base sólida que necesitan para emprender su aventura internacional con confianza."
                 },
                 {
                     "name": "Martha Herrera",
                     "role": "Gerente de Desarrollo de Negocios ",
-                    "image": "https://images.placeholders.dev/?width=150&height=150&bgColor=%23f7f6f6&textColor=%236d6e71&text=img",
+                    "image": "/assets/images/australia/migration/team/martha.png",
                     "description": "En LatinAdvisor coordino las cotizaciones, contratos y aspectos comerciales de los procesos migratorios, acompañando a los clientes en cada etapa. Disfruto transformar objetivos en planes claros y alcanzables, asegurando que cada proceso tenga una estrategia bien definida. Mi enfoque es brindar claridad, organización y confianza para que cada cliente avance con seguridad en su camino migratorio."
                 }
             ]
