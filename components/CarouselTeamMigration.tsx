@@ -30,7 +30,7 @@ export default function CarouselTeamMigration({ items }: any) {
               <div className="card-body px-4 px-lg-5">              
                 <div className="col-12 pt-4 pb-lg-4 d-flex flex-column flex-sm-row align-items-center">
                     <img
-                        src={item.image}
+                        src={getAssetUrl(item.image)}
                         alt=""
                         className="img-fluid img-team me-lg-4 mb-4 mb-lg-0"
                     />
