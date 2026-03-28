@@ -282,9 +282,9 @@ export default async function MigrationPage({
                                     </div>
 								</div>
                                 <div className="col-12 col-sm-8 col-md-6 section-australiaMigration_metricsCta d-flex align-items-center justify-content-center">
-                                    <button className="btn btn-cta">
+                                    <a href="https://www.instagram.com/p/DTtvkWmjBwF/" target="_blank" className="btn btn-cta">
                                         <img src={getAssetUrl("/assets/images/australia/migration/bg-cta-casos-exito.png")} alt="" className="img-fluid" />
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
