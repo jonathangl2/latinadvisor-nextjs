@@ -24,7 +24,7 @@ export default async function MigrationPage({
 
     const { locale } = await params;
     const dict = await getDictionary(locale);
-    const localePath = (path: string) => `/${locale}${path}`;
+    const localePath = (path: string) => getAssetUrl(path, locale);
         
     const data = loadHomeJson();
 	const migrationProcesses = data.data.migration_processes.au;

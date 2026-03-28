@@ -12,7 +12,8 @@ export default async function Home({
 
   const { locale } = await params;
   const dict = await getDictionary(locale);
-  const localePath = (path: string) => `/${locale}${path}`;
+  const localePath = (path: string) => getAssetUrl(path, locale);
+  console.log("Locale en Home:", locale);
   const assetPath = (path: string) => getAssetUrl(path);
   
   return (
