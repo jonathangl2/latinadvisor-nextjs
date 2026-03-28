@@ -25,7 +25,7 @@ export default async function Australia({
 
 	const { locale } = await params;
   	const dict = await getDictionary(locale);
- 	const localePath = (path: string) => `/${locale}${path}`;
+ 	const localePath = (path: string) => getAssetUrl(path, locale);
 
 	return (
 		<>
