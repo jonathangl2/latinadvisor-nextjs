@@ -173,7 +173,7 @@ export default async function MigrationPage({
                 </div>
             </section>
 
-            <section className="section-australia section-australiaMigration section-australiaMigration_whyChooseUs  container-fluid py-4 mb-5">
+            <section className="section-australia section-australiaMigration section-australiaMigration_whyChooseUs  container-fluid py-4">
                 <section className="container">
                     <div className="row container_whyChooseUsContent">
                         {
@@ -209,10 +209,93 @@ export default async function MigrationPage({
                 </section>
             </section>
 
+            <section className="section-australia section-australiaMigration container-fluid bg-grey-light-3">
+				<section className="container py-3 py-lg-5">
+					<div className="row d-flex justify-content-center py-5">
+						<div className="col-12 col-lg-11">
+							<div className="row">
+								<div className="col-12 col-sm-8 col-md-6">
+                                    <div className="row">
+                                        <div className="col-12 pb-5 pb-lg-3">
+                                            <div className="row section-australiaMigration_metricsProgressCircle">
+                                            {
+                                                [{
+                                                    name:"Acompañamiento",
+                                                    value:"100"
+                                                },{
+                                                    name:"Honestidad",
+                                                    value:"100"
+                                                },
+                                                {
+                                                    name:"Claridad",
+                                                    value:"100"
+                                                },
+                                                {
+                                                    name:"Compromiso",
+                                                    value:"100"
+                                                }    
+                                            ].map((item:any, i:any) => (
+                                                    <div className="col col-sm-6 px-2 mb-3 container-progressCircle">
+                                                        <div className="card card-progressCircle">
+                                                            <div className="card-body d-flex align-items-center">
+                                                                <div className="progress-circle" style={{ '--value': `${item.value}` } as React.CSSProperties}>
+                                                                    <span>{item.value}%</span>
+                                                                </div>
+                                                                <h5 className="ps-3">{item.name}</h5>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                    </div>
+                                                ))
+                                            }
+                                            </div>
+                                        </div>
+                                        <div className="col-12 section-australiaMigration_metricsCta px-4 pe-lg-5 mb-4 mb-md-0">
+                                            <h4 className="mt-2 mb-4"><strong>Nuestra experiencia habla por nosotros</strong></h4>
+                                            {
+                                            [   {
+                                                    name:"VETASSESS – Skills Assessment",
+                                                    value:"94"
+                                                },{
+                                                    name:"Visa 407 (Training Visa)",
+                                                    value:"85"
+                                                },
+                                                {
+                                                    name:"Visitor Visa",
+                                                    value:"90"
+                                                }
+                                            ].map((item:any, i:any) => (
+                                                <div className="row">
+                                                    <div className="col-12">
+                                                        <h5><span>{item.name}</span></h5>
+                                                    </div>
+                                                    <div className="col-12 d-flex pe-lg-5">
+                                                        <div className="progress mt-2 mb-3" role="progressbar" aria-label="Basic example" aria-valuenow={item.value} aria-valuemin={0} aria-valuemax={100}>
+                                                            <div className="progress-bar" style={{ width: `${item.value}%` }}></div>
+                                                        </div>
+                                                        <h5 className="mt-1 px-3">{item.value}%</h5>
+                                                    </div>
+                                                </div>
+                                            ))
+                                            }
+                                        </div>
+                                    </div>
+								</div>
+                                <div className="col-12 col-sm-8 col-md-6 section-australiaMigration_metricsCta d-flex align-items-center justify-content-center">
+                                    <button className="btn btn-cta">
+                                        <img src={getAssetUrl("/assets/images/australia/migration/bg-cta-casos-exito.png")} alt="" className="img-fluid" />
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
             <section id="visas" className="section-australia section-australiaMigration">
                 <section className="container">
                     <div className="row d-flex justify-content-center">
-                        <div className="col-12 pt-4 pb-5 section-australia_contentCta">
+                        <div className="col-12 pt-5 pb-5 section-australia_contentCta">
                             <a href="#contactForm" className="btn scrolling mt-2">¡CONOCE MÁS SOBRE LA CITA MIGRATORIA!</a>
                         </div>
 						<div className="col-12 col-lg-10 pt-3 pb-4">

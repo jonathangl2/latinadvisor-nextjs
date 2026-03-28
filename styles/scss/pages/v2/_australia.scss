@@ -42,6 +42,73 @@
                 }
             }
         }
+
+        @keyframes fillProgress {
+            from {
+                background: conic-gradient(var(--color) 0%, var(--bg) 0%);
+            }
+            to {
+                background: conic-gradient(
+                var(--color) calc(var(--value) * 1%),
+                var(--bg) 0
+                );
+            }
+        }
+
+        .progress{
+            height: 12px;
+            width: 100%;
+            box-shadow: 0px 1px 3px rgba(0,0,0, 0.1);
+            background-color: vars.$color-white !important;
+            border-radius: 3rem;
+            .progress-bar{
+                background-color: vars.$color-green-3 !important;
+            }
+        }
+        .progress-circle {
+            --size: 90px;
+            --thickness: 8px;
+            --color: #91BA15;
+            --bg: #e5e5e5;
+            --value: 75; /* porcentaje */
+
+            width: var(--size);
+            height: var(--size);
+            min-width: var(--size);
+            border-radius: 50%;
+
+            background: conic-gradient(
+                var(--color) calc(var(--value) * 1%),
+                var(--bg) 0
+            );
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            &:hover,
+            &:focus{
+                animation: fillProgress 1.5s ease-out forwards;
+            }
+        }
+
+        .progress-circle::before {
+            content: "";
+            position: absolute;
+            width: calc(100% - var(--thickness) * 2);
+            height: calc(100% - var(--thickness) * 2);
+            background: white;
+            border-radius: 50%;
+        }
+            
+        .progress-circle span {
+            position: relative;
+            font-weight: 500;
+            color: vars.$color-grey-1;
+            font-size: 1rem;
+        }
+
         .information{
             h2,h3,h5{
                 color: vars.$color-blue-dark-5;
@@ -88,6 +155,19 @@
                     p{
                         margin-bottom: 0px !important;
                     }
+                }
+            }
+            &.card-progressCircle{
+                box-shadow: 1px 3px 3px 0px rgba(0,0,0,0.09);
+                border: 0px;
+                border-radius: 15px;
+                padding: 0rem;
+                .card-body{
+                    padding: 1rem 1rem;
+                }
+                h5{
+                    font-size: 0.9rem;
+                    font-weight: 500;
                 }
             }
         }
@@ -630,6 +710,65 @@
                     font-weight: 600;
                 }
             }
+        }
+        &_metricsProgressCircle{
+            display: flex;
+            align-items: stretch;
+            justify-content: start;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            padding-bottom: 1rem;
+            
+            &::-webkit-scrollbar {
+                height: 6px; /* Define la altura de la barra horizontal */
+
+            }
+            &::-webkit-scrollbar-thumb {
+                background-color: rgba(0, 0, 0, .2);
+                border-radius: 6px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: rgba(0, 0, 0, 0.1);
+            }
+
+            @media #{vars.$m768}{
+                flex-wrap: wrap;
+                justify-content: center;
+                overflow-x: hidden;
+            }
+            .container-progressCircle{
+                max-width: 300px;
+                @media #{vars.$m768}{
+                    max-width: 100%;
+                }
+            }
+        }
+        &_metricsCta{
+            h5{
+                //color: vars.$color-grey-1;
+                span{
+                    font-weight: 300;
+                }
+            }
+            .btn{
+                padding: 0;
+                background-color: transparent;
+                transition: 0.3s ease-in-out all;
+                display: flex;
+                width: 100%;
+                @media #{vars.$m768}{
+                    padding: 0 0 0 1rem!important;
+                }
+                &:hover,
+                &:focus,
+                &:active{
+                    transform: scale(1.05);
+                }
+                img{
+                    width: 100%;
+                }
+            }
+            
         }
         &_team{
             .swiper{
