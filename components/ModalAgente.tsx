@@ -31,7 +31,7 @@ export default function ModalAgente({
       tabIndex={-1}
       aria-hidden="true"
     >
-      <div className="modal-dialog modal-dialog-centered modal-xl">
+      <div className="modal-dialog modal-xl">
         <div className="modal-content">
           
           <button

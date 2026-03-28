@@ -196,7 +196,7 @@ export default async function MigrationPage({
                             ].map((item:any, i:any) => (
                                 <div className="col-12 col-md-4 d-flex align-items-center container-whyChooseUs" key={i}>
                                     <div className="card card-whyChooseUs border-0">
-                                        <div className="card-body px-3 px-md-0">
+                                        <div className="card-body px-0">
                                             <h3 className="card-whyChooseUs_title" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
                                             <h5 className="card-whyChooseUs_percentage">{item.percentage}</h5>
                                             <p className="card-whyChooseUs_description mb-0">{item.description}</p>

@@ -469,8 +469,11 @@
             width: 100%;
             border: 0px;
             background-color: transparent;
-            padding: 1rem 1rem;
+            padding: 0.8rem 0.5rem;
             height: 100%;
+            @media #{vars.$m768}{
+                padding: 1rem;
+            }
             &_title,
             &_percentage,
             &_description{
@@ -586,7 +589,7 @@
                 overflow-x: hidden;
             }
             .container-migrationConsultations{
-                max-width: 350px;
+                max-width: 300px;
                 padding-bottom: 1rem;
                 @media #{vars.$m768}{
                     max-width: 100%;
