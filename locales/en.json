@@ -47,7 +47,8 @@
         "course_3_child":{
           "list1":"Bachelor’s Degrees",
           "list2":"Master’s Degrees"
-        }
+        },
+        "note":"<strong>Note:</strong> An advanced, certified level of English is required for higher education programs."
       }
     },
     "about": {

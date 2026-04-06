@@ -85,12 +85,12 @@ export default async function Australia({
 										<div className="col-12">
 											<h3 className="bg-green-2 mt-4 mb-3 p-3">{dict.pages.australia.courses.course_3}</h3>
 											<ul className="mb-4">
-												<li></li>
-												<li></li>	
+												<li>{dict.pages.australia.courses.course_3_child.list1}</li>
+												<li>{dict.pages.australia.courses.course_3_child.list2}</li>	
 											</ul>
 										</div>
 										<div className="col-12">
-											<p><strong>Nota:</strong> Para estudios de educación superior es necesario contar con un nivel avanzado de inglés certificado.</p>
+											<p dangerouslySetInnerHTML={{ __html: dict.pages.australia.courses.note }}></p>
 										</div>
 									</div>
 									

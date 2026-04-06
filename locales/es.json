@@ -47,7 +47,8 @@
         "course_3_child":{
           "list1":"Higher Education (Bachelor’s)",
           "list2":"Maestrías (Master’s)"
-        }
+        },
+        "note":"<strong>Nota:</strong> Para estudios de educación superior es necesario contar con un nivel avanzado de inglés certificado."
       }
     },
     "about": {
