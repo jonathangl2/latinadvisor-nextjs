@@ -4,8 +4,38 @@
     "destinations": "Destinos",
     "about": "Nosotros"
   },
-  "home": {
-    "title": "Vive, estudia y trabaja en el extranjero",
-    "cta": "Inicia ahora"
+  "pages":{
+    "home": {
+      "caption": "Vive, estudia y trabaja en el extranjero",
+      "cta": "Inicia ahora",
+      "destinations": {
+        "au": "Estudiar en Australia",
+        "db": "Estudiar en Dubái"
+      },
+      "services": {
+        "title": "Otros Servicios en Australia",
+        "study_visa": "Renovación de visa de estudio",
+        "migration_visa": "Procesos Migratorios y otras visas",
+        "workandholiday": "Work and Holiday"
+      },
+      "description_form": "Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.",
+      "description_option_1":"Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas.",
+      "description_option_2":"Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.",
+      "description_option_3":"Te ayudamos con la visa, el college, acompañamiento, el seguro médico, tips para conseguir trabajo, etc.",
+      "description_option_4":"Además, te invitamos a todos nuestros eventos educativos y recreativo en Australia o Dubái."
+    },
+    "about": {
+      "title": "Nosotros"
+    }
+  },
+  "footer":{
+    "btn_contact": "Contáctanos"
+  },
+  "forms":{
+    "home": {
+      "title": "Formulario de",
+      "subtitle": "Perfilamiento",
+      "description": "Completa estas preguntas para analizar tu perfil y con base en tus respuestas, te brindaremos asesoría personalizada."
+    }
   }
 }

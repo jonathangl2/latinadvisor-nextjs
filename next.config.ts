@@ -1,10 +1,10 @@
 import type { NextConfig } from "next";
 
-console.log('🔍 Variables de entorno:');
-console.log('NODE_ENV:', process.env.NODE_ENV);
-console.log('BASE_PATH:', process.env.NEXT_PUBLIC_BASE_PATH);
-console.log('ASSET_PREFIX:', process.env.NEXT_PUBLIC_ASSET_PREFIX);
-console.log('SITE_URL:', process.env.NEXT_PUBLIC_SITE_URL);
+// console.log('🔍 Variables de entorno:');
+// console.log('NODE_ENV:', process.env.NODE_ENV);
+// console.log('BASE_PATH:', process.env.NEXT_PUBLIC_BASE_PATH);
+// console.log('ASSET_PREFIX:', process.env.NEXT_PUBLIC_ASSET_PREFIX);
+// console.log('SITE_URL:', process.env.NEXT_PUBLIC_SITE_URL);
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 const assetPrefix = process.env.NEXT_PUBLIC_ASSET_PREFIX || "";

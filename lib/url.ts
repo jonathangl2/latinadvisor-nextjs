@@ -6,6 +6,7 @@
 // ✅ Base path desde variables de entorno
 export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || "";
+export const BACK_URL = process.env.NEXT_PUBLIC_BACK_URL || "";
 
 /**
  * Obtiene la URL completa para assets (imágenes, CSS, JS)

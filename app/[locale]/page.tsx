@@ -1,6 +1,5 @@
 import FormEmbed from "@/components/FormEmbed";
 import { getAssetUrl } from "@/lib/url";
-import Script from "next/script";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 
 export const generateStaticParams = generateLocaleParams;
@@ -9,11 +8,10 @@ export default async function Home({
   }: {
     params: Promise<{ locale: Locale }>
   }) {
-
+  
   const { locale } = await params;
   const dict = await getDictionary(locale);
   const localePath = (path: string) => getAssetUrl(path, locale);
-  console.log("Locale en Home:", locale);
   const assetPath = (path: string) => getAssetUrl(path);
   
   return (
@@ -26,7 +24,7 @@ export default async function Home({
             {/* <video autoPlay muted loop id="bgVideo" className="d-block d-md-none">
               <source src={getAssetUrl("/assets/documents/video-vertical-bg.mp4")} type="video/mp4" />
             </video> */}
-
+            
             {/* Video solo en desktop */}
             <video autoPlay muted loop id="bgVideo" className="d-none d-md-block">
               <source src={getAssetUrl("/assets/documents/video-horizontal-bg.mp4")} type="video/mp4" />
@@ -40,9 +38,11 @@ export default async function Home({
           </div>
           <div className="caption">
             <h1>
-              Vive, estudia y trabaja en el extranjero
+              {dict.pages.home.caption}
             </h1>
-            <a href="#contactForm" className="btn btn-lg btn-round px-5 py-3 btn-green-1 text-uppercase scrolling mb-lg-4">Inicia ahora</a>
+            <a href="#contactForm" className="btn btn-lg btn-round px-5 py-3 btn-green-1 text-uppercase scrolling mb-lg-4">
+              {dict.pages.home.cta}
+            </a>
           
             <section className="row d-flex justify-content-center px-4 mb-5 section-home_ctaDestination mx-auto w-100">
               <div className="col-11 col-sm-8 col-lg-4">
@@ -52,9 +52,9 @@ export default async function Home({
                   <div className="card card-ctaDestination">
                     <img
                       src={getAssetUrl("/assets/images/home/estudiar-en-australia.webp")}
-                      alt="Estudiar en Australia"
+                      alt={dict.pages.home.destinations.au}
                     />
-                    <h5 className="card-ctaDestination_title">Estudiar en Australia</h5>
+                    <h5 className="card-ctaDestination_title">{dict.pages.home.destinations.au}</h5>
                   </div>
                 </a>
               </div>
@@ -65,9 +65,9 @@ export default async function Home({
                   <div className="card card-ctaDestination">
                     <img
                       src={getAssetUrl("/assets/images/home/estudiar-en-dubai.webp")}
-                      alt="Estudiar en Dubái"
+                      alt={dict.pages.home.destinations.db}
                     />
-                    <h5 className="card-ctaDestination_title">Estudiar en Dubái</h5>
+                    <h5 className="card-ctaDestination_title">{dict.pages.home.destinations.db}</h5>
                   </div>
                 </a>
               </div> */}
@@ -81,23 +81,23 @@ export default async function Home({
         <section className="container py-5">
           <div className="row d-flex justify-content-center pb-lg-5">
             <div className="col-10 pt-4 pb-5 mb-2">
-              <h2 className="section-home_title section-home_ourServices--title text-center text-uppercase">Otros Servicios en Australia</h2>
+              <h2 className="section-home_title section-home_ourServices--title text-center text-uppercase">{dict.pages.home.services.title}</h2>
             </div>
 
             {[
               {
                 img: getAssetUrl("/assets/images/home/renovacion-visa-de-estudios.webp"),
-                title: "Renovación de visa de estudio",
+                title: dict.pages.home.services.study_visa,
                 url: 'renovaciondevisa'
               },
               {
                 img: getAssetUrl("/assets/images/home/procesos-migratorios-otras-visas.webp"),
-                title: "Procesos Migratorios y otras visas",
+                title: dict.pages.home.services.migration_visa,
                 url: 'migration'
               },
               {
                 img: getAssetUrl("/assets/images/home/work-and-holiday.webp"),
-                title: "Work and Holiday",
+                title: dict.pages.home.services.workandholiday,
                 url: 'workandholiday'
               },
             ].map((item, i) => (
@@ -126,17 +126,20 @@ export default async function Home({
                 formId="1Hc0dJ19yyTGDsdjYhVI"
                 formHeight={2822}
                 title="1. Formulario - Web global"
+                titleCard={dict.forms.home.title}
+                subtitleCard={dict.forms.home.subtitle}
+                descriptionCard={dict.forms.home.description}
               />
             </div>
 
             <div className="col-12 col-lg-6 section-home_contactForm--stickySlider ps-5 d-none d-md-block pt-5">
               <br></br>
-              <h5 className="mt-5 mb-3 pt-4">Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.</h5>
+              <h5 className="mt-5 mb-3 pt-4">{dict.pages.home.description_form}</h5>
               <ul>
-                <li>Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas. </li>
-                <li>Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.</li>
-                <li>Te ayudamos con la visa, el college, acompañamiento, el seguro médico, tips para conseguir trabajo, etc.</li>
-                <li>Además, te invitamos a todos nuestros eventos educativos y recreativo en Australia o Dubái.</li>
+                <li>{dict.pages.home.description_option_1}</li>
+                <li>{dict.pages.home.description_option_2}</li>
+                <li>{dict.pages.home.description_option_3}</li>
+                <li>{dict.pages.home.description_option_4}</li>
               </ul>
             </div>
             

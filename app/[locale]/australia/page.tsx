@@ -285,6 +285,9 @@ export default async function Australia({
 									formId="2v14tZNWKuPXVhu3l9hi"
 									formHeight={1612}
 									title="2. Formulario - Web Australia"
+									titleCard={dict.forms.home.title}
+									subtitleCard={dict.forms.home.subtitle}
+									descriptionCard={dict.forms.home.description}
 								/>
 							</div>
 						</div>

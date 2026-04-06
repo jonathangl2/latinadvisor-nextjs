@@ -7,8 +7,6 @@ import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 
 export const generateStaticParams = generateLocaleParams;
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-
 export const metadata: Metadata = {
   title: 'Inicio | Latinadvisor | Estamos construyendo sueños',
   description: 'Planifica tu viaje y encuentra toda la información en cuanto a visa, tramites y asesoría gratuita para estudiar inglés u otros cursos en Australia.',

@@ -4,8 +4,38 @@
     "destinations": "Destinations",
     "about": "About Us"
   },
-  "home": {
-    "title": "Live, study and work abroad",
-    "cta": "Start now"
+  "pages":{
+    "home": {
+      "caption": "Live, Study and Work Abroad",
+      "cta": "Get Started Now",
+      "destinations": {
+        "au": "Study in Australia",
+        "db": "Study in Dubai"
+      },
+      "services": {
+        "title": "Other Services in Australia",
+        "study_visa": "Student Visa Renewal",
+        "migration_visa": "Migration Processes and Other Visas",
+        "workandholiday": "Work and Holiday"
+      },
+      "description_form":"Fill out the form to analyze your profile and receive a free consultation with LatinAdvisor. You will know your visa requirements and the opportunities to reach this goal. During the free consultation, we will discuss your study options, travel and study costs and everything based on your specific personal goals and objectives.",
+      "description_option_1":"After checking your profile, you will receive a link with an availability schedule to book your free consultation.",
+      "description_option_2":"When you are ready to start this amazing journey, we will guide you step by step to choose your city, course, duration and start date — at no extra cost.",
+      "description_option_3":"We will help you with everything, starting from school enrolment, visa documentation, course, visa and insurance payments, travel and accommodation assistance, job-search tips, and more.",
+      "description_option_4":"In addition, you will be invited to all our events in Australia: study, recreational and migration events."
+    },
+    "about": {
+      "title": "About Us"
+    }
+  },
+  "footer":{
+    "btn_contact": "Contact Us"
+  },
+  "forms":{
+    "home": {
+      "title": "Assessment",
+      "subtitle": "Form Profile",
+      "description": "Please complete these questions to analyze your profile and based on your responses, we will organise a personalised advisory consultation."
+    }
   }
 }

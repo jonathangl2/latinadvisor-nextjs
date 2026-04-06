@@ -235,7 +235,7 @@ export default async function MigrationPage({
                                                     value:"100"
                                                 }    
                                             ].map((item:any, i:any) => (
-                                                    <div className="col col-sm-6 px-2 mb-3 container-progressCircle">
+                                                    <div className="col col-sm-6 px-2 mb-3 container-progressCircle" key={i}>
                                                         <div className="card card-progressCircle">
                                                             <div className="card-body d-flex align-items-center">
                                                                 <div className="progress-circle" style={{ '--value': `${item.value}` } as React.CSSProperties}>
@@ -265,7 +265,7 @@ export default async function MigrationPage({
                                                     value:"90"
                                                 }
                                             ].map((item:any, i:any) => (
-                                                <div className="row">
+                                                <div className="row" key={i}>
                                                     <div className="col-12">
                                                         <h5><span>{item.name}</span></h5>
                                                     </div>
@@ -367,6 +367,9 @@ export default async function MigrationPage({
                                     formId="EhQtmWa8R4EPoNXtkLB1"
                                     formHeight={1447}
                                     title="1. Formulario - Perfilamiento migracion español"
+                                    titleCard={dict.forms.home.title}
+                                    subtitleCard={dict.forms.home.subtitle}
+                                    descriptionCard={dict.forms.home.description}
                                 />
                             </div>
                         </div>

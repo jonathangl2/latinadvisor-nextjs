@@ -40,6 +40,9 @@ export default async function ContactoPage({
                   formId="1Hc0dJ19yyTGDsdjYhVI"
                   formHeight={2822}
                   title="1. Formulario - Web global"
+                  titleCard={dict.forms.home.title}
+                  subtitleCard={dict.forms.home.subtitle}
+                  descriptionCard={dict.forms.home.description}
                 />
               </div>
             </div>

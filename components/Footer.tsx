@@ -1,13 +1,12 @@
-"use client";
 import { getAssetUrl } from "@/lib/url";
 import Link from "next/link";
-import Script from "next/script";
+import { generateLocaleParams, getDictionary, type Locale } from "@/lib/i18n";
 
-export default function Footer() {
-  const handleSubmit = (e:any) => {
-    e.preventDefault();
-    console.log("Formulario Newsletter enviado 🚀");
-  };
+export const generateStaticParams = generateLocaleParams;
+
+export default async function Footer({locale}:{locale: Locale}) {
+
+  const dict = await getDictionary(locale);
 
   return (
     <footer id="principal_footer" className="container-fluid">
@@ -61,7 +60,7 @@ export default function Footer() {
               </div>
               <div className="col-10 d-flex align-items-center justify-content-center mt-3 mt-lg-4 mb-4 mb-lg-5">
                 <Link href="/contactanos?utm_web=Web%20contactanos" className="btn btn-round btn-green-1 text-uppercase btn-sm me-2 px-4 py-3 w-100">
-                  Contáctanos
+                  {dict.footer.btn_contact}
                 </Link>
               </div>
               <div className="col-12">
@@ -222,7 +221,6 @@ export default function Footer() {
                       </div>
                       <div className="col-12 container-escribenos container-newsletter px-5">
                         <form
-                          onSubmit={handleSubmit}
                           className="row"
                           id="newsletterForm"
                         >

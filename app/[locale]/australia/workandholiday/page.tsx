@@ -162,6 +162,9 @@ export default async function WorkAndHolidayPage({
 									formId="k6czEex6PZdfeLpophBR"
 									formHeight={1526}
 									title="4. Formulario - Web Work and holiday"
+									titleCard={dict.forms.home.title}
+									subtitleCard={dict.forms.home.subtitle}
+									descriptionCard={dict.forms.home.description}
 								/>
 							</div>
 						</div>

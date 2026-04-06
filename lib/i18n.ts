@@ -11,7 +11,6 @@ export function generateLocaleParams() {
 
 export async function getDictionary(locale: any) {
   if (!locales.includes(locale)) {
-    console.warn(`⚠️ Locale inválido: "${locale}", usando "${defaultLocale}"`);
     locale = defaultLocale;
   }
 
@@ -19,7 +18,6 @@ export async function getDictionary(locale: any) {
     const dict = await import(`@/locales/${locale}.json`);
     return dict.default;
   } catch (error) {
-    console.error(`Error loading dictionary for ${locale}:`, error);
     const fallback = await import(`@/locales/es.json`);
     return fallback.default;
   }

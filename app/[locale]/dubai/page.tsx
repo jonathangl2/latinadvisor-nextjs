@@ -210,6 +210,9 @@ export default async function Dubai({
 									formId="k6czEex6PZdfeLpophBR"
 									formHeight={1445}
 									title="3. Formulario - Web Dubai"
+									titleCard={dict.forms.home.title}
+									subtitleCard={dict.forms.home.subtitle}
+									descriptionCard={dict.forms.home.description}
 								/>
 							</div>
 						</div>
