@@ -12,7 +12,7 @@ jQuery(document).ready(function() {
   // --- START JAVASCRIPT FOR CALCULATOR ---
 
   // Cuando el offcanvasNavbar está visible y se hace click en un nav-link, cerrar el offcanvas
-  jQuery('#offcanvasNavbar .nav-link').on('click.closeOffcanvas', function () {
+  jQuery('#offcanvasNavbar .nav-link, #offcanvasNavbar .dropdown-item').on('click.closeOffcanvas', function () {
     // Solo cerrar si NO es un dropdown-toggle
     if (!jQuery(this).hasClass('dropdown-toggle')) {
       const offcanvasEl = document.getElementById('offcanvasNavbar');
