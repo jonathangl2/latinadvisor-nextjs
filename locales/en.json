@@ -24,6 +24,32 @@
       "description_option_3":"We will help you with everything, starting from school enrolment, visa documentation, course, visa and insurance payments, travel and accommodation assistance, job-search tips, and more.",
       "description_option_4":"In addition, you will be invited to all our events in Australia: study, recreational and migration events."
     },
+    "australia":{
+      "title_caption": "Study and Work in Australia",
+      "subtitle_caption": "Your Future Starts Here",
+      "description": "Australia is one of the most popular destinations for international students seeking high-quality education, real job opportunities, and pathways to permanent migration. With vibrant coastal cities, a stable economy, and breathtaking natural landscapes, living in Australia is much more than an adventure — it’s an investment in your future.",
+      "cta_caption":"Book Your Free Virtual Consultation!",
+      "courses_title":"Wide Range of Academic Programs in Australia",
+      "courses_desc":"Australia offers a diverse selection of high-quality academic programs tailored to your interests, goals, and English proficiency level:",
+      "courses": {
+        "course_1": "English Courses:",
+        "course_1_child":{
+          "list1":"General English",
+          "list2":"Business English",
+          "list3":"IELTS, Cambridge, and PTE Exam Preparation",
+          "list4":"English for Academic Purposes (EAP)"
+        },
+        "course_2": "Vocational Education and Training (VET):",
+        "course_2_child":{
+          "list1":"Certificates and Diplomas"
+        },
+        "course_3": "Higher Education:",
+        "course_3_child":{
+          "list1":"Bachelor’s Degrees",
+          "list2":"Master’s Degrees"
+        }
+      }
+    },
     "about": {
       "title": "About Us"
     }

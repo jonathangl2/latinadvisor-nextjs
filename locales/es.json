@@ -24,6 +24,32 @@
       "description_option_3":"Te ayudamos con la visa, el college, acompañamiento, el seguro médico, tips para conseguir trabajo, etc.",
       "description_option_4":"Además, te invitamos a todos nuestros eventos educativos y recreativo en Australia o Dubái."
     },
+    "australia":{
+      "title_caption": "Estudiar y Trabajar en Australia",
+      "subtitle_caption": "Tu Futuro Empieza Aquí",
+      "description":"Australia es uno de los destinos más populares para estudiantes internacionales que buscan una experiencia académica de calidad, oportunidades laborales reales y opciones de migrar de forma permanente. Con ciudades costeras vibrantes, una economía estable y paisajes naturales incomparables, vivir en Australia es mucho más que una aventura: es una inversión en tu futuro.",
+      "cta_caption":"¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!",
+      "courses_title":"Amplía Oferta académica en Australia",
+      "courses_desc":"Australia ofrece una gran variedad de programas académicos de alta calidad, según tus intereses, metas y nivel de inglés:",
+      "courses": {
+        "course_1": "Cursos de inglés:",
+        "course_1_child":{
+          "list1":"Inglés general",
+          "list2":"Inglés para negocios",
+          "list3":"Preparación para exámenes IELTS, Cambridge, PTE",
+          "list4":"Inglés con propósitos académicos (EAP)"
+        },
+        "course_2": "Programas técnicos Vocacionales (VET):",
+        "course_2_child":{
+          "list1":"Certificados y Diplomas"
+        },
+        "course_3": "Educación superior:",
+        "course_3_child":{
+          "list1":"Higher Education (Bachelor’s)",
+          "list2":"Maestrías (Master’s)"
+        }
+      }
+    },
     "about": {
       "title": "Nosotros"
     }

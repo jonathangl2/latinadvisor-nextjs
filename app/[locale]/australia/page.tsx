@@ -33,16 +33,16 @@ export default async function Australia({
 				imageSrc={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja.webp")}
 				imageSrcResponsive={getAssetUrl("/assets/images/australia/australia-vive-estudia-y-trabaja-responsive.webp")}
 				videoSrc="https://www.youtube.com/embed/b2rIxmDX2HA?si=U7v_GBW7vKiBh9Mg"
-				title="Estudiar y Trabajar en Australia"
-				subtitle="Tu Futuro Empieza Aquí"
+				title={dict.pages.australia.title_caption}
+				subtitle={dict.pages.australia.subtitle_caption}
 			/>
 			
 			<section className="section-australia container-fluid">
 				<section className="container">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-11 mt-lg-3 py-lg-5 section-australia_contentCta">
-							<p className="">Australia es uno de los destinos más populares para estudiantes internacionales que buscan una experiencia académica de calidad, oportunidades laborales reales y opciones de migrar de forma permanente. Con ciudades costeras vibrantes, una economía estable y paisajes naturales incomparables, vivir en Australia es mucho más que una aventura: es una inversión en tu futuro.</p>
-							<a href="#contactForm" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+							<p className="">{dict.pages.australia.description}</p>
+							<a href="#contactForm" className="btn scrolling">{dict.pages.australia.cta_caption}</a>
 						</div>
 					</div>
 				</section>
@@ -54,7 +54,7 @@ export default async function Australia({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-lg-4">
-							<h2 className="section-australia_title text-center text-uppercase mb-4">Amplía Oferta académica en Australia</h2>
+							<h2 className="section-australia_title text-center text-uppercase mb-4">{dict.pages.australia.courses_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10 my-4">
 							<div className="row d-flex justify-content-between align-items-center">
@@ -65,28 +65,28 @@ export default async function Australia({
 								<div className="col-12 col-lg-6 ps-lg-5 section-australia_courses order-0 order-lg-1">
 									<div className="row">
 										<div className="col-12">
-											<p className="mb-3">Australia ofrece una gran variedad de programas académicos de alta calidad, según tus intereses, metas y nivel de inglés:</p>
+											<p className="mb-3">{dict.pages.australia.courses_desc}</p>
 										</div>
 										<div className="col-12">
-											<h3 className="bg-green-2 mt-4 mb-3 p-3">Cursos de inglés:</h3>
+											<h3 className="bg-green-2 mt-4 mb-3 p-3">{dict.pages.australia.courses.course_1}</h3>
 											<ul className="mb-3">
-												<li>Inglés general</li>
-												<li>Inglés para negocios</li>
-												<li>Preparación para exámenes IELTS, Cambridge, PTE</li>
-												<li>Inglés con propósitos académicos (EAP)</li>
+												<li>{dict.pages.australia.courses.course_1_child.list1}</li>
+												<li>{dict.pages.australia.courses.course_1_child.list2}</li>
+												<li>{dict.pages.australia.courses.course_1_child.list3}</li>
+												<li>{dict.pages.australia.courses.course_1_child.list4}</li>
 											</ul>
 										</div>
 										<div className="col-12">
-											<h3 className="bg-green-2 mt-4 mb-3 p-3">Programas técnicos Vocacionales (VET):</h3>
+											<h3 className="bg-green-2 mt-4 mb-3 p-3">{dict.pages.australia.courses.course_2}</h3>
 											<ul className="mb-3">
-												<li>Certificados y Diplomas</li>
+												<li>{dict.pages.australia.courses.course_2_child.list1}</li>
 											</ul>
 										</div>
 										<div className="col-12">
-											<h3 className="bg-green-2 mt-4 mb-3 p-3">Educación superior:</h3>
+											<h3 className="bg-green-2 mt-4 mb-3 p-3">{dict.pages.australia.courses.course_3}</h3>
 											<ul className="mb-4">
-												<li>Higher Education (Bachelor’s)</li>
-												<li>Maestrías (Master’s)</li>	
+												<li></li>
+												<li></li>	
 											</ul>
 										</div>
 										<div className="col-12">
