@@ -17,7 +17,7 @@ export default async function LocaleLayout({
 
   return (
     <>
-      <HeaderServer />
+      <HeaderServer locale={locale} />
       <main>{children}</main>
       <Footer locale={locale} />
     </>

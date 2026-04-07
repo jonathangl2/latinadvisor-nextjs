@@ -2,7 +2,28 @@
   "nav": {
     "home": "Inicio",
     "destinations": "Destinos",
-    "about": "Nosotros"
+    "services": "Servicios",
+    "migration_processes": "Procesos Migratorios y otras Visas",
+    "resources": "Recursos",
+    "about_us": "Nosotros",
+    "contact": "Contáctanos",
+    "services_dropdown": {
+      "study_visa": "Renovación de visa de estudiante",
+      "migration_visa": "Procesos Migratorios",
+      "workandholiday": "Work and Holiday Visa"
+    },
+    "destinations_dropdown": {
+      "australia": "Australia",
+      "dubai": "Dubái"
+    },
+    "resources_dropdown": {
+      "blog": "Blog",
+      "ebooks": "Ebooks y guías",
+      "events": "Eventos",
+      "testimonials": "Testimonios",
+      "podcast": "Podcast",
+      "promotions": "Promociones"
+    }
   },
   "pages":{
     "home": {

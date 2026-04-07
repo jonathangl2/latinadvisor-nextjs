@@ -452,6 +452,8 @@ body {
                 }
             }
             .caption {
+                top: 50%;
+                bottom: auto;
                 h1 {
                     color: vars.$color-blue-dark-5; 
                     @media #{vars.$m992} {

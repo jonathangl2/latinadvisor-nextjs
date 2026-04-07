@@ -214,8 +214,7 @@ section#internal_banner {
 .container {
     &-queEstudiar,
     &-magic-offer,
-    &-landing-page,
-    &-ebooksGuias {
+    &-landing-page{
         margin-top: 3.5rem;
         @media #{vars.$m1024} {
             margin-top: 4.1rem;

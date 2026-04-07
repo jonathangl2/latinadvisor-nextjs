@@ -3,9 +3,11 @@
 import Link from 'next/link';
 import { getAssetUrl } from '@/lib/url';
 import { usePathname, useParams } from 'next/navigation';
+import { getDictionary } from '@/lib/i18n';
 
 type Props = {
   migrationProcesses: any[];
+  dict:any;
 };
 
 const languages = [
@@ -55,7 +57,7 @@ const langHtml = () => {
     );
 };
 
-export default function HeaderClient({ migrationProcesses }: Props) {
+export default function HeaderClient({ migrationProcesses, dict }: Props) {
   
   const pathname = usePathname();
   const { locale } = useParams();
@@ -65,7 +67,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
 
   return (
     <header id="principal_header">
-      <nav id="principal_navbar" className="navbar navbar_v3 navbar-expand-lg navbar-primary py-0 align-items-lg-stretch">
+      <nav id="principal_navbar" className="navbar navbar_v3 navbar-expand-lg navbar-primary py-2 py-md-0 align-items-lg-stretch">
         
         <Link className="navbar-brand py-0 d-flex align-items-center" href={localePath("/")}>
           <img 
@@ -79,7 +81,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
         <div className="collapse navbar-collapse d-none d-lg-flex col-lg-9" id="">
           <ul className="navbar-nav ms-auto align-items-lg-stretch principal-menu me-2">
             <li className="nav-item">
-              <Link className="nav-link" href={localePath("/")}>Inicio</Link>
+              <Link className="nav-link" href={localePath("/")}>{dict.nav.home}</Link>
             </li>
             <li className="nav-item dropdown">
                 <a
@@ -90,7 +92,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Destinos
+                  {dict.nav.destinations}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="destinosDropdown">
                   {[
@@ -120,13 +122,13 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Servicios
+                  {dict.nav.services}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="serviciosDropdown">
                   {[
                     {
                       url: localePath("/australia"),
-                      title: "ESTUDIAR EN AUSTRALIA",
+                      title: dict.nav.services_dropdown.study_visa,
                     },
                     // {
                     //   url: localePath("/dubai"),
@@ -134,15 +136,15 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                     // },
                     {
                       url: localePath("/australia/renovaciondevisa"),
-                      title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
+                      title: dict.nav.services_dropdown.study_visa,
                     },
                     {
                       url: localePath("/australia/migration"),
-                      title: "PROCESOS MIGRATORIOS",
+                      title: dict.nav.services_dropdown.migration_visa,
                     },
                     {
                       url: localePath("/australia/workandholiday"),
-                      title: "WORK AND HOLIDAY VISA",
+                      title: dict.nav.services_dropdown.workandholiday,
                     }
                   ].map((item, i) => (
                     <li key={i}>
@@ -162,7 +164,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Procesos migratorios y otras visas
+                  {dict.nav.migration_processes}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="procesosDropdown">
                   { migrationProcesses.map((item:any, i:number) => (
@@ -183,33 +185,33 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Recursos
+                  {dict.nav.resources}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="recursosDropdown">
                   {[
                     // {
                     //   url: localePath("/blog"),
-                    //   title: "blog",
+                    //   title: dict.nav.resources_dropdown.blog,
                     // },
-                    // {
-                    //   url: localePath("/ebooks-guias"),
-                    //   title: "ebooks y guías",
-                    // },
+                    {
+                      url: localePath("/ebooks-guias"),
+                      title: dict.nav.resources_dropdown.ebooks,
+                    },
                     // {
                     //   url: localePath("/eventos"),
-                    //   title: "eventos",
+                    //   title: dict.nav.resources_dropdown.events,
                     // },
                     // {
                     //   url: localePath("/testimonios"),
-                    //   title: "testimonios",
+                    //   title: dict.nav.resources_dropdown.testimonials,
                     // },
                     {
                       url: localePath("/podcast"),
-                      title: "podcast",
+                      title: dict.nav.resources_dropdown.podcast
                     },
                     // {
                     //   url: localePath("/promociones"),
-                    //   title: "promociones",
+                    //   title: dict.nav.resources_dropdown.promotions,
                     // }
                   ].map((item, i) => (
                     <li key={i}>
@@ -221,10 +223,10 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                 </ul>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
+              <Link className="nav-link" href={localePath("/conocenos")}>{dict.nav.about_us}</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href={localePath("/contactanos")}>Contáctanos</Link>
+              <Link className="nav-link" href={localePath("/contactanos")}>{dict.nav.contact}</Link>
             </li>
           </ul>
           
@@ -244,7 +246,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
           <div className="offcanvas-body">
             <ul className="navbar-nav mx-auto align-items-lg-stretch principal-menu">
               <li className="nav-item">
-                <Link className="nav-link" href={localePath("/")}>Inicio</Link>
+                <Link className="nav-link" href={localePath("/")}>{dict.nav.home}</Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -255,7 +257,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Destinos
+                  {dict.nav.destinations}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="destinosDropdownResp">
                   {[
@@ -288,13 +290,13 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Servicios
+                  {dict.nav.services}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="serviciosDropdownResp">
                   {[
                     {
                       url: localePath("/australia"),
-                      title: "ESTUDIAR EN AUSTRALIA",
+                      title: dict.nav.services_dropdown.study_visa,
                     },
                     // {
                     //   url: localePath("/dubai"),
@@ -302,15 +304,15 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                     // },
                     {
                       url: localePath("/australia/renovaciondevisa"),
-                      title: "RENOVACIÓN DE VISA DE ESTUDIANTE",
+                      title: dict.nav.services_dropdown.study_visa,
                     },
                     {
                       url: localePath("/australia/migration"),
-                      title: "PROCESOS MIGRATORIOS",
+                      title: dict.nav.services_dropdown.migration_visa,
                     },
                     {
                       url: localePath("/australia/workandholiday"),
-                      title: "WORK AND HOLIDAY VISA",
+                      title: dict.nav.services_dropdown.workandholiday,
                     }
                   ].map((item, i) => (
                     <li key={i}>
@@ -331,7 +333,7 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Procesos migratorios y otras visas
+                  {dict.nav.migration_processes}
                 </a>
                 <ul className="dropdown-menu" aria-labelledby="procesosDropdownResp">
                   { migrationProcesses.map((item:any, i:number) => (
@@ -344,12 +346,58 @@ export default function HeaderClient({ migrationProcesses }: Props) {
                 </ul>
               </li>
 
+              <li className="nav-item dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  id="recursosDropdownResp"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {dict.nav.resources}
+                </a>
+                <ul className="dropdown-menu" aria-labelledby="recursosDropdownResp">
+                  {[
+                    // {
+                    //   url: localePath("/blog"),
+                    //   title: dict.nav.resources_dropdown.blog,
+                    // },
+                    {
+                      url: localePath("/ebooks-guias"),
+                      title: dict.nav.resources_dropdown.ebooks,
+                    },
+                    // {
+                    //   url: localePath("/eventos"),
+                    //   title: dict.nav.resources_dropdown.events,
+                    // },
+                    // {
+                    //   url: localePath("/testimonios"),
+                    //   title: dict.nav.resources_dropdown.testimonials,
+                    // },
+                    {
+                      url: localePath("/podcast"),
+                      title: dict.nav.resources_dropdown.podcast
+                    },
+                    // {
+                    //   url: localePath("/promociones"),
+                    //   title: dict.nav.resources_dropdown.promotions,
+                    // }
+                  ].map((item, i) => (
+                    <li key={i}>
+                      <Link href={item.url} className="dropdown-item">
+                        {item.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </li>
 
               <li className="nav-item">
-                <Link className="nav-link" href={localePath("/conocenos")}>Nosotros</Link>
+                <Link className="nav-link" href={localePath("/conocenos")}>{dict.nav.about_us}</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href={localePath("/contactanos")}>Contáctanos</Link>
+                <Link className="nav-link" href={localePath("/contactanos")}>{dict.nav.contact}</Link>
               </li>
             </ul>
             

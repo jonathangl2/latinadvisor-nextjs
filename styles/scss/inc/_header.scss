@@ -40,12 +40,15 @@ header {
                 padding-right: 2rem;
             }
             .logo-image {
-                width: 180px;
+                width: 200px;
                 @media #{vars.$m1440} {
                     width: 270px;
                 }
                 @media #{vars.$m1366} {
                     width: 220px;
+                }
+                @media #{vars.$m1024} {
+                    width: 180px;
                 }
             }
         }
