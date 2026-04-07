@@ -128,7 +128,7 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
                   {[
                     {
                       url: localePath("/australia"),
-                      title: dict.nav.services_dropdown.study_visa,
+                      title: dict.nav.services_dropdown.study_australia,
                     },
                     // {
                     //   url: localePath("/dubai"),
@@ -136,7 +136,7 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
                     // },
                     {
                       url: localePath("/australia/renovaciondevisa"),
-                      title: dict.nav.services_dropdown.study_visa,
+                      title: dict.nav.services_dropdown.renovation_visa,
                     },
                     {
                       url: localePath("/australia/migration"),
@@ -296,7 +296,7 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
                   {[
                     {
                       url: localePath("/australia"),
-                      title: dict.nav.services_dropdown.study_visa,
+                      title: dict.nav.services_dropdown.study_australia,
                     },
                     // {
                     //   url: localePath("/dubai"),
@@ -304,7 +304,7 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
                     // },
                     {
                       url: localePath("/australia/renovaciondevisa"),
-                      title: dict.nav.services_dropdown.study_visa,
+                      title: dict.nav.services_dropdown.renovation_visa,
                     },
                     {
                       url: localePath("/australia/migration"),
