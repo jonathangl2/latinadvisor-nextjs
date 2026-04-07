@@ -82,7 +82,7 @@ function normalizeVisa(data: any) {
   return {
     slug: data.slug,
     title: data.title,
-    custom_title: data.custom_title,
+    custom_title: data.title_custom,
     description: data.description,
     formSrc: data.formSrc,
     formName: data.formName,
@@ -313,10 +313,10 @@ export default async function MigrationProcessesPage({ params }: { params: Promi
 
         
         { visa?.formSrc && visa?.formName && visa?.formId && visa?.formHeight && (
-
+          
           <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
               <div className="row d-flex justify-content-center">
-                  <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
+                  <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5">
                       <h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Quieres Aplicar <br />a este tipo de visa?</h2>
                   </div>
                   <div className="col-11 col-lg-10 pb-5">

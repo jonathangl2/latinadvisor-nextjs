@@ -41,7 +41,7 @@ export default async function WorkAndHolidayPage({
 							className="img-fluid w-100 d-block d-md-none"
 						/>
 						<div className="caption">
-							<h1>Work and Holiday <br/>Australia: <span className="d-inline d-md-block mt-md-3">Requisitos, beneficios y cómo aplicar</span></h1>
+							<h1>Work and Holiday <br/>Australia: <span className="d-block mt-3">Requisitos, beneficios y cómo aplicar</span></h1>
 						</div>
 					</div>
 				</div>

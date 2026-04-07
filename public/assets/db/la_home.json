@@ -2389,24 +2389,6 @@
         "migration_team": {
             "au":[
                 {
-                    "name": "Juan Carlos Bedoya",
-                    "role": "Cofundador y Agente de Migración Principal",
-                    "image": "/assets/images/australia/migration/team/juan-carlos.png",
-                    "description": "Ingeniero y agente migratorio — dos mundos completamente diferentes, pero que me apasionan por igual. Como ingeniero, trabajó tiempo completo en la intersección de inteligencia artificial y salud. Como agente migratorio, cofundé Latin Advisor porque sé lo que se siente llegar a un país nuevo sin saber por dónde empezar. Empezamos sirviendo a la comunidad hispanohablante, pero nuestra misión crece con cada cliente que confía en nosotros. Me especializo en patrocinios de empleador, residencia permanente, apelaciones ante el ART y casos complejos."
-                },
-                {
-                    "name": "Christina Toftegaard",
-                    "role": "Agente de migración",
-                    "image": "/assets/images/australia/migration/team/christina.png",
-                    "description": "Inmigrante multilingüe que ofrece consultas de inmigración en inglés y danés. Con una diversa y sólida formación cultural europea/escandinava, y residiendo permanentemente en Australia desde 2008, me apasiona navegar el complejo marco legal australiano y apoyar a individuos, familias y empresas a lo largo de todo su proceso migratorio."
-                },
-                {
-                    "name": "Renatto Lopez",
-                    "role": "Agente de migración",
-                    "image": "/assets/images/australia/migration/team/renatto.png",
-                    "description": "Soy Agente Migratorio con formación en la University of Technology Sydney (UTS) y experiencia trabajando con procesos de Skills Assessment ante Engineers Australia. Asesoro a clientes en sus procesos migratorios hacia Australia con un enfoque claro, estratégico y orientado a resultados. Me caracterizo por ser una persona directa, profesional y enfocada en encontrar soluciones, brindando asesoría confiable y bien estructurada para ayudar a cada cliente a tomar decisiones informadas sobre su futuro en Australia."
-                },
-                {
                     "name": "Zoe Nuñez",
                     "role": "Líder del equipo de Visas de Estudiante y Paralegal de Migración",
                     "image": "/assets/images/australia/migration/team/zoe.png",
@@ -2447,6 +2429,24 @@
                     "role": "Gerente de Desarrollo de Negocios ",
                     "image": "/assets/images/australia/migration/team/martha.png",
                     "description": "En LatinAdvisor coordino las cotizaciones, contratos y aspectos comerciales de los procesos migratorios, acompañando a los clientes en cada etapa. Disfruto transformar objetivos en planes claros y alcanzables, asegurando que cada proceso tenga una estrategia bien definida. Mi enfoque es brindar claridad, organización y confianza para que cada cliente avance con seguridad en su camino migratorio."
+                },
+                {
+                    "name": "Juan Carlos Bedoya",
+                    "role": "Cofundador y Agente de Migración Principal",
+                    "image": "/assets/images/australia/migration/team/juan-carlos.png",
+                    "description": "Ingeniero y agente migratorio — dos mundos completamente diferentes, pero que me apasionan por igual. Como ingeniero, trabajó tiempo completo en la intersección de inteligencia artificial y salud. Como agente migratorio, cofundé Latin Advisor porque sé lo que se siente llegar a un país nuevo sin saber por dónde empezar. Empezamos sirviendo a la comunidad hispanohablante, pero nuestra misión crece con cada cliente que confía en nosotros. Me especializo en patrocinios de empleador, residencia permanente, apelaciones ante el ART y casos complejos."
+                },
+                {
+                    "name": "Christina Toftegaard",
+                    "role": "Agente de migración",
+                    "image": "/assets/images/australia/migration/team/christina.png",
+                    "description": "Inmigrante multilingüe que ofrece consultas de inmigración en inglés y danés. Con una diversa y sólida formación cultural europea/escandinava, y residiendo permanentemente en Australia desde 2008, me apasiona navegar el complejo marco legal australiano y apoyar a individuos, familias y empresas a lo largo de todo su proceso migratorio."
+                },
+                {
+                    "name": "Renatto Lopez",
+                    "role": "Agente de migración",
+                    "image": "/assets/images/australia/migration/team/renatto.png",
+                    "description": "Soy Agente Migratorio con formación en la University of Technology Sydney (UTS) y experiencia trabajando con procesos de Skills Assessment ante Engineers Australia. Asesoro a clientes en sus procesos migratorios hacia Australia con un enfoque claro, estratégico y orientado a resultados. Me caracterizo por ser una persona directa, profesional y enfocada en encontrar soluciones, brindando asesoría confiable y bien estructurada para ayudar a cada cliente a tomar decisiones informadas sobre su futuro en Australia."
                 }
             ]
         }

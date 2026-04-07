@@ -37,13 +37,6 @@ export default async function MigrationPage({
                         {
                             desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
                             mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
-                            title: "Holbein Yeltsein Garcia Engativa",
-                            description: "Después de una negacion de visa de estudiante con otra agencia, estaba realmente desanimado y no sabía qué hacer. Fue entonces que contacté a LatinAdvisor, y desde el primer momento sentí que estaba en las mejores manos.",
-                            image: "/assets/images/australia/migration/migration-testimonio-holbein-yeltsein-garcia-engativa.png",
-                        },
-                        {
-                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
-                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Carlos Enrique Serrano Pena",
                             description: "Mi experiencia con LatinAdvisor ha sido muy positiva desde el inicio. Me Han acompañaron durante todo mi proceso con la visa 407, Vetassess, y visa 482. siempre resolviendo mis dudas de manera clara y rápida.",
                             image: "/assets/images/australia/migration/migration-testimonio-carlos-enrique-serrano-pena.png",
@@ -51,8 +44,15 @@ export default async function MigrationPage({
                         {
                             desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
                             mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
+                            title: "Holbein Yeltsein Garcia Engativa",
+                            description: "Después de una negacion de visa de estudiante con otra agencia, estaba realmente desanimado y no sabía qué hacer. Fue entonces que contacté a LatinAdvisor, y desde el primer momento sentí que estaba en las mejores manos.",
+                            image: "/assets/images/australia/migration/migration-testimonio-holbein-yeltsein-garcia-engativa.png",
+                        },
+                        {
+                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
+                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Ramón Iglesias",
-                            description: "Mi aplicación para la Sponsorship 482 en Australia fuera rápida y eficaz. Su equipo me acompañó en cada paso con gran profesionalidad y conocimiento de las regulaciones australianas. Gracias a ellos, hoy vivo y trabajo en Australia.",
+                            description: "Mi aplicación para la Sponsorship 482 en Australia fue rápida y eficaz. Su equipo me acompañó en cada paso con gran profesionalidad y conocimiento de las regulaciones australianas. Gracias a ellos, hoy vivo y trabajo en Australia.",
                             image: "/assets/images/australia/migration/migration-testimonio-ramon-iglesias.png",
                         }
                     ]}

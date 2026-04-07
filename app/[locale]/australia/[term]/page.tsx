@@ -6,7 +6,7 @@ import { console } from "inspector";
 import fs from "fs";
 import path from "path";
 import { Metadata } from "next";
-import { locales, type Locale } from '@/lib/i18n';
+import { getDictionary, locales, type Locale } from '@/lib/i18n';
 
 
 
@@ -80,6 +80,7 @@ export default async function AustraliaCityPage({
   }) {
 
   const { locale, term } = await params;
+  const dict = await getDictionary(locale);
   const ciudad = getCiudadData(term);
 
   if (!ciudad) {
@@ -109,7 +110,7 @@ export default async function AustraliaCityPage({
                       />
                     </div>
                     <div className="d-block d-sm-none col-12 col-lg-11 section-australia_contentCta d-flex justify-content-center my-4">
-                      <a href={getAssetUrl("/australia/#contactForm")} className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+                      <a href={getAssetUrl("/australia/#contactForm")} className="btn">{dict.pages.australia.cta_caption}</a>
                     </div>
                   </div>
                 </div>
