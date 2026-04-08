@@ -7,6 +7,7 @@ import Link from "next/link";
 import Script from "next/script";
 
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
+import { loadHomeJson } from "@/lib/loadJson";
 
 export const generateStaticParams = generateLocaleParams;
 
@@ -27,6 +28,9 @@ export default async function Australia({
   	const dict = await getDictionary(locale);
  	const localePath = (path: string) => getAssetUrl(path, locale);
 
+	const data = loadHomeJson();
+	const beneficiosAustralia = data.data.benefits.australia;
+	
 	return (
 		<>
 			<BannerVideo
@@ -48,7 +52,7 @@ export default async function Australia({
 				</section>
 			</section>
 
-			<CarouselBeneficios title="5 Beneficios Clave de Estudiar en Australia" location="australia" />
+			<CarouselBeneficios title={dict.pages.australia.benefits_title} location="australia" data={beneficiosAustralia} dict={dict}/>
 
 			<section className="section-australia container-fluid">
 				<section className="container py-3 py-lg-5">
@@ -105,12 +109,12 @@ export default async function Australia({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
-							<h2 className="section-australia_title text-center text-uppercase mb-4">Descubre las Ciudades Más Populares para Estudiantes</h2>
+							<h2 className="section-australia_title text-center text-uppercase mb-4">{dict.pages.australia.cities_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10">
-							<p className="mb-3">Estudia en las ciudades más populares y acogedoras para extranjeros, Sydney, Melbourne, Brisbane, Adelaide, Gold Coast, Perth y Byron Bay. </p>
-							<p className="mb-3">Estas ciudades ofrecen un estilo de vida único, cercanía al mar, clima ideal, excelente transporte y comunidad estudiantil multicultural.</p>
-							<p className="">Dale clic a la ciudad para ampliar más la información: </p>
+							<p className="mb-3">{dict.pages.australia.cities_desc1}</p>
+							<p className="mb-3">{dict.pages.australia.cities_desc2}</p>
+							<p className="">{dict.pages.australia.cities_desc3}</p>
 						</div>
 					</div>
 				</section>
@@ -135,13 +139,13 @@ export default async function Australia({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 mb-4">
-							<h2 className="section-australia_title text-center  text-uppercase mb-4">Requisitos Esenciales para tu Visa de Estudiante en Australia</h2>
+							<h2 className="section-australia_title text-center  text-uppercase mb-4">{dict.pages.australia.requirements_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10">
 							<div className="row">
 								<div className="col-12 mb-3 information">
-									<p className="mb-4">El gobierno australiano busca mejorar constantemente el proceso de visas, enfocándose en que los solicitantes tengan una intención genuina de estudiar. Por eso, evalúan factores como tu edad, historial académico y laboral, recursos económicos y la calidad de la institución educativa que elijas.</p>
-									<h3 className="mb-4">Lista de requisitos:</h3>
+									<p className="mb-4">{dict.pages.australia.requirements_desc}</p>
+									<h3 className="mb-4">{dict.pages.australia.requirements_subtitle}</h3>
 								</div>
 
 								<div className="col-12 col-md-6 ps-lg-4 information">
@@ -151,8 +155,8 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-carta-aceptacion"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>1. Carta de Aceptación (CoE):</strong></h5>
-											<p className="mb-3">Debes estar inscrito en un curso aprobado por el gobierno australiano (CRICOS) y recibir la carta de aceptación oficial (CoE). Esta carta es obligatoria para aplicar a la visa.</p> 
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list1_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list1_desc}</p> 
 										</div>
 									</div>
 
@@ -161,8 +165,8 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-seguro-medico-internacional"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>2. Seguro médico internacional:</strong></h5>
-											<p className="mb-3">Que te ofrecerá asistencia médica con cobertura específica según el elegido.</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list2_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list2_desc}</p>
 										</div>
 									</div>
 
@@ -171,8 +175,8 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-carta-de-intencion"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>3. Carta de intención (GTE):</strong></h5>
-											<p className="mb-3">Que te permite exponer tu intención real de ser un estudiante temporal en Australia.</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list3_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list3_desc}</p>
 										</div>
 									</div>
 
@@ -181,8 +185,8 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-pasaporte-vigente"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>4. Pasaporte vigente:</strong></h5>
-											<p className="mb-3">con vigencia mínimo de 6 meses.</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list4_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list4_desc}</p>
 										</div>
 									</div>
 
@@ -191,8 +195,8 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-examen-medico"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>5. Examen médico:</strong></h5>
-											<p className="mb-3">(según país de origen). Dependiendo de tu nacionalidad o tiempo de estadía, el gobierno puede solicitar exámenes médicos antes de otorgar la visa.</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list5_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list5_desc}</p>
 										</div>
 									</div>	
 								
@@ -206,8 +210,8 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-carta-aceptacion"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>6. Traducciones oficiales:</strong></h5>
-											<p className="mb-3">De toda tu documentación a idioma inglés.</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list6_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list6_desc}</p>
 										</div>
 									</div>
 
@@ -216,26 +220,23 @@ export default async function Australia({
 											<i className="icon-requirements icon-requisitos-fondos-economicos"></i>
 										</div>
 										<div className="col">
-											<h5 className="mb-1"><strong>7. Prueba de fondos económicos:</strong></h5>
-											<p className="mb-3">Según tu nacionalidad, podrías tener que demostrar fondos adicionales al valor del curso para cubrir tu estadía en Australia. Este dinero solo debe estar disponible hasta que aprueben tu visa, no es un gasto real que debas pagar.</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list7_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list7_desc}</p>
 										</div>
 									</div>
 
 									<div className="row">
 										<div className="col">
-											<h5 className="mb-1"><strong>¿Cuánto dinero necesitas demostrar?</strong></h5>
-											<p className="mb-3">Depende de la duración de tu curso:</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list8_ttl}</strong></h5>
+											<p className="mb-3">{dict.pages.australia.requirements_list8_desc}</p>
 											<ul className="mb-3">
-												<li>3 meses: aprox. AUD $14,400</li>
-												<li>6 meses: aprox. AUD $25,600</li>
-												<li>12 meses: aprox. AUD $37,200</li>
+												<li>{dict.pages.australia.requirements_list8_desc_li1}</li>
+												<li>{dict.pages.australia.requirements_list8_desc_li2}</li>
+												<li></li>
 											</ul>
 
-											<h5 className="mb-1"><strong>¿Cómo puedes demostrarlo?</strong></h5>
-											<p className="mb-3">
-												✅ Con tus extractos bancarios (últimos 3 meses)<br/>
-												✅ O mediante un patrocinador familiar que respalde tus gastos
-											</p>
+											<h5 className="mb-1"><strong>{dict.pages.australia.requirements_list9_ttl}</strong></h5>
+											<p className="mb-3" dangerouslySetInnerHTML={{ __html: dict.pages.australia.requirements_list9_desc }} />
 										</div>
 									</div>
 									
@@ -253,7 +254,7 @@ export default async function Australia({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 mb-lg-4">
-							<h2 className="section-australia_title text-white text-center  text-uppercase mb-4">Historias de Éxito de <br/>Nuestros Estudiantes</h2>
+							<h2 className="section-australia_title text-white text-center  text-uppercase mb-4" dangerouslySetInnerHTML={{ __html: dict.pages.australia.success_title }} />
 						</div>
 						<div className="col-12 mb-lg-4 section-australia_reputation">
 
@@ -274,7 +275,7 @@ export default async function Australia({
 			<section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
 				<div className="row d-flex justify-content-center">
 					<div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
-						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Listo para Impulsar tu <span className="d-inline-block d-lg-block fw-bold">Futuro en Australia?</span></h2>
+						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">{dict.pages.australia.cta_form_l1} <span className="d-inline-block d-lg-block fw-bold">{dict.pages.australia.cta_form_l2}</span></h2>
 					</div>
 					<div className="col-11 col-lg-10 pb-5">
 						<div className="row d-flex justify-content-center">
@@ -287,7 +288,7 @@ export default async function Australia({
 									title="2. Formulario - Web Australia"
 									titleCard={dict.forms.home.title}
 									subtitleCard={dict.forms.home.subtitle}
-									descriptionCard={dict.forms.home.description}
+									descriptionCard={dict.pages.australia.desc_form}
 								/>
 							</div>
 						</div>

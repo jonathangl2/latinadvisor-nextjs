@@ -26,7 +26,7 @@
                 {
                     "img_bg": "img-sandrita-bg.webp",
                     "img_front": "img-sandrita.webp",
-                    "name_team": "Sandrita",
+                    "name_team": "Sandra",
                     "name_position": "Asesora estudiantil",
                     "description_team": "Es una fuerza de la naturaleza: apasionada, responsable y siempre lista para abrazar lo auténtico en la vida. Con su amor por lo artesanal, su conexión con la naturaleza y su fe inquebrantable, es la persona que todos quieren tener cerca cuando buscan inspiración, dirección o simplemente una buena conversación sobre la vida."
                 },
@@ -168,28 +168,28 @@
             "australia": [
                 {
                     "img": "https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/australia/beneficios/oportunidad-de-trabajar-legalmente.webp",
-                    "title": "1. Oportunidad de trabajar legalmente",
-                    "description": "Con la visa de estudiante, puedes trabajar hasta 24 horas semanales durante tus estudios y tiempo completo en vacaciones. Esto te permite cubrir tus gastos básicos, pagar parte de tu curso y ahorrar durante su estancia. Australia cuenta con sectores con alta demanda como: Hospitality (hotelería y turismo), Cocina y gastronomía, Childcare y aged care, IT, ingeniería, construcción, educación y más."
+                    "title": "dict.pages.australia.benefits_list1_ttl",
+                    "description": "dict.pages.australia.benefits_list1_desc"
                 },
                 {
                     "img": "https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/australia/beneficios/posibilidad-de-quedarte-despues-de-estudiar.webp",
-                    "title": "2. Posibilidad de quedarte después de estudiar",
-                    "description": "Al finalizar tu programa, podrás aplicar a una Post Graduate Visa o extender tu residencia si encuentras un empleador que esté dispuesto a patrocinarte. Hay opciones reales para quedarte en Australia de manera legal. Nosotros te ayudamos en este camino con la asesoría de nuestros agentes migratorios registrados."
+                    "title": "dict.pages.australia.benefits_list2_ttl",
+                    "description": "dict.pages.australia.benefits_list2_desc"
                 },
                 {
                     "img": "https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/australia/beneficios/educacion-de-calidad.webp",
-                    "title": "3. Educación de calidad",
-                    "description": "Australia cuenta con instituciones de inglés reconocidas internacionalmente y programas académicos enfocados en el desarrollo práctico y profesional que te abrirán puertas a nivel global."
+                    "title": "dict.pages.australia.benefits_list3_ttl",
+                    "description": "dict.pages.australia.benefits_list3_desc"
                 },
                 {
                     "img": "https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/australia/beneficios/calidad-de-vida.webp",
-                    "title": "4. Calidad de vida",
-                    "description": "Australia es uno de los países con mayor calidad de vida del mundo. Su sistema de salud, seguridad, transporte y escenarios naturales impresionantes, hacen de este un lugar ideal para vivir y estudiar."
+                    "title": "dict.pages.australia.benefits_list4_ttl",
+                    "description": "dict.pages.australia.benefits_list4_desc"
                 },
                 {
                     "img": "https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/australia/beneficios/posibilidad-de-viajar-con-tu-pareja-o-familia.webp",
-                    "title": "5. Posibilidad de viajar con tu pareja o familia",
-                    "description": "Algunos programas permiten que tu pareja obtenga también una visa con permiso de trabajo, e incluso incluir a tus hijos en edad escolar."
+                    "title": "dict.pages.australia.benefits_list5_ttl",
+                    "description": "dict.pages.australia.benefits_list5_desc"
                 }
             ],
             "dubai": [

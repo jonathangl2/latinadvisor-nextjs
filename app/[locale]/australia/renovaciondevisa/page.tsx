@@ -58,7 +58,7 @@ export default async function RenovacionPage({
 							className="img-fluid w-100 d-block d-md-none"
 						/>
 						<div className="caption">
-							<h1><div className="d-inline d-md-block">Renovación de visa </div>de estudiante en Australia</h1>
+							<h1><div className="d-inline d-md-block">{dict.pages.visarenewal.title_caption}</div>{dict.pages.visarenewal.subtitle_caption}</h1>
 						</div>
 					</div>
 				</div>
@@ -68,8 +68,8 @@ export default async function RenovacionPage({
 				<section className="container">
 					<div className="row d-flex justify-content-center py-4">
 						<div className="col-12 col-lg-10 pt-4 pb-5 section-australia_contentCta">
-							<p className="">La renovación de la visa de estudiante es la mejor opción para quedarte y seguir viviendo tu experiencia en este país lleno de oportunidades. Al extender tu estadía podrás continuar con tus estudios, trabajar legalmente hasta <strong>24 horas semanales</strong>, fortalecer tu perfil profesional y, lo más importante, abrir la puerta a <strong>nuevas oportunidades migratorias</strong>.</p>
-							<a href="#agentes" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+							<p className="" dangerouslySetInnerHTML={{ __html: dict.pages.visarenewal.description }}></p>
+							<a href="#agentes" className="btn scrolling">{dict.pages.australia.cta_caption}</a>
 						</div>
 					</div>
 				</section>
@@ -79,10 +79,10 @@ export default async function RenovacionPage({
 				<section className="container py-lg-4">
 					<div className="row d-flex justify-content-center">
 						<div className="col-12 col-lg-9 pt-4 pb-5">
-							<h2 className="section-australia_title text-center text-uppercase text-white">Cursos con los que puedes renovar tu visa de estudiante</h2>
+							<h2 className="section-australia_title text-center text-uppercase text-white">{dict.pages.visarenewal.courses_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10">
-							<p className="text-white mb-3">Renovar tu visa no es solo un trámite, es la oportunidad de elegir el camino que más te acerque a tus metas. Ahora se trata de elegir el curso que mejor se adapte a tu perfil y objetivos:</p>
+							<p className="text-white mb-3">{dict.pages.visarenewal.courses_desc}</p>
 						</div>
 						<div className="col-12 col-lg-10 my-4 section-australiaRenovacion_courses">
 							<div className="row d-flex align-items-center mb-4">
@@ -90,14 +90,14 @@ export default async function RenovacionPage({
 										<img src={getAssetUrl("/assets/images/australia/renovacion/cursos-de-ingles-renovacion-australia-min.webp")} alt="" className="img-fluid w-100 my-lg-4"/>
 								</div>
 								<div className="col-12 col-lg-6 ps-lg-5">
-									<h3 className="mt-4 mb-3">Cursos de inglés:</h3>
-									<h5 className="text-white mb-3">Es una buena opción para los estudiantes que quieren reforzar el idioma antes de avanzar a estudios vocacionales o universitarios, podrás renovar con cursos de:</h5>
+									<h3 className="mt-4 mb-3">{dict.pages.visarenewal.courses_1}</h3>
+									<h5 className="text-white mb-3">{dict.pages.visarenewal.courses_1_desc}</h5>
 									<ul className="mb-3 text-white">
-										<li>General English</li>
-										<li>English for Academic Purpose</li>
-										<li>Business English</li>
-										<li>Cambridge Certificate</li>
-										<li>IELTS preparation.</li>
+										<li>{dict.pages.visarenewal.courses_1_child.list1}</li>
+										<li>{dict.pages.visarenewal.courses_1_child.list2}</li>
+										<li>{dict.pages.visarenewal.courses_1_child.list3}</li>
+										<li>{dict.pages.visarenewal.courses_1_child.list4}</li>
+										<li>{dict.pages.visarenewal.courses_1_child.list5}</li>
 									</ul>
 								</div>
 							</div>
@@ -106,8 +106,8 @@ export default async function RenovacionPage({
 										<img src={getAssetUrl("/assets/images/australia/renovacion/cursos-vocacionales-renovacion-australia-min.webp")} alt="" className="img-fluid w-100 my-lg-4"/>
 								</div>
 								<div className="col-12 col-lg-6 ps-lg-5">
-									<h3 className="mt-4 mb-3">Cursos Vocacionales (VET):</h3>
-									<h5 className="text-white mb-3">Renovar con un curso VET, es recomendado estudiantes que ya tienen un nivel intermedio/alto de inglés y quieren especializarse en un área que, de alta demanda en el mercado laboral australiano, con posibilidades de un camino migratorio.</h5>
+									<h3 className="mt-4 mb-3">{dict.pages.visarenewal.courses_2}</h3>
+									<h5 className="text-white mb-3">{dict.pages.visarenewal.courses_2_desc}</h5>
 								</div>
 							</div>
 							<div className="row d-flex align-items-center mb-3">
@@ -115,8 +115,8 @@ export default async function RenovacionPage({
 										<img src={getAssetUrl("/assets/images/australia/renovacion/educacion-superior-renovacion-australia-min.webp")} alt="" className="img-fluid w-100 my-lg-4"/>
 								</div>
 								<div className="col-12 col-lg-6 ps-lg-5">
-									<h3 className="mt-4 mb-3">Educación superior-Postgrados:</h3>
-									<h5 className="text-white mb-3">Puedes elegir entre carreras universitarias o maestrías, todas con reconocimiento internacional. Si cuentas con un nivel de inglés alto, una maestría es una excelente opción, no solo potencia tu perfil académico y laboral, sino que también puede abrirte el camino a mejores oportunidades migratorias, incluyendo la residencia permanente.</h5>
+									<h3 className="mt-4 mb-3">{dict.pages.visarenewal.courses_3}</h3>
+									<h5 className="text-white mb-3">{dict.pages.visarenewal.courses_3_desc}</h5>
 								</div>
 							</div>
 						</div>
@@ -129,12 +129,12 @@ export default async function RenovacionPage({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-9 mb-4">
-							<h2 className="section-australia_title text-center  text-uppercase mb-4">Áreas con alta demanda laboral en Australia</h2>
+							<h2 className="section-australia_title text-center  text-uppercase mb-4">{dict.pages.visarenewal.demand_areas_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10">
 							<div className="row d-flex justify-content-center">
 								<div className="col-12 mb-3 information">
-									<h5 className="mb-4">Renovar tu visa de estudiante no solo significa seguir trabajando mientras estudias, también puede ser el primer paso para abrir opciones migratorias a futuro si eliges áreas con alta demanda en el país.</h5>
+									<h5 className="mb-4">{dict.pages.visarenewal.demand_areas_desc1}</h5>
 								</div>
 								<div className="col-12 col-lg-10 information">
 									
@@ -142,31 +142,31 @@ export default async function RenovacionPage({
 										{[
 											{
 												img: "/assets/images/australia/renovacion/ingenieria-min.webp",
-												title: "Ingenerías"
+												title: dict.pages.visarenewal.demand_areas_list1
 											},
 											{
 												img: "/assets/images/australia/renovacion/construccion-min.webp",
-												title: "Construcción y Oficios (Trade)"
+												title: dict.pages.visarenewal.demand_areas_list2
 											},
 											{
 												img: "/assets/images/australia/renovacion/tecnologia-informacion-min.webp",
-												title: "Tecnología de la Información (IT)"
+												title: dict.pages.visarenewal.demand_areas_list3
 											},
 											{
 												img: "/assets/images/australia/renovacion/salud-cuidado-del-mayor-min.webp",
-												title: "Salud y cuidado de adulto mayor"
+												title: dict.pages.visarenewal.demand_areas_list4
 											},
 											{
 												img: "/assets/images/australia/renovacion/hospitality-turismo-min.webp",
-												title: "Hospitality y Turismo"
+												title: dict.pages.visarenewal.demand_areas_list5
 											},
 											{
 												img: "/assets/images/australia/renovacion/educacion-servicios-comunicarios-min.webp",
-												title: "Educación y Servicios Comunitarios"
+												title: dict.pages.visarenewal.demand_areas_list6
 											},
 											{
 												img: "/assets/images/australia/renovacion/cocina-min.webp",
-												title: "Cocina"
+												title: dict.pages.visarenewal.demand_areas_list7
 											}
 										].map((area, idx) => (
 											<div className="col-12 col-lg-6 mb-3 mb-lg-2" key={idx}>
@@ -183,7 +183,7 @@ export default async function RenovacionPage({
 									</div>
 								</div>
 								<div className="col-12 information mt-5">
-									<h5 className="mb-4">Al renovar tu visa de estudiante puedes elegir un curso que no solo te permita seguir trabajando, sino que también te acerque a opciones de residencia permanente en Australia. Nuestro equipo te orienta en seleccionar la mejor ruta según tus metas.</h5>
+									<h5 className="mb-4">{dict.pages.visarenewal.demand_areas_desc2}</h5>
 								</div>
 							</div>
 						</div>
@@ -195,12 +195,12 @@ export default async function RenovacionPage({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-9 mb-4">
-							<h2 className="section-australia_title text-center text-uppercase mb-4">¡Agenda tu asesoría virtual o presencial sin costo!</h2>
+							<h2 className="section-australia_title text-center text-uppercase mb-4">{dict.pages.visarenewal.agents_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10 pb-5 pb-lg-0">
 							<div className="row d-flex justify-content-center">
 								<div className="col-12 col-lg-10 mb-4">
-									<h5>Selecciona una asesora:</h5>
+									<h5>{dict.pages.visarenewal.agents_desc}</h5>
 								</div>
 								<div className="col-12 col-lg-10">
 									<AgentesClient agentes={agentes} />

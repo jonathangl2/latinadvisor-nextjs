@@ -26,7 +26,7 @@ export default async function ContactoPage({
     <>
       <BannerInterno
         imageSrc={getAssetUrl("/assets/images/banners/contactanos.webp")}
-        title="CONTÁCTANOS"
+        title={dict.pages.contact_us.title_caption}
         className="internal_page"
       />
       <section className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">

@@ -27,6 +27,7 @@ export default async function Dubai({
 	
 	const data = loadHomeJson();
   	const testimoniosDubai = data.data.testimonios.dubai;
+	const beneficiosDubai = data.data.benefits.dubai;
 
 	return (
 		<>
@@ -115,7 +116,7 @@ export default async function Dubai({
 				</section>
 			</section>
 
-			<CarouselBeneficios title="5 Beneficios Exclusivos que Dubái Ofrece a Estudiantes Internacionales" location="dubai" />
+			<CarouselBeneficios title="5 Beneficios Exclusivos que Dubái Ofrece a Estudiantes Internacionales" location="dubai" data={beneficiosDubai} dict={dict}/>
 
 			<section className="section-dubai container-fluid">
 				<section className="container pt-3 py-lg-5">

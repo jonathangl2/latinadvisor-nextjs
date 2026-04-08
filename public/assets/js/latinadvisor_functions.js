@@ -449,58 +449,23 @@ let funciones = {
 
     // V2
     getTeamLatinAdvisorHome: () => {
-        
-        const htmlTeamCArousel = (data) => {
-            return `<div class="item px-5 pt-5 d-flex align-items-center">
-                <div class="card card-team">
-                    <div class="card-body">
-                        <div class="img-bg" style="background-image: url('${BASE_URL}/assets/images/conocenos/team/${data?.img_bg}');">
-                            <p>${data.description_team}</p>
-                        </div>
-                        <div class="img-front" style="background-image: url('${BASE_URL}/assets/images/conocenos/team/${data.img_front}');"></div>
-                    </div>
-                    <div class="card-footer">
-                        <h3>${data.name_team}</h3>
-                        <h4>${data.name_position}</h4>
-                    </div>
-                </div>
-            </div>`;
-        };
-
-        fetch(`${BASE_URL}/assets/db/la_home.json`).then(response => {
-            if (!response.ok) throw new Error('Network response was not ok ' + response.statusText);
-            return response.json();
-        }).then(({ data }) => {
-
-            const HTMLfinal = data.home.team.map(item => htmlTeamCArousel(item)).join("");
-            const contentElement = document.getElementById('carousel-teamLatinadvisor');
-            if (!contentElement) {
-                console.warn('⚠️ No se encontró #carousel-teamLatinadvisor');
-                return;
+        jQuery('#carousel-teamLatinadvisor').owlCarousel({
+            loop: true,
+            mouseDrag: false,
+            dots: false,
+            items: 1,
+            center: false,
+            autoplay: false,
+            autoplayTimeout: 6000,
+            autoplayHoverPause: true,
+            nav: false,
+            navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
+            responsiveClass: true,
+            responsive: {
+                0: { items: 1 },
+                720: { items: 2, dots: true, nav: true, },
+                1024: { items: 3, dots: true,  nav: true, }
             }
-
-            contentElement.innerHTML = HTMLfinal;
-
-            jQuery('#carousel-teamLatinadvisor').owlCarousel({
-                loop: true,
-                mouseDrag: false,
-                dots: false,
-                items: 1,
-                center: false,
-                autoplay: false,
-                autoplayTimeout: 6000,
-                autoplayHoverPause: true,
-                nav: false,
-                navText: ['<i class="icon icon-arrow-light-left"></i>', '<i class="icon icon-arrow-light-right"></i>'],
-                responsiveClass: true,
-                responsive: {
-                    0: { items: 1 },
-                    720: { items: 2, dots: true, nav: true, },
-                    1024: { items: 3, dots: true,  nav: true, }
-                }
-            });
-        }).catch(error => {
-            console.error('❌ Error en fetch:', error);
         });
     },
     getPostBlog:() => {
@@ -539,50 +504,25 @@ let funciones = {
         });
     },
     getBeneficios: (location) => {
-
-        const htmlBenefit = (data) => {
-            return `
-            <div class="item d-flex flex-column align-items-center  px-3">
-                <div class="card card-benefit border-0 bg-transparent">
-                    <div class="card-body d-flex flex-column align-items-center px-4 px-lg-5">
-                        <img src="${data.img}" alt="${data.title}" class="img-fluid mb-3 benefit-img" />
-                        <h3 class="text-center"><strong>${data.title}</strong></h3>
-                        <p>${data.description}</p>
-                    </div>
-                </div>
-            </div>`;
-        };
-
-        fetch(`${BASE_URL}/assets/db/la_home.json`).then((response) => response.json()).then(({ data }) => {
-            
-            const section = data.benefits[location];
-            if (!section) return console.warn(`No se encontraron beneficios para: ${location}`);
-
-            const HTMLfinal = section.map((item) => htmlBenefit(item)).join("");
-            const contentElement = document.getElementById(`carousel-benefits-${location}`);
-            if (!contentElement) return console.warn(`No se encontró el contenedor #carousel-benefits-${location}`);
-
-            contentElement.innerHTML = HTMLfinal;
-
-            jQuery(`#carousel-benefits-${location}`).owlCarousel({
-                loop: true,
-                mouseDrag: false,
-                dots: true,
-                items: 1,
-                center: false,
-                autoplay: false,
-                autoplayTimeout: 8000,
-                autoplayHoverPause: true,
-                nav: false,
-                navText: ['<i class="icon icon-arrow-white-left"></i>', '<i class="icon icon-arrow-white-right"></i>'],
-                responsiveClass: true,
-                responsive: {
-                    0: { items: 1 },
-                    768: { items: 2, nav: true },
-                    1024: { items: 2, nav: true }
-                }
-            });
-        }).catch((error) => console.error('Error cargando beneficios:', error));
+    
+        jQuery(`#carousel-benefits-${location}`).owlCarousel({
+            loop: true,
+            mouseDrag: false,
+            dots: true,
+            items: 1,
+            center: false,
+            autoplay: false,
+            autoplayTimeout: 8000,
+            autoplayHoverPause: true,
+            nav: false,
+            navText: ['<i class="icon icon-arrow-white-left"></i>', '<i class="icon icon-arrow-white-right"></i>'],
+            responsiveClass: true,
+            responsive: {
+                0: { items: 1 },
+                768: { items: 2, nav: true },
+                1024: { items: 2, nav: true }
+            }
+        });
     }
 };
 

@@ -41,7 +41,7 @@ export default async function WorkAndHolidayPage({
 							className="img-fluid w-100 d-block d-md-none"
 						/>
 						<div className="caption">
-							<h1>Work and Holiday <br/>Australia: <span className="d-block mt-3">Requisitos, beneficios y cómo aplicar</span></h1>
+							<h1>{dict.pages.work_holiday.title_caption} <br/>Australia: <span className="d-block mt-3">{dict.pages.work_holiday.subtitle_caption}</span></h1>
 						</div>
 					</div>
 				</div>
@@ -51,9 +51,9 @@ export default async function WorkAndHolidayPage({
 				<section className="container">
 					<div className="row d-flex justify-content-center py-4">
 						<div className="col-12 col-lg-10 pt-4 pb-5 section-australia_contentCta">
-							<p className="mb-3">La Work and Holiday Visa Australia te permite vivir, trabajar y viajar en este país por hasta 12 meses. Es ideal para jóvenes entre 18 y 30 años que desean combinar aventura, aprendizaje y experiencia laboral internacional.</p>
-							<p className="">Con esta visa podrás sumergirte en la cultura australiana, mejorar tu inglés y disfrutar de una temporada inolvidable rodeado de naturaleza, playas, ciudades modernas y personas de todas partes del  mundo.</p>
-							<a href="#agentes" className="btn scrolling">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+							<p className="mb-3">{dict.pages.work_holiday.description1}</p>
+							<p className="">{dict.pages.work_holiday.description2}</p>
+							<a href="#agentes" className="btn scrolling">{dict.pages.australia.cta_caption}</a>
 						</div>
 					</div>
 				</section>
@@ -63,7 +63,7 @@ export default async function WorkAndHolidayPage({
 				<section className="container py-lg-4">
 					<div className="row d-flex justify-content-center">
 						<div className="col-12 col-lg-9 pt-4 pb-5">
-							<h2 className="section-australia_title text-center text-uppercase text-white">Beneficios de la Work and Holiday visa en Australia</h2>
+							<h2 className="section-australia_title text-center text-uppercase text-white">{dict.pages.work_holiday.benefits_title}</h2>
 						</div>
 						<div className="col-12 col-lg-10 my-4 ">
 							<div className="row d-flex align-items-center justify-content-around mb-4">

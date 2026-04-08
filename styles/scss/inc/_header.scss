@@ -33,22 +33,20 @@ header {
         .navbar-brand {
             display: inline-block;
             height: auto;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            @media #{vars.$m1440} {
+            @media #{vars.$m1680} {
                 padding-left: 2rem;
                 padding-right: 2rem;
             }
             .logo-image {
                 width: 200px;
-                @media #{vars.$m1440} {
-                    width: 270px;
+                @media #{vars.$m1024} {
+                    width: 180px;
                 }
                 @media #{vars.$m1366} {
                     width: 220px;
                 }
-                @media #{vars.$m1024} {
-                    width: 180px;
+                @media #{vars.$m1440} {
+                    width: 270px;
                 }
             }
         }
