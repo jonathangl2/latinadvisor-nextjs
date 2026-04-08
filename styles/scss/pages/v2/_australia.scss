@@ -412,6 +412,35 @@
             background-color: vars.$color-green-2 !important;
             color: vars.$color-blue-dark-5 !important;
         }
+        .swiper{
+            padding: 1rem 2rem 2rem 2rem;
+            .swiper-button-next, .swiper-button-prev{
+                color: vars.$color-grey-1 !important;
+                display: none;
+                @media #{vars.$m768}{
+                    display: flex;
+                }
+                &:hover,
+                &:focus,
+                &:active{
+                    color: vars.$color-blue-dark-5 !important;
+                }
+            }
+            
+            .swiper-button-prev {
+                left: 0.2rem; 
+            }
+            .swiper-button-next {
+                right: 0.2rem;    
+            }
+            .swiper-pagination-bullet{
+                background: vars.$color-grey-1 !important;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active{
+                background: vars.$color-blue-dark-5 !important;
+            }
+        }
     }
     &-australiaMigration{
         h2 > span{
@@ -572,6 +601,14 @@
                 font-size: 3.5rem;
                 font-weight: 700;
                 margin-bottom: 1rem;
+            }
+        }
+        .instagram-embed-wrapper{
+            overflow: hidden;
+            width: 100%;
+            padding: 0 2rem;
+            iframe{
+                margin-bottom: -9.6rem !important;
             }
         }
         &_banner{
@@ -946,6 +983,16 @@
                     border-radius: 50%;
                     background-color: vars.$color-grey-1
                 }
+            }
+        }
+    }
+    &-australiaTestimonials{
+        .instagram-embed-wrapper{
+            overflow: hidden;
+            width: 100%;
+            padding: 0 2rem;
+            iframe{
+                margin-bottom: -9.6rem !important;
             }
         }
     }

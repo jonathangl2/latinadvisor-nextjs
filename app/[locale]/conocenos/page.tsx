@@ -1,5 +1,5 @@
 import BannerInterno from "@/components/BannerInterno";
-import { getAssetUrl } from "@/lib/url";
+import { getAssetUrl, API_URL } from "@/lib/url";
 import { Metadata } from 'next';
 import ConocenosClient from "./ConocenosClient";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
@@ -12,16 +12,41 @@ export const metadata:Metadata = {
 	description: "Nuestro equipo te ayudará a hacer realidad tus sueños. Todos han hecho parte de esta experiencia de estudiar, vivir y trabajar en el exterior.",
 }
 
+
+// ========== DATA FETCHING ==========
+
+async function getAllTeamLatinadvisor(locale: string) {
+  try {
+    const url = `${API_URL}/api/latinadvisor-team-members?locale=${locale}&populate=*&sort=createdAt:asc`;
+    
+    const res = await fetch(url, { 
+      next: { revalidate: 60 },
+    });
+
+    if (!res.ok) {
+      console.error("❌ Failed to fetch latinadvisor team:", res.status);
+      return [];
+    }
+
+    const data = await res.json();
+    return data.data || [];
+
+  } catch (err) {
+    console.error("❌ Error fetching latinadvisor team:", err);
+    return [];
+  }
+}
+
 export default async function ConocenosPage({
     params
   }: {
     params: Promise<{ locale: Locale }>
   }) {
 
-  const {data} = loadHomeJson();
-  const teamLatin = data.home.team;
 
   const { locale } = await params;
+  const teamLatin = await getAllTeamLatinadvisor(locale);
+
   const dict = await getDictionary(locale);
 
   return (
@@ -46,7 +71,7 @@ export default async function ConocenosPage({
         </div>
       </section>
 
-      <ConocenosClient data={teamLatin} dict={dict}/>
+      <ConocenosClient data={teamLatin} title={dict.pages.about_us.title_team}/>
 
     </>
   );

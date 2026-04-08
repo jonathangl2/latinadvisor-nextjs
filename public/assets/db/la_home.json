@@ -596,27 +596,27 @@
             "australia": [
                 {
                     "name": "Mayerli Ladino",
-                    "testimonial": "¡Excelente Agencia! Ya mi visa fue aprobada muchas gracias por estar pendientes en mi proceso ! Amabilidad, Confianza y Excelente atención! Gracias Rosario ☺️🥳"
+                    "testimonial": "dict.pages.work_holiday.experience_testimonial_1"
                 },
                 {
                     "name": "Paola Delgado",
-                    "testimonial": "El acompañamiento fue constante y su amabilidad daba tranquilidad para un proceso que en un postule genera ansiedad.\nGracias"
+                    "testimonial": "dict.pages.work_holiday.experience_testimonial_2"
                 },
                 {
                     "name": "Esnith Casas",
-                    "testimonial": "El proceso y la asesoría es muy completa! Es una buena empresa."
+                    "testimonial": "dict.pages.work_holiday.experience_testimonial_3"
                 },
                 {
                     "name": "Katerin Tello Ura",
-                    "testimonial": "Tuve una experiencia realmente excepcional con Latin Advisor. Me acompañaron durante todo el proceso y, sobre todo, demostraron ser humanos, cercanos y totalmente comprometidos. Siempre respondieron nuestras dudas cuando más lo necesitábamos y nos ofrecieron un apoyo constante, lo que refleja su verdadero valor. Muchas gracias Rosario y a todo el equipo de Latin Advisor por su acompañamiento y profesionalismo."
+                    "testimonial": "dict.pages.work_holiday.experience_testimonial_4"
                 },
                 {
                     "name": "Juan David Gallego Zuleta",
-                    "testimonial": "Demasiado pendientes y diligentes con absolutamente todo, recomendados al 100% 😌"
+                    "testimonial": "dict.pages.work_holiday.experience_testimonial_5"
                 },
                 {
                     "name": "Antonio de la Cruz",
-                    "testimonial": "Excellent service, a professional team always ready to provide timely and concise responses. Their customer care is outstanding, making every interaction pleasant and efficient. I would certainly recommend this place to anyone looking for quality service."
+                    "testimonial": "dict.pages.work_holiday.experience_testimonial_6"
                 }
             ]
         },
@@ -797,8 +797,8 @@
                     ] 
                 },
                 {
-                    "slug": "temporary-visa-australia",
-                    "title": "Temporary Visa Australia",
+                    "slug": "temporary-graduate-visa",
+                    "title": "Temporary Graduate visa",
                     "description": "Permite residir, trabajar y estudiar en el país durante un tiempo limitado después de graduarse, sirviendo como puente hacia el mundo laboral o distintas rutas migratorias permanentes.",
                     "formSrc": "https://api.leadconnectorhq.com/widget/form/9V0IG3ZcYhFX0Mqwqzf3",
                     "formName": "5. Formulario - Perfilamiento Postgraduated -Visa 485 (Temporary Graduate Visa)",

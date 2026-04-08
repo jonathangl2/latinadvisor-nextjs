@@ -3,7 +3,7 @@ import CarouselTestimonios from "@/components/CarouselTestimonios";
 import { loadHomeJson } from "@/lib/loadJson";
 import { getAssetUrl } from "@/lib/url";
 import { Metadata } from 'next';
-import Australia from '../page';
+import { resolveDictPath } from "@/lib/resolveDictPath";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 
 export const generateStaticParams = generateLocaleParams;
@@ -22,7 +22,12 @@ export default async function WorkAndHolidayPage({
 	const dict = await getDictionary(locale);
 	
 	const data = loadHomeJson();
-	const testimonios = data.data.testimonios.australia;
+	const testimonios = data.data.testimonios.australia.map((item:any)=>{
+		return {
+			...item,
+			testimonial: resolveDictPath(item.testimonial, dict)
+		}
+	});
 	
 	return (
 		<>
@@ -69,14 +74,14 @@ export default async function WorkAndHolidayPage({
 							<div className="row d-flex align-items-center justify-content-around mb-4">
 								<div className="col-12 col-lg-6 information ps-lg-5">
 									<ul className="mb-3 text-white">
-										<li><span>Mejora tu nivel de inglés</span> con práctica diaria en un entorno real.</li>
-										<li><span>Trabaja un máximo de 6 meses</span> con el mismo empleador. Transcurridos estos 6 meses, deberás cambiar de trabajo.</li>
-										<li><span>Adquiere experiencia laboral internacional,</span> muy valorada en tu carrera profesional.</li>
-										<li><span>Entra y sal de Australia</span> tantas veces como quieras durante estos 12 meses. </li>
-										<li><span>Ahorra en dólares australianos</span> y financia tu próxima aventura o estudios.</li>
-										<li><span>Estudia hasta 4 meses,</span> la opción de matricularte en un curso de inglés durante tus primeros meses en Australia es ideal.</li>
-										<li><span>Conoce nuevas culturas</span> y haz amigos de todo el mundo en un ambiente multicultural.</li>
-										<li><span>Solicita un segundo y un tercer visado</span> Work and Holiday, si te enamoras de Australia y quieres ampliar tu estancia.</li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_1}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_2}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_3}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_4}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_5}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_6}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_7}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.benefits_8}}></li>
 									</ul>
 								</div>
 								<div className="col-12 col-lg-4 information d-none d-md-block">
@@ -105,7 +110,7 @@ export default async function WorkAndHolidayPage({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-9 mb-4">
-							<h2 className="section-australia_title text-center  text-uppercase mb-4">Requisitos para aplicar a la <span className="d-inline d-md-block">Work and Holiday Australia</span></h2>
+							<h2 className="section-australia_title text-center  text-uppercase mb-4">{dict.pages.work_holiday.requirements_title}<span className="d-inline d-md-block">Work and Holiday Australia</span></h2>
 						</div>
 						<div className="col-12 col-lg-10">
 							<div className="row d-flex justify-content-center">
@@ -113,19 +118,19 @@ export default async function WorkAndHolidayPage({
 									<img src={getAssetUrl("/assets/images/australia/work-and-holiday/requisitos-para-aplicar-work-and-holiday-australia.webp")} alt="" className="img-fluid w-100 my-lg-4"/>
 								</div>
 								<div className="col-12 col-lg-6 information ps-lg-5 pt-5 pb-4">
-									<h5 className="mb-3">Para postular a la visa Work and Holiday Australia, debes cumplir con estas condiciones:</h5>
+									<h5 className="mb-3">{dict.pages.work_holiday.requirements_desc}</h5>
 									<ul>
-										<li>Tener entre <strong>18 y 30 años.</strong></li>
-										<li>Pasaporte válido de un país elegible en el caso de hispanos: (Argentina, Chile, Perú, Ecuador, Uruguay o España).</li>
-										<li>Haber completado estudios terciarios o contar con al menos <strong>2 años de estudios universitarios.</strong></li>
-										<li>Contar con una solvencia económica mínima de <strong>USD $3.000 + tiquetes de viaje.</strong></li>
-										<li>Tener un <strong>nivel de inglés intermedio</strong> acreditado con un examen oficial.</li>
-										<li>No tener hijos dependientes.</li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.requirements_1}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.requirements_2}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.requirements_3}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.requirements_4}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.requirements_5}}></li>
+										<li dangerouslySetInnerHTML={{ __html:  dict.pages.work_holiday.requirements_6}}></li>		
 									</ul>	
 									<div className="section-australiaWorkAndHoliday_alert mt-4 mt-md-5">
 										<div className="px-4 py-4">
-											<h4 className="mb-2">⚠️ Recuerda: </h4>
-											<p>los <strong>cupos son limitados cada año</strong>, por lo que es clave preparar tu aplicación con anticipación.</p>
+											<h4 className="mb-2">⚠️ {dict.pages.work_holiday.remember_title}</h4>
+											<p dangerouslySetInnerHTML={{ __html: dict.pages.work_holiday.remember_desc }}></p>
 										</div>
 									</div>
 								</div>
@@ -135,11 +140,11 @@ export default async function WorkAndHolidayPage({
 				</section>
 			</section>
 
-			<section  className="section-australia section-australiaRenovacion container-fluid bg-grey-light-3">
+			<section  className="section-australia section-australiaWorkAndHoliday container-fluid bg-grey-light-3">
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-9 mb-4">
-							<h2 className="section-australia_title text-center text-uppercase mb-4">Experiencia de una <span className="d-inline d-md-block">work and holiday</span></h2>
+							<h2 className="section-australia_title text-center text-uppercase mb-4">{dict.pages.work_holiday.experience_title} <span className="d-inline d-md-block">{dict.pages.work_holiday.experience_subtitle}</span></h2>
 						</div>
 						<div className="col-12 col-lg-12 pb-5 pb-lg-0">
 							<CarouselTestimonios items={testimonios} />
@@ -151,7 +156,7 @@ export default async function WorkAndHolidayPage({
 			<section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
 				<div className="row d-flex justify-content-center">
 					<div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
-						<h2 className="section-australia_title text-center text-uppercase mb-lg-4">¿Listo para vivir y <br/>trabajar en Australia?</h2>
+						<h2 className="section-australia_title text-center text-uppercase mb-lg-4" dangerouslySetInnerHTML={{ __html: dict.pages.work_holiday.cta_form }}></h2>
 					</div>
 					<div className="col-11 col-lg-10 pb-5">
 						<div className="row d-flex justify-content-center">
@@ -164,7 +169,7 @@ export default async function WorkAndHolidayPage({
 									title="4. Formulario - Web Work and holiday"
 									titleCard={dict.forms.home.title}
 									subtitleCard={dict.forms.home.subtitle}
-									descriptionCard={dict.forms.home.description}
+									descriptionCard={dict.pages.work_holiday.description_form}
 								/>
 							</div>
 						</div>

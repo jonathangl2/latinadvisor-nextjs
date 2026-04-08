@@ -1,14 +1,13 @@
 import FormEmbed from "@/components/FormEmbed";
-import CarouselTestimonios from "@/components/CarouselTestimonios";
 import { loadHomeJson } from "@/lib/loadJson";
 import { getAssetUrl } from "@/lib/url";
 import { Metadata } from 'next';
-import Australia from '../page';
-import BannerInterno from "@/components/BannerInterno";
 import CarouselTeamMigration from "@/components/CarouselTeamMigration";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 import BannerCarouselCustom from "@/components/BannerCarouselCustom";
 import AgentCards from "@/components/AgentsCards";
+import InstagramEmbed from "@/components/InstagramEmbed";
+
 
 export const generateStaticParams = generateLocaleParams;
 
@@ -214,7 +213,7 @@ export default async function MigrationPage({
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-11">
 							<div className="row">
-								<div className="col-12 col-sm-8 col-md-6">
+								<div className="col-12 col-sm-8 col-md-7">
                                     <div className="row">
                                         <div className="col-12 pb-5 pb-lg-3">
                                             <div className="row section-australiaMigration_metricsProgressCircle">
@@ -281,10 +280,11 @@ export default async function MigrationPage({
                                         </div>
                                     </div>
 								</div>
-                                <div className="col-12 col-sm-8 col-md-6 section-australiaMigration_metricsCta d-flex align-items-center justify-content-center">
-                                    <a href="https://www.instagram.com/p/DTtvkWmjBwF/" target="_blank" className="btn btn-cta">
+                                <div className="col-12 col-sm-8 col-md-5 section-australiaMigration_metricsCta d-flex align-items-center justify-content-center">
+                                    {/* <a href="https://www.instagram.com/p/DTtvkWmjBwF/" target="_blank" className="btn btn-cta">
                                         <img src={getAssetUrl("/assets/images/australia/migration/bg-cta-casos-exito.png")} alt="" className="img-fluid" />
-                                    </a>
+                                    </a> */}
+                                    <InstagramEmbed url="https://www.instagram.com/p/DTtvkWmjBwF" />
                                 </div>
                             </div>
                         </div>

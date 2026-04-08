@@ -3,7 +3,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
-import InstagramEmbed from "@/components/InstagramEmbed";
 
 export default function CarouselTestimonios({ items }: any) {
   return (
@@ -28,7 +27,7 @@ export default function CarouselTestimonios({ items }: any) {
       >
         {items.map((item: any, index: number) => (
           <SwiperSlide key={index}>
-            <div className="item px-2 px-lg-5 pt-5 d-flex align-items-center">
+            <div className="item px-2 px-lg-4 pt-5 d-flex align-items-center">
               <div className="row d-flex justify-content-center align-items-center">
                 <div className="content-user col-12 d-flex flex-column justify-content-center  text-center">
                   <span className=""><i className="fas fa-quote-left"></i></span>

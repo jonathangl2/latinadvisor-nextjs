@@ -30,7 +30,7 @@ export default function FormEmbed({
             <div className="card-header">
                 <div className="row">
                 <div className="col-12 text-center px-lg-4 py-3">
-                    <h3 className="text-uppercase">
+                    <h3 className="text-uppercase mb-2">
                         <strong> {titleCard} <span className="text-green-1 d-block">{subtitleCard}</span></strong>
                     </h3>
                     <p>{descriptionCard}</p>
