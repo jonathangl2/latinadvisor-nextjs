@@ -6,6 +6,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { getAssetUrl } from "@/lib/url";
 
 export default function CarouselTeamMigration({ items }: any) {
+
   return (
       <Swiper
         modules={[Navigation,Pagination]}
@@ -24,23 +25,24 @@ export default function CarouselTeamMigration({ items }: any) {
         pagination={{ clickable: true }}
         navigation={true}
       >
-        {items.map((item: any, index: number) => (
-          <SwiperSlide key={index}>
+        {items.map((item: any) => (
+
+          <SwiperSlide key={item.id}>
             <div className="card card-teamMigration">
               <div className="card-body px-4 px-lg-5">              
                 <div className="col-12 pt-4 pb-lg-4 d-flex flex-column flex-sm-row align-items-center">
                     <img
-                        src={getAssetUrl(item.image)}
+                        src={item.image_featured?.url}
                         alt=""
                         className="img-fluid img-team me-lg-4 mb-4 mb-lg-0"
                     />
                     <h4 className="d-flex flex-column text-center text-lg-start">
-                      <span>{item.name}</span> 
-                      <strong>{item.role}</strong>
+                      <span>{item.title}</span> 
+                      <strong>{item?.role}</strong>
                     </h4>
                 </div>
                 <div className="col-12 order-2 order-lg-3 py-4">
-                    <p dangerouslySetInnerHTML={{ __html: item.description }}></p>
+                    <p dangerouslySetInnerHTML={{ __html: item.Description }}></p>
                 </div>
               </div>
             </div>

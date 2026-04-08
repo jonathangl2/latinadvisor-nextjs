@@ -1,18 +1,58 @@
 import FormEmbed from "@/components/FormEmbed";
 import { loadHomeJson } from "@/lib/loadJson";
-import { getAssetUrl } from "@/lib/url";
+import { API_URL, getAssetUrl } from "@/lib/url";
 import { Metadata } from 'next';
 import CarouselTeamMigration from "@/components/CarouselTeamMigration";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 import BannerCarouselCustom from "@/components/BannerCarouselCustom";
 import AgentCards from "@/components/AgentsCards";
 import InstagramEmbed from "@/components/InstagramEmbed";
+import { resolveDictPath } from "@/lib/resolveDictPath";
 
 
 export const generateStaticParams = generateLocaleParams;
 
 export const metadata:Metadata = {
     title: "Migration | LatinAdvisor",
+}
+
+
+async function getMigrationProcesses(locale: Locale) {
+  try {
+    const res = await fetch(
+      `${API_URL}/api/migration-processes?locale=${locale}&fields[0]=slug&fields[1]=title&sort=createdAt:asc`,
+      { next: { revalidate: 60 } }
+    );
+    
+    if (!res.ok) {
+      console.error('Failed to fetch migration processes:', res.status);
+      return [];
+    }
+    
+    const data = await res.json();
+    return data.data || [];
+  } catch (err) {
+    console.error('Error fetching migration processes:', err);
+    return [];
+  }
+}
+
+async function getMigrationTeam(locale: Locale) {
+  try {
+    const res = await fetch(
+      `${API_URL}/api/migration-agents?locale=${locale}&populate=*&sort=createdAt:asc`,
+      { next: { revalidate: 60 } }
+    );
+    if (!res.ok) {
+      console.error('Failed to fetch migration team:', res.status);
+      return [];
+    }
+    const data = await res.json();
+    return data.data || [];
+  } catch (err) {
+    console.error('Error fetching migration team:', err);
+    return [];
+  }
 }
 
 export default async function MigrationPage({
@@ -25,9 +65,9 @@ export default async function MigrationPage({
     const dict = await getDictionary(locale);
     const localePath = (path: string) => getAssetUrl(path, locale);
         
-    const data = loadHomeJson();
-	const migrationProcesses = data.data.migration_processes.au;
-    const migrationTeam = data.data.migration_team.au;
+	const migrationProcesses = await getMigrationProcesses(locale);
+    const migrationTeam = await getMigrationTeam(locale);
+
     return (
         <>
             {  
@@ -62,12 +102,12 @@ export default async function MigrationPage({
                 <section className="container py-lg-4"> 
                     <div className="row d-flex align-items-center">
                         <div className="col-12 col-lg-5 pt-4 pt-lg-0 pb-5 pe-lg-5 information">
-                            <h2 className="section-australia_title text-uppercase mb-4">Nos importas</h2>
-                            <p className="mb-3">No es un eslogan. Es la forma en la que trabajamos cada caso.</p>
-                            <p className="mb-3">Tu proceso migratorio no es un número para nosotros. Es tu vida, tu tiempo y tu futuro.</p>
-                            <p className="mb-4">Presentamos casos sólidos, organizados y bien argumentados.</p>
+                            <h2 className="section-australia_title text-uppercase mb-4">{dict.pages.migration.we_care}</h2>
+                            <p className="mb-3">{dict.pages.migration.description1}</p>
+                            <p className="mb-3">{dict.pages.migration.description2}</p>
+                            <p className="mb-4">{dict.pages.migration.description3}</p>
                             <div className="w-100 section-australia_contentCta d-flex justify-content-start">
-                                <a href="#visas" className="btn scrolling mt-2 text-uppercase">¡Conoce nuestros servicios!</a>
+                                <a href="#visas" className="btn scrolling mt-2 text-uppercase">{dict.pages.migration.cta_services}</a>
                             </div>
                         </div>
                         <div className="col-12 col-lg-7 pt-4 pb-lg-5 information">
@@ -76,19 +116,19 @@ export default async function MigrationPage({
                                     [
                                         {
                                             img: "/assets/images/australia/migration/values-1.png",
-                                            description:"<strong>Nunca estás solo en tu proceso:</strong> Desde el primer análisis hasta la decisión final, caminamos contigo."
+                                            description:"dict.pages.migration.value1"
                                         },
                                         {
                                             img: "/assets/images/australia/migration/values-2.png",
-                                            description:"<strong>Honestidad antes que promesas:</strong> Te decimos lo que sí es viable y lo que no."
+                                            description:"dict.pages.migration.value2"
                                         },
                                         {
                                             img: "/assets/images/australia/migration/values-3.png",
-                                            description:"<strong>Hacemos lo complejo simple:</strong> Traducimos leyes migratorias en pasos claros y estratégicos."
+                                            description:"dict.pages.migration.value3"
                                         },
                                         {
                                             img: "/assets/images/australia/migration/values-4.png",
-                                            description:"<strong>Enviamos aplicaciones que los case officers amen revisar:</strong> No enviamos formularios."
+                                            description:"dict.pages.migration.value4"
                                         },
                                     ].map((item:any, i:any) => (
                                         <div className="col-12 col-sm-6 d-flex align-items-center mb-4" key={i}>
@@ -99,7 +139,7 @@ export default async function MigrationPage({
                                                     alt=""
                                                     className="img-fluid"
                                                 />
-                                                <h5 dangerouslySetInnerHTML={{ __html: item.description }}></h5>
+                                                <h5 dangerouslySetInnerHTML={{ __html: resolveDictPath(item.description, dict) }}></h5>
                                                 </div>
                                             </div>
                                         </div>
@@ -115,10 +155,10 @@ export default async function MigrationPage({
 				<section className="container">
 					<div className="row d-flex justify-content-center">
 						<div className="col-12 col-lg-12 pb-4">
-							<h2 className="section-australia_title text-center text-uppercase">Citas migratorias en LatinAdvisor</h2>
+							<h2 className="section-australia_title text-center text-uppercase">{dict.pages.migration.title_appointment}</h2>
 						</div>
 						<div className="col-12 col-lg-11 my-4 section-australia_contentCta">
-                            <p className="mb-3">En <strong>LatinAdvisor</strong>, nuestros agentes migratorios registrados Juan Bedoya (MARN 2117696), Renatto Lopez (MARN 2518857) y Christina Toftegaard (MARN 2117707) brindan asesoría profesional, transparente y estratégica, diseñada para ayudarte a tomar decisiones informadas y seguras sobre tu futuro en Australia.</p>
+                            <p className="mb-3" dangerouslySetInnerHTML={{ __html: dict.pages.migration.description_appointment }}></p>
                             {/* <p className="mb-5">Las consultas se realizan de manera virtual para ofrecer la máxima flexibilidad, atendiendo a clientes tanto dentro de Australia como en el extranjero. También es posible coordinar consultas presenciales en Brisbane o Sídney, previa solicitud.</p> */}
                         </div>
                     </div>  
@@ -129,19 +169,19 @@ export default async function MigrationPage({
                                     [
                                         {
                                             img: "/assets/images/australia/migration/icon-migration-consultations-1.svg",
-                                            description:"<strong>Tu agente migratorio ya sabe quién eres. </strong>Revisamos tu perfil antes de la reunión. No empezamos desde cero."
+                                            description: dict.pages.migration.consultations_1
                                         },
                                         {
                                             img: "/assets/images/australia/migration/icon-migration-consultations-2.svg",
-                                            description:"<strong>Sin límite de tiempo. </strong> Tu caso no se mide por reloj. Si necesitamos más tiempo, lo tomamos. <span>(Nuestro récord: 2h 42min.)</span>"
+                                            description: dict.pages.migration.consultations_2
                                         },
                                         {
                                             img: "/assets/images/australia/migration/icon-migration-consultations-3.svg",
-                                            description:"<strong>Sales con una estrategia clara.</strong> No terminas con dudas. Te llevas una ruta alineada con tus objetivos reales."
+                                            description: dict.pages.migration.consultations_3
                                         },
                                         {
                                             img: "/assets/images/australia/migration/icon-migration-consultations-4.svg",
-                                            description:"<strong>Recibes tu Carta de asesoría. </strong> Un documento formal con análisis, estrategia y próximos pasos. Una guía que puedes consultar cuando lo necesites."
+                                            description: dict.pages.migration.consultations_4
                                         }
                                     ].map((item:any, i:any) => (
                                         <div className="col-12 col-sm-6 col-lg-3 d-flex mb-4 container-migrationConsultations" key={i}>
@@ -167,7 +207,7 @@ export default async function MigrationPage({
             <section className="section-australia section-australiaMigration container-fluid pt-4 pb-5">
                 <div className="row d-flex justify-content-center">
                     <div className="col-12 col-lg-12 pb-3">
-                        <h2 className="section-australia_title text-center text-uppercase">Porque elegir latinadvisor</h2>
+                        <h2 className="section-australia_title text-center text-uppercase">{dict.pages.migration.why_choose_ttl}</h2>
                     </div>
                 </div>
             </section>
@@ -180,17 +220,17 @@ export default async function MigrationPage({
                                 {
                                     percentage: "100%",
                                     title: "Engineers Australia <br>Skills Assessment",
-                                    description: "de éxito."
+                                    description: dict.pages.migration.why_choose_1
                                 },
                                 {
                                     percentage: "95%",
                                     title: "Visa 482 ",
-                                    description: "(Skills in Demand / TSS)"
+                                    description: dict.pages.migration.why_choose_2
                                 },
                                 {
                                     percentage: "100%",
                                     title: "Appeals (ART / Tribunal)",
-                                    description: "Todos los casos han tenido resultados exitosos en audiencia cuando nuestros agentes migratorios han determinado previamente una probabilidad mínima del 50% de ganar el caso."
+                                    description: dict.pages.migration.why_choose_3
                                 }
                             ].map((item:any, i:any) => (
                                 <div className="col-12 col-md-4 d-flex align-items-center container-whyChooseUs" key={i}>
@@ -219,18 +259,18 @@ export default async function MigrationPage({
                                             <div className="row section-australiaMigration_metricsProgressCircle">
                                             {
                                                 [{
-                                                    name:"Acompañamiento",
+                                                    name: dict.pages.migration.metrics_1,
                                                     value:"100"
                                                 },{
-                                                    name:"Honestidad",
+                                                    name: dict.pages.migration.metrics_2,
                                                     value:"100"
                                                 },
                                                 {
-                                                    name:"Claridad",
+                                                    name: dict.pages.migration.metrics_3,
                                                     value:"100"
                                                 },
                                                 {
-                                                    name:"Compromiso",
+                                                    name: dict.pages.migration.metrics_4,
                                                     value:"100"
                                                 }    
                                             ].map((item:any, i:any) => (
@@ -250,7 +290,7 @@ export default async function MigrationPage({
                                             </div>
                                         </div>
                                         <div className="col-12 section-australiaMigration_metricsCta px-4 pe-lg-5 mb-4 mb-md-0">
-                                            <h4 className="mt-2 mb-4"><strong>Nuestra experiencia habla por nosotros</strong></h4>
+                                            <h4 className="mt-2 mb-4"><strong>{dict.pages.migration.metrics_ttl}</strong></h4>
                                             {
                                             [   {
                                                     name:"VETASSESS – Skills Assessment",
@@ -296,10 +336,10 @@ export default async function MigrationPage({
                 <section className="container">
                     <div className="row d-flex justify-content-center">
                         <div className="col-12 pt-5 pb-5 section-australia_contentCta">
-                            <a href="#contactForm" className="btn scrolling mt-2">¡CONOCE MÁS SOBRE LA CITA MIGRATORIA!</a>
+                            <a href="#contactForm" className="btn scrolling mt-2">{dict.pages.migration.cta_migration}</a>
                         </div>
 						<div className="col-12 col-lg-10 pt-3 pb-4">
-							<h2 className="section-australia_title text-center text-uppercase">Tipos de visas y servicios</h2>
+							<h2 className="section-australia_title text-center text-uppercase">{dict.pages.migration.visas_ttl}</h2>
 						</div>
                         <div className="col-12 col-lg-11 pt-4 pb-5">
                             <div className="row d-flex align-items-stretch justify-content-center">
@@ -322,16 +362,16 @@ export default async function MigrationPage({
 				<section className="container py-3 py-lg-5">
 					<div className="row d-flex justify-content-center py-5">
 						<div className="col-12 col-lg-10 mb-4">
-							<h2 className="section-australia_title text-center text-uppercase mb-4">Nuestros Agentes Migratorios certificados en Australia</h2>
+							<h2 className="section-australia_title text-center text-uppercase mb-4" dangerouslySetInnerHTML={{ __html: dict.pages.migration.agents_ttl }} />
 						</div>
 						<div className="col-12 col-lg-10 information">
 							<div className="row">
 								<div className="col-12 section-australiaMigration_agents">
-									<p className="mb-4 text-center">Nuestros agentes migratorios están registrados en Australia y cumplen con los más altos estándares éticos y legales. Cada caso es evaluado con criterio profesional, experiencia real y estrategia personalizada.</p>
+									<p className="mb-4 text-center">{dict.pages.migration.agents_desc}</p>
 								</div>
                                 <div className="col-12 section-australiaMigration section-australiaMigration_agents">
                                     <div className="row d-flex align-items-stretch py-4 py-lg-5">
-                                        <AgentCards />
+                                        <AgentCards dict={dict}/>
                                     </div>
                                 </div>
                             </div>
@@ -344,7 +384,7 @@ export default async function MigrationPage({
                 <section className="container">
                     <div className="row d-flex justify-content-center pt-4 pt-lg-5">
 						<div className="col-12 col-lg-10 pt-5 pb-5">
-							<h2 className="section-australia_title text-center text-uppercase">Nuestro equipo</h2>
+							<h2 className="section-australia_title text-center text-uppercase">{dict.pages.migration.team_ttl}</h2>
 						</div>
                         <div className="col-12 col-lg-11 pt-2 section-australiaMigration_team">
                             <CarouselTeamMigration items={migrationTeam} />
@@ -356,7 +396,7 @@ export default async function MigrationPage({
             <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
                 <div className="row d-flex justify-content-center">
                     <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5 mt-lg-5">
-                        <h2 className="section-australia_title text-center text-uppercase mb-lg-4">Inicia tu ruta migratoria</h2>
+                        <h2 className="section-australia_title text-center text-uppercase mb-lg-4">{dict.pages.migration.cta_form}</h2>
                     </div>
                     <div className="col-11 col-lg-10 pb-5">
                         <div className="row d-flex justify-content-center">

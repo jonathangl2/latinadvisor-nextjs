@@ -50,9 +50,9 @@ export default async function EbooksGuiasPage({
                 {testimonios.length > 0 ? (
                   testimonios.map((item: any, i:any) => {
                     return (
-                        <div key={i} className="col-12 col-md-6 col-lg-4 mb-4 section-australiaTestimonials">
+                      <div key={i} className="col-12 col-md-6 col-lg-4 mb-4 section-australiaTestimonials">
                         <InstagramEmbed url={item} />
-                        </div>
+                      </div>
                     )
                   })
                 ) : (

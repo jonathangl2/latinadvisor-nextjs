@@ -3,6 +3,8 @@
 import { useState } from "react";
 import { getAssetUrl } from "@/lib/url";
 import ModalAgente from "./ModalAgente";
+import { resolveDictPath } from "@/lib/resolveDictPath";
+import { resolve } from "path/win32";
 
 const agents = [
     {
@@ -86,7 +88,7 @@ const agents = [
     },
 ];
 
-export default function AgentCards() {
+export default function AgentCards({dict}:any) {
     
     const [openIndex, setOpenIndex] = useState<number | null>(null);
     const toggleCard = (index: number) => {
@@ -122,13 +124,13 @@ export default function AgentCards() {
                                 </div>
                                 <div className="col-12 mb-3 d-flex flex-column gap-3 align-items-center">
                                     <a href={item.url} target="_blank" className="btn btn-blue-dark">
-                                        ¡Agenda ahora!
+                                        { resolveDictPath( dict.pages.migration.cta_agents_schedule, dict) }
                                     </a>
                                     <button className="btn btn-blue-grey-4" 
                                         data-bs-toggle="modal"
                                         data-bs-target="#modalAgente"
                                         //onClick={() => toggleCard(i)}
-                                        onClick={() => openModal(item.description)}>Conoce más</button>
+                                        onClick={() => openModal(item.description)}>{ resolveDictPath( dict.pages.migration.cta_agents_more , dict) }</button>
                                 </div>
                             </div>
                         </div>
