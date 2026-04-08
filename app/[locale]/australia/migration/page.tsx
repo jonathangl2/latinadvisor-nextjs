@@ -68,6 +68,11 @@ export default async function MigrationPage({
 	const migrationProcesses = await getMigrationProcesses(locale);
     const migrationTeam = await getMigrationTeam(locale);
 
+    const formUrl = ( locale == 'es' ) ? "https://api.leadconnectorhq.com/widget/form/EhQtmWa8R4EPoNXtkLB1" : "https://api.leadconnectorhq.com/widget/form/kEIMRmyHPCcyxZh2T3Vg";
+    const formId = ( locale == 'es' ) ? "EhQtmWa8R4EPoNXtkLB1" : "kEIMRmyHPCcyxZh2T3Vg";
+    const formName = ( locale == 'es' ) ? "1. Formulario - Perfilamiento migracion español" : "1.1 Formulario - Perfilamiento migracion ingles";
+
+
     return (
         <>
             {  
@@ -402,11 +407,11 @@ export default async function MigrationPage({
                         <div className="row d-flex justify-content-center">
                             <div className="col-12 col-sm-9 col-lg-6">
                                 <FormEmbed
-                                    formSrc="https://api.leadconnectorhq.com/widget/form/EhQtmWa8R4EPoNXtkLB1"
-                                    formName="1. Formulario - Perfilamiento migracion español"
-                                    formId="EhQtmWa8R4EPoNXtkLB1"
+                                    formSrc={formUrl}
+                                    formName={formName}
+                                    formId={formId}
                                     formHeight={1447}
-                                    title="1. Formulario - Perfilamiento migracion español"
+                                    title={formName}
                                     titleCard={dict.forms.home.title}
                                     subtitleCard={dict.forms.home.subtitle}
                                     descriptionCard={dict.forms.home.description}
