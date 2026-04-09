@@ -225,7 +225,9 @@
       "cta_agents_schedule":"¡Agenda ahora!",
       "cta_agents_more":"Conoce más",
       "team_ttl":"Nuestro equipo",
-      "cta_form":"Inicia tu ruta migratoria"
+      "cta_form":"Inicia tu ruta migratoria",
+      "title_form":"¿Quieres Aplicar <br/>a este tipo de visa?",
+      "title_form2":"¿Quieres conocer más<br/>de este proceso?"
     },
     "ebooks":{
       "title_caption":"EBOOKS Y GUÍAS"

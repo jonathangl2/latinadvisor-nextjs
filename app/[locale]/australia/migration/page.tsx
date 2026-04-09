@@ -79,27 +79,22 @@ export default async function MigrationPage({
                 <BannerCarouselCustom 
                     items={[
                         {
-                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
-                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Carlos Enrique Serrano Pena",
                             description: dict.pages.migration.testimonial_caption1,
                             image: "/assets/images/australia/migration/migration-testimonio-carlos-enrique-serrano-pena.png",
                         },
                         {
-                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
-                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Holbein Yeltsein Garcia Engativa",
                             description: dict.pages.migration.testimonial_caption2,
                             image: "/assets/images/australia/migration/migration-testimonio-holbein-yeltsein-garcia-engativa.png",
                         },
                         {
-                            desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
-                            mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Ramón Iglesias",
                             description: dict.pages.migration.testimonial_caption3,
                             image: "/assets/images/australia/migration/migration-testimonio-ramon-iglesias.png",
                         }
                     ]}
+                    locale={locale}
                 />
             }
 

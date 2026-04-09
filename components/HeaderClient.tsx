@@ -27,8 +27,8 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
   const renderLanguageSelector = () => (
     <ul className="navbar-nav ms-lg-3 me-lg-4 align-items-lg-stretch principal-menu ps-3 border-lg-start h-100">
       <li className="nav-item dropdown">
-        
-        <a  className="nav-link dropdown-toggle d-flex align-items-center gap-2"
+        <a  
+          className="nav-link dropdown-toggle d-flex align-items-center gap-2"
           href="#"
           id="langDropdown"
           role="button"
@@ -39,19 +39,26 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
           {activeLang.label}
         </a>
         <ul className="dropdown-menu dropdown-menu-end dropdown-lang" aria-labelledby="langDropdown">
-          {languages.map(lang => (
-            <li key={lang.code}>
-              <Link
-                href={`/${lang.code}`}
-                className={`dropdown-item d-flex align-items-center gap-2 ${
-                  lang.code === locale ? 'active fw-bold' : ''
-                }`}
-              >
-                <span className={lang.icon}></span>
-                {lang.label}
-              </Link>
-            </li>
-          ))}
+          
+          {languages.map(lang => {
+        
+            const currentPath = pathname || '/';
+            const newPath = currentPath.replace(`/${locale}`, `/${lang.code}`);
+
+            return (
+              <li key={lang.code}>
+                <Link
+                  href={newPath}
+                  className={`dropdown-item d-flex align-items-center gap-2 ${
+                    lang.code === locale ? 'active fw-bold' : ''
+                  }`}
+                >
+                  <span className={lang.icon}></span>
+                  {lang.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </li>
     </ul>

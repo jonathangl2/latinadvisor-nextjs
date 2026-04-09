@@ -225,7 +225,9 @@
       "cta_agents_schedule":"Book now!",
       "cta_agents_more":"Learn more",
       "team_ttl":"Our team",
-      "cta_form":"Start your immigration journey"
+      "cta_form":"Start your immigration journey",
+      "title_form":"Would you like to apply <br/>for this type of visa?",
+      "title_form2":"Would you like to know <br/>more about this process?"
     },
     "ebooks":{
       "title_caption":"EBOOKS AND GUIDES"

@@ -9,8 +9,8 @@ import { ReactNode } from "react";
 import { getAssetUrl } from "@/lib/url";
 
 interface SlideItem {
-    desktopImg: string;
-    mobileImg: string;
+    desktopImg?: string;
+    mobileImg?: string;
     title?: string;
     description?: string;
     image: string;
@@ -18,20 +18,21 @@ interface SlideItem {
 
 interface BannerCarouselCustomProps {
     items: SlideItem[];
+    locale:any;
 }
 
-const renderSlide = (item: SlideItem) => (
+const renderSlide = (item: SlideItem, locale:any) => (
     <section id="internal_banner" className="container-fluid banner-migrationPage">
         <div className="row">
             <div className="col-12 px-0">
                 <div className="position-relative w-100">
                     <img
-                        src={getAssetUrl(item.desktopImg)}
+                        src={getAssetUrl(`/assets/images/australia/migration/home-migration-desktop-${locale}.png`)}
                         alt=""
                         className="internal_banner_img object-cover d-none d-md-block"
                     />
                     <img
-                        src={getAssetUrl(item.mobileImg)}
+                        src={getAssetUrl(`/assets/images/australia/migration/home-migration-responsive-${locale}.png`)}
                         alt=""
                         className="internal_banner_img object-cover d-md-none"
                     />
@@ -58,7 +59,7 @@ const renderSlide = (item: SlideItem) => (
     </section>
 );
 
-export default function BannerCarouselCustom({ items }: BannerCarouselCustomProps) {
+export default function BannerCarouselCustom({ items, locale }: BannerCarouselCustomProps) {
     return (
         <Swiper
             modules={[Autoplay,Navigation, Pagination]}
@@ -74,7 +75,7 @@ export default function BannerCarouselCustom({ items }: BannerCarouselCustomProp
         className="section-australiaMigration_banner">
             {items.map((item, index) => (
                 <SwiperSlide key={index}>
-                    {renderSlide(item)} {/* ✅ */}
+                    {renderSlide(item,locale)} {/* ✅ */}
                 </SwiperSlide>
             ))}
         </Swiper>
