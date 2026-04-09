@@ -64,7 +64,7 @@ export default async function MigrationPage({
     const { locale } = await params;
     const dict = await getDictionary(locale);
     const localePath = (path: string) => getAssetUrl(path, locale);
-        
+    
 	const migrationProcesses = await getMigrationProcesses(locale);
     const migrationTeam = await getMigrationTeam(locale);
 
@@ -82,21 +82,21 @@ export default async function MigrationPage({
                             desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
                             mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Carlos Enrique Serrano Pena",
-                            description: "Mi experiencia con LatinAdvisor ha sido muy positiva desde el inicio. Me Han acompañaron durante todo mi proceso con la visa 407, Vetassess, y visa 482. siempre resolviendo mis dudas de manera clara y rápida.",
+                            description: dict.pages.migration.testimonial_caption1,
                             image: "/assets/images/australia/migration/migration-testimonio-carlos-enrique-serrano-pena.png",
                         },
                         {
                             desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
                             mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Holbein Yeltsein Garcia Engativa",
-                            description: "Después de una negacion de visa de estudiante con otra agencia, estaba realmente desanimado y no sabía qué hacer. Fue entonces que contacté a LatinAdvisor, y desde el primer momento sentí que estaba en las mejores manos.",
+                            description: dict.pages.migration.testimonial_caption2,
                             image: "/assets/images/australia/migration/migration-testimonio-holbein-yeltsein-garcia-engativa.png",
                         },
                         {
                             desktopImg: "/assets/images/australia/migration/home-migration-desktop.png",
                             mobileImg: "/assets/images/australia/migration/home-migration-responsive.png",
                             title: "Ramón Iglesias",
-                            description: "Mi aplicación para la Sponsorship 482 en Australia fue rápida y eficaz. Su equipo me acompañó en cada paso con gran profesionalidad y conocimiento de las regulaciones australianas. Gracias a ellos, hoy vivo y trabajo en Australia.",
+                            description: dict.pages.migration.testimonial_caption3,
                             image: "/assets/images/australia/migration/migration-testimonio-ramon-iglesias.png",
                         }
                     ]}
@@ -376,7 +376,7 @@ export default async function MigrationPage({
 								</div>
                                 <div className="col-12 section-australiaMigration section-australiaMigration_agents">
                                     <div className="row d-flex align-items-stretch py-4 py-lg-5">
-                                        <AgentCards dict={dict}/>
+                                        <AgentCards dict={dict} locale={locale}/>
                                     </div>
                                 </div>
                             </div>
