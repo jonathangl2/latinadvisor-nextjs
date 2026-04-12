@@ -1,0 +1,111 @@
+(globalThis.TURBOPACK||(globalThis.TURBOPACK=[])).push(["object"==typeof document?document.currentScript:void 0,3303,(e,a,i)=>{a.exports=e.r(79520)},95458,e=>{"use strict";var a=e.i(43476),i=e.i(3303);function s({formSrc:e,formName:s,formId:r,formHeight:n=2822,title:t="Formulario - Web global",titleCard:o,subtitleCard:l,descriptionCard:c}){return(0,a.jsxs)("div",{className:"card card-contactForm",children:[(0,a.jsx)("div",{className:"card-header",children:(0,a.jsx)("div",{className:"row",children:(0,a.jsxs)("div",{className:"col-12 text-center px-lg-4 py-3",children:[(0,a.jsx)("h3",{className:"text-uppercase mb-2",children:(0,a.jsxs)("strong",{children:[" ",o," ",(0,a.jsx)("span",{className:"text-green-1 d-block",children:l})]})}),(0,a.jsx)("p",{children:c})]})})}),(0,a.jsx)("div",{className:"card-body py-0",children:(0,a.jsx)("div",{className:"row",children:(0,a.jsxs)("div",{className:"col-12",children:[(0,a.jsx)("iframe",{src:e,style:{width:"100%",height:`${n}px`,border:"none",borderRadius:0},id:`inline-${r}`,"data-layout":"{'id':'INLINE'}","data-trigger-type":"alwaysShow","data-trigger-value":"","data-activation-type":"alwaysActivated","data-activation-value":"","data-deactivation-type":"neverDeactivate","data-deactivation-value":"","data-form-name":s,"data-height":n,"data-layout-iframe-id":`inline-${r}`,"data-form-id":r,title:t}),(0,a.jsx)(i.default,{src:"https://link.msgsndr.com/js/form_embed.js"})]})})})]})}e.s(["default",()=>s])},4184,e=>{"use strict";function a(e,a){if(!e.startsWith("dict."))return e;let i=e.replace(/^dict\./,"").split("."),s=a;for(let a of i)if(!s||"object"!=typeof s||!(a in s))return console.warn(`Dictionary path not found: ${e}`),e;else s=s[a];return"string"==typeof s?s:e}e.s(["resolveDictPath",()=>a])},5168,e=>{"use strict";var a=e.i(43476),i=e.i(71645);function s({modalId:e,url:s,contentHtml:r}){return(0,i.useEffect)(()=>{let e=document.createElement("script");return e.src="https://link.msgsndr.com/js/form_embed.js",e.async=!0,document.body.appendChild(e),()=>{document.body.removeChild(e)}},[s,r]),(0,a.jsx)("div",{className:"modal fade",id:e,tabIndex:-1,"aria-hidden":"true",children:(0,a.jsx)("div",{className:"modal-dialog modal-xl",children:(0,a.jsxs)("div",{className:"modal-content",children:[(0,a.jsx)("button",{type:"button",className:"btn-close","data-bs-dismiss":"modal","aria-label":"Close"}),(0,a.jsx)("div",{className:"modal-body p-0",children:r?(0,a.jsx)("div",{className:"p-4 p-lg-5 contentHTMLCustom",dangerouslySetInnerHTML:{__html:r}}):s?(0,a.jsx)("iframe",{src:s,style:{width:"100%",height:"100%",border:"none"}}):null})]})})})}e.s(["default",()=>s])},27138,e=>{"use strict";var a=e.i(43476),i=e.i(80401);e.i(41983);var s=e.i(79053),r=e.i(86301);function n({items:e}){return(0,a.jsx)(i.Swiper,{modules:[s.Navigation,r.Pagination],loop:!0,spaceBetween:20,slidesPerView:1,breakpoints:{768:{slidesPerView:1},992:{slidesPerView:2,spaceBetween:40}},pagination:{clickable:!0},navigation:!0,children:e.map(e=>(0,a.jsx)(i.SwiperSlide,{children:(0,a.jsx)("div",{className:"card card-teamMigration",children:(0,a.jsxs)("div",{className:"card-body px-4 px-lg-5",children:[(0,a.jsxs)("div",{className:"col-12 pt-4 pb-lg-4 d-flex flex-column flex-sm-row align-items-center",children:[(0,a.jsx)("img",{src:e.image_featured?.url,alt:"",className:"img-fluid img-team me-lg-4 mb-4 mb-lg-0"}),(0,a.jsxs)("h4",{className:"d-flex flex-column text-center text-lg-start",children:[(0,a.jsx)("span",{children:e.title}),(0,a.jsx)("strong",{children:e?.role})]})]}),(0,a.jsx)("div",{className:"col-12 order-2 order-lg-3 py-4",children:(0,a.jsx)("p",{dangerouslySetInnerHTML:{__html:e.Description}})})]})})},e.id))})}e.s(["default",()=>n])},54992,e=>{"use strict";var a=e.i(43476),i=e.i(80401);e.i(41983);var s=e.i(20519),s=s,r=e.i(79053),n=e.i(86301),t=e.i(24594);function o({items:e,locale:o}){return(0,a.jsx)(i.Swiper,{modules:[s.default,r.Navigation,n.Pagination],loop:!0,spaceBetween:0,slidesPerView:1,pagination:{clickable:!0},navigation:!0,autoplay:{delay:3e4,disableOnInteraction:!0},className:"section-australiaMigration_banner",children:e.map((e,s)=>(0,a.jsxs)(i.SwiperSlide,{children:[(0,a.jsxs)("section",{id:"internal_banner",className:"container-fluid banner-migrationPage",children:[(0,a.jsx)("div",{className:"row",children:(0,a.jsx)("div",{className:"col-12 px-0",children:(0,a.jsxs)("div",{className:"position-relative w-100",children:[(0,a.jsx)("img",{src:(0,t.getAssetUrl)(`/assets/images/australia/migration/home-migration-desktop-${o}.png`),alt:"",className:"internal_banner_img object-cover d-none d-md-block"}),(0,a.jsx)("img",{src:(0,t.getAssetUrl)(`/assets/images/australia/migration/home-migration-responsive-${o}.png`),alt:"",className:"internal_banner_img object-cover d-md-none"})]})})}),(0,a.jsx)("div",{className:"caption",children:(0,a.jsx)("div",{className:"row w-100 mx-0 justify-content-end d-flex h-100",children:(0,a.jsx)("div",{className:"col-12 col-lg-9 h-100",children:(0,a.jsxs)("div",{className:"card card-migrationTestimonial border-0",children:[(0,a.jsx)("div",{className:"card-header",children:(0,a.jsx)("img",{src:(0,t.getAssetUrl)(e.image),alt:"",className:"card-img img-fluid"})}),(0,a.jsx)("div",{className:"card-body",children:(0,a.jsxs)("div",{className:"container-testimonial",children:[(0,a.jsx)("h5",{children:e.title}),(0,a.jsx)("p",{children:e.description})]})})]})})})})]})," "]},s))})}e.s(["default",()=>o],54992)},86484,e=>{"use strict";var a=e.i(43476),i=e.i(71645),s=e.i(24594),r=e.i(5168),n=e.i(4184);let t=[{img:"/assets/images/australia/migration/juan-carlos-agente.png",name:"Juan Carlos Bedoya",code_permisson:"MARN 2117696",city:"Brisbane",url:"https://api.whatsapp.com/send?phone=61426844177&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20los%20Procesos%20Migratorios.%20Gracias.",description:`
+        <p><strong>Agente Migratorio Registrado – MARN 2117696</strong></p>
+        <p><strong>Cargo:</strong> CEO y Agente Migratorio Registrado</p>
+        <p><strong>En LatinAdvisor desde:</strong> Abril de 2014 (Fundador)</p>
+        <h5>Formaci\xf3n Acad\xe9mica</h5>
+        <ul>
+            <li>Ingeniero Electr\xf3nico – Pontificia Universidad Javeriana, Colombia</li>
+            <li>Maestr\xeda en Negocios y Tecnolog\xeda de la Informaci\xf3n – The University of Melbourne</li>
+            <li>Agente Migratorio Registrado desde 2021</li>
+        </ul>
+        <h5>Experiencia Profesional</h5>
+        <ul>
+            <li>Fundador y CEO, LatinAdvisor Pty Ltd (2014–Presente)</li>
+            <li>Agente Migratorio Registrado (2021–Presente)</li>
+            <li>Arquitecto Senior de Soluciones para el sector Salud, Amazon Web Services (AWS) (2021–Presente)</li>
+        </ul>
+        <h5>Lo que Juan Carlos aporta a LatinAdvisor</h5>
+        <p>Juan Carlos aporta una combinaci\xf3n \xfanica de experiencia t\xe9cnica, liderazgo empresarial y un profundo conocimiento del sistema migratorio australiano. Como fundador de LatinAdvisor, ha construido una estructura operativa s\xf3lida, basada en la calidad, la transparencia y un enfoque centrado en las personas.</p>
+        <p>Su experiencia internacional, su visi\xf3n estrat\xe9gica y su trabajo en AWS fortalecen su capacidad para analizar situaciones complejas y dise\xf1ar estrategias migratorias efectivas para sus clientes. Juan Carlos lidera la organizaci\xf3n con un enfoque en la innovaci\xf3n, el desarrollo del equipo y la entrega de resultados excepcionales en cada proceso migratorio.</p>`,descriptionEn:`
+        <p><strong>Registered Migration Agent – MARN 2117696</strong></p>
+        <p><strong>Position:</strong> CEO & Registered Migration Agent</p>
+        <p><strong>At LatinAdvisor since:</strong> April 2014 (Founder)</p>
+        <h5>Academic Background</h5>
+        <ul>
+            <li>Electronic Engineer – Pontificia Universidad Javeriana, Colombia</li>
+            <li>Master's in Business and Information Technology – The University of Melbourne</li>
+            <li>Registered Migration Agent since 2021</li>
+        </ul>
+        <h5>Professional Experience</h5>
+        <ul>
+            <li>Founder & CEO, LatinAdvisor Pty Ltd (2014–Present)</li>
+            <li>Registered Migration Agent (2021–Present)</li>
+            <li>Senior Solutions Architect – Healthcare Sector, Amazon Web Services (AWS) (2021–Present)</li>
+        </ul>
+        <h5>What Juan Carlos brings to LatinAdvisor</h5>
+        <p>Juan Carlos brings a unique combination of technical expertise, business leadership, and in-depth knowledge of the Australian migration system. As the founder of LatinAdvisor, he has built a solid operational structure grounded in quality, transparency, and a people-centered approach.</p>
+        <p>His international experience, strategic vision, and role at AWS strengthen his ability to analyze complex situations and design effective migration strategies for clients. Juan Carlos leads the organization with a strong focus on innovation, team development, and delivering exceptional results in every migration process.</p>`},{img:"/assets/images/australia/migration/christina-agente.png",name:"Christina Toftegaard",code_permisson:"MARN 2117707",city:"Brisbane",url:"https://latinadvisor.setmore.com/christina-toftegaard",description:`
+        <p><strong>Agente Migratoria – MARN 2117707</strong></p>
+        <p><strong>Cargo:</strong> Agente Migratoria Registrada</p>
+        <p><strong>En LatinAdvisor desde:</strong> Mayo de 2025</p>
+        <h5>Formaci\xf3n Acad\xe9mica</h5>
+        <ul>
+            <li>Evaluaci\xf3n Final (Capstone) para Agentes Migratorios</li>
+            <li>Diploma de Posgrado en Derecho y Pr\xe1ctica de Migraci\xf3n Australiana</li>
+            <li>Maestr\xeda en Traducci\xf3n e Interpretaci\xf3n (Franc\xe9s–Dan\xe9s), Dinamarca</li>
+            <li>Beca Erasmus (estudios de pregrado, Francia)</li>
+            <li>Licenciatura en Lenguas Empresariales (Franc\xe9s y Alem\xe1n), Dinamarca</li>
+        </ul>
+        <h5>Experiencia Profesional</h5>
+        <ul>
+            <li>Agente Migratoria Registrada, agencia de migraci\xf3n (2024–2025)</li>
+            <li>Agente Migratoria Registrada y Propietaria de Negocio (2021–2024)</li>
+            <li>Propietaria y Socia Directora, empresa australiana de importaci\xf3n de muebles (2010–2019)</li>
+            <li>Roles como paralegal y secretaria legal en firmas legales australianas e internacionales (2001–2010)</li>
+        </ul>
+        <h5>Lo que Christina aporta a LatinAdvisor</h5>
+        <p>Como migrante multiling\xfce, Christina ofrece consultas en ingl\xe9s y dan\xe9s, aportando una s\xf3lida perspectiva cultural europea y escandinava a su trabajo de asesor\xeda. Al haber vivido de manera permanente en Australia desde 2008, comprende tanto las complejidades legales de los procesos migratorios como el componente humano que hay detr\xe1s de cada decisi\xf3n.</p>
+        <p>Christina siente una profunda vocaci\xf3n por acompa\xf1ar a personas, familias y empresas a lo largo del sistema migratorio australiano. Brinda asesor\xeda clara, estrat\xe9gica y emp\xe1tica, adaptada a los objetivos espec\xedficos de cada cliente.</p>
+        <p>Adem\xe1s, contribuye al crecimiento de LatinAdvisor a trav\xe9s del desarrollo de negocio y mentor\xedas, fortaleciendo la calidad y el impacto de nuestros servicios.</p>`,descriptionEn:`
+        <p><strong>Registered Migration Agent – MARN 2117707</strong></p>
+        <p><strong>Position:</strong> Registered Migration Agent</p>
+        <p><strong>At LatinAdvisor since:</strong> May 2025</p>
+        <h5>Academic Background</h5>
+        <ul>
+            <li>Capstone Assessment for Migration Agents</li>
+            <li>Graduate Diploma in Australian Migration Law and Practice</li>
+            <li>Master's in Translation and Interpretation (French–Danish), Denmark</li>
+            <li>Erasmus Scholarship (undergraduate studies, France)</li>
+            <li>Bachelor's in Business Languages (French and German), Denmark</li>
+        </ul>
+        <h5>Professional Experience</h5>
+        <ul>
+            <li>Registered Migration Agent, migration agency (2024–2025)</li>
+            <li>Registered Migration Agent & Business Owner (2021–2024)</li>
+            <li>Owner & Managing Partner, Australian furniture import company (2010–2019)</li>
+            <li>Paralegal and legal secretary roles in Australian and international law firms (2001–2010)</li>
+        </ul>
+        <h5>What Christina brings to LatinAdvisor</h5>
+        <p>As a multilingual migrant, Christina offers consultations in English and Danish, bringing a strong European and Scandinavian cultural perspective to her advisory work. Having lived permanently in Australia since 2008, she understands both the legal complexities of migration processes and the human element behind every decision.</p>
+        <p>Christina is deeply committed to guiding individuals, families, and businesses through the Australian migration system. She provides clear, strategic, and empathetic advice tailored to each client's specific goals.</p>
+        <p>Additionally, she contributes to LatinAdvisor's growth through business development and mentoring, strengthening the quality and impact of our services.</p>`},{img:"/assets/images/australia/migration/renatto-agente.png",name:"Renatto López",code_permisson:"MARN 2518857",city:"Sydney",url:"https://api.whatsapp.com/send?phone=61426844177&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20los%20Procesos%20Migratorios.%20Gracias.",description:`
+        <p><strong>Agente Migratorio Registrado – MARN 2518857</strong></p>
+        <p><strong>Cargo:</strong> Agente Migratorio Registrado</p>
+        <p><strong>En LatinAdvisor desde:</strong> Abril de 2025</p>
+        <h5>Formaci\xf3n Acad\xe9mica</h5>
+        <ul>
+            <li>Maestr\xeda en Gesti\xf3n de Proyectos – The University of Sydney</li>
+        </ul>
+        <h5>Experiencia Profesional</h5>
+        <ul>
+            <li>Agente Migratorio Registrado, LatinAdvisor (2025–Presente)</li>
+            <li>Asesor de ingenieros en procesos de evaluaci\xf3n de cualificaciones y experiencia profesional ante Engineers Australia</li>
+        </ul>
+        <h5>Lo que Renatto aporta a LatinAdvisor</h5>
+        <p>Renatto combina una s\xf3lida formaci\xf3n acad\xe9mica con experiencia pr\xe1ctica apoyando a ingenieros en sus procesos de evaluaci\xf3n de habilidades ante Engineers Australia. Su enfoque anal\xedtico, atenci\xf3n al detalle y metodolog\xeda estructurada lo convierten en un miembro clave del equipo, especialmente en casos de alta complejidad t\xe9cnica.</p>
+        <p>Est\xe1 comprometido con brindar asesor\xeda migratoria clara, precisa y centrada en el cliente, asegurando que cada solicitud se prepare bajo los m\xe1s altos est\xe1ndares de calidad.</p>`,descriptionEn:`
+        <p><strong>Registered Migration Agent – MARN 2518857</strong></p>
+        <p><strong>Position:</strong> Registered Migration Agent</p>
+        <p><strong>At LatinAdvisor since:</strong> April 2025</p>
+        <h5>Academic Background</h5>
+        <ul>
+            <li>Master's Degree in Project Management – The University of Sydney</li>
+        </ul>
+        <h5>Professional Experience</h5>
+        <ul>
+            <li>Registered Migration Agent, LatinAdvisor (2025–Present)</li>
+            <li>Advisor to engineers on skills assessment processes, including qualifications and professional experience, with Engineers Australia</li>
+        </ul>
+        <h5>What Renatto brings to LatinAdvisor</h5>
+        <p>Renatto combines a strong academic background with hands-on experience supporting engineers through their skills assessment processes with Engineers Australia. His analytical approach, attention to detail, and structured methodology make him a key member of the team, particularly in technically complex cases.</p>
+        <p>He is committed to providing clear, precise, and client-focused migration advice, ensuring that every application is prepared to the highest standards of quality.</p>`}];function o({dict:e,locale:o}){let[l,c]=(0,i.useState)(null),[d,g]=(0,i.useState)(""),m=e=>{g(e)};return(0,a.jsxs)(a.Fragment,{children:[t.map((i,r)=>(0,a.jsx)("div",{className:"col-12 col-lg-4 mb-5 mb-lg-0",children:(0,a.jsxs)("div",{className:"card card-agentsMigration border-0 h-100",children:[(0,a.jsx)("div",{className:"card-header",children:(0,a.jsx)("img",{src:(0,s.getAssetUrl)(i.img),alt:"",className:"img-agent img-fluid"})}),(0,a.jsx)("div",{className:"card-body",children:(0,a.jsxs)("div",{className:"row",children:[(0,a.jsxs)("div",{className:"col-12 mb-4 text-center",children:[(0,a.jsx)("h4",{className:"mb-2",children:i.city}),(0,a.jsxs)("h5",{children:[(0,a.jsx)("strong",{children:i.name}),(0,a.jsx)("br",{}),i.code_permisson]})]}),(0,a.jsxs)("div",{className:"col-12 mb-3 d-flex flex-column gap-3 align-items-center",children:[(0,a.jsx)("a",{href:i.url,target:"_blank",className:"btn btn-blue-dark",children:(0,n.resolveDictPath)(e.pages.migration.cta_agents_schedule,e)}),(0,a.jsx)("button",{className:"btn btn-blue-grey-4","data-bs-toggle":"modal","data-bs-target":"#modalAgente",onClick:()=>"es"==o?m(i.description):m(i.descriptionEn),children:(0,n.resolveDictPath)(e.pages.migration.cta_agents_more,e)})]})]})})]})},r)),(0,a.jsx)(r.default,{modalId:"modalAgente",contentHtml:d})]})}e.s(["default",()=>o])},44596,e=>{"use strict";var a=e.i(43476),i=e.i(71645);function s({metrics:e}){let s=(0,i.useRef)([]),[r,n]=(0,i.useState)(Array(e.length).fill(!1));return(0,i.useEffect)(()=>{let e=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){let a=parseInt(e.target.getAttribute("data-index")||"0");n(e=>{let i=[...e];return i[a]=!0,i})}})},{threshold:.3});return s.current.forEach(a=>{a&&e.observe(a)}),()=>e.disconnect()},[]),(0,a.jsx)(a.Fragment,{children:(0,a.jsx)("div",{className:"row section-australiaMigration_metricsProgressCircle",children:e.map((e,i)=>(0,a.jsx)("div",{className:"col col-sm-6 px-2 mb-3 container-progressCircle",children:(0,a.jsx)("div",{className:"card card-progressCircle",children:(0,a.jsxs)("div",{className:"card-body d-flex align-items-center",children:[(0,a.jsx)("div",{ref:e=>{s.current[i]=e},"data-index":i,className:`progress-circle ${r[i]?"animate":""}`,style:{"--value":`${e.value}`},onMouseEnter:()=>{n(e=>{let a=[...e];return a[i]=!1,a}),setTimeout(()=>{n(e=>{let a=[...e];return a[i]=!0,a})},50)},children:(0,a.jsxs)("span",{children:[e.value,"%"]})}),(0,a.jsx)("h5",{className:"ps-3 mb-0",children:e.name})]})})},i))})})}e.s(["default",()=>s])},30755,e=>{"use strict";var a=e.i(43476),i=e.i(71645);function s({metrics:e,title:s}){let r=(0,i.useRef)([]),[n,t]=(0,i.useState)(Array(e.length).fill(!1));return(0,i.useEffect)(()=>{let e=new IntersectionObserver(e=>{e.forEach(e=>{if(e.isIntersecting){let a=parseInt(e.target.getAttribute("data-index")||"0");t(e=>{let i=[...e];return i[a]=!0,i})}})},{threshold:.3});return r.current.forEach(a=>{a&&e.observe(a)}),()=>e.disconnect()},[]),(0,a.jsxs)(a.Fragment,{children:[s&&(0,a.jsx)("h4",{className:"mt-2 mb-4",children:(0,a.jsx)("strong",{children:s})}),e.map((e,i)=>(0,a.jsxs)("div",{className:"row",children:[(0,a.jsx)("div",{className:"col-12",children:(0,a.jsx)("h5",{children:(0,a.jsx)("span",{children:e.name})})}),(0,a.jsxs)("div",{className:"col-12 d-flex pe-lg-5",children:[(0,a.jsx)("div",{ref:e=>{r.current[i]=e},"data-index":i,className:`progress-container mt-2 mb-3 ${n[i]?"animate":""}`,role:"progressbar","aria-label":e.name,"aria-valuenow":e.value,"aria-valuemin":0,"aria-valuemax":100,onMouseEnter:()=>{t(e=>{let a=[...e];return a[i]=!1,a}),setTimeout(()=>{t(e=>{let a=[...e];return a[i]=!0,a})},50)},children:(0,a.jsx)("div",{className:"progress",children:(0,a.jsx)("div",{className:"progress-bar",style:{"--bar-value":`${e.value}%`}})})}),(0,a.jsxs)("h5",{className:"mt-1 px-3 mb-0",children:[e.value,"%"]})]})]},i))]})}e.s(["default",()=>s])},80234,e=>{"use strict";var a=e.i(43476),i=e.i(71645),s=e.i(80401);e.i(41983);var r=e.i(79053),n=e.i(86301);function t({testimonials:e}){let t=(0,i.useRef)([]),o=(0,i.useRef)(null);return(0,a.jsx)("div",{className:"testimonials-carousel-wrapper w-100",children:(0,a.jsx)(s.Swiper,{modules:[r.Navigation,n.Pagination],onSwiper:e=>{o.current=e},onSlideChange:()=>{t.current.forEach(e=>{e&&!e.paused&&e.pause()})},loop:!0,spaceBetween:0,slidesPerView:1,pagination:{clickable:!0,dynamicBullets:!0},navigation:!0,className:"testimonials-swiper",children:e.map((e,i)=>(0,a.jsx)(s.SwiperSlide,{children:(0,a.jsx)("div",{className:"testimonial-slide",children:(0,a.jsx)("div",{className:"video-container",children:e.Video?.url?(0,a.jsxs)("video",{ref:e=>{t.current[i]=e},className:"testimonial-video",controls:!0,preload:"metadata",onPlay:()=>{t.current.forEach((e,a)=>{e&&a!==i&&!e.paused&&e.pause()})},children:[(0,a.jsx)("source",{src:e.Video.url,type:e.Video.mime||"video/mp4"}),"Tu navegador no soporta videos HTML5."]}):(0,a.jsx)("div",{className:"video-placeholder",children:(0,a.jsx)("p",{className:"text-white mb-0",children:"Video no disponible"})})})})},e.documentId))})})}e.s(["default",()=>t])}]);
