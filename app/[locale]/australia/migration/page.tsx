@@ -6,7 +6,9 @@ import CarouselTeamMigration from "@/components/CarouselTeamMigration";
 import { getDictionary, type Locale, generateLocaleParams } from '@/lib/i18n';
 import BannerCarouselCustom from "@/components/BannerCarouselCustom";
 import AgentCards from "@/components/AgentsCards";
-import InstagramEmbed from "@/components/InstagramEmbed";
+import MetricsCircular from '@/components/MetricsCircular';
+import MetricsProgressBar from '@/components/MetricsProgressBar';
+import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { resolveDictPath } from "@/lib/resolveDictPath";
 
 
@@ -66,6 +68,48 @@ export default async function MigrationPage({
     const localePath = (path: string) => getAssetUrl(path, locale);
     
 	const migrationProcesses = await getMigrationProcesses(locale);
+    const testimonials = [
+        {
+            id: 1,
+            documentId: "1",
+            title: "Testimonio 1",
+            Video: {
+                url: "https://latinadvisor-cms-media-strapi.s3.ap-southeast-2.amazonaws.com/testimonial_latinadvisor_migration_1_499200ab0d.mp4",
+                name: "testimonial1.mp4",
+                mime: "video/mp4"
+            }
+        },
+        {
+            id: 2,
+            documentId: "2",
+            title: "Testimonio 2",
+            Video: {
+                url: "https://latinadvisor-cms-media-strapi.s3.ap-southeast-2.amazonaws.com/testimonial_latinadvisor_migration_2_40baf4ea0d.mp4",
+                name: "testimonial2.mp4",
+                mime: "video/mp4"
+            }
+        } ,
+        {
+            id: 3,
+            documentId: "3",
+            title: "Testimonio 3",
+            Video: {
+                url: "https://latinadvisor-cms-media-strapi.s3.ap-southeast-2.amazonaws.com/testimonial_latinadvisor_migration_3_2b089bf5ff.mp4",
+                name: "testimonial3.mp4",
+                mime: "video/mp4"
+            }
+        },
+        {
+            id: 4,
+            documentId: "4",
+            title: "Testimonio 4",
+            Video: {
+                url: "https://latinadvisor-cms-media-strapi.s3.ap-southeast-2.amazonaws.com/testimonial_latinadvisor_migration_4_3e73d2d755.mp4",
+                name: "testimonial4.mp4",
+                mime: "video/mp4"
+            }
+        }
+    ]
     const migrationTeam = await getMigrationTeam(locale);
 
     const formUrl = ( locale == 'es' ) ? "https://api.leadconnectorhq.com/widget/form/EhQtmWa8R4EPoNXtkLB1" : "https://api.leadconnectorhq.com/widget/form/kEIMRmyHPCcyxZh2T3Vg";
@@ -255,76 +299,66 @@ export default async function MigrationPage({
 							<div className="row">
 								<div className="col-12 col-sm-8 col-md-7">
                                     <div className="row">
+
+                                        {/* Métricas circulares */}
                                         <div className="col-12 pb-5 pb-lg-3">
-                                            <div className="row section-australiaMigration_metricsProgressCircle">
-                                            {
-                                                [{
-                                                    name: dict.pages.migration.metrics_1,
-                                                    value:"100"
-                                                },{
-                                                    name: dict.pages.migration.metrics_2,
-                                                    value:"100"
-                                                },
-                                                {
-                                                    name: dict.pages.migration.metrics_3,
-                                                    value:"100"
-                                                },
-                                                {
-                                                    name: dict.pages.migration.metrics_4,
-                                                    value:"100"
-                                                }    
-                                            ].map((item:any, i:any) => (
-                                                    <div className="col col-sm-6 px-2 mb-3 container-progressCircle" key={i}>
-                                                        <div className="card card-progressCircle">
-                                                            <div className="card-body d-flex align-items-center">
-                                                                <div className="progress-circle" style={{ '--value': `${item.value}` } as React.CSSProperties}>
-                                                                    <span>{item.value}%</span>
-                                                                </div>
-                                                                <h5 className="ps-3">{item.name}</h5>
-                                                            </div>
-                                                        </div>
-                                                        
-                                                    </div>
-                                                ))
-                                            }
-                                            </div>
+                                            <MetricsCircular 
+                                                metrics={[
+                                                    {
+                                                        name: dict.pages.migration.metrics_1,
+                                                        value: 100
+                                                    },
+                                                    {
+                                                        name: dict.pages.migration.metrics_2,
+                                                        value: 100
+                                                    },
+                                                    {
+                                                        name: dict.pages.migration.metrics_3,
+                                                        value: 100
+                                                    },
+                                                    {
+                                                        name: dict.pages.migration.metrics_4,
+                                                        value: 100
+                                                    }    
+                                                ]}
+                                            />
                                         </div>
+
+                                        {/* Métricas de barra */}
                                         <div className="col-12 section-australiaMigration_metricsCta px-4 pe-lg-5 mb-4 mb-md-0">
-                                            <h4 className="mt-2 mb-4"><strong>{dict.pages.migration.metrics_ttl}</strong></h4>
-                                            {
-                                            [   {
-                                                    name:"VETASSESS – Skills Assessment",
-                                                    value:"94"
-                                                },{
-                                                    name:"Visa 407 (Training Visa)",
-                                                    value:"85"
-                                                },
-                                                {
-                                                    name:"Visitor Visa",
-                                                    value:"90"
-                                                }
-                                            ].map((item:any, i:any) => (
-                                                <div className="row" key={i}>
-                                                    <div className="col-12">
-                                                        <h5><span>{item.name}</span></h5>
-                                                    </div>
-                                                    <div className="col-12 d-flex pe-lg-5">
-                                                        <div className="progress mt-2 mb-3" role="progressbar" aria-label="Basic example" aria-valuenow={item.value} aria-valuemin={0} aria-valuemax={100}>
-                                                            <div className="progress-bar" style={{ width: `${item.value}%` }}></div>
-                                                        </div>
-                                                        <h5 className="mt-1 px-3">{item.value}%</h5>
-                                                    </div>
-                                                </div>
-                                            ))
-                                            }
+                                            <MetricsProgressBar 
+                                                title={dict.pages.migration.metrics_ttl}
+                                                metrics={[
+                                                    {
+                                                        name: "VETASSESS – Skills Assessment",
+                                                        value: 94
+                                                    },
+                                                    {
+                                                        name: "Visa 407 (Training Visa)",
+                                                        value: 85
+                                                    },
+                                                    {
+                                                        name: "Visitor Visa",
+                                                        value: 90
+                                                    }
+                                                ]}
+                                            />
                                         </div>
+
+
                                     </div>
 								</div>
                                 <div className="col-12 col-sm-8 col-md-5 section-australiaMigration_metricsCta d-flex align-items-center justify-content-center">
                                     {/* <a href="https://www.instagram.com/p/DTtvkWmjBwF/" target="_blank" className="btn btn-cta">
                                         <img src={getAssetUrl("/assets/images/australia/migration/bg-cta-casos-exito.png")} alt="" className="img-fluid" />
                                     </a> */}
-                                    <InstagramEmbed url="https://www.instagram.com/p/DTtvkWmjBwF" />
+                                    {testimonials.length > 0 ? (
+                                        <TestimonialsCarousel testimonials={testimonials} />
+                                    ) : (
+                                        <div className="text-center py-5">
+                                        <p className="text-muted">No hay testimonios disponibles en este momento.</p>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         </div>

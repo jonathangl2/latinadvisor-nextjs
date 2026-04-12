@@ -43,71 +43,247 @@
             }
         }
 
-        @keyframes fillProgress {
-            from {
-                background: conic-gradient(var(--color) 0%, var(--bg) 0%);
-            }
-            to {
-                background: conic-gradient(
-                var(--color) calc(var(--value) * 1%),
-                var(--bg) 0
-                );
-            }
+        /* --- START PROGRESS BAR ---*/
+        
+        @keyframes fillProgressBar {
+          from {
+            width: 0%;
+          }
+          to {
+            width: var(--bar-value);
+          }
         }
 
-        .progress{
-            height: 12px;
-            width: 100%;
-            box-shadow: 0px 1px 3px rgba(0,0,0, 0.1);
-            background-color: vars.$color-white !important;
-            border-radius: 3rem;
-            .progress-bar{
-                background-color: vars.$color-green-3 !important;
-            }
+        @keyframes shimmerBar {
+          0% {
+            left: -100%;
+          }
+          100% {
+            left: 100%;
+          }
         }
-        .progress-circle {
-            --size: 90px;
-            --thickness: 8px;
-            --color: #91BA15;
-            --bg: #e5e5e5;
-            --value: 75; /* porcentaje */
 
-            width: var(--size);
-            height: var(--size);
-            min-width: var(--size);
-            border-radius: 50%;
+        @keyframes shimmerBarContinuous {
+          0% {
+            transform: translateX(-100%);
+          }
+          100% {
+            transform: translateX(400%);
+          }
+        }
 
+        .progress-container {
+          width: 100%;
+          cursor: pointer;
+        }
+
+        .progress {
+          height: 12px;
+          width: 100%;
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+          background-color: vars.$color-white !important;
+          border-radius: 3rem;
+          overflow: hidden;
+          position: relative;
+        }
+
+        .progress-bar {
+          background: linear-gradient(
+            90deg,
+            #7da312 0%,
+            #91ba15 25%,
+            #a8d01f 50%,
+            #91ba15 75%,
+            #7da312 100%
+          );
+          width: 0%;
+          height: 100%;
+          position: relative;
+          overflow: hidden;
+        }
+
+        /* Animación de llenado */
+        .progress-container.animate .progress-bar {
+          animation: fillProgressBar 2s ease-out forwards;
+        }
+
+        /* Brillo que se mueve mientras se llena */
+        .progress-container.animate .progress-bar::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 40%;
+          height: 100%;
+          background: linear-gradient(
+            90deg,
+            transparent,
+            rgba(255, 255, 255, 0.6),
+            transparent
+          );
+          animation: 
+            shimmerBar 2s ease-out,
+            shimmerBarContinuous 3s linear 2s infinite;
+        }
+
+        /* Efecto hover */
+        .progress-container:hover {
+          transform: scale(1.02);
+          transition: transform 0.2s ease;
+        }
+
+        @media (max-width: 768px) {
+          .progress {
+            height: 10px;
+          }
+        }
+
+        /* --- END ---* /
+
+        /* --- START PROGRESS CIRCLE ---*/
+
+        @keyframes fillProgressCircle {
+          0% {
             background: conic-gradient(
-                var(--color) calc(var(--value) * 1%),
-                var(--bg) 0
+              from 0deg,
+              #e5e5e5 0%,
+              #e5e5e5 100%
             );
+          }
+          100% {
+            background: conic-gradient(
+              from 0deg,
+              #91ba15 0%,
+              #a8d01f calc(var(--value) * 0.3%),
+              #91ba15 calc(var(--value) * 0.6%),
+              #7da312 calc(var(--value) * 1%),
+              #e5e5e5 calc(var(--value) * 1%)
+            );
+          }
+        }
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        @keyframes shimmerFill {
+          0% {
+            background: conic-gradient(
+              from 0deg,
+              transparent 0deg,
+              rgba(255, 255, 255, 0.4) 0deg,
+              transparent 0deg
+            );
+          }
+          100% {
+            background: conic-gradient(
+              from 0deg,
+              transparent 0deg,
+              rgba(255, 255, 255, 0.4) calc(var(--value) * 3.6deg),
+              transparent calc(var(--value) * 3.6deg)
+            );
+          }
+        }
 
-            position: relative;
-            &:hover,
-            &:focus{
-                animation: fillProgress 1.5s ease-out forwards;
-            }
+        @keyframes rotateGradient {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+
+        .card-progressCircle {
+          background: white;
+          border-radius: 12px;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+          border: none;
+        }
+
+        .progress-circle {
+          --size: 90px;
+          --thickness: 8px;
+          --value: 75;
+
+          width: var(--size);
+          height: var(--size);
+          min-width: var(--size);
+          border-radius: 50%;
+          
+          background: conic-gradient(from 0deg, #e5e5e5 0%, #e5e5e5 100%);
+          
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          cursor: pointer;
+          transition: transform 0.2s ease;
+          overflow: hidden;
+        }
+
+        .progress-circle:hover {
+          transform: scale(1.05);
+        }
+
+        /* Animación del círculo llenándose */
+        .progress-circle.animate {
+          animation: fillProgressCircle 1.5s ease-out forwards;
+        }
+
+        /* Brillo que se llena junto con el círculo */
+        .progress-circle.animate::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          border-radius: 50%;
+          background: conic-gradient(
+            from 0deg,
+            transparent 0deg,
+            rgba(255, 255, 255, 0.5) 0deg,
+            transparent 0deg
+          );
+          animation: shimmerFill 1.5s ease-out forwards;
+          pointer-events: none;
+          z-index: 0;
+        }
+
+        /* Después del llenado, el brillo continúa rotando */
+        .progress-circle.animate::after {
+          animation: 
+            shimmerFill 2s ease-out forwards,
+            rotateGradient 3s linear 1.5s infinite;
         }
 
         .progress-circle::before {
-            content: "";
-            position: absolute;
-            width: calc(100% - var(--thickness) * 2);
-            height: calc(100% - var(--thickness) * 2);
-            background: white;
-            border-radius: 50%;
+          content: '';
+          position: absolute;
+          width: calc(100% - var(--thickness) * 2);
+          height: calc(100% - var(--thickness) * 2);
+          background: white;
+          border-radius: 50%;
+          z-index: 1;
         }
-            
+
         .progress-circle span {
-            position: relative;
-            font-weight: 500;
-            color: vars.$color-grey-1;
-            font-size: 1rem;
+          position: relative;
+          font-weight: 500;
+          color: #6c757d;
+          font-size: 1rem;
+          z-index: 2;
         }
+
+        @media (max-width: 768px) {
+          .progress-circle {
+            --size: 70px;
+            --thickness: 6px;
+          }
+
+          .progress-circle span {
+            font-size: 0.875rem;
+          }
+        }
+
+        /* --- END --- */
 
         .information{
             h2,h3,h5{
@@ -809,6 +985,85 @@
                 }
             }
             
+            .testimonials-carousel-wrapper {
+                max-width: 100%;
+                overflow: hidden;
+            }
+
+            .testimonial-slide {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+
+            .testimonial-video {
+                width: 100%;
+                height: auto;
+                border-radius: 8px;
+                aspect-ratio: 9/16;
+                object-fit: cover;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .video-placeholder {
+                width: 100%;
+                aspect-ratio: 9/16;
+                background-color: #6c757d;
+                border-radius: 8px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .testimonials-swiper {
+                padding-bottom: 3rem !important;
+            }
+            
+            .swiper-slide{
+                padding: 0 1rem;
+                @media #{vars.$m768}{
+                    padding: 0 3rem;
+                }
+            }
+
+            .swiper-button-next, .swiper-button-prev{
+                color: vars.$color-grey-1 !important;
+                display: none;
+                @media #{vars.$m768}{
+                    display: flex;
+                }
+                &:hover,
+                &:focus,
+                &:active{
+                    color: vars.$color-blue-dark-5 !important;
+                }
+            }
+
+            .swiper-button-prev {
+                left: -1rem; 
+            }
+            .swiper-button-next {
+                right: -1rem;    
+            }
+            .swiper-pagination-bullet{
+                margin-top: 2rem !important;
+                background: vars.$color-grey-1 !important;
+                opacity: 1;
+            }
+            .swiper-pagination-bullet-active{
+                background: vars.$color-blue-dark-5 !important;
+            }
+
+            .video-container {
+                max-width: 100%;
+                @media #{vars.$m768}{
+                    max-width: 300px;
+                }
+                @media #{vars.$m992}{
+                    max-width: 350px;
+                }   
+            }            
         }
         &_team{
             .swiper{

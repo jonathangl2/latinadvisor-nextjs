@@ -22,23 +22,41 @@ export default async function RenovacionPage({
 		{
 			img: "/assets/images/australia/renovacion/asesora-rosario-min.webp",
 			name: "Rosario Orejuela",
-			city: "Melbourne",
+			city: "Melbourne - Perth",
 			url: "https://api.whatsapp.com/send?phone=61423165193&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20Renovaci%C3%B3n%20de%20Visa.%20Gracias.",
 			// url: "https://api.leadconnectorhq.com/widget/booking/0pIcQiJVuE3xw7LCNx6m",
 		},
-		// {
-		// 	img: "/assets/images/australia/renovacion/asesora-camila-min.webp",
-		// 	name: "María Camila",
-		// 	city: "Brisbane",
-		// 	url: "https://api.leadconnectorhq.com/widget/booking/Fkag8dYLd7yy28O8xjCJ",
-		// },
 		{
 			img: "/assets/images/australia/renovacion/asesora-johanna-min.webp",
 			name: "Johanna Gravenhorst",
-			city: "Melbourne",
+			city: "Melbourne - Sydney - Adelaide",
 			url: "https://api.whatsapp.com/send?phone=61452518562&text=Hola,%20estoy%20interesado%20en%20saber%20m%C3%A1s%20sobre%20el%20servicio%20de%20Renovaci%C3%B3n%20de%20Visa.%20Gracias.",
 			// url: "https://api.leadconnectorhq.com/widget/booking/BTZO6UtDAU29VUNhvjyl",
 		},
+		{
+			img: "/assets/images/australia/renovacion/asesora-andre.webp",
+			name: "Andrea Lotero",
+			city: "Brisbane - Gold Coast",
+			url: "https://wa.link/kq5rz7",
+		},
+		{
+			img: "/assets/images/australia/renovacion/asesora-adaliz.webp",
+			name: "Adaliz Enriquez Lara",
+			city: "Sydney",
+			url: "https://wa.link/0kxr3v",
+		},
+		{
+			img: "/assets/images/australia/renovacion/asesora-sandra.webp",
+			name: "Sandra Orejuela",
+			city: "Brisbane - Gold Coast",
+			url: "https://wa.link/b1hgqd",
+		},
+		{
+			img: "/assets/images/australia/renovacion/asesora-mechas.webp",
+			name: "Maria Mercedes Becerra",
+			city: "Melbourne - Perth",
+			url: "https://wa.link/b1hgqd",
+		}
 	];
 
 	return (
@@ -123,7 +141,7 @@ export default async function RenovacionPage({
 					</div>
 				</section>
 			</section>
-
+			
 
 			<section className="section-australiaRenovacion container-fluid">
 				<section className="container py-3 py-lg-5">
@@ -199,10 +217,10 @@ export default async function RenovacionPage({
 						</div>
 						<div className="col-12 col-lg-10 pb-5 pb-lg-0">
 							<div className="row d-flex justify-content-center">
-								<div className="col-12 col-lg-10 mb-4">
+								<div className="col-12 col-lg-12 mb-4">
 									<h5>{dict.pages.visarenewal.agents_desc}</h5>
 								</div>
-								<div className="col-12 col-lg-10">
+								<div className="col-12">
 									<AgentesClient agentes={agentes} />
 								</div>
 							</div>
