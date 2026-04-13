@@ -234,7 +234,7 @@
     },
     "testimonials":{
       "title_caption":"TESTIMONIALS",
-      "success_title":"See what our students <br>are saying on Google"
+      "success_title":"See what our students <span class='d-inline d-lg-block'>are saying on Google</span>"
     },
     "contact_us":{
       "title_caption": "CONTACT US"

@@ -59,20 +59,19 @@ export default async function EbooksGuiasPage({
         className="internal_page"
       />
 
-      <section className="section-australia container-fluid py-4 py-lg-5 mt-0">
+      <section className="section-australia container-fluid pb-4 py-lg-5 mt-0 ">
         <div className="container">
           <div className="row d-flex justify-content-center">
             <div className="col-12 col-lg-11">
-              <div className="row d-flex align-items-stretch py-4">
-
                 {testimonios.length > 0 ? (
                   <TestimonialsGrid testimonials={testimonios} />
                 ) : (
-                  <div className="col-12 text-center py-5">
-                    <p className="text-muted">No hay testimonios disponibles en este momento.</p>
+                  <div className="row d-flex align-items-stretch py-4">
+                    <div className="col-12 text-center py-5">
+                      <p className="text-muted">No hay testimonios disponibles en este momento.</p>
+                    </div>
                   </div>
                 )}
-              </div>
             </div>
           </div>
         </div>
