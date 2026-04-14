@@ -69,7 +69,7 @@ export async function generateStaticParams() {
       }
     }
     
-    console.log(`✅ Generated ${params.length} static params for ebooks`);
+    //console.log(`✅ Generated ${params.length} static params for ebooks`);
     return params;
     
   } catch (err) {

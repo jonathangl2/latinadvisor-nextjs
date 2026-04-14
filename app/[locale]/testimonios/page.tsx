@@ -88,7 +88,7 @@ export default async function EbooksGuiasPage({
               <Script type="text/javascript" src="https://reputationhub.site/reputation/assets/review-widget.js"></Script>
               <iframe
                 className="lc_reviews_widget"
-                src="https://reputationhub.site/reputation/widgets/review_widget/yOvoI3RqcAHeOtiiNEyF?widgetId=690d5a98cf2958bcfac1a58c"
+                src="https://reputationhub.site/reputation/widgets/review_widget/yOvoI3RqcAHeOtiiNEyF?widgetId=66ac3c0fb644ec4d4c7156c6"
                 style={{ minWidth: "100%", width: "100%" }}
               ></iframe>
 
