@@ -249,30 +249,27 @@ body {
         font-weight: bold;
         font-style: normal;
         .card {
-            border-radius: 0px;
+            border-radius: 0 0 10px 10px;
             border: 0px;
             box-shadow: none;
             background-color: transparent;
             margin-top: 0px;
-            margin-bottom: 5px;
+            margin-bottom: 1.5rem;
+            box-shadow: 3px 6px 7px -1px #dfdfe0 !important;
             .card-header {
                 background: transparent !important;
                 border-bottom: 0px;
-                box-shadow: none;
                 padding: 0 !important;
                 margin: 0 !important;
-                border-radius: 3px;
+                border-radius: 10px;
                 button {
                     background-color: transparent !important;
                     width: 100%;
                     text-align: left;
                     text-decoration: none;
-                    padding: 0.2rem 2rem;
-                    border-radius: 0px;
-                    border-left: 0px;
-                    border-right: 0px;
-                    border-top: 0px;
-                    border-bottom: 1px solid vars.$color-grey-6;
+                    padding: 0.4rem 2rem;
+                    border-radius: 10px;
+                    border: 0px;
                     @media #{vars.$M991} {
                         padding: 0.5rem 1rem;
                     }
@@ -289,9 +286,8 @@ body {
                         }
                     }
                     h4 {
-                        text-transform: uppercase;
                         color: vars.$color-grey-6;
-                        font-weight: bold;
+                        font-weight: 600;
                         font-style: normal;
                     }
                 }
@@ -319,13 +315,42 @@ body {
                 }
             }
             .card-body {
-                padding: 1.5rem 2rem 0rem 2rem;
+                padding: 1.5rem 2rem 2rem 2rem;
+                border-radius: 0 0 10px 10px;
                 @media #{vars.$M991} {
                     padding: 1rem;
                 }
                 h5 {
-                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    font-weight: 600;
                     color: vars.$color-grey-1;
+                }
+                p{
+                    margin-bottom: 1rem;
+                }
+                ul li,
+                ul ul li,
+                ol li,
+                ol ul li{
+                    margin-bottom: 12px;
+                    position: relative;
+                }
+                ol{
+                    padding-left: 1rem;
+                }
+                ul li{
+                    padding-left: 1rem;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        top: 8px;
+                        left: 0;
+                        width: 6px;
+                        height: 6px;
+                        border-radius: 50%;
+                        background-color: vars.$color-grey-1
+                    }
                 }
             }
         }

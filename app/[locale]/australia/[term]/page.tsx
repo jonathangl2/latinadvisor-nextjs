@@ -8,12 +8,8 @@ import path from "path";
 import { Metadata } from "next";
 import { getDictionary, locales, type Locale } from '@/lib/i18n';
 
-
-
-
 export async function generateStaticParams() {
   try {
-    // 1. Lee las ciudades del JSON
     const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
     const fileContent = fs.readFileSync(filePath, "utf-8");
     const json = JSON.parse(fileContent);
@@ -82,6 +78,7 @@ export default async function AustraliaCityPage({
   const { locale, term } = await params;
   const dict = await getDictionary(locale);
   const ciudad = getCiudadData(term);
+ 	const localePath = (path: string) => getAssetUrl(path, locale);
 
   if (!ciudad) {
     notFound();
@@ -110,7 +107,7 @@ export default async function AustraliaCityPage({
                       />
                     </div>
                     <div className="d-block d-sm-none col-12 col-lg-11 section-australia_contentCta d-flex justify-content-center my-4">
-                      <a href={getAssetUrl("/australia/#contactForm")} className="btn">{dict.pages.australia.cta_caption}</a>
+                      <a href={localePath("/australia/#contactForm")} className="btn">{dict.pages.australia.cta_caption}</a>
                     </div>
                   </div>
                 </div>
@@ -128,7 +125,7 @@ export default async function AustraliaCityPage({
                   )}
                 </div>
                 <div className="col-12 col-lg-11 d-flex justify-content-end order-3 order-lg-2">
-                  <a href={getAssetUrl("/australia#ciudades")} className="view-more mb-5 mb-lg-2 mt-lg-4">Ver más ciudades <i className="icon icon-arrow-right ms-2"></i></a>
+                  <a href={localePath("/australia#ciudades")} className="view-more mb-5 mb-lg-2 mt-lg-4">Ver más ciudades <i className="icon icon-arrow-right ms-2"></i></a>
                 </div>
                 <div className="col-12 col-lg-10 mt-5 pb-5 order-1 order-lg-3">
                   {ciudad.imagenes?.length > 0 && (

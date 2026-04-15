@@ -134,7 +134,8 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
         [
           { url: localePath("/ebooks-guias"), title: dict.nav.resources_dropdown.ebooks },
           { url: localePath("/testimonios"), title: dict.nav.resources_dropdown.testimonials},
-          { url: localePath("/podcast"), title: dict.nav.resources_dropdown.podcast }
+          { url: localePath("/podcast"), title: dict.nav.resources_dropdown.podcast },
+          { url: localePath("/promociones"), title: dict.nav.resources_dropdown.promotions }
         ]
       )}
 
