@@ -1,6 +1,43 @@
 1:"$Sreact.fragment"
-2:I[97367,["/latinadvisor-nextjs/_next/static/chunks/ff1a16fafef87110.js","/latinadvisor-nextjs/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
+4:I[97367,["/latinadvisor-nextjs/_next/static/chunks/ff1a16fafef87110.js","/latinadvisor-nextjs/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
 :HL["https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","image"]
-0:{"buildId":"HCR6oDFwPrNWdm3hzw_FF","rsc":["$","$1","c",{"children":[[["$","section",null,{"id":"internal_banner","className":"container-fluid internal_page","children":[["$","div",null,{"className":"row","children":["$","div",null,{"className":"col-12 px-0","children":["$","div",null,{"className":"position-relative w-100","children":["$","img",null,{"src":"https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","alt":"PROMOCIONES","className":"internal_banner_img object-cover"}]}]}]}],["$","div",null,{"className":"caption","children":[["$","h1",null,{"dangerouslySetInnerHTML":{"__html":"PROMOCIONES"}}],false]}]]}],["$","section",null,{"className":"container-pqr container-fluid py-4 py-lg-5 mt-0","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"row d-flex justify-content-center","children":["$","div",null,{"className":"col-12 col-lg-9","children":["$","div",null,{"className":"accordion","id":"pqrFirst","children":["$","div",null,{"className":"col-12 text-center py-5","children":["$","p",null,{"className":"text-muted","children":"No hay promociones disponibles en este momento."}]}]}]}]}]}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
+2:T502,<h5>¡En LatinAdvisor todos ganamos!</h5>
+<p>Refiere a un amigo y recibe beneficios reales mientras le ayudas a cumplir su sueño de estudiar en el exterior.</p>
+<br>
+
+<h5>Beneficios del programa:</h5>
+<ul>
+<li>AUD $150 para ti por cada persona que refieras (efectivo)</li>
+<li>AUD $100 para tu referido (bono aplicable a su proceso)</li>
+</ul>
+<br>
+
+<h5>¿Cómo funciona?</h5>
+<ol>
+<li>Recomiendas a un amigo, familiar o conocido</li>
+<li>Tu referido inicia su proceso con LatinAdvisor</li>
+<li>¡Ambos reciben su beneficio!</li>
+</ol>
+<br>
+
+<h5>¿En qué puede usar el bono el estudiante?</h5>
+<p>El referido podrá aplicar su bono de AUD $100 en:</p>
+<ul>
+<li>valor del curso</li>
+<li>Proceso de visa</li>
+<li>Seguro médico</li>
+<li>Transferencia bancaria</li>
+</ul>
+<br>
+
+<h5>Términos y condiciones</h5>
+<ul>
+<li>El pago de AUD $150 para la persona que refiere se realizará una vez el referido haya iniciado formalmente su proceso con LatinAdvisor.</li>
+<li>El bono de AUD $100 es personal e intransferible y solo podrá ser utilizado dentro de los servicios ofrecidos por LatinAdvisor.</li>
+<li>Aplica únicamente para nuevos clientes referidos.</li>
+<li>LatinAdvisor se reserva el derecho de validar la información del referido antes de otorgar los beneficios.</li>
+</ul>
+0:{"buildId":"9SYDqeYnMS5ig0ke3Zsbd","rsc":["$","$1","c",{"children":[[["$","section",null,{"id":"internal_banner","className":"container-fluid internal_page","children":[["$","div",null,{"className":"row","children":["$","div",null,{"className":"col-12 px-0","children":["$","div",null,{"className":"position-relative w-100","children":["$","img",null,{"src":"https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","alt":"PROMOCIONES","className":"internal_banner_img object-cover"}]}]}]}],["$","div",null,{"className":"caption","children":[["$","h1",null,{"dangerouslySetInnerHTML":{"__html":"PROMOCIONES"}}],false]}]]}],["$","section",null,{"className":"container-pqr container-fluid py-4 py-lg-5 mt-0","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"row d-flex justify-content-center","children":["$","div",null,{"className":"col-12 col-lg-9","children":["$","div",null,{"className":"accordion","id":"pqrFirst","children":[["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr5","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr5","aria-expanded":"false","aria-controls":"collapsePqr5","children":["$","h4",null,{"className":"mb-0","children":"Plan de referidos"}]}]}],["$","div",null,{"id":"collapsePqr5","className":"collapse","aria-labelledby":"pqr5","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}],["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr8","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr8","aria-expanded":"false","aria-controls":"collapsePqr8","children":["$","h4",null,{"className":"mb-0","children":"Testimonio inspira… y también te recompensa"}]}]}],["$","div",null,{"id":"collapsePqr8","className":"collapse","aria-labelledby":"pqr8","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"<p>En LatinAdvisor valoramos tu experiencia. Comparte tu historia y recibe un beneficio por ayudar a otros a dar el paso.</p>\n\n¿Qué puedes ganar?\nAUD $100 transferidos directamente a tu cuenta bancaria\n\n¿Cómo participar?\nPara acceder al beneficio, debes completar los siguientes pasos:\nEnviar un video testimonial contando tu experiencia\nRealizar tu calificación en Google\nSeguirnos en nuestras redes sociales\n\nTérminos y condiciones\nAplica únicamente para estudiantes que ya se encuentren en su país de destino.\nEs obligatorio cumplir con los 3 requisitos para acceder al beneficio.\nEl pago de AUD $100 se realizará una vez se validen correctamente todas las condiciones.\nLos detalles completos del proceso se encuentran en el documento: “Instructivo de términos y condiciones”, el cual será enviado a cada estudiante con visa aprobada.\n"}}]}]]}]]}]}]}]}]}]],null,"$L3"]}],"loading":null,"isPartial":false}
+3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
+6:null
