@@ -1,8 +1,8 @@
 1:"$Sreact.fragment"
-4:I[97367,["/latinadvisor-nextjs/_next/static/chunks/ff1a16fafef87110.js","/latinadvisor-nextjs/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-5:"$Sreact.suspense"
+5:I[97367,["/latinadvisor-nextjs/_next/static/chunks/ff1a16fafef87110.js","/latinadvisor-nextjs/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+6:"$Sreact.suspense"
 :HL["https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","image"]
-2:T502,<h5>¡En LatinAdvisor todos ganamos!</h5>
+2:T54d,<h5>¡En LatinAdvisor todos ganamos!</h5>
 <p>Refiere a un amigo y recibe beneficios reales mientras le ayudas a cumplir su sueño de estudiar en el exterior.</p>
 <br>
 
@@ -24,7 +24,7 @@
 <h5>¿En qué puede usar el bono el estudiante?</h5>
 <p>El referido podrá aplicar su bono de AUD $100 en:</p>
 <ul>
-<li>valor del curso</li>
+<li>Valor del curso</li>
 <li>Proceso de visa</li>
 <li>Seguro médico</li>
 <li>Transferencia bancaria</li>
@@ -38,6 +38,32 @@
 <li>Aplica únicamente para nuevos clientes referidos.</li>
 <li>LatinAdvisor se reserva el derecho de validar la información del referido antes de otorgar los beneficios.</li>
 </ul>
-0:{"buildId":"9SYDqeYnMS5ig0ke3Zsbd","rsc":["$","$1","c",{"children":[[["$","section",null,{"id":"internal_banner","className":"container-fluid internal_page","children":[["$","div",null,{"className":"row","children":["$","div",null,{"className":"col-12 px-0","children":["$","div",null,{"className":"position-relative w-100","children":["$","img",null,{"src":"https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","alt":"PROMOCIONES","className":"internal_banner_img object-cover"}]}]}]}],["$","div",null,{"className":"caption","children":[["$","h1",null,{"dangerouslySetInnerHTML":{"__html":"PROMOCIONES"}}],false]}]]}],["$","section",null,{"className":"container-pqr container-fluid py-4 py-lg-5 mt-0","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"row d-flex justify-content-center","children":["$","div",null,{"className":"col-12 col-lg-9","children":["$","div",null,{"className":"accordion","id":"pqrFirst","children":[["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr5","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr5","aria-expanded":"false","aria-controls":"collapsePqr5","children":["$","h4",null,{"className":"mb-0","children":"Plan de referidos"}]}]}],["$","div",null,{"id":"collapsePqr5","className":"collapse","aria-labelledby":"pqr5","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}],["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr8","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr8","aria-expanded":"false","aria-controls":"collapsePqr8","children":["$","h4",null,{"className":"mb-0","children":"Testimonio inspira… y también te recompensa"}]}]}],["$","div",null,{"id":"collapsePqr8","className":"collapse","aria-labelledby":"pqr8","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"<p>En LatinAdvisor valoramos tu experiencia. Comparte tu historia y recibe un beneficio por ayudar a otros a dar el paso.</p>\n\n¿Qué puedes ganar?\nAUD $100 transferidos directamente a tu cuenta bancaria\n\n¿Cómo participar?\nPara acceder al beneficio, debes completar los siguientes pasos:\nEnviar un video testimonial contando tu experiencia\nRealizar tu calificación en Google\nSeguirnos en nuestras redes sociales\n\nTérminos y condiciones\nAplica únicamente para estudiantes que ya se encuentren en su país de destino.\nEs obligatorio cumplir con los 3 requisitos para acceder al beneficio.\nEl pago de AUD $100 se realizará una vez se validen correctamente todas las condiciones.\nLos detalles completos del proceso se encuentran en el documento: “Instructivo de términos y condiciones”, el cual será enviado a cada estudiante con visa aprobada.\n"}}]}]]}]]}]}]}]}]}]],null,"$L3"]}],"loading":null,"isPartial":false}
-3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
-6:null
+<br>
+
+<p>Válido del 1 de enero del 2026 hasta el 30 diciembre del 2026</p>3:T440,<p>En LatinAdvisor valoramos tu experiencia. Comparte tu historia y recibe un beneficio por ayudar a otros a dar el paso.</p>
+<br>
+<h5>¿Qué puedes ganar?</h5>
+<p>AUD $100 transferidos directamente a tu cuenta bancaria.</p>
+<br>
+
+<h5>¿Cómo participar?</h5>
+<p>Para acceder al beneficio, debes completar los siguientes pasos:</p>
+<ul>
+<li>Enviar un video testimonial contando tu experiencia.</li>
+<li>Realizar tu calificación en Google</li>
+<li>Seguirnos en nuestras redes sociales.</li>
+</ul>
+<br>
+
+<h5>Términos y condiciones</h5>
+<ul>
+<li>Aplica únicamente para estudiantes que ya se encuentren en su país de destino.</li>
+<li>Es obligatorio cumplir con los 3 requisitos para acceder al beneficio.</li>
+<li>El pago de AUD $100 se realizará una vez se validen correctamente todas las condiciones.</li>
+<li>Los detalles completos del proceso se encuentran en el documento: <strong>“Instructivo de términos y condiciones”, </strong>el cual será enviado a cada estudiante con visa aprobada.</li>
+</ul>
+<br>
+
+<p>Válido del 1 de enero del 2026 hasta el 30 diciembre del 2026</p>0:{"buildId":"lzLtp4rTKUD89ENPHJ3Qk","rsc":["$","$1","c",{"children":[[["$","section",null,{"id":"internal_banner","className":"container-fluid internal_page","children":[["$","div",null,{"className":"row","children":["$","div",null,{"className":"col-12 px-0","children":["$","div",null,{"className":"position-relative w-100","children":["$","img",null,{"src":"https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","alt":"PROMOCIONES","className":"internal_banner_img object-cover"}]}]}]}],["$","div",null,{"className":"caption","children":[["$","h1",null,{"dangerouslySetInnerHTML":{"__html":"PROMOCIONES"}}],false]}]]}],["$","section",null,{"className":"container-pqr container-fluid py-4 py-lg-5 mt-0","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"row d-flex justify-content-center","children":["$","div",null,{"className":"col-12 col-lg-9","children":["$","div",null,{"className":"accordion","id":"pqrFirst","children":[["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr17","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr17","aria-expanded":"false","aria-controls":"collapsePqr17","children":["$","h4",null,{"className":"mb-0","children":"Plan de referidos"}]}]}],["$","div",null,{"id":"collapsePqr17","className":"collapse","aria-labelledby":"pqr17","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}],["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr19","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr19","aria-expanded":"false","aria-controls":"collapsePqr19","children":["$","h4",null,{"className":"mb-0","children":"Testimonio inspira… y también te recompensa"}]}]}],["$","div",null,{"id":"collapsePqr19","className":"collapse","aria-labelledby":"pqr19","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"$3"}}]}]]}]]}]}]}]}]}]],null,"$L4"]}],"loading":null,"isPartial":false}
+4:["$","$L5",null,{"children":["$","$6",null,{"name":"Next.MetadataOutlet","children":"$@7"}]}]
+7:null

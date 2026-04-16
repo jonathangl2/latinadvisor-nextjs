@@ -1,6 +1,46 @@
 1:"$Sreact.fragment"
-2:I[97367,["/latinadvisor-nextjs/_next/static/chunks/ff1a16fafef87110.js","/latinadvisor-nextjs/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
-3:"$Sreact.suspense"
+4:I[97367,["/latinadvisor-nextjs/_next/static/chunks/ff1a16fafef87110.js","/latinadvisor-nextjs/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
 :HL["https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","image"]
-0:{"buildId":"9SYDqeYnMS5ig0ke3Zsbd","rsc":["$","$1","c",{"children":[[["$","section",null,{"id":"internal_banner","className":"container-fluid internal_page","children":[["$","div",null,{"className":"row","children":["$","div",null,{"className":"col-12 px-0","children":["$","div",null,{"className":"position-relative w-100","children":["$","img",null,{"src":"https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","alt":"PROMOTIONS","className":"internal_banner_img object-cover"}]}]}]}],["$","div",null,{"className":"caption","children":[["$","h1",null,{"dangerouslySetInnerHTML":{"__html":"PROMOTIONS"}}],false]}]]}],["$","section",null,{"className":"container-pqr container-fluid py-4 py-lg-5 mt-0","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"row d-flex justify-content-center","children":["$","div",null,{"className":"col-12 col-lg-9","children":["$","div",null,{"className":"accordion","id":"pqrFirst","children":["$","div",null,{"className":"col-12 text-center py-5","children":["$","p",null,{"className":"text-muted","children":"No hay promociones disponibles en este momento."}]}]}]}]}]}]}]],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
-4:null
+2:T4fc,<h5>At LatinAdvisor, everyone wins!</h5>
+<p>Refer a friend and earn real rewards while helping them achieve their dream of studying abroad.</p>
+<br>
+
+<h5>Program benefits:</h5>
+<ul>
+<li>AUD $150 for you for each person you refer (cash).</li>
+<li>AUD $100 for your referral (bonus applicable to their process).</li>
+</ul>
+<br>
+
+<h5>How does it work?</h5>
+<ol>
+<li>Recommend a friend, family member, or acquaintance</li>
+<li>Your referral starts their process with LatinAdvisor</li>
+<li>You both receive your reward!</li>
+</ol>
+<br>
+
+<h5>How can the student use the bonus?</h5>
+<p>The referred student can apply their AUD $100 bonus toward:</p>
+<ul>
+<li>Course fees</li>
+<li>Visa process</li>
+<li>Health insurance</li>
+<li>Bank transfer</li>
+</ul>
+<br>
+
+<h5>Terms and conditions:</h5>
+<ul>
+<li>The AUD $150 payment for the referrer will be issued once the referred person has formally started their process with LatinAdvisor.</li>
+<li>The AUD $100 bonus is personal and non-transferable and can only be used within services offered by LatinAdvisor.</li>
+<li>Applies only to new referred clients.</li>
+<li>LatinAdvisor reserves the right to verify the referral’s information before granting any benefits.</li>
+</ul>
+<br>
+
+<p>Valid from January 1, 2026 to December 30, 2026</p>
+0:{"buildId":"lzLtp4rTKUD89ENPHJ3Qk","rsc":["$","$1","c",{"children":[[["$","section",null,{"id":"internal_banner","className":"container-fluid internal_page","children":[["$","div",null,{"className":"row","children":["$","div",null,{"className":"col-12 px-0","children":["$","div",null,{"className":"position-relative w-100","children":["$","img",null,{"src":"https://jonathangl2.github.io/latinadvisor-nextjs/assets/images/banners/promociones.webp","alt":"PROMOTIONS","className":"internal_banner_img object-cover"}]}]}]}],["$","div",null,{"className":"caption","children":[["$","h1",null,{"dangerouslySetInnerHTML":{"__html":"PROMOTIONS"}}],false]}]]}],["$","section",null,{"className":"container-pqr container-fluid py-4 py-lg-5 mt-0","children":["$","div",null,{"className":"container","children":["$","div",null,{"className":"row d-flex justify-content-center","children":["$","div",null,{"className":"col-12 col-lg-9","children":["$","div",null,{"className":"accordion","id":"pqrFirst","children":[["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr16","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr16","aria-expanded":"false","aria-controls":"collapsePqr16","children":["$","h4",null,{"className":"mb-0","children":"Referral Program"}]}]}],["$","div",null,{"id":"collapsePqr16","className":"collapse","aria-labelledby":"pqr16","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"$2"}}]}]]}],["$","div",null,{"className":"card","children":[["$","div",null,{"className":"card-header","id":"pqr18","children":["$","button",null,{"className":"d-flex justify-content-between align-items-center collapsed","type":"button","data-bs-toggle":"collapse","data-bs-target":"#collapsePqr18","aria-expanded":"false","aria-controls":"collapsePqr18","children":["$","h4",null,{"className":"mb-0","children":"Your story inspires… and rewards you"}]}]}],["$","div",null,{"id":"collapsePqr18","className":"collapse","aria-labelledby":"pqr18","data-parent":"#pqrFirst","children":["$","div",null,{"className":"card-body","dangerouslySetInnerHTML":{"__html":"<p>At LatinAdvisor, we value your experience. Share your story and receive a reward for helping others take the next step.</p>\n<br>\n<h5>What can you earn?</h5>\n<p>AUD $100 transferred directly to your bank account.</p>\n<br>\n\n<h5>How to participate?</h5>\n<p>To receive the reward, you must complete the following steps:</p>\n<ul>\n<li>Submit a video testimonial sharing your experience</li>\n<li>Leave a Google review</li>\n<li>Follow us on our social media channels</li>\n</ul>\n<br>\n\n<h5>Terms and conditions:</h5>\n<ul>\n<li>Applies only to students who are already in their destination country.</li>\n<li>All 3 requirements must be completed to qualify for the reward.</li>\n<li>The AUD $100 payment will be processed once all conditions have been successfully validated.</li> \n<li>Full details are outlined in the document:\n <strong>“Terms and Conditions Guide”</strong>, which will be sent to each student with an approved visa</li>\n</ul>\n<br>\n\n<p>Valid from January 1, 2026 to December 30, 2026</p>"}}]}]]}]]}]}]}]}]}]],null,"$L3"]}],"loading":null,"isPartial":false}
+3:["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]
+6:null
