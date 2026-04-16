@@ -8,6 +8,7 @@ import BannerCarouselCustom from "@/components/BannerCarouselCustom";
 import AgentCards from "@/components/AgentsCards";
 import MetricsCircular from '@/components/MetricsCircular';
 import MetricsProgressBar from '@/components/MetricsProgressBar';
+import MetricsPercentage from '@/components/MetricsPercentage';
 import TestimonialsCarousel from "@/components/TestimonialsCarousel";
 import { resolveDictPath } from "@/lib/resolveDictPath";
 
@@ -262,29 +263,27 @@ export default async function MigrationPage({
                         {
                             [
                                 {
-                                    percentage: "100%",
+                                    percentage: 100,
                                     title: "Engineers Australia <br>Skills Assessment",
                                     description: dict.pages.migration.why_choose_1
                                 },
                                 {
-                                    percentage: "95%",
+                                    percentage: 95,
                                     title: "Visa 482 ",
                                     description: dict.pages.migration.why_choose_2
                                 },
                                 {
-                                    percentage: "100%",
+                                    percentage: 100,
                                     title: "Appeals (ART / Tribunal)",
                                     description: dict.pages.migration.why_choose_3
                                 }
                             ].map((item:any, i:any) => (
                                 <div className="col-12 col-md-4 d-flex align-items-center container-whyChooseUs" key={i}>
-                                    <div className="card card-whyChooseUs border-0">
-                                        <div className="card-body px-0">
-                                            <h3 className="card-whyChooseUs_title" dangerouslySetInnerHTML={{ __html: item.title }}></h3>
-                                            <h5 className="card-whyChooseUs_percentage">{item.percentage}</h5>
-                                            <p className="card-whyChooseUs_description mb-0">{item.description}</p>
-                                        </div>
-                                    </div>
+                                    <MetricsPercentage
+                                        percentage={item.percentage}
+                                        title={item.title}
+                                        description={item.description}
+                                    />
                                 </div>
                             ))
                         }

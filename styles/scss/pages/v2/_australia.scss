@@ -285,6 +285,28 @@
 
         /* --- END --- */
 
+        /* --- START PERCENTAGE --- */
+
+        .card-whyChooseUs_percentage {
+            /* Transición suave para cambios de tamaño */
+            transition: font-size 0.1s ease;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        /* Opcional: efecto de fade-in cuando aparece */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* --- END --- */
+
         .information{
             h2,h3,h5{
                 color: vars.$color-blue-dark-5;
@@ -777,6 +799,7 @@
                 font-size: 3.5rem;
                 font-weight: 700;
                 margin-bottom: 1rem;
+                width: 100%;
             }
         }
         .instagram-embed-wrapper{
