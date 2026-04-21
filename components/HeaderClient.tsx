@@ -2,7 +2,8 @@
 
 import Link from 'next/link';
 import { getAssetUrl } from '@/lib/url';
-import { usePathname, useParams } from 'next/navigation';
+import { usePathname, useParams, useRouter } from 'next/navigation';
+import { useState } from 'react';
 
 type Props = {
   migrationProcesses: any[];
@@ -16,14 +17,58 @@ const languages = [
 
 export default function HeaderClient({ migrationProcesses, dict }: Props) {
   const pathname = usePathname();
+  const router = useRouter();
   const { locale } = useParams();
+  const [isChangingLang, setIsChangingLang] = useState(false);
 
   const localePath = (path: string) => `/${locale}${path}`;
   const assetPath = (path: string) => getAssetUrl(path);
   const activeLang = languages.find(l => l.code === locale) ?? languages[0];
 
-  // ========== FUNCIONES DE MENÚ ==========
+  // ========== CAMBIAR IDIOMA ==========
+  const handleLanguageChange = async (targetLang: string) => {
+    if (targetLang === locale || isChangingLang) return;
+    
+    setIsChangingLang(true);
+    
+    try {
+      const currentPath = pathname || '/';
+      
+      // Detectar si estamos en /eventos/[slug]
+      const eventMatch = currentPath.match(/\/eventos\/([^/]+)/);
+      
+      if (eventMatch) {
+        // Estamos en un evento, intentar cambiar al evento traducido
+        const currentSlug = eventMatch[1];
+        
+        // Construir la nueva URL
+        const newEventUrl = `/${targetLang}/eventos/${currentSlug}`;
+        
+        // Intentar navegar - si existe la página, funcionará; si no, redirigir a eventos
+        router.push(newEventUrl);
+        
+        // Verificar después de un momento si la navegación falló
+        setTimeout(() => {
+          // Si después de navegar seguimos en la misma URL, significa que falló
+          // En ese caso redirigir al listado
+          if (window.location.pathname === currentPath) {
+            router.push(`/${targetLang}/eventos`);
+          }
+        }, 1000);
+      } else {
+        // Ruta normal - solo cambiar el locale
+        const newPath = currentPath.replace(`/${locale}`, `/${targetLang}`);
+        router.push(newPath);
+      }
+    } catch (error) {
+      console.error('Error changing language:', error);
+      router.push(`/${targetLang}/eventos`);
+    } finally {
+      setIsChangingLang(false);
+    }
+  };
 
+  // ========== RENDER LANGUAGE SELECTOR ==========
   const renderLanguageSelector = () => (
     <ul className="navbar-nav ms-lg-3 me-lg-4 align-items-lg-stretch principal-menu ps-3 border-lg-start h-100">
       <li className="nav-item dropdown">
@@ -39,26 +84,21 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
           {activeLang.label}
         </a>
         <ul className="dropdown-menu dropdown-menu-end dropdown-lang" aria-labelledby="langDropdown">
-          
-          {languages.map(lang => {
-        
-            const currentPath = pathname || '/';
-            const newPath = currentPath.replace(`/${locale}`, `/${lang.code}`);
-
-            return (
-              <li key={lang.code}>
-                <Link
-                  href={newPath}
-                  className={`dropdown-item d-flex align-items-center gap-2 ${
-                    lang.code === locale ? 'active fw-bold' : ''
-                  }`}
-                >
-                  <span className={lang.icon}></span>
-                  {lang.label}
-                </Link>
-              </li>
-            );
-          })}
+          {languages.map(lang => (
+            <li key={lang.code}>
+              <button
+                onClick={() => handleLanguageChange(lang.code)}
+                className={`dropdown-item d-flex align-items-center gap-2 ${
+                  lang.code === locale ? 'active fw-bold' : ''
+                }`}
+                disabled={isChangingLang}
+                type="button"
+              >
+                <span className={lang.icon}></span>
+                {lang.label}
+              </button>
+            </li>
+          ))}
         </ul>
       </li>
     </ul>
@@ -70,7 +110,6 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
     items: Array<{ url: string; title: string }>
   ) => (
     <li className="nav-item dropdown">
-      
       <a className="nav-link dropdown-toggle"
         href="#"
         id={dropdownId}
@@ -154,8 +193,6 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
     </>
   );
 
-  // ========== RENDER ==========
-
   return (
     <header id="principal_header">
       <nav id="principal_navbar" className="navbar navbar_v3 navbar-expand-lg navbar-primary py-2 py-md-0 align-items-lg-stretch">
@@ -168,7 +205,6 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
           />
         </Link>
 
-        {/* NAVBAR DESKTOP */}
         <div className="collapse navbar-collapse d-none d-lg-flex col-lg-9">
           <ul className="navbar-nav ms-auto align-items-lg-stretch principal-menu me-2">
             {renderMainMenuItems()}
@@ -177,7 +213,6 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
           {renderLanguageSelector()}
         </div>
 
-        {/* NAVBAR RESPONSIVE */}
         <button 
           className="navbar-toggler d-block d-lg-none me-4" 
           type="button" 

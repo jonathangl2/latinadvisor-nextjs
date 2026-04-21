@@ -234,7 +234,13 @@
       "title_caption":"EBOOKS AND GUIDES"
     },
     "events":{
-      "title_caption":"EVENTS"
+      "title_caption":"EVENTS",
+      "btn_register":"Register Now!",
+      "not_found":"No events for the selected month.",
+      "presencial":"In-Person Event",
+      "free": "Free of Charge",
+      "finished": "FINISHED",
+      "all_months":"All Months"
     },
     "testimonials":{
       "title_caption":"TESTIMONIALS",
