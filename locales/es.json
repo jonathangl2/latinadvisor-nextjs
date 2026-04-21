@@ -233,6 +233,9 @@
     "ebooks":{
       "title_caption":"EBOOKS Y GUÍAS"
     },
+     "events":{
+      "title_caption":"EVENTOS"
+    },
     "testimonials":{
       "title_caption":"TESTIMONIOS",
       "success_title":"Mira lo que dicen de <span class='d-inline d-lg-block'>nosotros en Google </span>"

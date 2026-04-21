@@ -133,6 +133,7 @@ export default function HeaderClient({ migrationProcesses, dict }: Props) {
         `recursosDropdown${idSuffix}`,
         [
           { url: localePath("/ebooks-guias"), title: dict.nav.resources_dropdown.ebooks },
+          { url: localePath("/eventos"), title: dict.nav.resources_dropdown.events },
           { url: localePath("/testimonios"), title: dict.nav.resources_dropdown.testimonials},
           { url: localePath("/podcast"), title: dict.nav.resources_dropdown.podcast },
           { url: localePath("/promociones"), title: dict.nav.resources_dropdown.promotions }
