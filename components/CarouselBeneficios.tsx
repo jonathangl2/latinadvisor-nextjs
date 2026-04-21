@@ -34,7 +34,7 @@ export default function CarouselBeneficios({ title, location, data, dict }: Caro
 						>
               
               {data.map((item: any, index: number) => (
-                <div className="item d-flex flex-column align-items-center  px-3">
+                <div key={index} className="item d-flex flex-column align-items-center  px-3">
                     <div className="card card-benefit border-0 bg-transparent">
                         <div className="card-body d-flex flex-column align-items-center px-4 px-lg-5">
                             <img src={item.img} alt={item.title} className="img-fluid mb-3 benefit-img" />

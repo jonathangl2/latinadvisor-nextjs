@@ -41,10 +41,10 @@
         "workandholiday": "Work and Holiday"
       },
       "description_form": "Rellena el formulario para analizar tu perfil y recibir una asesoría gratuita con LatinAdvisor. Así podrás conocerás los requisitos y posibilidades de tu proyecto, el curso, los costos y todo basado en tus objetivos y metas.",
-      "description_option_1":"Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia o Dubái y solucionar todas tus preguntas.",
+      "description_option_1":"Después de evaluar tu perfil te llegará un link de agendamiento para separar tu asesoría para estudiar en Australia y solucionar todas tus preguntas.",
       "description_option_2":"Cuando te sientas list@, preparamos contigo todo lo que necesitas para estudiar y trabajar en el destino que tú elijas sin ningún costo extra.",
       "description_option_3":"Te ayudamos con la visa, el college, acompañamiento, el seguro médico, tips para conseguir trabajo, etc.",
-      "description_option_4":"Además, te invitamos a todos nuestros eventos educativos y recreativo en Australia o Dubái."
+      "description_option_4":"Además, te invitamos a todos nuestros eventos educativos y recreativo en Australia."
     },
     "australia":{
       "title_caption": "Estudiar y Trabajar en Australia",
@@ -114,7 +114,8 @@
       "success_title": "Historias de Éxito de <br/>Nuestros Estudiantes",
       "cta_form_l1":"¿Listo para Impulsar tu",
       "cta_form_l2":"Futuro en Australia?",
-      "desc_form":"Completa estas preguntas para analizar tu perfil y con base en tus respuestas, te brindamos asesoría personalizada."
+      "desc_form":"Completa estas preguntas para analizar tu perfil y con base en tus respuestas, te brindamos asesoría personalizada.",
+      "view_more_cities":"Ver más ciudades"
     },
     "visarenewal":{
       "title_caption": "Renovación de visa",

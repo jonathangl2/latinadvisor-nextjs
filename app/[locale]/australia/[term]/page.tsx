@@ -1,143 +1,192 @@
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import BannerInterno from "@/components/BannerInterno";
-import { getAssetUrl } from "@/lib/url";
-import { console } from "inspector";
-import fs from "fs";
-import path from "path";
+import { getAssetUrl, API_URL } from "@/lib/url";
 import { Metadata } from "next";
 import { getDictionary, locales, type Locale } from '@/lib/i18n';
 
-export async function generateStaticParams() {
+// ========== DATA FETCHING ==========
+
+async function getAllCitiesFromStrapi() {
   try {
-    const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const json = JSON.parse(fileContent);
-    const ciudades = json.data?.ciudades || [];
+    const url = `${API_URL}/api/australia-cities?populate=*`;
     
-    // 2. Genera combinaciones: cada ciudad × cada idioma
-    const params = [];
-    for (const locale of locales) {
-      for (const ciudad of ciudades) {
-        params.push({
-          locale: locale,      // es, en, pt
-          term: ciudad.slug,   // melbourne, sydney, etc.
-        });
-      }
-    }
-    
-    
-    return params;
+    const res = await fetch(url, { 
+      next: { revalidate: 3600 }, // Cache por 1 hora
+    });
+
+    if (!res.ok) return [];
+
+    const data = await res.json();
+    return data.data || [];
+
   } catch (err) {
-    console.error("❌ Error generando params:", err);
+    console.error("❌ Error fetching all cities:", err);
     return [];
   }
 }
 
-
-function getCiudadData(term: string) {
+async function getCityFromStrapi(slug: string, locale: string) {
   try {
-    const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const json = JSON.parse(fileContent);
-    const ciudad = json.data?.ciudades?.find((c: any) => c.slug === term);
-    return ciudad;
+    const url = `${API_URL}/api/australia-cities?filters[slug][$eq]=${slug}&locale=${locale}&populate=*`;
+    
+    const res = await fetch(url, { 
+      next: { revalidate: 60 },
+    });
+
+    if (!res.ok) {
+      console.error("❌ Response not OK:", res.status);
+      return null;
+    }
+
+    const data = await res.json();
+    return data.data?.[0] || null;
+
   } catch (err) {
-    console.error(`❌ Error cargando ciudad ${term}:`, err);
+    console.error("❌ Error fetching city:", err);
     return null;
   }
 }
 
-// Metadata dinámica
+// ========== STATIC PARAMS ==========
+
+export async function generateStaticParams() {
+  try {
+    const cities = await getAllCitiesFromStrapi();
+    
+    const params = [];
+    for (const locale of locales) {
+      for (const city of cities) {
+        params.push({
+          locale: locale,
+          term: city.slug,
+        });
+      }
+    }
+    
+    console.log(`✅ Generated ${params.length} static params for cities`);
+    return params;
+    
+  } catch (err) {
+    console.error("❌ Error generating params:", err);
+    return [];
+  }
+}
+
+// ========== METADATA ==========
+
 export async function generateMetadata({ 
   params 
 }: { 
   params: Promise<{ locale: Locale; term: string }> 
 }): Promise<Metadata> {
-  const { term } = await params;
-  const ciudad = getCiudadData(term);
+  const { locale, term } = await params;
+  const city = await getCityFromStrapi(term, locale);
   
-  if (!ciudad) {
+  if (!city) {
     return {
       title: "Ciudad no encontrada | LatinAdvisor",
     };
   }
   
   return {
-    title: `${ciudad.title} | Estudiar en Australia | LatinAdvisor`,
-    description: ciudad.description?.replace(/<[^>]*>/g, "").substring(0, 160) || "",
+    title: `${city.title} | Estudiar en Australia | LatinAdvisor`,
+    description: city.content?.replace(/<[^>]*>/g, "").substring(0, 160) || "",
   };
 }
 
-export default async function AustraliaCityPage({ 
-    params 
-  }: { 
-    params: Promise<{ locale: Locale; term: string }> 
-  }) {
+// ========== PAGE COMPONENT ==========
 
+export default async function AustraliaCityPage({ 
+  params 
+}: { 
+  params: Promise<{ locale: Locale; term: string }> 
+}) {
   const { locale, term } = await params;
   const dict = await getDictionary(locale);
-  const ciudad = getCiudadData(term);
- 	const localePath = (path: string) => getAssetUrl(path, locale);
+  const city = await getCityFromStrapi(term, locale);
+  const localePath = (path: string) => getAssetUrl(path, locale);
 
-  if (!ciudad) {
+  if (!city) {
     notFound();
   }
+
+  // Extraer URLs de banner (si existe en Strapi)
+  const bannerImageUrl = city.image_banner?.url 
+    ? city.image_banner.url 
+    : getAssetUrl(`/assets/images/australia/${city.slug}/banner-${city.slug}-australia.webp`);
 
   return (
     <>
       <BannerInterno
-        imageSrc={getAssetUrl(`/assets/images/australia/${ciudad.slug}/banner-${ciudad.slug}-australia.webp`)}
-        title={ciudad.title}
+        imageSrc={bannerImageUrl}
+        title={city.title}
         btnCtaForm={true}
+        locale={locale}
         className="banner-cityAus"
       />
 
       <section className="section-cityAus container-donde-estudiar container-fluid">
         <div id="response" className="col-12 pb-5 pb-lg-0">
-           <div id={ciudad.slug} className="container-donde-estudiar-city row d-flex justify-content-center">
+          <div id={city.slug} className="container-donde-estudiar-city row d-flex justify-content-center">
             <div className="col-12 featured-information">
               <div className="row px-4 d-flex justify-content-center">
+                
+                {/* Descripción de la ciudad */}
                 <div className="col-12 col-lg-5 offset-lg-1 pt-3 pb-lg-5 ps-lg-0 order-0">
                   <div className="row d-flex justify-content-center">
                     <div className="col-12">
                       <div
                         className="ciudad-description"
-                        dangerouslySetInnerHTML={{ __html: ciudad.description }}
+                        dangerouslySetInnerHTML={{ __html: city.content }}
                       />
                     </div>
                     <div className="d-block d-sm-none col-12 col-lg-11 section-australia_contentCta d-flex justify-content-center my-4">
-                      <a href={localePath("/australia/#contactForm")} className="btn">{dict.pages.australia.cta_caption}</a>
+                      <a href={localePath("/australia/#contactForm")} className="btn">
+                        {dict.pages.australia.cta_caption}
+                      </a>
                     </div>
                   </div>
                 </div>
-                <div className="col-12 col-lg-5 offset-lg-1 pb-5 ps-lg-0 pe-lg-5 order-2 order-lg-1">
-                  {ciudad.features?.length > 0 && (
-                    <div className="row">
 
-                      {ciudad.features.map((feature: any, i: number) => (
-                        <div key={i} className="col-12 d-flex align-items-center py-2">
-                          <img src={getAssetUrl(feature.icon)} alt="" className="featured-information-icon" />
-                          <h5 className="mb-0">{feature.description}</h5>
-                        </div>
+                {/* Features de la ciudad */}
+                <div className="col-12 col-lg-5 offset-lg-1 pb-5 ps-lg-0 pe-lg-5 order-2 order-lg-1">
+                  {city.featured_content?.length > 0 && (
+                    <div className="row">
+                      {city.featured_content.map((feature: any, i: number) => (
+                        <div 
+                          key={i} 
+                          className="col-12 d-flex align-items-center py-2"
+                          dangerouslySetInnerHTML={{ __html: feature.content }}
+                        />
                       ))}
                     </div>
                   )}
                 </div>
+
+                {/* Link ver más ciudades */}
                 <div className="col-12 col-lg-11 d-flex justify-content-end order-3 order-lg-2">
-                  <a href={localePath("/australia#ciudades")} className="view-more mb-5 mb-lg-2 mt-lg-4">Ver más ciudades <i className="icon icon-arrow-right ms-2"></i></a>
+                  <a href={localePath("/australia#ciudades")} className="view-more mb-5 mb-lg-2 mt-lg-4">
+                    {dict.pages.australia.view_more_cities} <i className="icon icon-arrow-right ms-2"></i>
+                  </a>
                 </div>
+
+                {/* Carrusel de imágenes */}
                 <div className="col-12 col-lg-10 mt-5 pb-5 order-1 order-lg-3">
-                  {ciudad.imagenes?.length > 0 && (
+                  {city.multimedia?.length > 0 && (
                     <div id="carousel-donde-estudiar" className="carousel-donde-estudiar owl-carousel owl-theme owl-loaded owl-drag">
-                      {ciudad.imagenes.map((img: string, i: number) => (
+                      {city.multimedia.map((media: any, i: number) => (
                         <div key={i} className="item px-3">
-                          <img src={getAssetUrl(img)} className="img-fluid" />
+                          <img 
+                            src={media.url} 
+                            alt={media.alternativeText || city.title}
+                            className="img-fluid" 
+                          />
                         </div>
                       ))}
                     </div>
                   )}
                 </div>
+
               </div>
             </div>
           </div>

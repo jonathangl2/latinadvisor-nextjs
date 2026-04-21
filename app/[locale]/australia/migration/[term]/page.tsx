@@ -1,42 +1,34 @@
 import { notFound } from "next/navigation";
 import BannerInterno from "@/components/BannerInterno";
-import { getAssetUrl } from "@/lib/url";
-import fs from "fs";
-import path from "path";
 import { Metadata } from "next";
 import FormEmbed from "@/components/FormEmbed";
 import { JSX } from "react";
 import { getDictionary, locales, type Locale } from '@/lib/i18n';
+import { API_URL } from "@/lib/url";
 
+// ========== DATA FETCHING ==========
 
-export async function generateStaticParams() {
+async function getAllMigrationProcessesFromStrapi() {
   try {
-    const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const json = JSON.parse(fileContent);
-    const mpVisas = json.data?.migration_processes.au || [];
+    const url = `${API_URL}/api/migration-processes?populate=*`;
     
-    const params = [];
-    for (const locale of locales) {
-      for (const visa of mpVisas) {
-        params.push({
-          locale: locale,
-          term: visa.slug,
-        });
-      }
-    }
-    
-    return params;
+    const res = await fetch(url, { 
+      next: { revalidate: 3600 }, // Cache por 1 hora
+    });
+
+    if (!res.ok) return [];
+
+    const data = await res.json();
+    return data.data || [];
+
   } catch (err) {
-    console.error("❌ Error generando params:", err);
+    console.error("❌ Error fetching all migration processes:", err);
     return [];
   }
 }
 
 async function getVisaFromStrapi(term: string, locale: string) {
   try {
-
-    const API_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:1337';
     const url = `${API_URL}/api/migration-processes?filters[slug][$eq]=${term}&locale=${locale}&populate=*`;
 
     const res = await fetch(url, { 
@@ -58,16 +50,30 @@ async function getVisaFromStrapi(term: string, locale: string) {
   }
 }
 
-function getVisaData(term: string) {
+// ========== STATIC PARAMS ==========
+
+export async function generateStaticParams() {
   try {
-    const filePath = path.join(process.cwd(), "public", "assets", "db", "la_home.json");
-    const fileContent = fs.readFileSync(filePath, "utf-8");
-    const json = JSON.parse(fileContent);
-    const visa = json.data?.migration_processes.au?.find((c: any) => c.slug === term);
-    return visa;
+    // Obtener todos los migration processes de Strapi
+    const migrationProcesses = await getAllMigrationProcessesFromStrapi();
+    
+    // Generar combinaciones: cada process × cada idioma
+    const params = [];
+    for (const locale of locales) {
+      for (const process of migrationProcesses) {
+        params.push({
+          locale: locale,
+          term: process.slug,
+        });
+      }
+    }
+    
+    console.log(`✅ Generated ${params.length} static params for migration processes`);
+    return params;
+    
   } catch (err) {
-    console.error(`❌ Error cargando visa ${term}:`, err);
-    return null;
+    console.error("❌ Error generating params:", err);
+    return [];
   }
 }
 
@@ -92,7 +98,8 @@ function normalizeVisa(data: any) {
   };
 }
 
-// Metadata dinámica
+// ========== METADATA ==========
+
 export async function generateMetadata({ 
   params 
 }: { 
@@ -100,12 +107,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   
   const { locale, term } = await params;
-  const dict = await getDictionary(locale);
   
-  // Intentar Strapi primero
-  const visaFromStrapi = await getVisaFromStrapi(term, locale);
-  const visaFromFile = getVisaData(term);
-  const visa = visaFromStrapi || visaFromFile;
+  const visa = await getVisaFromStrapi(term, locale);
 
   if (!visa) {
     return {
@@ -118,11 +121,6 @@ export async function generateMetadata({
     description: visa.description?.replace(/<[^>]*>/g, "").substring(0, 160) || "",
   };
 }
-
-type TextFragment = {
-  type: "span" | "strong";
-  value: string;
-};
 
 // ========== HELPERS ==========
 
@@ -280,18 +278,21 @@ function renderSections(sections: any[], slug: string) {
   ));
 }
 
-export default async function MigrationProcessesPage({ params }: { params: Promise<{ locale: Locale; term: string }> }) {
+// ========== PAGE COMPONENT ==========
+
+export default async function MigrationProcessesPage({ 
+  params 
+}: { 
+  params: Promise<{ locale: Locale; term: string }> 
+}) {
 
   const { locale, term } = await params;
   const dict = await getDictionary(locale);
+  
   // Validar si el term contiene la palabra "visa"
   const isVisa = term.toLowerCase().includes('visa');
 
-  // Intentar Strapi primero, luego fallback a archivo
-  const visaFromStrapi = await getVisaFromStrapi(term, locale);
-  const visaFromFile = getVisaData(term);
-  
-  const rawVisa = visaFromStrapi || visaFromFile;
+  const rawVisa = await getVisaFromStrapi(term, locale);
   const visa = normalizeVisa(rawVisa);
   
   if (!visa) {
@@ -300,46 +301,52 @@ export default async function MigrationProcessesPage({ params }: { params: Promi
 
   return (
     <>
-        <BannerInterno
-            imageSrc=''
-            title={visa.custom_title || visa.title}
-            btnCtaForm={false}
-            className="internal_migration internal_migration_subpage"
-        />
-    
-        {visa?.body?.length > 0 && (
-          <section className="section-australiaMigration_bodyDynamics container-fluid mb-4">
-            {renderSections(visa.body, visa.slug)}
-          </section>
-        )}
+      <BannerInterno
+        imageSrc=''
+        title={visa.custom_title || visa.title}
+        btnCtaForm={false}
+        className="internal_migration internal_migration_subpage"
+      />
+  
+      {visa?.body?.length > 0 && (
+        <section className="section-australiaMigration_bodyDynamics container-fluid mb-4">
+          {renderSections(visa.body, visa.slug)}
+        </section>
+      )}
 
-        
-        { visa?.formSrc && visa?.formName && visa?.formId && visa?.formHeight && (
-          
-          <section id="contactForm" className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid">
+      {visa?.formSrc && visa?.formName && visa?.formId && visa?.formHeight && (
+        <section 
+          id="contactForm" 
+          className="section-escribenos section-escribenos_contactForm container-escribenos container-fluid"
+        >
+          <div className="row d-flex justify-content-center">
+            <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5">
+              <h2 
+                className="section-australia_title text-center text-uppercase mb-lg-4" 
+                dangerouslySetInnerHTML={{ 
+                  __html: (isVisa) ? dict.pages.migration.title_form : dict.pages.migration.title_form2 
+                }} 
+              />
+            </div>
+            <div className="col-11 col-lg-10 pb-5">
               <div className="row d-flex justify-content-center">
-                  <div className="col-11 col-lg-10 mt-4 py-5 py-lg-5">
-                      <h2 className="section-australia_title text-center text-uppercase mb-lg-4" dangerouslySetInnerHTML={{ __html: (isVisa) ? dict.pages.migration.title_form: dict.pages.migration.title_form2 }} />
-                  </div>
-                  <div className="col-11 col-lg-10 pb-5">
-                      <div className="row d-flex justify-content-center">
-                          <div className="col-12 col-sm-9 col-lg-6">
-                              <FormEmbed
-                                  formSrc={visa.formSrc}
-                                  formName={visa.formName}
-                                  formId={visa.formId}
-                                  formHeight={visa.formHeight}
-                                  title={visa.title}
-                                  titleCard={dict.forms.home.title}
-                                  subtitleCard={dict.forms.home.subtitle}
-                                  descriptionCard={dict.forms.home.description}
-                              />
-                          </div>
-                      </div>
-                  </div>
+                <div className="col-12 col-sm-9 col-lg-6">
+                  <FormEmbed
+                    formSrc={visa.formSrc}
+                    formName={visa.formName}
+                    formId={visa.formId}
+                    formHeight={visa.formHeight}
+                    title={visa.title}
+                    titleCard={dict.forms.home.title}
+                    subtitleCard={dict.forms.home.subtitle}
+                    descriptionCard={dict.forms.home.description}
+                  />
+                </div>
               </div>
-          </section>
-        )}
+            </div>
+          </div>
+        </section>
+      )}
     </>
   );
 }

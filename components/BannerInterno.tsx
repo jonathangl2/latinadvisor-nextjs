@@ -1,10 +1,12 @@
 import { getAssetUrl } from "@/lib/url";
 import Image from "next/image";
 
-export default function BannerInterno({ imageSrc, title, btnCtaForm = false, className = "" }:{ imageSrc:string, title:string, btnCtaForm?:boolean, className:string }) {
+export default async function BannerInterno({ imageSrc, title, btnCtaForm = false, className = "", locale }:{ imageSrc:string, title:string, btnCtaForm?:boolean, className:string, locale: string }) {
+
+  const localePath = (path: string) => getAssetUrl(path, locale);
+
   return (
     <section id="internal_banner" className={`container-fluid ${className}`}>
-      
       
         {imageSrc && (
           <div className="row">
@@ -25,7 +27,7 @@ export default function BannerInterno({ imageSrc, title, btnCtaForm = false, cla
           {btnCtaForm && (
             <div className="row w-100 mx-0 justify-content-center d-flex">
               <div className="d-none d-sm-block col-12 col-lg-11 section-australia_contentCta d-flex justify-content-center">
-                <a href={getAssetUrl("/australia/#contactForm")} className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
+                <a href={localePath("/australia/#contactForm")} className="btn">¡AGENDA TU ASESORÍA VIRTUAL GRATUITA!</a>
               </div>
             </div>
           )}
