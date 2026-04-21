@@ -124,6 +124,7 @@ export default async function EbookPage({
     <>
       <BannerInterno
         imageSrc={getAssetUrl("/assets/images/banners/ebooks-guias.webp")}
+        locale={locale}
         title="EBOOKS Y GUÍAS"
         className="internal_page"
       />

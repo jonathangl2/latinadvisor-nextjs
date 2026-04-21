@@ -41,6 +41,7 @@ export default async function PodcastPage({
     <>
 			<BannerInterno
 				imageSrc={getAssetUrl("/assets/images/banners/podcast.webp")}
+        locale={locale}
 				title="PODCAST"
 				className="internal_page"
 			/>

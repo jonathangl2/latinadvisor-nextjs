@@ -53,6 +53,7 @@ export default async function ConocenosPage({
     <>
       <BannerInterno
         imageSrc={getAssetUrl("/assets/images/banners/quienes-somos.webp")}
+        locale={locale}
         title={dict.pages.about_us.title_caption}
         className="internal_page"
       />

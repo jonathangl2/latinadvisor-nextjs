@@ -303,6 +303,7 @@ export default async function MigrationProcessesPage({
     <>
       <BannerInterno
         imageSrc=''
+        locale={locale}
         title={visa.custom_title || visa.title}
         btnCtaForm={false}
         className="internal_migration internal_migration_subpage"

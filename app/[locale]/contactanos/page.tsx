@@ -26,6 +26,7 @@ export default async function ContactoPage({
     <>
       <BannerInterno
         imageSrc={getAssetUrl("/assets/images/banners/contactanos.webp")}
+        locale={locale}
         title={dict.pages.contact_us.title_caption}
         className="internal_page"
       />

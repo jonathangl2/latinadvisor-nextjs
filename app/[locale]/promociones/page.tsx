@@ -50,6 +50,7 @@ export default async function PromocionesPage({
     <>
       <BannerInterno
         imageSrc={getAssetUrl("/assets/images/banners/promociones.webp")}
+        locale={locale}
         title={dict.pages.promociones.title_caption}
         className="internal_page"
       />
